@@ -1,0 +1,17 @@
+
+title: A Theme for Creatives & Agencies
+description: Vitality is the perfect theme for a freelance professional or an agency.
+services:
+  - service: "Retina Ready"
+    icon: "fa-eye"
+    description: "This theme includes the retina.js plugin for easy retina image support so your images and graphics will look great on mobile devices!"
+  - service: "Easy to Edit"
+    icon: "fa-edit"
+    description: "Vitality is built using Bootstrap 3, and is easy to edit and customize. LESS files are included as well for deeper customization."
+  - service: "Responsive"
+    icon: "fa-tablet"
+    description: "When building this theme, we've paid close attention to how it looks on various screen sizes. Try it out on a phone or tablet!"
+  - service: "Built with Love"
+    icon: "fa-heart"
+    description: "All of our themes are crafted with care, and we strive to make your experience as one of our customers the best as possible."
+servicesDelay: 0.22

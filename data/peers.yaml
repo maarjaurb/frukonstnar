@@ -1,0 +1,26 @@
+
+title: Menschen
+description: "Diese Menschen kenne ich gut und mag sehr, was sie tun oder tun wollen."
+people:
+  - image: "img/peers/maarja.jpg"
+    name: "Maarja Urb"
+    position: "Foto- und Webkünstlerin"
+    social:
+    - icon:   "fa-instagram"
+      link:   "https://www.instagram.com/maarja_urb/?hl=en"
+    - icon:   "fa-cloud"
+      link:   "http://www.m-urb.de"
+    - icon:   "fa-facebook"
+      link:   "https://www.facebook.com/profile.php?id=100006824838702"
+  - image: "img/peers/lukas.jpg"
+    name: "Lukas König"
+    position: "Schauspieler und Regisseur"
+    social:
+    - icon:   "fa-cloud"
+      link:   "http://www.spielsinn.net/"
+  - image: "img/peers/malin.jpg"
+    name: "Malin Haraldsson"
+    position: "Kommunikations-Trainerin"
+    social:
+    - icon:   "fa-facebook"
+      link:   "https://www.facebook.com/modermalin"

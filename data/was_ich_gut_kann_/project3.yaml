@@ -1,0 +1,19 @@
+
+abilityName: "Berührung als Kraftquelle"
+description: > 
+    Ohne Berührung, ohne Sensualität sterben wir.
+    Wenn wir zu wenig haben, dann sind wir kraftlos.
+    Berührung ist Nahrung, genau wie physische Nahrung.
+    Und im Westen sind die Menschen chronisch unterernährt.
+linkText: "View Details"
+backgroundImage: "img/backgrounds/bg-ability3.jpg"
+screenImage: "img/mobile-screens.png"
+longDescription: >
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.
+carouselImages:
+  - "img/mobile-screens.png"
+info:
+  Client: 	"Start Bootstrap"
+  Date: 		"April 2015"
+  Service: 	"Web Development"
+closeButton: "Close"

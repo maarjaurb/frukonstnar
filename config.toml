@@ -1,0 +1,74 @@
+###############################################################
+#
+# Config File for INVISIBLE UNIVERSITY flavour of VITALITY bootstrap theme
+#
+#--------------------------------------------------------------
+Baseurl = "https://example.org/"
+LanguageCode = "de-DE"
+Title = "大學 Invisible University - Michael Schmidt"
+Theme = "hugo-vitality-theme"
+publishDir = "docs"
+
+[Params]
+
+	# You can use Markdown syntax for urls [text](//url.to/source) for
+	# most longer texts.
+
+	# All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+	# for more icons. The icons are represented by their corresponding
+	# CSS class.
+
+	# To provide some metadata for search engines feel free to add a few
+  # information about you and your website.
+
+	# There are sechs different flavours: agency, creative, culinary, fashion, legal, video
+	# and three styles: default, modern or vintage
+  
+  Flavour = "university"
+	Style = "modern"
+
+	# !Important: Theme colors can be selected in static/less/vitality.less
+	
+	Name = "Invisible University - Michael Schmidt"
+	Description = "Liebe zur Technik - und ein sachlicher, tiefer Blick ins eigene Innere."
+	Favicon = "favicon.ico"
+	Author = "Lafisrap (Miuchael Schmidt)"
+	Brand = "大學 Invisible University"
+
+	# List of Google fonts, for use in less files.
+	#
+	# TIPP! To find fonts:
+	# - Go to fonts.google.com.
+	# - Select a font, open the selected font at the bottom of the page, maybe customize it
+	# - In section "Embed Font" copy the full family value (boldly printed), everything after 'family='.
+	# - Add it in quotation marks to the list below.
+	#
+	# TIPP! A good first step after defining fonts, would be to go to static/less/vitality.less and define the main fonts.
+
+	Fonts = [
+		"IM+Fell+English+SC&amp;subset=latin-ext",
+		"Josefin+Sans:300,300i,400,400i,700,700i",
+	]
+
+	# List of menu entries
+	# - Make sure that there is a section with an id to jump to. E.g. for "About" this would be <section id="about">
+
+	NavMenu = [
+		"Über mich",
+		"Was ich gut kann",
+		"Startpunkte",
+		"Peers",
+		"Triff mich!"
+	]
+
+	# All Sections are defined in yaml files in the folder data/creative
+	# HERO 				: hero.yaml
+	# ABOUT 			: about.yaml
+	# SERVICES 		: services.yaml
+	# ASIDE 			: aside.yaml
+	# PROCESS 		: process.yaml
+	# WORK 				: work.yaml /// single projects are defined in folder data/creative/work_
+	# GRID 				: grid.yaml
+	# NEWSLETTER 	: newsletter.yaml
+	# CONTACT 		: contact.yaml
+	# FOOTER 			: footer.yaml

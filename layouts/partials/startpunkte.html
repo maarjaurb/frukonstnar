@@ -1,0 +1,63 @@
+<!-- Portfolio Grid Section -->
+{{ with .Site.Data.startpunkte }}
+<section id="zeropoints">
+    <div class="container text-center wow fadeIn">
+        <h2>{{ .title }}</h2>
+        <hr class="colored">
+        <p>{{ .subtitle }}</p>
+        <div class="row content-row">
+            <div class="col-lg-12">
+                <div class="portfolio-filter">
+                    <ul id="filters" class="clearfix">
+                        <li>
+                            <span class="filter active" data-filter="all">{{ .all }}</span>
+                        </li>
+                        {{ range $index, $element := .filters }}
+                        <li>
+                            <span class="filter" data-filter=".{{ . | urlize }}">{{ . }}</span>
+                        </li>
+                        {{ end }}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div id="portfoliolist">
+                    <!-- NOTE: You can add more items to the grid, or remove items you don't need! -->
+                    {{ range $i, $e := .elements }}
+                    <div class="mix {{ range .filters }}{{ . | urlize }} {{ end }}" id="portfolio{{ $i }}" href="#" title="Client Name">
+                        <div class="portfolio-wrapper">
+                            <a href="#gridModal{{ $i }}" data-toggle="modal">
+                                <img src="{{ .image }}" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a class="text-title">{{ .captionTitle }}</a>
+                                        <span class="text-category">{{ .captionCategory }}</span>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ range $i, $e := .elements }}
+<div class="portfolio-modal modal fade" id="gridModal{{ $i }}" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('{{ .image }}')">
+    <div class="modal-content" data-dismiss="modal">
+        <div id="grid-panel">
+            <h2>{{ .captionTitle }}</h2>
+            <p>{{ .content | markdownify }}</p>
+            <video controls>
+                <source src="{{ .video }}" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</div>
+{{ end }}
+{{ end }}

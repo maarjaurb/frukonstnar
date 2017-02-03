@@ -1,0 +1,165 @@
+<!-- Portfolio Carousel Heading -->
+{{ with .Site.Data.was_ich_gut_kann }}
+<section id="was-ich-gut-kann" class="bg-white">
+    <div class="container text-center wow fadeIn">
+        <h2>{{ .title }}<a class="asterix page-scroll" href="#carousel">*</a></h2>
+        <hr class="colored">
+        <p>{{ .subtitle | markdownify }}</p>
+    </div>
+</section>
+{{ end }}
+
+<!-- Portfolio Carousel -->
+<section id="carousel" class="portfolio-carousel wow fadeIn">
+    <!-- Carousel Items -->
+    {{ $imageColumns := .Site.Data.was_ich_gut_kann.imageColumns }}
+    {{ $screenFrame := .Site.Data.was_ich_gut_kann.screenFrame }}
+    {{ range $index, $element := .Site.Data.was_ich_gut_kann_ }}
+    <div class="item" style="background-image: url('{{ .backgroundImage }}')">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-{{ sub 12 $imageColumns }} col-md-push-{{ $imageColumns }}">
+                    <div class="project-details">
+                        {{ if .clientLogo }}
+                        <img src="{{ .clientLogo }}" class="img-responsive client-logo" alt="">
+                        {{ end }}
+                        <span class="project-name">{{ .abilityName }}</span>
+                        <span class="project-description">{{ .description | markdownify }}</span>
+                        <hr class="colored">
+                        <a href="#workModal{{ $index }}" data-toggle="modal" class="btn btn-outline-light">{{ .linkText }} <i class="fa fa-long-arrow-right fa-fw"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-{{ $imageColumns }} col-md-pull-{{ sub 12 $imageColumns }} hidden-xs">
+                    {{ if $screenFrame }}
+                    <div class="device-container">
+                        <div class="device-mockup macbook portrait black">
+                            <div class="device">
+                                <div class="screen">
+                                    <img src="{{ .screenImage }}" class="img-responsive" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{ else }}
+                        <img src="{{ .screenImage }}" class="img-responsive" alt="">
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+    {{ end }}
+</section>
+
+<div id="just-for-width" class="device-mockup">
+    <div class="topics">
+        <div class="inner">
+            {{ range $index, $element := .Site.Data.was_ich_gut_kann_ }}
+            {{ range .topicsUp }}
+            <div class="topic">
+                <div class="oneword row"><li>{{ .oneword | markdownify }}</li></span></div>
+            </div>
+            {{ end }}                                
+            {{ range .topicsDown }}
+            <div class="topic">
+                <div class="oneword row"><li>{{ .oneword | markdownify }}</li></span></div>
+            </div>
+            {{ end }}                                
+            {{ end }}
+        </div>
+    </div>
+</div>
+
+
+{{ range $index, $element := .Site.Data.was_ich_gut_kann_ }}
+<div class="portfolio-modal modal fade" id="workModal{{ $index }}" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('{{ .backgroundImage }}')">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-11 col-md-offset-1">
+                        <h2>{{ .abilityName }}</h2>
+                        <hr class="colored">
+                    </div>
+                    <div class="col-md-11 col-md-offset-1">
+                        <div class="device-mockup jasper">
+                            <div class="topics up">
+                                <div class="inner">
+                                    {{ range $i, $e := .topicsUp }}
+                                    <div class="topic" padding="20" tid="{{ $i }}">
+                                        <div class="oneword row"><li>{{ .oneword | markdownify }}</li></span></div>
+                                        <hr>
+                                        <div class="description row"><span>{{ .description | markdownify }}</span></div>
+                                        <br><br><br><br><br>
+                                    </div>
+                                    {{ end }}                                
+                                </div>
+                            </div>
+                            <div class="topics down">
+                                <div class="inner">
+                                    {{ range $i, $e := .topicsDown }}
+                                    <div class="topic" padding="20" tid="{{ add $i 100 }}">
+                                        <br><br><br><br><br>
+                                        <div class="description row"><span>{{ .description | markdownify }}</span></div>
+                                        <hr>
+                                        <div class="oneword row"><li>{{ .oneword | markdownify }}</li></span></div>
+                                    </div>
+                                    {{ end }}                                
+                                </div>
+                            </div>
+                            <div class="device">
+                                <div class="screen">
+                                    <div class="mockup-carousel">
+                                        {{ range $i, $e := .topicsUp }}
+                                        <div class="item item{{ $i }}">
+                                            {{ if .text }}
+                                            <img src="img/nil.png" class="img-responsive" alt="">
+                                            <table class="text"><tr><td><div>{{ .text | markdownify }}</div></td></tr></table>
+                                            {{ else if .image }}
+                                            <img src="{{ .image }}" class="img-responsive" alt="">
+                                            {{ else if .video }}
+                                            <video controls>
+                                                <source src="{{ .video }}" type="video/mp4">
+                                            </video>
+                                            {{ end }}                                                
+                                        </div>
+                                        {{ end }}
+                                        {{ range $i, $e := .topicsDown }}
+                                        <div class="item item{{ add $i 100 }}">
+                                            {{ if .text }}
+                                            <img src="img/nil.png" class="img-responsive" alt="">
+                                            <table class="text"><tr><td><div>{{ .text | markdownify }}</div></td></tr></table>
+                                            {{ else if .image }}
+                                            <img src="{{ .image }}" class="img-responsive" alt="">
+                                            {{ else if .video }}
+                                            <video controls>
+                                                <source src="{{ .video }}" type="video/mp4">
+                                            </video>
+                                            {{ end }}                                                
+                                        </div>
+                                        {{ end }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-md-offset-2">
+                        <ul class="list-inline item-details">
+                            {{ range $index, $element := .info }}
+                            <li>{{ $index }}: <strong>{{ . }}</strong></li>
+                            {{ end }}
+                        </ul>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> {{ .closeButton }}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}
+

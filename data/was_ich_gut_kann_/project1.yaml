@@ -1,0 +1,127 @@
+#####################################################################
+# Definition of an Ability
+#
+#################################################################
+# Entry Page
+#
+# abilityName:      The name of the ability, used as title
+# description:      Description of the ability for the front page
+# linkText:         Text of the button
+# backgroundImage:  Background image (you bet ;-)
+# screenImage:      Image on screen
+
+abilityName: "Programmieren"
+description: >
+    Ich nehme die Tastatur, ich versuche die Idee in meinem Kopf klar zu kriegen, ich suche.
+
+
+    Plötzlich: Ein inneres Lächeln, Freude, Vorfreude.
+    Ich lege die Finger auf die Tastatur und beginne zu schreiben.
+    
+
+    Ich starte die App, fixiere den Bildschirm,<br>erwarte ...
+
+
+    Shit! Ein leichter Stich im Herzbereich.<br>Es geht nicht.
+
+linkText: "Mehr"
+backgroundImage: "img/backgrounds/bg-ability1.jpg"
+screenImage: "img/abilities/programming1.png"
+
+###################################################################
+# Modal Page
+#
+# All Topics
+#
+# !Important: Make sure that you have always the right amount of
+#             spaces (not tabs!!) in the beginning of each line,
+#             Yaml is very picky.
+#
+# topicsUp:     List with topics that are shown above the screen
+# topicsDown:   List with topics that are shown below the screen
+# oneword:      The word that appears above the screen
+# description:  The text that appears when you hover over the word
+# text:         Text (with images, MarkDown syntax) on the screen
+# image:        An image on the screen
+# video:        A video on the screen
+# closeButton:  Text on close button
+#
+# !Note: You must choose one of the three: text, image, video
+# !Note: To get a new paragraph in a text you need two (!) empty lines
+
+topicsUp:
+  - oneword: "Idee"
+    description: > 
+      Etwas Neues erschaffen, die Vorfreude darauf, ein spannendes Gefühl.
+      Alles fliegt durcheinander: Was ich kann, was ich gesehen habe, was ich will.
+      Und endet bei:<br>JA, das kann ich.
+    text: >
+      <h3>Idee</h3>
+
+
+
+      ![left](img/abilities/programming1.png)
+      Die Idee ,,, **Lorem ipsum dolor sit amet**, consectetur adipisicing elit.
+      Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea.
+      Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.
+
+
+
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea.
+      Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.
+      ![right](img/backgrounds/bg-ability1.jpg)
+
+
+
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea.
+      Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.
+
+  - oneword: "Start-Euphorie"
+    description: "..."
+    image: "img/abilities/programming1.png"
+  - oneword: "Struktur"
+    description: "..."
+    video: "video/image_to_playground.mp4"
+  - oneword: "Verzweiflung"
+    description: "..."
+    video: "video/image_to_playground.mp4"
+
+topicsDown:
+  - oneword: "Verzweiflung"
+    description: "Was ich will, steht klar und leuchtend hinter dieser Wand. Stahl. Beton. Aufgeben? Ich bin so oft schon durchgekommen ... Dieses Mal auch!"
+    text: >
+      <h3>Ein Titel</h3>
+
+
+      DOWN **Lorem ipsum dolor sit amet**, consectetur adipisicing elit.
+      Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea.
+      Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.
+
+
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea.
+      Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.
+  - oneword: "Euphorie"
+    description: "Die Tür springt auf, ich schreite hindurch und die Welt schaut mir zu: \"JA! Es funktioniert.\""
+    text: >
+      DOWN **Lorem ipsum dolor sit amet**, consectetur adipisicing elit.
+      Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea.
+      Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.
+
+
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea.
+      Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.
+  - oneword: "Spielplatz"
+    description: "Was man nicht zuerst auf einem Spielplatz lernt, lernt man nicht so ganz so richtig, so ... flubatsch tuatäng."
+    video: "video/image_to_playground.mp4"
+
+
+closeButton: "Schließen"
+
+info:
+  Datum: 	  "1. Februar 2017"
+  Ort: 		  "Berlin"
+  Wetter: 	"Kalt, nicht gemütlich"

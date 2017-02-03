@@ -1,0 +1,18 @@
+quotes:
+  - lead: "Working with Vitality was both a valuable and rewarding experience."
+    quote: >
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Reprehenderit, temporibus, laborum, dignissimos doloremque corporis alias nostrum recusandae culpa id quisquam harum impedit sed sunt non obcaecati vero ipsam aut fugit?
+    image: "img/agency/testimonials/1.jpg"
+    author: "Jim Walker"
+    authorInfo: "CEO of Company Name"
+    stars: 5
+
+  - lead: "Vitality is a well coded, well documented, and easy to use theme!"
+    quote: >
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Quidem amet rem minus dolorum, facere in soluta explicabo, unde eveniet illo vel, nemo nostrum atque nesciunt facilis quaerat quasi reprehenderit dicta.
+    image: "img/agency/testimonials/2.jpg"
+    author: "Ashley Creadle"
+    authorInfo: "Creative Director of Company Name"
+    stars: 4

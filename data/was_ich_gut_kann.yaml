@@ -1,0 +1,14 @@
+# Change LESS Globals in file static/less/vitality.less for following items
+# @themeDark: 	
+# @themePrimary: 	
+# @fontPrimary: 
+# @fontTitle: 	
+
+title: "Was ich gut kann"
+subtitle: > 
+    Individuelle Fähigkeiten machen unser Leben aus.<br>
+    Auch solche Fähigkeiten, die noch in uns schlummern.<br>
+    Sie wollen ans Tageslicht, sie suchen Bedürfnisse.<br>
+    Und andere Menschen schauen mit großer Freude oder Neid darauf, was sie hervorbringen.
+imageColumns: 7
+screenFrame: true

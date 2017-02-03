@@ -1,0 +1,25 @@
+title: Our Process
+subtitle: Here is an overview of how we approach each new project.
+delay: 0.2
+processes:
+  - process: "Plan"
+    icon: "fa-clipboard"
+    bullets:
+      - "Client interview"
+      - "Gather consumer data"
+      - "Create content strategy"
+      - "Analyze research"
+  - process: "Create"
+    icon: "fa-pencil"
+    bullets:
+      - "Build wireframe"
+      - "Gather client feedback"
+      - "Code development"
+      - "Marketing review"
+  - process: "Launch"
+    icon: "fa-rocket"
+    bullets:
+      - "Deploy website"
+      - "Market product launch"
+      - "Collect UX data"
+      - "Quarterly maintenence"

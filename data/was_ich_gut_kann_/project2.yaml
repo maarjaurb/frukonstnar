@@ -1,0 +1,19 @@
+
+abilityName: "Kommunikation als Kunst"
+description: >
+    Alles ist Kommunikation.
+    Nichts kann sich in der Welt verändern, außer es verändert sich in unserem Bewusstsein:
+    in der Kommunikation mit uns, mit anderen und mit der Welt.
+    Jeder Konflikt, jede Beziehung, jedes Ziel ist eine Aufforderung, uns zu ändern, einen Schritt weiter zu gehen.
+linkText: "View Details"
+backgroundImage: "img/backgrounds/bg-ability2.jpg"
+screenImage: "img/tablet-screens.png"
+longDescription: >
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.
+carouselImages:
+  - "img/tablet-screens.png"
+info:
+  Client: 	"Start Bootstrap"
+  Date: 		"April 2015"
+  Service: 	"Web Development"
+closeButton: "Close"

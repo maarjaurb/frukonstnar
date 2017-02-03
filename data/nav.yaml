@@ -1,0 +1,25 @@
+# Change LESS Globals in file static/less/vitality.less for following items
+# @themeDark: 	Color of brand name and nav entries when navbar is transparent, color of dark navbar
+# @themeLight: 	Color of brand name and nav entries when navbar is dark
+# @fontPrimary: Font of nav entries
+# @fontTitle: 	Font of brand name
+#
+# !IMPORTANT: Make sure leading spaces are exact (!) in each line.
+# 						A line with - begins with two spaces
+# 						A line without has four spaces at the beginning, and NO tabs! (Yaml wants that, not me!)
+menu:
+  - title: 	"Über mich"
+    href: 	"ueber-mich"
+  - title: 	"Was ich gut kann"
+  - title: 	"Startpunkte"
+    href:   "zeropoints"
+  - title: 	"Menschen"
+    href: 	"peers"
+
+# Additional Parameters
+
+# menuSize: 	"20px"
+# brandSize: 	"22px"
+# colorLight: "#ff0000"
+# colorDark: 	"#330000"
+

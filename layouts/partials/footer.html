@@ -1,0 +1,31 @@
+<!-- Footer -->
+{{ $version := .Hugo.Version }}
+{{ with .Site.Data.footer }}
+<footer class="footer" style="background-image: url('{{ .image }}')">
+    <div class="container text-center">
+        <div class="row">
+            {{ $cols := div 12 (len .details) }}
+            {{ range .details }}
+            <div class="col-md-{{ $cols }} contact-details">
+                <h4><i class="fa {{ .icon }}"></i> {{ .title }}</h4>
+                <p>{{ .text | markdownify }}</p>
+            </div>
+            {{ end }}
+        </div>
+        <div class="row social">
+            <div class="col-lg-12">
+                <ul class="list-inline">
+                    {{ range .social }}
+                    <li><a href="{{ .link }}"><i class="fa {{ .icon }} fa-fw fa-2x"></i></a></li>
+                    {{ end }}
+                </ul>
+            </div>
+        </div>
+        <div class="row copyright">
+            <div class="col-lg-12">
+                <p class="small">&copy; 2016 Start Bootstrap Themes, powered by Hugo    {{ $version }}.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+{{ end }}

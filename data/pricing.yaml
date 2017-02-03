@@ -1,0 +1,39 @@
+title: Pricing
+image: img/agency/backgrounds/bg-pricing.jpg
+description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, quae, laborum, voluptate delectus odio doloremque error porro obcaecati nemo animi ducimus quaerat nostrum? Ab molestiae eaque et atque architecto reiciendis.
+currency: $
+featured: true
+table:
+  - title: Basic
+    price: 25
+    value: / month
+    list:
+      - 60 Users
+      - Unlimited Forums
+      - Unlimited Reports
+      - 3,000 Entries per Month
+      - 200 MB Storage
+      - Unlimited Support
+    action: Sign up
+  - title: Plus
+    price: 50
+    value: / month
+    list:
+      - <strong>60</strong> Users
+      - Unlimited Forums
+      - Unlimited Reports
+      - <strong>3,000</strong> Entries per Month
+      - <strong>200 MB</strong> Storage
+      - Unlimited Support
+    action: Sign up
+  - title: Premium
+    price: 150
+    value: / month
+    list:
+      - 60 Users
+      - Unlimited Forums
+      - Unlimited Reports
+      - 3,000 Entries per Month
+      - 200 MB Storage
+      - Unlimited Support
+    action: Sign up
