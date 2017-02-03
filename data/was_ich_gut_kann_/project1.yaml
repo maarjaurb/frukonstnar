@@ -49,6 +49,11 @@ screenImage: "img/abilities/programming1.png"
 # !Note: You must choose one of the three: text, image, video
 # !Note: To get a new paragraph in a text you need two (!) empty lines
 
+test:
+  - 1
+  - 2
+  - 3
+
 topicsUp:
   - oneword: "Idee"
     description: > 

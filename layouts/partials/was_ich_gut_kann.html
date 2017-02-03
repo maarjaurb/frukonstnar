@@ -1,4 +1,5 @@
 <!-- Portfolio Carousel Heading -->
+
 {{ with .Site.Data.was_ich_gut_kann }}
 <section id="was-ich-gut-kann" class="bg-white">
     <div class="container text-center wow fadeIn">
@@ -90,6 +91,8 @@
                         <div class="device-mockup jasper">
                             <div class="topics up">
                                 <div class="inner">
+                                    {{ $l := len .topicsUp }}
+                                    {{ $l := 100 }}
                                     {{ range $i, $e := .topicsUp }}
                                     <div class="topic" padding="20" tid="{{ $i }}">
                                         <div class="oneword row"><li>{{ .oneword | markdownify }}</li></span></div>
@@ -97,13 +100,14 @@
                                         <div class="description row"><span>{{ .description | markdownify }}</span></div>
                                         <br><br><br><br><br>
                                     </div>
-                                    {{ end }}                                
+                                    {{ end }} 
                                 </div>
                             </div>
                             <div class="topics down">
                                 <div class="inner">
+                                    
                                     {{ range $i, $e := .topicsDown }}
-                                    <div class="topic" padding="20" tid="{{ add $i 100 }}">
+                                    <div class="topic" padding="20" tid="{{ add $i $l }}">
                                         <br><br><br><br><br>
                                         <div class="description row"><span>{{ .description | markdownify }}</span></div>
                                         <hr>
