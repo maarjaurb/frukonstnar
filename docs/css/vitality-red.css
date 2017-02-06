@@ -760,6 +760,9 @@ aside.cta-quote .panel {
   font-family: "Josefin Sans";
   color: #1B073D;
 }
+.portfolio-modal .infoline {
+  margin-top: 40px;
+}
 .mockup-carousel .item {
   position: relative;
   margin: 0;
@@ -812,6 +815,7 @@ aside.cta-quote .panel {
   padding: 20px;
 }
 .device-mockup .topics .topic {
+  position: absolute;
   width: 260px;
   text-align: left;
   font-size: 20px;
@@ -845,8 +849,22 @@ aside.cta-quote .panel {
 .device-mockup .topics.up {
   top: -45px;
 }
+.device-mockup .topics.up .inner {
+  position: absolute;
+  top: 0px;
+}
+.device-mockup .topics.up .inner .topic {
+  top: 16px;
+}
 .device-mockup .topics.down {
   bottom: -45px;
+}
+.device-mockup .topics.down .inner {
+  position: absolute;
+  bottom: 0px;
+}
+.device-mockup .topics.down .inner .topic {
+  bottom: 0px;
 }
 .device-mockup .text {
   position: absolute;

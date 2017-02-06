@@ -49,11 +49,6 @@ screenImage: "img/abilities/programming1.png"
 # !Note: You must choose one of the three: text, image, video
 # !Note: To get a new paragraph in a text you need two (!) empty lines
 
-test:
-  - 1
-  - 2
-  - 3
-
 topicsUp:
   - oneword: "Idee"
     description: > 
@@ -89,15 +84,12 @@ topicsUp:
   - oneword: "Struktur"
     description: "..."
     video: "video/image_to_playground.mp4"
-  - oneword: "Verzweiflung"
-    description: "..."
-    video: "video/image_to_playground.mp4"
 
 topicsDown:
   - oneword: "Verzweiflung"
     description: "Was ich will, steht klar und leuchtend hinter dieser Wand. Stahl. Beton. Aufgeben? Ich bin so oft schon durchgekommen ... Dieses Mal auch!"
     text: >
-      <h3>Ein Titel</h3>
+      <h3>Ein schöner Titel</h3>
 
 
       DOWN **Lorem ipsum dolor sit amet**, consectetur adipisicing elit.

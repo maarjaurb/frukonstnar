@@ -189,6 +189,10 @@
     	font-family: @fontPrimary;
     	color: @themeDark;
     }
+
+    .infoline {
+    	margin-top: 40px;
+    }
 }
 
 // Mockup Carousel
@@ -248,6 +252,7 @@
 		padding: 20px;
 
   	.topic {
+  		position: absolute;	
 			width: 260px;
 			text-align: left;
 			font-size: 20px;
@@ -283,12 +288,32 @@
 		}
 	}
 
+
+
 	.topics.up {
 		top: -45px;
+
+		.inner {
+			position: absolute;
+			top: 0px;
+
+			.topic {
+				top: 16px;
+			}
+		}
 	}
 
 	.topics.down {
 		bottom: -45px;
+
+		.inner {
+			position: absolute;
+			bottom: 0px;
+
+			.topic {
+				bottom: 0px;
+			}
+		}
 	}
 
 	.text {

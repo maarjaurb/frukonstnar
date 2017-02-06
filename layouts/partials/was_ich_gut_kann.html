@@ -56,12 +56,12 @@
         <div class="inner">
             {{ range $index, $element := .Site.Data.was_ich_gut_kann_ }}
             {{ range .topicsUp }}
-            <div class="topic">
+            <div class="topic up" padding="20">
                 <div class="oneword row"><li>{{ .oneword | markdownify }}</li></span></div>
             </div>
             {{ end }}                                
             {{ range .topicsDown }}
-            <div class="topic">
+            <div class="topic down" padding="20">
                 <div class="oneword row"><li>{{ .oneword | markdownify }}</li></span></div>
             </div>
             {{ end }}                                
@@ -91,10 +91,9 @@
                         <div class="device-mockup jasper">
                             <div class="topics up">
                                 <div class="inner">
-                                    {{ $l := len .topicsUp }}
                                     {{ $l := 100 }}
                                     {{ range $i, $e := .topicsUp }}
-                                    <div class="topic" padding="20" tid="{{ $i }}">
+                                    <div class="topic" tid="{{ $i }}">
                                         <div class="oneword row"><li>{{ .oneword | markdownify }}</li></span></div>
                                         <hr>
                                         <div class="description row"><span>{{ .description | markdownify }}</span></div>
@@ -107,7 +106,7 @@
                                 <div class="inner">
                                     
                                     {{ range $i, $e := .topicsDown }}
-                                    <div class="topic" padding="20" tid="{{ add $i $l }}">
+                                    <div class="topic" tid="{{ add $i $l }}">
                                         <br><br><br><br><br>
                                         <div class="description row"><span>{{ .description | markdownify }}</span></div>
                                         <hr>
@@ -152,7 +151,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-8 col-md-offset-2">
+                    <div class="infoline col-md-8 col-md-offset-2">
                         <ul class="list-inline item-details">
                             {{ range $index, $element := .info }}
                             <li>{{ $index }}: <strong>{{ . }}</strong></li>

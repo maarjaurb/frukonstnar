@@ -10,49 +10,66 @@ $( () => {
 
 		topicAnimating = topic.attr( "tid" );
 
-		$( ".device-mockup .topic" ).each( function() {
+		$( ".device-mockup .up" ).each( function() {
 			if( $(this).attr( "tid") !== topicAnimating ) {
 				$(this).stop().animate( {
 					"margin-top": "40px",
 				}, 300);
-				console.log("Hiding", $(this).attr( "tid"));
+			}
+		});
+		$( ".device-mockup .down" ).each( function() {
+			if( $(this).attr( "tid") !== topicAnimating ) {
+				$(this).stop().animate( {
+					"margin-bottom": "40px",
+				}, 300);
 			}
 		});
 
-		topic.stop().animate( {
-			"margin-top": "-"+height+"px",
-		}, 300);
-		console.log("Showing", topic.attr( "tid" ));
+		if( topic.hasClass( "up") ) {
+			topic.stop().animate( {
+				"margin-top": -(height+30)+"px",
+			}, 300);			
+		} else {
+			topic.stop().animate( {
+				"margin-bottom": "-"+(height+30)+"px",
+			}, 300);						
+		}
 
 	}, null);
 
 	////////////////////////////////////////////////////////7
 	// Let topic menu slide back to where it was
 	$( ".device-mockup .topic" ).hover( null, function() {
-		console.log("Going back", $(this).attr( "tid"));
-		$( ".device-mockup .topic" ).stop().animate( {
+		$( ".device-mockup .up" ).stop().animate( {
 			"margin-top": "0px",
+		}, 300);
+
+		$( ".device-mockup .down" ).stop().animate( {
+			"margin-bottom": "0px",
 		}, 300);
 	});
 
 
 	////////////////////////////////////////////////////////7
 	// Correct right margins of all topic titles
-	var widths = [];
-	$( "#just-for-width .topic" ).each( function() {
-		var $this = $( this ),
-				width1 = $this.outerWidth(),
-				width2 = $( ".oneword li", $this ).outerWidth();
-				
-		widths.push( width2 - width1 );
-	});
+	var widths = [],
+			p = ["up", "down"];
+
+	for( var pos in p ) {
+		var left = 0;
+		$( "#just-for-width .topic."+p[pos] ).each( function() {
+			var $this = $( this ),
+					width = $( ".oneword li", $this ).outerWidth(),
+					padding = parseInt( $this.attr( "padding" ) );
+					
+			widths.push( left );
+			left += width + padding;
+		});		
+	}
 
 	$( "#just-for-width" ).remove();
 
 	$( ".device-mockup .topic" ).each( function() {
-			var $this = $( this ),
-					padding = parseInt( $this.attr( "padding" ) );
-
-			$this.css( "margin-right", (widths.shift()+padding)+"px" );
+			$( this ).css( "left", widths.shift()+"px" );
 	});
 });
