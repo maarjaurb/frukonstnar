@@ -27,6 +27,7 @@ description: >
 linkText: "Mehr"
 backgroundImage: "img/backgrounds/bg-ability1.jpg"
 screenImage: "img/abilities/programming1.png"
+extra: "Noch ein Extra ..."
 
 ###################################################################
 # Modal Page

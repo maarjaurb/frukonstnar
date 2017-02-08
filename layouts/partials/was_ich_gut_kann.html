@@ -27,6 +27,9 @@
                         <span class="project-name">{{ .abilityName }}</span>
                         <span class="project-description">{{ .description | markdownify }}</span>
                         <hr class="colored">
+                        {{ if .extra }}
+                        <div class="extra">{{ .extra }}</div>
+                        {{ end }}
                         <a href="#workModal{{ $index }}" data-toggle="modal" class="btn btn-outline-light">{{ .linkText }} <i class="fa fa-long-arrow-right fa-fw"></i></a>
                     </div>
                 </div>
@@ -55,13 +58,15 @@
     <div class="topics">
         <div class="inner">
             {{ range $index, $element := .Site.Data.was_ich_gut_kann_ }}
+            ->{{ $index }}
             {{ range .topicsUp }}
             <div class="topic up" padding="20">
                 <div class="oneword row"><li>{{ .oneword | markdownify }}</li></span></div>
             </div>
             {{ end }}                                
-            {{ range .topicsDown }}
-            <div class="topic down" padding="20">
+            {{ range $i, $e := .topicsDown }}
+            -->{{ $i }}
+            <div class="topic down {{ if eq $i 0 }}cr{{ end }}" padding="20">
                 <div class="oneword row"><li>{{ .oneword | markdownify }}</li></span></div>
             </div>
             {{ end }}                                
@@ -93,7 +98,7 @@
                                 <div class="inner">
                                     {{ $l := 100 }}
                                     {{ range $i, $e := .topicsUp }}
-                                    <div class="topic" tid="{{ $i }}">
+                                    <div class="topic up" tid="{{ $i }}">
                                         <div class="oneword row"><li>{{ .oneword | markdownify }}</li></span></div>
                                         <hr>
                                         <div class="description row"><span>{{ .description | markdownify }}</span></div>
@@ -106,7 +111,7 @@
                                 <div class="inner">
                                     
                                     {{ range $i, $e := .topicsDown }}
-                                    <div class="topic" tid="{{ add $i $l }}">
+                                    <div class="topic down" tid="{{ add $i $l }}">
                                         <br><br><br><br><br>
                                         <div class="description row"><span>{{ .description | markdownify }}</span></div>
                                         <hr>

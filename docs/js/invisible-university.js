@@ -52,7 +52,7 @@ $( () => {
 
 	////////////////////////////////////////////////////////7
 	// Correct right margins of all topic titles
-	var widths = [],
+	var lefts = [],
 			p = ["up", "down"];
 
 	for( var pos in p ) {
@@ -61,8 +61,11 @@ $( () => {
 			var $this = $( this ),
 					width = $( ".oneword li", $this ).outerWidth(),
 					padding = parseInt( $this.attr( "padding" ) );
+			
+			var a = $this.hasClass( "cr" );
+			if( $this.hasClass( "cr" )) left = 0;
 					
-			widths.push( left );
+			lefts.push( left );
 			left += width + padding;
 		});		
 	}
@@ -70,6 +73,6 @@ $( () => {
 	$( "#just-for-width" ).remove();
 
 	$( ".device-mockup .topic" ).each( function() {
-			$( this ).css( "left", widths.shift()+"px" );
+			$( this ).css( "left", lefts.shift()+"px" );
 	});
 });
