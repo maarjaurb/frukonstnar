@@ -433,20 +433,40 @@ if (typeof Object.create !== "function") {
                     base.prev();
                 }
 
-                var videos = $(this).parents(".mockup-carousel" ).find( "video"),
-                    video =  $(this).parents(".mockup-carousel" ).find( "video").parents( ".item"+base.currentItem ).find( "video" )[0];
+                /////////////////////////////////////////////////////////////////////////////
+                // @lafisrap: Extension for Invisible University: Switching videos on and off
+                playVideo.call( this );
+                ///////////////////////////////////////////////////////////////////////////////
+            });
+
+            ///////////////////////////////////////////////////////////////////////////
+            // @lafisrap: Extension for Invisible University: Listening to topic menus
+            var topicWrapper = $( ".topic[tid]" );
+
+            topicWrapper.off( "click touch").on( "click touch", function (event) {
+                base.currentItem = parseInt( $(this).attr( "tid" ) );
+                base.goTo(base.currentItem);
+
+                playVideo.call( this ); // not this, but the right context to find videos !!!
+            });
+
+            var playVideo = function() {
+                var videos = $(this).parents( ".device-mockup" ).find( "video"),
+                    video = videos.parents( ".item"+base.currentItem ).find( "video" )[0];
                 
                 videos.each( function() {
                     $( this ).get(0).pause();
                 });
 
+                console.log( "Stopping", videos.length, "videos.", video? " Starting 1.": "" );
                 if( video ) {
                     var v = $( video ).get(0);
 
                     v.currentTime = 0;
                     v.play();
-                }
-            });
+                }                
+            }
+            ////////////////////////////////////////////////////////////////////////////
         },
 
         buildPagination : function () {

@@ -682,7 +682,7 @@ aside.cta-quote .panel {
     line-height: 25px;
   }
   .portfolio-carousel .item hr.colored {
-    margin: 20px auto 20px 0;
+    margin: 10px auto 10px 0;
   }
 }
 .portfolio-gallery .item {
@@ -706,12 +706,15 @@ aside.cta-quote .panel {
   box-shadow: none;
   border: none;
   min-height: 100%;
-  padding: 40px 0;
+  padding: 20px 0;
   text-align: center;
 }
 .portfolio-modal .modal-content h2 {
   margin: 0;
   font-size: 46px;
+}
+.portfolio-modal .modal-content hr {
+  margin: 10px auto 50px auto;
 }
 .portfolio-modal .modal-content .item-details {
   margin: 30px 0;
@@ -857,7 +860,7 @@ aside.cta-quote .panel {
   top: 16px;
 }
 .device-mockup .topics.down {
-  bottom: -45px;
+  bottom: -30px;
 }
 .device-mockup .topics.down .inner {
   position: absolute;

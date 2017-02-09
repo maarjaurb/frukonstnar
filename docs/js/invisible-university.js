@@ -6,32 +6,35 @@ $( () => {
 	var topicAnimating = null;
 	$( ".device-mockup .oneword li" ).hover( function() {
 		var topic = $( this ).parents( ".topic" ),
-				height = $( ".description", topic ).outerHeight()+10;
+				height = $( ".description", topic ).outerHeight()+10,
+				isUp = topic.hasClass( "up");
 
 		topicAnimating = topic.attr( "tid" );
 
-		$( ".device-mockup .up" ).each( function() {
-			if( $(this).attr( "tid") !== topicAnimating ) {
-				$(this).stop().animate( {
-					"margin-top": "40px",
-				}, 300);
-			}
-		});
-		$( ".device-mockup .down" ).each( function() {
-			if( $(this).attr( "tid") !== topicAnimating ) {
-				$(this).stop().animate( {
-					"margin-bottom": "40px",
-				}, 300);
-			}
-		});
+		if( isUp ) {
+			$( ".device-mockup .up" ).each( function() {
+				if( $(this).attr( "tid") !== topicAnimating ) {
+					$(this).stop().animate( {
+						"margin-top": "40px",
+					}, 300);
+				}
+			});
 
-		if( topic.hasClass( "up") ) {
 			topic.stop().animate( {
-				"margin-top": -(height+30)+"px",
+				"margin-top": -(height+40)+"px",
 			}, 300);			
+
 		} else {
+			$( ".device-mockup .down" ).each( function() {
+				if( $(this).attr( "tid") !== topicAnimating ) {
+					$(this).stop().animate( {
+						"margin-bottom": "40px",
+					}, 300);
+				}
+			});
+
 			topic.stop().animate( {
-				"margin-bottom": "-"+(height+30)+"px",
+				"margin-bottom": "-"+(height+35)+"px",
 			}, 300);						
 		}
 

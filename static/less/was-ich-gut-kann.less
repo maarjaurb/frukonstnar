@@ -108,7 +108,7 @@
 				}
 			}
 			hr.colored {
-				margin: 20px auto 20px 0;
+				margin: 10px auto 10px 0;
 			}			
 		}
 	}
@@ -134,11 +134,14 @@
 	    box-shadow: none;
 	    border: none;
 	    min-height: 100%;
-	    padding: 40px 0;
+	    padding: 20px 0;
 	    text-align: center;
 		h2 {
-	    	margin: 0;
-	    	font-size: 46px;
+    	margin: 0;
+    	font-size: 46px;
+		}
+		hr {
+			margin: 7px auto 50px auto;	
 		}
 		.item-details {
 			margin: 30px 0;
@@ -191,8 +194,19 @@
     }
 
     .infoline {
-    	margin-top: 40px;
-    }
+    	margin-bottom: 150px;
+	    .list-wrapper {
+	    	position: fixed;
+	    	transform: rotate( 90deg );
+	    	text-align: right;
+	    	right: 20px;
+	    	text-align: center;
+	    	width: 800px;
+	    	margin-right: -400px;
+	    	top: 50%;
+	    	right: 3%;
+		  }
+		}
 }
 
 // Mockup Carousel
@@ -243,6 +257,22 @@
 }
 
 /* Only for Device Mockup */
+.device-mockup-wrapper button {
+	position: absolute;
+	transform: rotate( 270deg );
+	width: 800px;
+	left: -440px;
+	top: 45%;
+	font-size: 50px;
+	border: 0px solid rgba( 0,0,0,0 );
+	background: none;
+	color: rgba( 0,0,0,0.08);
+}
+
+.device-mockup-wrapper button:hover {
+	background: none;
+	color: rgba( 0,0,0,0.15);
+}
 
 .device-mockup {
 	.topics {
@@ -282,7 +312,7 @@
 				border-radius: 5px;
 				padding: 10px;
 				font-size: 15px;
-				background: @themeDark;
+				background-color: @themeDark;
 				box-shadow: 0px 0px 0px 3px rgba(0,0,0,0.3);
 			}
 		}
@@ -349,11 +379,57 @@
 	
 	.device {
 		
-		background-image: url("../img/stones/dontnow.png");
+		background-image: url("../img/stones/jasper.png");
 		
 		.screen {
     
     	top: 9.177551%; bottom: 10.477551%; left: 7.345988%; right: 6.945988%;
+		}
+	}
+
+	.topics {
+		.topic {
+			.oneword li {
+				color: rgba( 177, 35, 3, 1);
+			}
+
+			hr {
+				border-color: rgba( 177, 35, 3, 1);
+			}
+
+			.description {
+				background-color: rgba( 177, 35, 3, 1);
+			}			
+		}
+	}
+}
+
+.device-mockup.saphire {
+	padding-bottom: 65.14%;
+	
+	.device {
+		
+		background-image: url("../img/stones/saphire.png");
+		
+		.screen {
+    
+    	top: 9.177551%; bottom: 10.477551%; left: 7.345988%; right: 6.945988%;
+		}
+	}
+
+	.topics {
+		.topic {
+			.oneword li {
+				color: rgba( 47, 54, 73, 1);
+			}
+
+			hr {
+				border-color: rgba( 47, 54, 73, 1);
+			}
+
+			.description {
+				background-color: rgba( 47, 54, 73, 1);
+			}			
 		}
 	}
 }

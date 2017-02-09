@@ -1,5 +1,4 @@
 <!-- Portfolio Carousel Heading -->
-
 {{ with .Site.Data.was_ich_gut_kann }}
 <section id="was-ich-gut-kann" class="bg-white">
     <div class="container text-center wow fadeIn">
@@ -27,16 +26,13 @@
                         <span class="project-name">{{ .abilityName }}</span>
                         <span class="project-description">{{ .description | markdownify }}</span>
                         <hr class="colored">
-                        {{ if .extra }}
-                        <div class="extra">{{ .extra }}</div>
-                        {{ end }}
                         <a href="#workModal{{ $index }}" data-toggle="modal" class="btn btn-outline-light">{{ .linkText }} <i class="fa fa-long-arrow-right fa-fw"></i></a>
                     </div>
                 </div>
                 <div class="col-md-{{ $imageColumns }} col-md-pull-{{ sub 12 $imageColumns }} hidden-xs">
                     {{ if $screenFrame }}
                     <div class="device-container">
-                        <div class="device-mockup macbook portrait black">
+                        <div class="device-mockup {{ .frame }} portrait black">
                             <div class="device">
                                 <div class="screen">
                                     <img src="{{ .screenImage }}" class="img-responsive" alt="">
@@ -55,24 +51,22 @@
 </section>
 
 <div id="just-for-width" class="device-mockup">
+    {{ range $index, $element := .Site.Data.was_ich_gut_kann_ }}
     <div class="topics">
         <div class="inner">
-            {{ range $index, $element := .Site.Data.was_ich_gut_kann_ }}
-            ->{{ $index }}
-            {{ range .topicsUp }}
-            <div class="topic up" padding="20">
+            {{ range $i, $e := .topicsUp }}
+            <div class="topic up {{ if eq $i 0 }}cr{{ end }}" padding="20">
                 <div class="oneword row"><li>{{ .oneword | markdownify }}</li></span></div>
             </div>
             {{ end }}                                
             {{ range $i, $e := .topicsDown }}
-            -->{{ $i }}
             <div class="topic down {{ if eq $i 0 }}cr{{ end }}" padding="20">
                 <div class="oneword row"><li>{{ .oneword | markdownify }}</li></span></div>
             </div>
             {{ end }}                                
-            {{ end }}
         </div>
     </div>
+    {{ end }}
 </div>
 
 
@@ -92,11 +86,10 @@
                         <h2>{{ .abilityName }}</h2>
                         <hr class="colored">
                     </div>
-                    <div class="col-md-11 col-md-offset-1">
-                        <div class="device-mockup jasper">
+                    <div class="device-mockup-wrapper col-md-11 col-md-offset-1">
+                        <div class="device-mockup {{ .stone }}">
                             <div class="topics up">
                                 <div class="inner">
-                                    {{ $l := 100 }}
                                     {{ range $i, $e := .topicsUp }}
                                     <div class="topic up" tid="{{ $i }}">
                                         <div class="oneword row"><li>{{ .oneword | markdownify }}</li></span></div>
@@ -109,9 +102,9 @@
                             </div>
                             <div class="topics down">
                                 <div class="inner">
-                                    
+                                    {{ $len := len .topicsUp }}
                                     {{ range $i, $e := .topicsDown }}
-                                    <div class="topic down" tid="{{ add $i $l }}">
+                                    <div class="topic down" tid="{{ add $i $len }}">
                                         <br><br><br><br><br>
                                         <div class="description row"><span>{{ .description | markdownify }}</span></div>
                                         <hr>
@@ -137,8 +130,9 @@
                                             {{ end }}                                                
                                         </div>
                                         {{ end }}
+                                        {{ $len := len .topicsUp }}
                                         {{ range $i, $e := .topicsDown }}
-                                        <div class="item item{{ add $i 100 }}">
+                                        <div class="item item{{ add $i $len }}">
                                             {{ if .text }}
                                             <img src="img/nil.png" class="img-responsive" alt="">
                                             <table class="text"><tr><td><div>{{ .text | markdownify }}</div></td></tr></table>
@@ -155,14 +149,16 @@
                                 </div>
                             </div>
                         </div>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> {{ .closeButton }}</button>
                     </div>
                     <div class="infoline col-md-8 col-md-offset-2">
-                        <ul class="list-inline item-details">
-                            {{ range $index, $element := .info }}
-                            <li>{{ $index }}: <strong>{{ . }}</strong></li>
-                            {{ end }}
-                        </ul>
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> {{ .closeButton }}</button>
+                        <div class="list-wrapper">
+                            <ul class="list-inline item-details">
+                                {{ range $index, $element := .info }}
+                                <li>{{ $index }}: <strong>{{ . }}</strong></li>
+                                {{ end }}
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

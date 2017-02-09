@@ -12,3 +12,7 @@ subtitle: >
     Und andere Menschen schauen mit großer Freude oder Neid darauf, was sie hervorbringen.
 imageColumns: 7
 screenFrame: true
+test: 
+  - eins
+  - zwei
+  - drei
