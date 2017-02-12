@@ -34,7 +34,7 @@ $( () => {
 			});
 
 			topic.stop().animate( {
-				"margin-bottom": "-"+(height+35)+"px",
+				"margin-bottom": "-"+(height+40)+"px",
 			}, 300);						
 		}
 
@@ -55,27 +55,27 @@ $( () => {
 
 	////////////////////////////////////////////////////////7
 	// Correct right margins of all topic titles
-	var lefts = [],
-			p = ["up", "down"];
+	var lefts = [];
 
-	for( var pos in p ) {
-		var left = 0;
-		$( "#just-for-width .topic."+p[pos] ).each( function() {
-			var $this = $( this ),
-					width = $( ".oneword li", $this ).outerWidth(),
-					padding = parseInt( $this.attr( "padding" ) );
-			
-			var a = $this.hasClass( "cr" );
-			if( $this.hasClass( "cr" )) left = 0;
-					
-			lefts.push( left );
-			left += width + padding;
-		});		
-	}
+	$( "#just-for-width .topic" ).each( function() {
+		var $this = $( this ),
+				elem = $( ".oneword li", $this ),
+				width = $( ".oneword li", $this ).outerWidth(),
+				attr = $this.attr( "padding" ),
+				padding = parseInt( $this.attr( "padding" ) );
+		
+		var a = $this.hasClass( "cr" );
+		if( $this.hasClass( "cr" )) left = 0;
+				
+		lefts.push( left );
+		left += width + padding;
+	});
 
 	$( "#just-for-width" ).remove();
-
-	$( ".device-mockup .topic" ).each( function() {
-			$( this ).css( "left", lefts.shift()+"px" );
+	
+	$( ".topic" ).each( function() {
+		$( this ).css( "left", lefts.shift()+"px" );
 	});
+
+	console.assert( !lefts.length, "lefts array should be empty." )
 });

@@ -912,7 +912,10 @@ aside.cta-quote .panel {
   width: 300px;
   clear: both;
   float: right;
-  margin: 20px;
+  padding: 16px;
+  margin: 4px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
 }
 .device-mockup .text img[alt="left"] {
   float: left;
@@ -1078,7 +1081,7 @@ aside.cta-quote .panel {
   max-width: 920px;
   border: 0.2vw solid #BA4C3D;
   border-radius: 1vw;
-  background-color: rgba(112, 13, 0, 0.3);
+  background-color: rgba(182, 76, 61, 0.3);
   margin: 2vw auto;
   overflow: hidden;
 }

@@ -9,6 +9,7 @@
 # linkText:         Text of the button
 # backgroundImage:  Background image (you bet ;-)
 # screenImage:      Image on screen
+# frame:            Frame around screen image 
 
 abilityName: Programmieren
 description: >
@@ -28,6 +29,14 @@ linkText: Mehr
 backgroundImage: img/backgrounds/bg-ability1.jpg
 screenImage: img/abilities/programming1.png
 frame: macbook
+
+# titleSize:        40
+# titleColor:       "#1B073D"
+# textSize:         24
+# textColor:        "#1B073D"
+# lineColor:        "#700D00"
+# buttonSize:       14
+
 
 ###################################################################
 # Modal Page
@@ -59,10 +68,7 @@ topicsUp:
       Und endet bei:<br>JA, das kann ich.
     text: >
       <h3>Idee</h3>
-
-
-
-      ![left](img/abilities/programming1.png)
+      ![left](img/backgrounds/bg-ability2.jpg "This text appears when hovering over the image")
       Die Idee ,,, **Lorem ipsum dolor sit amet**, consectetur adipisicing elit.
       Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea.
       Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.
@@ -72,7 +78,7 @@ topicsUp:
       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
       Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea.
       Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.
-      ![right](img/backgrounds/bg-ability1.jpg)
+      ![right](img/backgrounds/bg-ability1.jpg "This text appears when hovering over the image")
 
 
 
@@ -129,3 +135,22 @@ info:
   Datum: 	  1. Februar 2017
   Ort: 		  Berlin
   Wetter: 	Kalt, nicht gemütlich
+
+
+# modalTitleSize:         40
+# modalTitleColor:        red
+# modalLineColor:         red
+# modalTopicSize:         34
+# modalTopicWidth:        280
+# modalTopicColor:        grey
+# modalDescriptionSize:   16
+# modalDescriptionColor:  white
+# modalButtonSize:        60
+# modalButtonColor:       grey
+# modalWeatherSize:       14
+# modalWeatherColor:      white
+# modalTextSize:          24      # Use <h3> tag in the md text for headlines
+# modalTextColor:         green
+# modalImagePadding:      20
+# modalImageSize:         300
+# modalImageOpacity:      100, 100, 100, 0.05   # First three values red, green, blue, last opacity

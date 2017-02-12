@@ -1,4 +1,226 @@
 <!-- Portfolio Carousel Heading -->
+<style>
+{{ with .Site.Data.was_ich_gut_kann }}
+{{ if .titleSize }}
+#was-ich-gut-kann h2 {
+    font-size: {{ .titleSize }}px !important;
+    line-height: {{ mul .titleSize 1.375 }}px !important;
+}
+{{ end }}
+
+{{ if .titleColor }}
+#was-ich-gut-kann h2 {
+    color: {{ .titleColor }} !important;
+}
+{{ end }}
+
+{{ if .asterixColor }}
+#was-ich-gut-kann .asterix {
+    color: {{ .asterixColor }} !important;
+}
+{{ end }}
+
+{{ if .lineColor }}
+    #was-ich-gut-kann hr {
+        border-color: {{ .lineColor }} !important;
+  }
+{{ end }}
+
+{{ if .textSize }}
+#was-ich-gut-kann p {
+    font-size: {{ .textSize }}px !important;
+    line-height: {{ mul .textSize 1.375 }}px !important;
+}
+{{ end }}
+
+{{ if .textColor }}
+#was-ich-gut-kann p {
+    color: {{ .textColor }} !important;
+}
+{{ end }}
+
+{{ if .noShadow }}
+#was-ich-gut-kann p {
+    box-shadow: none !important;
+}
+{{ end }}
+
+{{ if .shadowRadius }}
+#was-ich-gut-kann p {
+    border-radius: {{ .shadowRadius }} !important;
+}
+{{ end }}
+{{ end }}
+
+{{ range $index, $element := .Site.Data.was_ich_gut_kann_ }}
+    {{ if .titleSize }}
+    #carousel .item_{{ $index }} .project-name {
+        font-size: {{ .titleSize }}px !important;
+        line-height: {{ mul .titleSize 1.375 }}px !important;
+    }
+    {{ end }}
+
+    {{ if .titleColor }}
+    #carousel .item_{{ $index }} .project-name {
+        color: {{ .titleColor }} !important;
+    }
+    {{ end }}
+
+    {{ if .lineColor }}
+        #carousel .item_{{ $index }} hr {
+            border-color: {{ .lineColor }} !important;
+      }
+    {{ end }}
+
+    {{ if .textSize }}
+    #carousel .item_{{ $index }} .project-description,
+    #carousel .item_{{ $index }} .project-description p {
+        font-size: {{ .textSize }}px !important;
+        line-height: {{ mul .textSize 1.375 }}px !important;
+    }
+    {{ end }}
+
+    {{ if .textColor }}
+    #carousel .item_{{ $index }} .project-description,
+    #carousel .item_{{ $index }} .project-description p {
+        color: {{ .textColor }} !important;
+    }
+    {{ end }}
+
+    {{ if .buttonSize }}
+    #carousel .item_{{ $index }} .project-description a {
+        font-size: {{ .buttonSize }}px !important;
+    }
+    {{ end }}
+
+    {{ if .modalTitleSize }}
+    .modal_{{ $index }} h2 {
+        font-size: {{ .modalTitleSize }}px !important;
+    }
+    {{ end }}
+
+    {{ if .modalTitleColor }}
+    .modal_{{ $index }} h2 {
+        color: {{ .modalTitleColor }} !important;
+    }
+    {{ end }}
+    
+    {{ if .modalLineColor }}
+        .modal_{{ $index }} hr {
+            border-color: {{ .modalLineColor }} !important;
+      }
+    {{ end }}
+
+    {{ if .modalTopicSize }}
+    .modal_{{ $index }} .topic li {
+        font-size: {{ .modalTopicSize }}px !important;
+    }
+
+    .modal_{{ $index }} .topics.up {
+        top: -{{ add (mul .modalTopicSize 1.30) 16 }}px !important;
+    }
+
+    .modal_{{ $index }} .topics.down {
+        bottom: -{{ add (mul .modalTopicSize 1.30) 5 }}px !important;
+    }
+    {{ end }}
+    
+    {{ if .modalTopicColor }}
+    .modal_{{ $index }} .topic li {
+        color: {{ .modalTopicColor }} !important;
+    }
+    {{ end }}
+
+    {{ if .modalTopicWidth }}
+    .modal_{{ $index }} .topic {
+        width: {{ .modalTopicWidth }}px !important;
+    }
+    {{ end }}
+
+    {{ if .modalDescriptionSize }}
+    .modal_{{ $index }} .topic span {
+        font-size: {{ .modalDescriptionSize }}px !important;
+    }
+    {{ end }}
+
+    {{ if .modalDescriptionColor }}
+    .modal_{{ $index }} .topic span {
+        color: {{ .modalDescriptionColor }} !important;
+    }
+    {{ end }}
+
+    {{ if .modalButtonSize }}
+    .modal_{{ $index }} button {
+        font-size: {{ .modalButtonSize }}px !important;
+    }
+    {{ end }}
+
+    {{ if .modalButtonColor }}
+    .modal_{{ $index }} button {
+        color: {{ .modalButtonColor }} !important;
+        opacity: 0.20;
+    }
+    .modal_{{ $index }} button:hover {
+        opacity: 0.40;
+    }
+    {{ end }}
+
+    {{ if .modalWeatherSize }}
+    .modal_{{ $index }} .infoline {
+        font-size: {{ .modalWeatherSize }}px !important;
+    }
+    {{ end }}
+
+    {{ if .modalWeatherColor }}
+    .modal_{{ $index }} .infoline {
+        color: {{ .modalWeatherColor }} !important;
+    }
+    {{ end }}
+
+    {{ if .modalTextSize }}
+    .modal_{{ $index }} .screen .item, 
+    .modal_{{ $index }} .screen .item p {
+        font-size: {{ .modalTextSize }}px !important;
+        line-height: {{ mul .modalTextSize 1.375 }}px !important;
+        margin: 0 0 {{ mul .modalTextSize 0.5 }}px;
+    }
+    .modal_{{ $index }} .screen .item h3 {
+        font-size: {{ mul .modalTextSize 1.5 }}px !important;
+        line-height: {{ mul .modalTextSize 2 }}px !important;
+        margin: 0 0 {{ mul .modalTextSize 1.0 }}px !important;
+    }
+    {{ end }}
+
+    {{ if .modalTextColor }}
+    .modal_{{ $index }} .screen .item {
+        color: {{ .modalTextColor }} !important;
+    }
+    {{ end }}
+
+    {{ if .modalImagePadding }}
+    .modal_{{ $index }} .screen .text img {
+        padding: {{ mul .modalImagePadding 0.8 }}px !important;
+        margin: {{ mul .modalImagePadding 0.2 }}px !important;
+    }
+    {{ end }}
+
+    {{ if .modalImageWidth }}
+    .modal_{{ $index }} .screen .text img {
+        width: {{ .modalImageWidth }}px !important;
+    }
+    {{ end }}
+
+    {{ if .modalImageOpacity }}
+    .modal_{{ $index }} .screen .text img {
+        background-color: rgba( {{ .modalImageOpacity }} ) !important;
+    }
+    {{ end }}
+
+
+
+{{ end }}
+</style>
+
 {{ with .Site.Data.was_ich_gut_kann }}
 <section id="was-ich-gut-kann" class="bg-white">
     <div class="container text-center wow fadeIn">
@@ -15,7 +237,8 @@
     {{ $imageColumns := .Site.Data.was_ich_gut_kann.imageColumns }}
     {{ $screenFrame := .Site.Data.was_ich_gut_kann.screenFrame }}
     {{ range $index, $element := .Site.Data.was_ich_gut_kann_ }}
-    <div class="item" style="background-image: url('{{ .backgroundImage }}')">
+
+    <div class="item item_{{ $index }}" style="background-image: url('{{ .backgroundImage }}')">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-{{ sub 12 $imageColumns }} col-md-push-{{ $imageColumns }}">
@@ -52,15 +275,16 @@
 
 <div id="just-for-width" class="device-mockup">
     {{ range $index, $element := .Site.Data.was_ich_gut_kann_ }}
-    <div class="topics">
+    <div class="topics modal_{{ $index }}">
         <div class="inner">
+            {{ $modalTopicSize := .modalTopicSize }}
             {{ range $i, $e := .topicsUp }}
-            <div class="topic up {{ if eq $i 0 }}cr{{ end }}" padding="20">
+            <div class="topic up {{ if eq $i 0 }}cr{{ end }}" padding="{{ if $modalTopicSize }}{{ $modalTopicSize }}{{ else }}20{{ end }}">
                 <div class="oneword row"><li>{{ .oneword | markdownify }}</li></span></div>
             </div>
             {{ end }}                                
             {{ range $i, $e := .topicsDown }}
-            <div class="topic down {{ if eq $i 0 }}cr{{ end }}" padding="20">
+            <div class="topic down {{ if eq $i 0 }}cr{{ end }}" padding="{{ if $modalTopicSize }}{{ $modalTopicSize }}{{ else }}20{{ end }}">
                 <div class="oneword row"><li>{{ .oneword | markdownify }}</li></span></div>
             </div>
             {{ end }}                                
@@ -69,9 +293,8 @@
     {{ end }}
 </div>
 
-
 {{ range $index, $element := .Site.Data.was_ich_gut_kann_ }}
-<div class="portfolio-modal modal fade" id="workModal{{ $index }}" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('{{ .backgroundImage }}')">
+<div class="portfolio-modal modal fade modal_{{ $index }}" id="workModal{{ $index }}" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('{{ .backgroundImage }}')">
     <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
             <div class="lr">

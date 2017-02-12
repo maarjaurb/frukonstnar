@@ -12,7 +12,12 @@ subtitle: >
     Und andere Menschen schauen mit großer Freude oder Neid darauf, was sie hervorbringen.
 imageColumns: 7
 screenFrame: true
-test: 
-  - eins
-  - zwei
-  - drei
+
+# titleSize:     		40
+# titleColor:				"#1B073D"
+# asterixColor:			"#BA4C3D"
+# lineColor: 				"#700D00"
+# textSize:     		16
+# textColor:     		"#1B073D"
+# noShadow:					false
+# shadowRadius: 		"50%"   // also px instead of %
