@@ -1,5 +1,151 @@
 <!-- Portfolio Grid Section -->
 {{ with .Site.Data.startpunkte }}
+<style>
+{{ if .backgroundColor }}
+#zeropoints {
+    background-color: {{ .backgroundColor }} !important;
+}
+{{ end }}
+
+{{ if .titleSize }}
+#zeropoints .container > h2 {
+    font-size: {{ .titleSize }}px !important;
+    line-height: {{ mul .titleSize 1.375 }}px !important;
+}
+{{ end }}
+
+{{ if .titleColor }}
+#zeropoints .container > h2 {
+    color: {{ .titleColor }} !important;
+}
+{{ end }}
+
+{{ if .lineColor }}
+#zeropoints .container > hr {
+    border-color: {{ .lineColor }} !important;
+}
+{{ end }}
+
+{{ if .textSize }}
+#zeropoints .container > p {
+    font-size: {{ .textSize }}px !important;
+    line-height: {{ mul .textSize 1.375 }}px !important;
+}
+{{ end }}
+
+{{ if .textColor }}
+#zeropoints .container > p {
+    color: {{ .textColor }} !important;
+}
+{{ end }}
+
+{{ if .filterSize }}
+#zeropoints #filters li span {
+    font-size: {{ .filterSize }}px !important;
+    line-height: {{ mul .filterSize 1.375 }}px !important;
+}
+{{ end }}
+
+{{ if .filterActiveColor }}
+#zeropoints #filters li .filter {
+    color: {{ .filterActiveColor }} !important;
+}
+{{ end }}
+
+{{ if .filterActiveTextColor }}
+#zeropoints #filters li .filter.active {
+    color: {{ .filterActiveTextColor }} !important;
+}
+{{ end }}
+
+{{ if .filterBorderColor }}
+#zeropoints #filters li .filter.active {
+    background-color: {{ .filterBorderColor }} !important;
+}
+#zeropoints #filters li .filter {
+    border-color: {{ .filterBorderColor }} !important;
+}
+{{ end }}
+
+{{ if .captionSize }}
+#zeropoints .caption-text .text-title {
+    font-size: {{ .captionSize }}px !important;
+    line-height: {{ mul .captionSize 1.175 }}px !important;
+}
+#zeropoints .caption-text .text-category {
+    font-size: {{ mul .captionSize 0.75 }}px !important;
+    line-height: {{ mul .captionSize 1.0 }}px !important;
+}
+#portfoliolist .mix .portfolio-wrapper .caption {
+    height: {{ add (mul .captionSize 2.5) 32 }}px !important;
+    bottom: -{{ add (mul .captionSize 2.5) 32 }}px !important;
+}
+#portfoliolist .mix:hover .portfolio-wrapper .caption {
+    bottom: 0px !important;
+}
+{{ end }}
+
+{{ if .captionColor }}
+#zeropoints .caption-text .text-title {
+    color: {{ .captionColor }} !important;
+}
+#zeropoints .caption-text .text-category {
+    color: {{ .captionColor }} !important;
+}
+{{ end }}
+
+{{ if .captionBackgroundColor }}
+#zeropoints .caption-bg {
+    background-color: {{ .captionBackgroundColor }} !important;
+}
+{{ end }}
+
+{{ if .panelBackgroundColor }}
+.portfolio-modal #grid-panel {
+    background-color: rgba( {{ .panelBackgroundColor }}, 0.3 ) !important;
+    border-color: rgb( {{ .panelBackgroundColor }} );
+
+}
+.portfolio-modal #grid-panel h2 {
+    background-color: rgb( {{ .panelBackgroundColor }} ) !important;    
+}
+{{ end }}
+
+{{ if .panelColor }}
+.portfolio-modal #grid-panel h2 {
+    color: {{ .panelColor }} !important;
+}
+{{ end }}
+
+{{ if .panelTitleSize }}
+.portfolio-modal #grid-panel h2 {
+    font-size: {{ .panelTitleSize }}px !important;
+    line-height: {{ mul .panelTitleSize 1.375 }}px !important;
+}
+{{ end }}
+
+{{ if .panelTitleColor }}
+.portfolio-modal #grid-panel h2 {
+    color: {{ .panelTitleColor }} !important;
+}
+{{ end }}
+
+{{ if .panelTextSize }}
+.portfolio-modal #grid-panel p {
+    font-size: {{ .panelTextSize }}px !important;
+    line-height: {{ mul .panelTextSize 1.375 }}px !important;
+}
+{{ end }}
+
+{{ if .panelTextColor }}
+.portfolio-modal #grid-panel p {
+    color: {{ .panelTextColor }} !important;
+}
+{{ end }}
+
+
+</style>
+
 <section id="zeropoints">
     <div class="container text-center wow fadeIn">
         <h2>{{ .title }}</h2>

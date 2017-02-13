@@ -102,3 +102,27 @@ elements:
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
     video: video/image_to_playground.mp4
 
+
+# backgroundColor:        white
+# titleSize:              50
+# titleColor:             "#333"
+# lineColor:              "#BA4C3D"
+# textSize:               18
+# textColor:              "#333"
+# filterSize:             12
+# filterColor:            "#1B0728"
+# filterActiveColor:      "#BA4C3D"
+# filterActiveTextColor:  white
+
+# captionSize:            16
+# captionColor:           white
+# captionBackgroundColor: "#BA4C3D"
+# panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
+# panelColor:             white
+# panelTitleSize:         60
+# panelTitleColor:        blue
+# panelTextSize:          20
+# panelTextColor:         blue
+
+
+
