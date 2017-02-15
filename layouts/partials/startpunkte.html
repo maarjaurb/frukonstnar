@@ -144,6 +144,26 @@
 {{ end }}
 
 
+{{ range $i, $e := .elements }}
+{{ if .panelBackgroundColor }}
+#gridModal{{ $i }} #grid-panel {
+    background-color: rgba( {{ .panelBackgroundColor }}, 0.3 ) !important;
+    border-color: rgb( {{ .panelBackgroundColor }} );
+
+}
+#gridModal{{ $i }} #grid-panel h2 {
+    background-color: rgb( {{ .panelBackgroundColor }} ) !important;    
+}
+{{ end }}
+
+{{ if .panelColor }}
+#gridModal{{ $i }} #grid-panel h2 {
+    color: {{ .panelColor }} !important;
+}
+{{ end }}
+{{ end }}
+
+
 </style>
 
 <section id="zeropoints">

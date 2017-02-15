@@ -1,6 +1,7 @@
 
 title: Menschen
 description: "Diese Menschen kenne ich gut und mag sehr, was sie tun oder tun wollen."
+overlay: true
 people:
   - image: "img/peers/maarja.jpg"
     name: "Maarja Urb"
@@ -18,9 +19,33 @@ people:
     social:
     - icon:   "fa-cloud"
       link:   "http://www.spielsinn.net/"
+  - image: "img/peers/iris.jpg"
+    name: "Iris Johansson"
+    position: "Kommunikations-Künstlerin"
+    social:
+    - icon:   "fa-facebook"
+      link:   "https://www.facebook.com/johansson.iris"
+    - icon:   "fa-cloud"
+      link:   "http://irisjohansson.com/"
   - image: "img/peers/malin.jpg"
     name: "Malin Haraldsson"
     position: "Kommunikations-Trainerin"
     social:
     - icon:   "fa-facebook"
       link:   "https://www.facebook.com/modermalin"
+
+# backgroundColor:        white
+# titleSize:              50
+# titleColor:             "#333"
+# lineColor:              "#BA4C3D"
+# textSize:               18
+# textColor:              "#333"
+# photoTitleSize:         24
+# photoTitleColor:        white
+# photoLineColor:         "#BA4C3D"
+# photoTextSize:          18
+# photoTextColor:         white
+# photoTextLeft:          40%
+# photoTextTop:           85%
+# photoIconSize:          16
+

@@ -18,6 +18,10 @@ elements:
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
     video: video/image_to_playground.mp4
 
+    # Backgorund color and text color can be changed for each element, but also for all together further below with the global attributes
+    # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
+    # panelColor:             white
+
   - image: img/backgrounds/startpunkte2.jpg
     captionTitle: Khan-Academy
     captionCategory: Programmieren
@@ -26,6 +30,9 @@ elements:
     content: >
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
     video: video/image_to_playground.mp4
+
+    # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
+    # panelColor:             white
 
   - image: img/backgrounds/startpunkte2.jpg
     captionTitle: Der Computer-Spielplatz
@@ -36,6 +43,9 @@ elements:
     content: >
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
     video: video/image_to_playground.mp4
+
+    # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
+    # panelColor:             white
 
   - image: img/backgrounds/startpunkte3.jpg
     captionTitle: Der Computer-Spielplatz
@@ -47,6 +57,9 @@ elements:
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
     video: video/image_to_playground.mp4
 
+    # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
+    # panelColor:             white
+
   - image: img/backgrounds/startpunkte4.jpg
     captionTitle: Original Play - Ursprüngliches Spiel
     captionCategory: Kommunikation
@@ -55,6 +68,9 @@ elements:
     content: >
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
     video: video/image_to_playground.mp4
+
+    # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
+    # panelColor:             white
 
   - image: img/backgrounds/startpunkte5.jpg
     captionTitle: 9 Grundgedanken
@@ -65,6 +81,9 @@ elements:
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
     video: video/image_to_playground.mp4
 
+    # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
+    # panelColor:             white
+
   - image: img/backgrounds/startpunkte6.jpg
     captionTitle: Primärwoche in Dahab
     captionCategory: Kommunikation
@@ -74,6 +93,9 @@ elements:
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
     video: video/image_to_playground.mp4
 
+    # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
+    # panelColor:             white
+
   - image: img/backgrounds/startpunkte7.jpg
     captionTitle: 95 Gedankenfehler der westlichen Kultur
     captionCategory: Ideen
@@ -82,6 +104,9 @@ elements:
     content: >
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
     video: video/image_to_playground.mp4
+
+    # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
+    # panelColor:             white
 
   - image: img/backgrounds/startpunkte8.jpg
     captionTitle: 2064 - Die Geschichte der Cypherpunks
@@ -93,6 +118,9 @@ elements:
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
     video: video/image_to_playground.mp4
 
+    # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
+    # panelColor:             white
+
   - image: img/backgrounds/startpunkte9.jpg
     captionTitle: 2064 - Das Spiel
     captionCategory: Ideen
@@ -101,6 +129,9 @@ elements:
     content: >
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
     video: video/image_to_playground.mp4
+
+    # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
+    # panelColor:             white
 
 
 # backgroundColor:        white
