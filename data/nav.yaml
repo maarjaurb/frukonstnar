@@ -9,8 +9,9 @@
 # 						A line without has four spaces at the beginning, and NO tabs! (Yaml wants that, not me!)
 menu:
   - title: 	"Über mich"
-    href: 	"ueber-mich"
+    href: 	"about"
   - title: 	"Was ich gut kann"
+    href: 	"abilities"
   - title: 	"Startpunkte"
     href:   "zeropoints"
   - title: 	"Menschen"

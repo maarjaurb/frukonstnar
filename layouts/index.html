@@ -9,11 +9,30 @@
 
     {{ partial "nav.html" . }}
     {{ partial "hero.html" . }}
-    {{ partial "ueber_mich.html" . }}
-    {{ partial "was_ich_gut_kann.html" . }}
-    {{ partial "startpunkte.html" . }}
+    {{ partial "about.html" . }}
+    {{ partial "abilities.html" . }}
+    {{ partial "startingpoints.html" . }}
     {{ partial "peers.html" . }}
-    {{ partial "footer.html" . }}    
+    {{ partial "footer.html" . }}
+
+    <!-- Potential Addons
+        
+         You can use them in the partials list above. You should copy the corresponing
+         files
+
+         themes/hugo-vitality-theme/data/[name of partial].yaml => data 
+         themes/hugo-vitality-theme/layouts/partials[name of partial].html => layouts/partials
+
+         There you can modify them as your own copy.
+     
+    {{ partial "contact.html" . }}
+    {{ partial "newsletter.html" . }}
+    {{ partial "pricing.html" . }}
+    {{ partial "process.html" . }}
+    {{ partial "services.html" . }}
+    {{ partial "testimonials.html" . }} 
+
+    -->
 
         <!-- Core Scripts -->
     <script src="vendor/jquery/jquery.min.js"></script>

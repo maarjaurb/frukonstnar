@@ -3,7 +3,7 @@
 {{ with .Site.Data.footer }}
 <footer class="footer" style="background-image: url('{{ .image }}')">
     <div class="container text-center">
-        <div class="row">
+        <div class="row details">
             {{ $cols := div 12 (len .details) }}
             {{ range .details }}
             <div class="col-md-{{ $cols }} contact-details">

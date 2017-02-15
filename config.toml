@@ -50,17 +50,6 @@ publishDir = "docs"
 		"Josefin+Sans:300,300i,400,400i,700,700i",
 	]
 
-	# List of menu entries
-	# - Make sure that there is a section with an id to jump to. E.g. for "About" this would be <section id="about">
-
-	NavMenu = [
-		"Über mich",
-		"Was ich gut kann",
-		"Startpunkte",
-		"Peers",
-		"Triff mich!"
-	]
-
 	# All Sections are defined in yaml files in the folder data/creative
 	# HERO 				: hero.yaml
 	# ABOUT 			: about.yaml

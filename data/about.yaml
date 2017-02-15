@@ -1,17 +1,31 @@
+# Change LESS Globals in file static/less/vitality.less for following items
+# @themeDark: 	Color of title and subtitle
+# @themePrimary: 	Color of double line and navigation button
+# @fontPrimary: Font of subtitle
+# @fontTitle: 	Font of title
 
-title: A Theme for Creatives & Agencies
-description: Vitality is the perfect theme for a freelance professional or an agency.
-services:
-  - service: "Retina Ready"
-    icon: "fa-eye"
-    description: "This theme includes the retina.js plugin for easy retina image support so your images and graphics will look great on mobile devices!"
-  - service: "Easy to Edit"
-    icon: "fa-edit"
-    description: "Vitality is built using Bootstrap 3, and is easy to edit and customize. LESS files are included as well for deeper customization."
-  - service: "Responsive"
-    icon: "fa-tablet"
-    description: "When building this theme, we've paid close attention to how it looks on various screen sizes. Try it out on a phone or tablet!"
-  - service: "Built with Love"
-    icon: "fa-heart"
-    description: "All of our themes are crafted with care, and we strive to make your experience as one of our customers the best as possible."
-servicesDelay: 0.22
+backgroundImage: img/backgrounds/bg-aside.jpg
+image: img/me.jpg
+text: >
+    <span class="p">Wenn <span class="text-primary">eine Million Menschen</span> sagen, dass man <span class="text-primary">einen Apfel</span> gut essen kann,
+    auch wenn man <span class="text-primary">nicht weiß</span>, welchen Weg er vorher gegangen ist,
+    dann ist das <span class="text-primary">kein Grund</span> für mich als Einzelner das nicht <span class="text-primary">anders</span> zu sehen.
+    Und die Million Menschen haben in diesem Fall Recht. Aber ich auch.</span>
+
+    <span class="p">Die Welt ist auf <span class="text-primary">Gedanken</span> gebaut, auf <span class="text-primary">Ideen</span>.
+    Ohne die <span class="text-primary">Idee der Freiheit</span> können Menschen ihre Fähigkeiten und Talente nicht entdecken.
+    Ohne die <span class="text-primary">konkrete Idee</span> eines Hauses, kann man es nicht bauen.
+    Mit Ideen beginnt <span class="text-primary">alles</span>, und sie überleben <span class="text-primary">alle Dinge</span>, die sie hervorbringen.</span>
+action: Was ich gut kann ...
+ref: abilities
+
+# Additional Parameters
+
+# textSize:     		36
+# textPadding:			60
+# textColor: 				"yellow"
+# textColorPrimary: "#700D00"
+# buttonSize:    		18
+# buttonColor: 			"white"
+# lineColor: 				"#700D00"
+# opacity: 					0.6

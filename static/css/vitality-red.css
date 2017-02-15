@@ -89,7 +89,7 @@ fieldset[disabled] .btn-primary.active {
   background-color: white;
 }
 body {
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Josefin Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-weight: 300;
 }
@@ -427,6 +427,8 @@ aside.cta-quote span.quote .p {
 aside.cta-quote a.btn {
   font-family: "IM Fell English SC";
   font-size: 18px;
+  color: white;
+  border-color: white;
 }
 aside.cta-quote hr {
   margin: 30px auto;
@@ -640,10 +642,10 @@ aside.cta-quote .panel {
 .portfolio-carousel .owl-controls .owl-next {
   right: 0;
 }
-#was-ich-gut-kann h2 {
+#abilities h2 {
   color: #1B073D;
 }
-#was-ich-gut-kann p {
+#abilities p {
   color: #1B073D;
   font-size: 30px;
   font-family: "IM Fell English SC";
@@ -655,7 +657,7 @@ aside.cta-quote .panel {
   width: 80%;
   margin: -45px auto;
 }
-#was-ich-gut-kann a.asterix:hover {
+#abilities a.asterix:hover {
   color: #BA4C3D;
 }
 @media (min-width: 992px) {
@@ -1179,168 +1181,6 @@ aside.cta-quote .panel {
 .about-carousel .owl-controls .owl-next {
   right: 15px;
 }
-.services .media {
-  margin-bottom: 30px;
-}
-.services .media i.fa {
-  height: 75px;
-  width: 75px;
-  line-height: 70px;
-  text-align: center;
-  border: 3px solid #1B073D;
-  border-radius: 100%;
-  font-size: 30px;
-}
-.services .media .media-body {
-  min-width: none;
-  padding-left: 15px;
-}
-.services .media .media-body h3 {
-  margin-bottom: 15px;
-}
-.services .media .media-body ul {
-  list-style: inside;
-  padding: 0;
-}
-.services .media .media-body ul li {
-  margin-bottom: 10px;
-}
-@media (min-width: 390px) {
-  .services .media .media-body {
-    min-width: 260px;
-  }
-}
-@media (min-width: 992px) {
-  .services .media .media-body {
-    min-width: 193px;
-  }
-}
-@media (min-width: 1199px) {
-  .services .media .media-body {
-    min-width: 260px;
-  }
-}
-@media (min-width: 992px) {
-  .services .media {
-    margin-bottom: 0;
-  }
-}
-.pricing {
-  color: white;
-  background-color: #1B073D;
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
-.pricing .pricing-item {
-  text-align: center;
-  background: white;
-  color: #1B073D;
-  padding: 30px;
-  -webkit-box-shadow: 0px 0px 30px 5px rgba(27, 7, 61, 0.75);
-  -moz-box-shadow: 0px 0px 30px 5px rgba(27, 7, 61, 0.75);
-  box-shadow: 0px 0px 30px 5px rgba(27, 7, 61, 0.75);
-  z-index: 1;
-  margin-bottom: 30px;
-}
-.pricing .pricing-item h3 {
-  margin: 0;
-}
-.pricing .pricing-item hr {
-  max-width: 100px;
-}
-.pricing .pricing-item .price {
-  margin-bottom: 20px;
-}
-.pricing .pricing-item .price .number {
-  font-weight: 900;
-  font-size: 50px;
-}
-.pricing .pricing-item .price .number sup {
-  font-size: 30px;
-}
-.pricing .pricing-item .list-group-item {
-  border-radius: 0;
-}
-@media (min-width: 992px) {
-  .pricing {
-    background-attachment: scroll;
-  }
-  .pricing .pricing-item {
-    margin-bottom: 0;
-  }
-  .pricing .pricing-item.featured-first {
-    margin-right: -15px;
-    margin-top: 15px;
-  }
-  .pricing .pricing-item.featured {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    margin: 0;
-    padding: 45px 30px;
-  }
-  .pricing .pricing-item.featured-last {
-    margin-left: -15px;
-    margin-top: 15px;
-  }
-}
-@media (min-width: 1025px) {
-  .pricing {
-    background-attachment: fixed;
-  }
-}
-.floating-label-form-group {
-  position: relative;
-  margin-bottom: 0;
-  padding-bottom: 0.5em;
-  border-bottom: 1px solid #dbcaf9;
-}
-.floating-label-form-group input,
-.floating-label-form-group textarea {
-  z-index: 1;
-  position: relative;
-  padding-right: 0;
-  padding-left: 0;
-  border: none;
-  border-radius: 0;
-  font-size: 1.5em;
-  background: none;
-  box-shadow: none !important;
-  resize: none;
-}
-.floating-label-form-group label {
-  display: block;
-  z-index: 0;
-  position: relative;
-  top: 2em;
-  margin: 0;
-  font-size: 0.85em;
-  line-height: 1.764705882em;
-  vertical-align: middle;
-  vertical-align: baseline;
-  opacity: 0;
-  -webkit-transition: top 0.5s ease,opacity 0.5s ease;
-  -moz-transition: top 0.5s ease,opacity 0.5s ease;
-  -ms-transition: top 0.5s ease,opacity 0.5s ease;
-  transition: top 0.5s ease,opacity 0.5s ease;
-}
-.floating-label-form-group::not(:first-child) {
-  padding-left: 14px;
-  border-left: 1px solid #dbcaf9;
-}
-.floating-label-form-group-with-value label {
-  top: 0;
-  opacity: 1;
-}
-.floating-label-form-group-with-focus label {
-  color: #BA4C3D;
-}
-form .row:first-child .floating-label-form-group {
-  border-top: 1px solid #dbcaf9;
-}
 footer.footer {
   color: rgba(255, 255, 255, 0.7);
   background: no-repeat center center scroll;
@@ -1372,6 +1212,56 @@ footer.footer .copyright p.small {
   footer.footer {
     background-attachment: fixed;
   }
+}
+body.modern {
+  font-family: "Josefin Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+body.modern h1,
+body.modern h2,
+body.modern h3,
+body.modern h4,
+body.modern h5,
+body.modern h6,
+body.modern .navbar-brand,
+body.modern p.lead,
+body.modern header .brand-name,
+body.modern .portfolio-carousel .project-name,
+body.modern .testimonials .testimonial-author .name {
+  font-family: "IM Fell English SC", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-weight: 400 !important;
+  text-transform: uppercase !important;
+}
+body.modern .about-carousel .owl-controls .owl-prev,
+body.modern .testimonials .owl-controls .owl-prev,
+body.modern .about-carousel .owl-controls .owl-next,
+body.modern .testimonials .owl-controls .owl-next {
+  line-height: 55px !important;
+}
+body.vintage {
+  font-family: "Josefin Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+body.vintage h1,
+body.vintage h2,
+body.vintage h3,
+body.vintage h4,
+body.vintage h5,
+body.vintage h6,
+body.vintage .navbar-brand,
+body.vintage p.lead,
+body.vintage header .brand-name,
+body.vintage .portfolio-carousel .project-name,
+body.vintage .testimonials .testimonial-author .name {
+  font-family: "IM Fell English SC", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-weight: 400 !important;
+  text-transform: uppercase !important;
+}
+body.vintage .about-carousel .owl-controls .owl-prev,
+body.vintage .testimonials .owl-controls .owl-prev,
+body.vintage .about-carousel .owl-controls .owl-next,
+body.vintage .testimonials .owl-controls .owl-next {
+  line-height: 55px !important;
 }
 .btn-outline-light {
   color: white;
@@ -1431,54 +1321,4 @@ footer.footer .copyright p.small {
 }
 .btn-full-width:focus {
   color: white;
-}
-body.modern {
-  font-family: "Josefin Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-}
-body.modern h1,
-body.modern h2,
-body.modern h3,
-body.modern h4,
-body.modern h5,
-body.modern h6,
-body.modern .navbar-brand,
-body.modern p.lead,
-body.modern header .brand-name,
-body.modern .portfolio-carousel .project-name,
-body.modern .testimonials .testimonial-author .name {
-  font-family: "IM Fell English SC", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  font-weight: 400 !important;
-  text-transform: uppercase !important;
-}
-body.modern .about-carousel .owl-controls .owl-prev,
-body.modern .testimonials .owl-controls .owl-prev,
-body.modern .about-carousel .owl-controls .owl-next,
-body.modern .testimonials .owl-controls .owl-next {
-  line-height: 55px !important;
-}
-body.vintage {
-  font-family: "Josefin Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-}
-body.vintage h1,
-body.vintage h2,
-body.vintage h3,
-body.vintage h4,
-body.vintage h5,
-body.vintage h6,
-body.vintage .navbar-brand,
-body.vintage p.lead,
-body.vintage header .brand-name,
-body.vintage .portfolio-carousel .project-name,
-body.vintage .testimonials .testimonial-author .name {
-  font-family: "IM Fell English SC", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  font-weight: 400 !important;
-  text-transform: uppercase !important;
-}
-body.vintage .about-carousel .owl-controls .owl-prev,
-body.vintage .testimonials .owl-controls .owl-prev,
-body.vintage .about-carousel .owl-controls .owl-next,
-body.vintage .testimonials .owl-controls .owl-next {
-  line-height: 55px !important;
 }
