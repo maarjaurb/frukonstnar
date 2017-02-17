@@ -17,9 +17,11 @@ description: >
     in der Kommunikation mit uns, mit anderen und mit der Welt.
     Jeder Konflikt, jede Beziehung, jedes Ziel ist eine Aufforderung, uns zu ändern, einen Schritt weiter zu gehen.
 linkText: Mehr
+colorMode: light
 backgroundImage: img/backgrounds/startingpoints2.jpg
 screenImage: img/backgrounds/startingpoints3.jpg
 frame: macbook
+placeOfWriting: Ängelsberg
 
 ###################################################################
 # Modal Page

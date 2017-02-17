@@ -26,9 +26,12 @@ description: >
     Shit! Ein leichter Stich im Herzbereich.<br>Es geht nicht.
 
 linkText: Mehr
+colorMode: dark
 backgroundImage: img/backgrounds/bg-ability1.jpg
 screenImage: img/abilities/programming1.png
 frame: macbook
+placeOfWriting: Berlin
+date: 13. Febr. 2017
 
 # titleSize:        40
 # titleColor:       "#1B073D"
@@ -131,10 +134,6 @@ topicsDown:
 
 closeButton: Schließen
 
-info:
-  Datum: 	  1. Februar 2017
-  Ort: 		  Berlin
-  Wetter: 	Kalt, nicht gemütlich
 
 
 # modalTitleSize:         40

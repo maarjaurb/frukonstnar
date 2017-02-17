@@ -17,9 +17,11 @@ description: >
     Nichts ist so spannend wie zu erleben, wie eine Idee die Wirklichkeit umpflügt.
     (Student: „Herr Hegel! Und was, wenn die Wirklichkeit sich nicht an Ihre Ideen hält?“ Hegel: „Um so schlimmer für die Wirklichkeit.“)
 linkText: Mehr
+colorMode: light
 backgroundImage: img/backgrounds/startingpoints4.jpg
 screenImage: img/backgrounds/startingpoints5.jpg
 frame: macbook
+placeOfWriting: Dahab
 
 ###################################################################
 # Modal Page
@@ -42,7 +44,7 @@ frame: macbook
 # !Note: You must choose one of the three: text, image, video
 # !Note: To get a new paragraph in a text you need two (!) empty lines
 
-stone: jasper
+stone: saphire
 topicsUp:
   - oneword: ...
     description: > 
@@ -113,11 +115,6 @@ topicsDown:
 
 
 closeButton: Schließen
-
-info:
-  Datum: 	  1. Februar 2017
-  Ort: 		  Berlin
-  Wetter: 	Kalt, nicht gemütlich
 
 # modalTitleSize:         40
 # modalTitleColor:        red

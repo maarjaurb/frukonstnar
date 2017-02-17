@@ -242,7 +242,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-{{ sub 12 $imageColumns }} col-md-push-{{ $imageColumns }}">
-                    <div class="project-details">
+                    <div class="project-details {{ .colorMode }}">
                         {{ if .clientLogo }}
                         <img src="{{ .clientLogo }}" class="img-responsive client-logo" alt="">
                         {{ end }}
@@ -306,7 +306,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-11 col-md-offset-1">
-                        <h2>{{ .abilityName }}</h2>
+                        <h2 class="{{ .colorMode }}">{{ .abilityName }}</h2>
                         <hr class="colored">
                     </div>
                     <div class="device-mockup-wrapper col-md-11 col-md-offset-1">
@@ -377,9 +377,9 @@
                     <div class="infoline col-md-8 col-md-offset-2">
                         <div class="list-wrapper">
                             <ul class="list-inline item-details">
-                                {{ range $index, $element := .info }}
-                                <li>{{ $index }}: <strong>{{ . }}</strong></li>
-                                {{ end }}
+                                <li class="date">Datum: <strong>{{ .date }}</strong></li>
+                                <li class="placeOfWriting" place="{{ .placeOfWriting }}" language="{{ .language }}">Ort: <strong>{{ .placeOfWriting }}</strong></li>
+                                <li class="weather">Derzeitiges Wetter: <strong></strong></li>
                             </ul>
                         </div>
                     </div>
