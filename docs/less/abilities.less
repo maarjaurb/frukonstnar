@@ -10,13 +10,15 @@
 		text-align: center;
 		.project-details {
 			padding: 0;
+		
 			.project-name {
 				display: block;
 				font-size: 40px;
 				line-height: 40px;
 				margin-bottom: 25px;
-					.heading-font;
+				.heading-font;
 			}
+		
 			.project-description, .project-description p {
 				display: block;
 				font-size: 16px;
@@ -93,7 +95,6 @@
 			min-height: 100%;		
 			.project-details {
 				padding: 25% 0 0;
-				color: @themeDark;
 				img.client-logo {
 					margin: 0 auto 25px 0;
 				}
@@ -107,6 +108,16 @@
 					line-height: 25px;
 				}
 			}
+
+			.project-details.light {
+				color: @themeLight;
+			}
+
+			.project-details.dark {
+				color: @themeDark;
+			}
+
+
 			hr.colored {
 				margin: 10px auto 10px 0;
 			}			
@@ -185,6 +196,11 @@
 
     h2 {
     	font-family: @fontTitle;
+    }
+    h2.light {
+    	color: @themeLight;    	
+    }
+    h2.dark {
     	color: @themeDark;    	
     }
     .topic {

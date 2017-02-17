@@ -427,8 +427,6 @@ aside.cta-quote span.quote .p {
 aside.cta-quote a.btn {
   font-family: "IM Fell English SC";
   font-size: 18px;
-  color: white;
-  border-color: white;
 }
 aside.cta-quote hr {
   margin: 30px auto;
@@ -668,7 +666,6 @@ aside.cta-quote .panel {
   }
   .portfolio-carousel .item .project-details {
     padding: 25% 0 0;
-    color: #1B073D;
   }
   .portfolio-carousel .item .project-details img.client-logo {
     margin: 0 auto 25px 0;
@@ -682,6 +679,12 @@ aside.cta-quote .panel {
   .portfolio-carousel .item .project-details .project-description p {
     font-size: 22px;
     line-height: 25px;
+  }
+  .portfolio-carousel .item .project-details.light {
+    color: white;
+  }
+  .portfolio-carousel .item .project-details.dark {
+    color: #1B073D;
   }
   .portfolio-carousel .item hr.colored {
     margin: 10px auto 10px 0;
@@ -758,6 +761,11 @@ aside.cta-quote .panel {
 }
 .portfolio-modal h2 {
   font-family: "IM Fell English SC";
+}
+.portfolio-modal h2.light {
+  color: white;
+}
+.portfolio-modal h2.dark {
   color: #1B073D;
 }
 .portfolio-modal .topic {

@@ -1,3 +1,4 @@
+var locale = "de";
 
 $( () => {
 
@@ -81,15 +82,28 @@ $( () => {
 
 	////////////////////////////////////////////////////////////////////
 	// Read weather data
-	setInterval( () => {
-		$.getJSON( "https://maps.googleapis.com/maps/api/geocode/json?address=Berlin&key=AIzaSyDdbOWHGBqca6ryptX-bnW2wNHJicHoi40", res => {
-			var loc = res.results[0].geometry.location;
+	moment.locale( locale );
 
-			$.getJSON( "https://api.darksky.net/forecast/c7947be0fa327664efbfd2e97f0d86e0/"+loc.lat+","+loc.lng+"?callback=\?&exclude=daily,flags,hourly", data => {
-				var now = data.currently;
+	var updateWeather = function() {
+		$( ".infoline .placeOfWriting").each( function( item ) {
+			var $this = $( this ),
+					place = $this.attr( "place" );
 
-				debugger;
+			$.getJSON( "https://maps.googleapis.com/maps/api/geocode/json?address="+place+"&key=AIzaSyDdbOWHGBqca6ryptX-bnW2wNHJicHoi40", res => {
+				var loc = res.results[0].geometry.location;
+
+				$.getJSON( "https://api.darksky.net/forecast/73e75222e01692bb6da64c27b34642fa/"+loc.lat+","+loc.lng+"?callback=\?&exclude=daily,flags,hourly&lang="+locale, data => {
+					var temp = (data.currently.temperature -32) / 1.8;
+
+					temp = Math.round( temp * 10 ) / 10;
+
+					$this.parent().find( ".weather strong" ).text( temp+"°C, "+data.currently.summary );
+					//$this.parent().find( ".date strong" ).text( moment().format("DD. MMM YYYY") );
+				});
 			});
-		})
-	}, 5000)
+		});
+	};
+
+	updateWeather();
+	setInterval( updateWeather, 1800000); // every 30 min
 });
