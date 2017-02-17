@@ -3,7 +3,7 @@
 # Config File for INVISIBLE UNIVERSITY flavour of VITALITY bootstrap theme
 #
 #--------------------------------------------------------------
-Baseurl = "https://invisible-university.github.io/michael/"
+Baseurl = "https://invisible-university.github.io/template"
 LanguageCode = "de-DE"
 Title = "大學 Invisible University - Michael Schmidt"
 Theme = "hugo-vitality-theme"
