@@ -1,5 +1,9 @@
 # TO DO
 
+## Main Site: template
+- michael als fork von template
+
+
 ## Technische Struktur
 - Theme als Unterprojekt?
 
@@ -22,4 +26,5 @@
 
 - Installation
 	- Hugo
+- 
 
