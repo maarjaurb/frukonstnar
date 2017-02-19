@@ -5,15 +5,16 @@
 # @fontTitle: 	Font of title
 
 image: "img/backgrounds/bg-header1.jpg"
-title: "Michael Schmidt."
+title: "Lukas König"
 subtitle: "Liebe zur Technik -<br>und ein sachlicher Blick<br>ins eigene Innere"
 ref: "about"
+test: Noch ein Text ...
 
 # Additional Parameters
 
 # titleSize: 			"80px"
 # subtitleSize: 	"40px"
-# titleColor: 		"#280E54"
+# titleColor: 		"red"
 # subtitleColor: 	"#280E54"
 # lineColor: 			"#1F4F5E"
 # buttonColor: 		"#1F4F5E"
