@@ -5,7 +5,7 @@
 #--------------------------------------------------------------
 Baseurl = "https://invisible-university.github.io/template/"
 LanguageCode = "de-DE"
-Title = "大學 Invisible University - Michael Schmidt"
+Title = "大學 Invisible University - Template"
 Theme = "hugo-vitality-theme"
 publishDir = "docs"
 
@@ -21,18 +21,15 @@ publishDir = "docs"
 	# To provide some metadata for search engines feel free to add a few
   # information about you and your website.
 
-	# There are sechs different flavours: agency, creative, culinary, fashion, legal, video
-	# and three styles: default, modern or vintage
-  
   Flavour = "university"
 	Style = "modern"
 
 	# !Important: Theme colors can be selected in static/less/vitality.less
 	
-	Name = "Invisible University - Michael Schmidt"
-	Description = "Liebe zur Technik - und ein sachlicher, tiefer Blick ins eigene Innere."
+	Name = "Invisible University - Template"
+	Description = "This is just a template. Fork it!"
 	Favicon = "favicon.ico"
-	Author = "Lafisrap (Miuchael Schmidt)"
+	Author = "Lafisrap (Michael Schmidt)"
 	Brand = "大學 Invisible University"
 
 	# List of Google fonts, for use in less files.
@@ -49,15 +46,3 @@ publishDir = "docs"
 		"IM+Fell+English+SC&amp;subset=latin-ext",
 		"Josefin+Sans:300,300i,400,400i,700,700i",
 	]
-
-	# All Sections are defined in yaml files in the folder data/creative
-	# HERO 				: hero.yaml
-	# ABOUT 			: about.yaml
-	# SERVICES 		: services.yaml
-	# ASIDE 			: aside.yaml
-	# PROCESS 		: process.yaml
-	# WORK 				: work.yaml /// single projects are defined in folder data/creative/work_
-	# GRID 				: grid.yaml
-	# NEWSLETTER 	: newsletter.yaml
-	# CONTACT 		: contact.yaml
-	# FOOTER 			: footer.yaml
