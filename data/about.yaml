@@ -4,7 +4,7 @@
 # @fontPrimary: Font of subtitle
 # @fontTitle: 	Font of title
 
-backgroundImage: img/backgrounds/bg-aside.jpg
+backgroundImage: img/backgrounds/fußabdruck.jpg
 image: img/me.jpg
 text: >
     <span class="p">Hinterlasse einen Abdruck von Dir. Du bist nicht der Fuß, Du bist der, der geht.</span>
