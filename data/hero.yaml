@@ -5,10 +5,10 @@
 # @fontTitle: 	Font of title
 
 image: "img/backgrounds/bg-header1.jpg"
-title: "Lukas König"
-subtitle: "Liebe zur Technik -<br>und ein sachlicher Blick<br>ins eigene Innere"
+title: "Dein Name"
+subtitle: "Gib deinem Fachgebiet -<br>seinen Namen. Blick<br>Sei eigensinnig."
 ref: "about"
-test: Noch ein Text ...
+
 
 # Additional Parameters
 
