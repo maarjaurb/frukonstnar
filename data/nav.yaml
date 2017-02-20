@@ -10,7 +10,7 @@
 menu:
   - title: 	"Über mich"
     href: 	"about"
-  - title: 	"Was ich gut kann"
+  - title: 	"Was ich kann"
     href: 	"abilities"
   - title: 	"Startpunkte"
     href:   "zeropoints"
