@@ -11,19 +11,10 @@
 # screenImage:      Image on screen
 # frame:            Frame around screen image 
 
-abilityName: Programmieren
+abilityName: Benenne dein Tätigkeitsfeld
 description: >
-    Ich nehme die Tastatur, ich versuche die Idee in meinem Kopf klar zu kriegen, ich suche.
-
-
-    Plötzlich: Ein inneres Lächeln, Freude, Vorfreude.
-    Ich lege die Finger auf die Tastatur und beginne zu schreiben.
-    
-
-    Ich starte die App, fixiere den Bildschirm,<br>erwarte ...
-
-
-    Shit! Ein leichter Stich im Herzbereich.<br>Es geht nicht.
+    Beschreibe das Tätigkeitsfeld, in welchem Du deine Fähigkeiten einsetzt. 
+    Welchen Sinn siehst Du in deinem Tätigkeitsfeld?
 
 linkText: Mehr
 colorMode: dark
@@ -64,30 +55,23 @@ date: 13. Febr. 2017
 
 stone: saphire
 topicsUp:
-  - oneword: Idee
+  - oneword: Gib deiner Erfahrung eine Überschrift.
     description: > 
-      Etwas Neues erschaffen, die Vorfreude darauf, ein spannendes Gefühl.
-      Alles fliegt durcheinander: Was ich kann, was ich gesehen habe, was ich will.
-      Und endet bei:<br>JA, das kann ich.
+      Charakterisiere hier skizzenhaft das Umfeld und den Kontext, in welchem Du diese Erfahrung gemacht hast.
     text: >
-      <h3>Idee</h3>
+      <h3>Überschrift</h3>
       ![left](img/backgrounds/bg-ability2.jpg "This text appears when hovering over the image")
-      Die Idee ,,, **Lorem ipsum dolor sit amet**, consectetur adipisicing elit.
-      Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea.
-      Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.
-
-
-
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-      Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea.
-      Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.
+      Portraitiere hier eine deiner Erfahrungen, die Du in deinem Tätigkeitsfeld gemacht hast. 
+      Schreibe aus deiner eigenen Perspektive so, dass andere deine Erfahrung nachvollziehen können.
+      Richte deine Aufmerksamkeit auf das, was in Dir geschehen ist und lege den Schwerpunkt des Portraits
+      auf das, was andere von Außen nicht sehen können, weil es sonst in Dir verborgen bleibt.
       ![right](img/backgrounds/bg-ability1.jpg "This text appears when hovering over the image")
 
 
 
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-      Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea.
-      Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.
+      Du kannst für dein Portrait verschiedene Medien verwenden, die Dir für deinen Zweck passend erscheinen.
+      Schreibe z. Bsp. einen Text, mache Fotos, Videos oder Bilder. Oder Du baust Musik in dein Portrait ein, 
+      welche deine Erfahrung nachvollziehbar macht.
 
   - oneword: Start-Euphorie
     description: ...
