@@ -7,8 +7,10 @@
 backgroundImage: img/backgrounds/fussabdruck.jpg
 image: img/me.jpg
 text: >
-    <span class="p">Hinterlasse einen Abdruck von Dir. Du bist nicht der Fuß, Du bist der, der geht.</span>
-action: Was ich gut kann ...
+    <span class="p">Hinterlasse einen ersten Eindruck von Dir.<br> 
+    Du bist nicht der Abdruck, Du bist nicht der Fuß,<br>  
+    Du bist der, der geht.</span>
+action: Was ich kann ...
 ref: abilities
 
 # Additional Parameters
