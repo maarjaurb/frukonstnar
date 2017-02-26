@@ -124,7 +124,7 @@ closeButton: Schließen
 # modalTitleColor:        red
 # modalLineColor:         red
 # modalTopicSize:         34
-# modalTopicWidth:        280
+modalTopicWidth:        340
 # modalTopicColor:        grey
 # modalDescriptionSize:   16
 # modalDescriptionColor:  white

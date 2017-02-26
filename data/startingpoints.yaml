@@ -2,18 +2,18 @@ title: Startpunkte
 subtitle: Du willst etwas Neues beginnen? Hier sind einige Startpunkte, die ich für mich gefunden habe.
 
 filters: [
+  University,
   Programmieren,
-  Kommunikation,
   Ideen,
 ]
 all: Alle
 
 elements:
   - image: img/backgrounds/startingpoints1.jpg
-    captionTitle: FreeCodeAcademy
-    captionCategory: Programmieren
+    captionTitle: A Template for the first steps
+    captionCategory: Invisible University
     filters:
-      - Programmieren
+      - University
     content: >
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
     video: video/image_to_playground.mp4
@@ -22,7 +22,19 @@ elements:
     # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
     # panelColor:             white
 
-  - image: img/backgrounds/startingpoints2.jpg
+  - image: img/startingpoints/sp_freecodecamp.png
+    captionTitle: FreeCodeCamp
+    captionCategory: Programmieren
+    filters:
+      - Programmieren
+    content: >
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
+    video: video/image_to_playground.mp4
+
+    # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
+    # panelColor:             white
+
+  - image: img/startingpoints/sp_khanacademy.png
     captionTitle: Khan-Academy
     captionCategory: Programmieren
     filters:
@@ -34,12 +46,11 @@ elements:
     # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
     # panelColor:             white
 
-  - image: img/backgrounds/startingpoints2.jpg
+  - image: img/startingpoints/sp_spielplatz.png
     captionTitle: Der Computer-Spielplatz
     captionCategory: Programmieren
     filters:
       - Programmieren
-      - Kommunikation
     content: >
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
     video: video/image_to_playground.mp4
@@ -47,12 +58,11 @@ elements:
     # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
     # panelColor:             white
 
-  - image: img/backgrounds/startingpoints3.jpg
-    captionTitle: Der Computer-Spielplatz
+  - image: img/startingpoints/sp_codecademy.png
+    captionTitle: Codecademy
     captionCategory: Programmieren
     filters:
       - Programmieren
-      - Kommunikation
     content: >
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
     video: video/image_to_playground.mp4

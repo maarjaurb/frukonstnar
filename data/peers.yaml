@@ -27,9 +27,9 @@ people:
       link:   "https://www.facebook.com/johansson.iris"
     - icon:   "fa-cloud"
       link:   "http://irisjohansson.com/"
-  - image: "img/peers/malin.jpg"
-    name: "Malin Haraldsson"
-    position: "Kommunikations-Trainerin"
+  - image: "img/peers/michael.jpg"
+    name: "Michael Schmidt"
+    position: "Programmier- und Ideenforscher"
     social:
     - icon:   "fa-facebook"
       link:   "https://www.facebook.com/modermalin"
