@@ -5,10 +5,10 @@ details: # 2, 3 or 4 entries
     text:   "+49-151-28075067<br>+49-163-7951207"
   - icon:   "fa-map-marker"
     title:  "Visit"
-    text:   "... .., ..... Ober-Mörlen<br>Turiner Straße 21, 13347 Berlin"
+    text:   Hauptstraße 25, 61239 Ober-Mörlen<br>Turiner Straße 21, 13347 Berlin"
   - icon:   "fa-envelope"
     title:  "Email"
-    text:   "postmaster@spielsinn.in-berlin.de<br>michael@c2064.org"
+    text:   "lukaskoenig@spielsinn.net<br>michael@c2064.org"
 social:
   - icon:   "fa-twitter"
     link:   "#"
