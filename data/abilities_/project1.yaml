@@ -59,8 +59,11 @@ topicsUp:
     description: > 
       Charakterisiere hier skizzenhaft das Umfeld und den Kontext, in welchem Du diese Erfahrung gemacht hast.
     text: >
-      <h3>Überschrift</h3>
+      <h3>Erlebnisse</h3>
       ![left](img/backgrounds/bg-ability2.jpg "This text appears when hovering over the image")
+
+
+
       Portraitiere hier eine deiner Erfahrungen, die Du in deinem Tätigkeitsfeld gemacht hast. 
       Schreibe aus deiner eigenen Perspektive so, dass andere deine Erfahrung nachvollziehen können.
       Richte deine Aufmerksamkeit auf das, was in Dir geschehen ist und lege den Schwerpunkt des Portraits
@@ -73,19 +76,19 @@ topicsUp:
       Schreibe z. Bsp. einen Text, mache Fotos, Videos oder Bilder. Oder Du baust Musik in dein Portrait ein, 
       welche deine Erfahrung nachvollziehbar macht.
 
-  - oneword: Start-Euphorie
-    description: ...
+  - oneword: Viele
+    description: Wenn man tut, was man gerne tut und gut kann, ... 
     image: img/abilities/programming1.png
-  - oneword: Struktur
-    description: ...
+  - oneword: weitere
+    description: dann trifft man auf wiederkehrende innere Erlebnisse.
     video: video/image_to_playground.mp4
-  - oneword: Mal sehen wie lang der <Text></Text>
-    description: ...
+  - oneword: Erlebnisse
+    description: Sie stehen für den Weg, den man geht.
     video: video/image_to_playground.mp4
 
 topicsDown:
-  - oneword: Verzweiflung
-    description: Was ich will, steht klar und leuchtend hinter dieser Wand. Stahl. Beton. Aufgeben? Ich bin so oft schon durchgekommen ... Dieses Mal auch!
+  - oneword: Auch in der
+    description: ...
     text: >
       <h3>Ein schöner Titel</h3>
 
@@ -99,8 +102,8 @@ topicsDown:
       Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea.
       Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.
 
-  - oneword: Euphorie
-    description: "Die Tür springt auf, ich schreite hindurch und die Welt schaut mir zu: \"JA! Es funktioniert.\""
+  - oneword: unteren Leiste.
+    description: ...
     text: >
       DOWN **Lorem ipsum dolor sit amet**, consectetur adipisicing elit.
       Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea.
@@ -110,10 +113,6 @@ topicsDown:
       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
       Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea.
       Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.
-
-  - oneword: Spielplatz
-    description: Was man nicht zuerst auf einem Spielplatz lernt, lernt man nicht so ganz so richtig, so ... flubatsch tuatäng.
-    video: video/image_to_playground.mp4
 
 
 closeButton: Schließen
