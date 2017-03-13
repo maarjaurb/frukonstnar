@@ -1,0 +1,3 @@
+[submodule "themes/hugo-university-theme"]
+	path = themes/hugo-university-theme
+	url = https://github.com/invisible-university/hugo-university-theme
