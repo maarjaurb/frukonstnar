@@ -412,14 +412,16 @@ aside.cta-quote {
   padding: 50px 0;
   text-align: center;
 }
-aside.cta-quote span.quote {
+aside.cta-quote div.quote {
   display: block;
   text-align: justify;
   font-size: 32px;
   line-height: 44px;
   font-weight: 300;
 }
-aside.cta-quote span.quote .p {
+aside.cta-quote div.quote p {
+  font-size: 32px;
+  line-height: 44px;
   margin-top: 27.194px;
   margin-bottom: 27.194px;
   display: block;
@@ -435,7 +437,6 @@ aside.cta-quote img {
   border-radius: 100%;
   margin: 0px auto;
   opacity: 0.5;
-  height: 197px;
 }
 aside.cta-quote .transparent-border {
   border-width: 1px;
@@ -452,16 +453,14 @@ aside.cta-quote .panel {
     background-attachment: scroll;
     padding: 100px 0;
   }
-  aside.cta-quote span.quote .p {
+  aside.cta-quote div.quote p {
+    font-size: 32px;
+    line-height: 44px;
     margin-top: 27.194px;
     margin-bottom: 27.194px;
   }
   aside.cta-quote hr {
     margin: 40px auto;
-  }
-  aside.cta-quote img {
-    height: 160px;
-    margin-top: -55px;
   }
   aside.cta-quote .panel {
     padding: 18px 45px;
@@ -471,13 +470,11 @@ aside.cta-quote .panel {
   aside.cta-quote {
     padding: 150px 0;
   }
-  aside.cta-quote span.quote .p {
+  aside.cta-quote div.quote p {
+    font-size: 32px;
+    line-height: 44px;
     margin-top: 27.194px;
     margin-bottom: 27.194px;
-  }
-  aside.cta-quote img {
-    height: 160px;
-    margin-top: -60px;
   }
   aside.cta-quote .panel {
     padding: 24px 60px;
@@ -583,6 +580,10 @@ aside.cta-quote .panel {
   padding: 50px 55px;
   text-align: center;
 }
+.portfolio-carousel .item img {
+  --border: 3px solid white;
+  box-shadow: 5px 5px 55px -13px rgba(0, 0, 0, 0.63);
+}
 .portfolio-carousel .item .project-details {
   padding: 0;
 }
@@ -651,7 +652,6 @@ aside.cta-quote .panel {
   border-radius: 100%;
   padding: 40px;
   background-color: rgba(0, 0, 0, 0);
-  box-shadow: 4px 6px 157px -15px rgba(27, 7, 61, 0.1);
   width: 80%;
   margin: -45px auto;
 }
@@ -988,6 +988,9 @@ aside.cta-quote .panel {
   left: 13.364486%;
   right: 13.364486%;
 }
+.owl-item {
+  background-color: black;
+}
 .portfolio-filter {
   display: inline-block;
 }
@@ -1046,6 +1049,15 @@ aside.cta-quote .panel {
 #portfoliolist .mix .portfolio-wrapper img:hover {
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
+}
+#portfoliolist .mix .portfolio-wrapper .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #1B073D;
+  opacity: 0.5;
 }
 #portfoliolist .mix .portfolio-wrapper .caption {
   position: absolute;

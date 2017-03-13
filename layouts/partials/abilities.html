@@ -39,9 +39,9 @@
 }
 {{ end }}
 
-{{ if .noShadow }}
+{{ if .shadow }}
 #abilities p {
-    box-shadow: none !important;
+    box-shadow: 4px 6px 157px -15px rgba(27,7,61,0.10) !important;
 }
 {{ end }}
 
@@ -236,9 +236,10 @@
     <!-- Carousel Items -->
     {{ $imageColumns := .Site.Data.abilities.imageColumns }}
     {{ $screenFrame := .Site.Data.abilities.screenFrame }}
+    {{ $imagePadding := .Site.Data.abilities.imagePadding }}
     {{ range $index, $element := .Site.Data.abilities_ }}
 
-    <div class="item item_{{ $index }}" style="background-image: url('{{ .backgroundImage }}')">
+    <div class="item item_{{ $index }}" {{ if .backgroundImage }}style="background-image: url('{{ .backgroundImage }}')"{{ else if .backgroundColor }}style="background-color: {{ .backgroundColor }}"{{ end }}>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-{{ sub 12 $imageColumns }} col-md-push-{{ $imageColumns }}">
@@ -263,8 +264,11 @@
                             </div>
                         </div>
                     </div>
+
                     {{ else }}
+                    <div class="image-frame" style="padding: {{ $imagePadding }}px;">
                         <img src="{{ .screenImage }}" class="img-responsive" alt="">
+                    </div>
                     {{ end }}
                 </div>
             </div>
@@ -294,7 +298,7 @@
 </div>
 
 {{ range $index, $element := .Site.Data.abilities_ }}
-<div class="portfolio-modal modal fade modal_{{ $index }}" id="workModal{{ $index }}" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('{{ .backgroundImage }}')">
+<div class="portfolio-modal modal fade modal_{{ $index }}" id="workModal{{ $index }}" tabindex="-1" role="dialog" aria-hidden="true"{{ if .backgroundImage }}style="background-image: url('{{ .backgroundImage }}')"{{ else if .backgroundColor }}style="background-color: {{ .backgroundColor }}"{{ end }}>
     <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
             <div class="lr">

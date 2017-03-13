@@ -18,8 +18,9 @@ description: >
     Jeder Konflikt, jede Beziehung, jedes Ziel ist eine Aufforderung, uns zu ändern, einen Schritt weiter zu gehen.
 linkText: Mehr
 colorMode: light
-backgroundImage: img/backgrounds/bg-ability1.jpg
-screenImage: img/backgrounds/programming1.png
+# backgroundImage: img/...
+backgroundColor: "#820503"
+screenImage: img/abilities/globe.jpg
 frame: macbook
 placeOfWriting: Ängelsberg
 

@@ -4,12 +4,19 @@
 # @fontPrimary: Font of subtitle
 # @fontTitle: 	Font of title
 
-backgroundImage: img/backgrounds/fussabdruck.jpg
+backgroundImage: img/backgrounds/dahabshore.jpg
 image: img/me.jpg
+imagePos: left
+imageSize: 250
 text: >
-    <span class="p">Hinterlasse einen ersten Eindruck von Dir.<br> 
-    Du bist nicht der Abdruck, Du bist nicht der Fuß,<br>  
-    Du bist der, der geht.</span>
+    Hinterlasse einen ersten Eindruck von Dir. 
+    <br>Du bist nicht der Abdruck,
+
+
+    Du bist nicht der Fuß,  
+    
+
+    Du bist der, der geht.
 action: Was ich kann ...
 ref: abilities
 

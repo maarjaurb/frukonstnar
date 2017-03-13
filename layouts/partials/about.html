@@ -74,15 +74,23 @@
     <div class="container">
         <div class="row">
             <div class="panel transparent-border col-md-10 col-md-offset-1 wow fadeIn">
-                <span class="quote">{{ .text | markdownify }}</span>
-                <hr class="colored">
                 <div class="row">
-                	<div class="col-xs-12 col-sm-7">
-		                <a class="btn btn-outline-light page-scroll pull-right" href="#{{ .ref }}">{{ .action }}</a>
+                	{{ if eq .imagePos "left" }}
+	              	<div class="col-xs-12 col-sm-4" style="height: {{ .imageSize }}px">
+	              		<img src="{{ .image }}" class="img-responsive" height="{{ .imageSize }}" width="{{ .imageSize }}">
+	    			      </div>
+	                <div class="col-xs-12 col-md-8 quote">{{ .text | markdownify }}</div>
+	    			      {{ else }}
+	                <div class="col-xs-12 col-md-8 quote">{{ .text | markdownify }}</div>
+	              	<div class="col-xs-12 col-sm-4" style="height: {{ .imageSize }}px">
+	              		<img src="{{ .image }}" class="img-responsive" height="{{ .imageSize }}" width="{{ .imageSize }}">
+	    			      </div>
+	    			      {{ end }}
+		            </div>
+                <div class="row">
+                	<div class="col-xs-12">
+		                <a class="btn btn-outline-light page-scroll" href="#{{ .ref }}">{{ .action }}</a>
 			            </div>
-                	<div class="col-xs-12 col-sm-5">
-                		<img src="{{ .image }}" class="img-responsive">
-      			      </div>
             </div>
         </div>
     </div>

@@ -11,7 +11,8 @@ subtitle: >
     Was willst Du deine Leser wissen lassen, bevor sie sich<br>
     in die Portraits deiner inneren Erfahrungen vertiefen?
 imageColumns: 7
-screenFrame: true
+imagePadding: 50
+screenFrame: false
 
 # titleSize:     		40
 # titleColor:				"#1B073D"
@@ -19,5 +20,5 @@ screenFrame: true
 # lineColor: 				"#700D00"
 # textSize:     		16
 # textColor:     		"#1B073D"
-# noShadow:					false
+# shadow:						false
 # shadowRadius: 		"50%"   // also px instead of %

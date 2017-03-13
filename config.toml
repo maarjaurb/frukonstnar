@@ -6,7 +6,7 @@
 Baseurl = "https://invisible-university.github.io/template/"
 LanguageCode = "de-DE"
 Title = "大學 Invisible University - Template"
-Theme = "hugo-vitality-theme"
+Theme = "hugo-university-theme"
 publishDir = "docs"
 
 [Params]

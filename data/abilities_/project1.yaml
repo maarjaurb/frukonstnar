@@ -18,16 +18,16 @@ description: >
 
 linkText: Mehr
 colorMode: dark
-backgroundImage: img/backgrounds/startingpoints2.jpg
-screenImage: img/abilities/startingpoints3.jpg
-frame: macbook
+# backgroundImage: img/...
+backgroundColor: "#13105C"
+screenImage: img/abilities/pencils.jpg
 placeOfWriting: Dahab
 date: 13. Febr. 2017
 
 # titleSize:        40
-# titleColor:       "#1B073D"
+titleColor:       "white"
 # textSize:         24
-# textColor:        "#1B073D"
+textColor:        "white"
 # lineColor:        "#700D00"
 # buttonSize:       14
 
