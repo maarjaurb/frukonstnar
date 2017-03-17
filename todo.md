@@ -1,17 +1,18 @@
 # TO DO
 
+Responsive Design
+
 ## Main Site: template
-- michael als fork von template
 
 
 ## Technische Struktur
-- Theme als Unterprojekt?
 
 ## Über mich
 
-## Was ich gut kann
+## Was ich kann
 
 - Wetterabhängige Anzeige: Hintergrundbild mit filter verändern
+- Klick auf Topic geht nicht
 
 ## Startpunkte
 
@@ -20,7 +21,6 @@
 ## Peers
 
 ## Footer
-
 
 ## README.md
 

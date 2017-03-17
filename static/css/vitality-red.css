@@ -604,8 +604,9 @@ aside.cta-quote .panel {
 }
 .portfolio-carousel .item .project-details .project-description .btn-outline-light,
 .portfolio-carousel .item .project-details .project-description p .btn-outline-light {
-  color: #1B073D;
-  border-color: #1B073D;
+  color: white;
+  border-color: white;
+  border-radius: 0px;
 }
 .portfolio-carousel .item .device-container {
   padding: 25px;

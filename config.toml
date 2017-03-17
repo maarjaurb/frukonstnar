@@ -46,3 +46,6 @@ publishDir = "docs"
 		"IM+Fell+English+SC&amp;subset=latin-ext",
 		"Josefin+Sans:300,300i,400,400i,700,700i",
 	]
+
+	# If you want to have your fonts local, you have to place them in static/fonts folder
+	FontsLocal = true
