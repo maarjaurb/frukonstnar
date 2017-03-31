@@ -3,9 +3,9 @@
 # Config File for INVISIBLE UNIVERSITY flavour of VITALITY bootstrap theme
 #
 #--------------------------------------------------------------
-Baseurl = "https://lafisrap.github.io/computer-coaching/"
+Baseurl = "https://invisible-university.github.io/template/"
 LanguageCode = "de-DE"
-Title = "大學 Invisible University - Michael Schmidt"
+Title = "大學 Invisible University - Template"
 Theme = "hugo-university-theme"
 publishDir = "docs"
 
