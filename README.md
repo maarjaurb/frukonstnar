@@ -9,12 +9,12 @@ The Invisible University websites are design to be easy to handle, flexible and 
 
 - **git** for collaboration, easy publishing, version control,
 - **hugo** for simple and fast enhancing and changing the website,
-- optional: **less** for advanced styling,
-- optional: **sublime** for text editing (if you have another favourite text editor, fine)
+- recommended: **less** for advanced styling,
+- recommended: **sublime** for text editing (if you have another favourite text editor, fine)
 
-If you don't have these, than look [here](https://github.com/invisible-university/template/wiki/Installation-of-Required-Programs-%E5%AE%89%E8%A3%9D) how to install them. Do it before you go on here.
+CAUTION! If you don't have these, than install them. [Here](https://github.com/invisible-university/template/wiki/Installation-of-Required-Programs-%E5%AE%89%E8%A3%9D) you find how. Do it before you go on here.
 
-### STEP 1 一 Fork the template
+<a id="step1">### STEP 1 一 Fork the template
 
 Log into your GitHub account (get one [here](https://github.com) if you don't have one yet) and search for
 
