@@ -1,116 +1,101 @@
-# Hugo University Template
+# Hugo University 大學 Template
 
-Das Hugo University Template ist das Start-Template für Invisible University Webseiten. Es geht zurück auf das Premium-Theme "Viality" der [StartBootstrap-Reihe](//https://wrapbootstrap.com). Es ist derzeit nicht kostenlos! Es kostet $10. Wie du diese bezahlen kannst, siehe weiter unten.
-
-## Vorbereitung: Hugo, Less
+The Hugo University Template is the start template for Invisible University websites. It's based on the Premium-Theme "Viality" of the wonderful [StartBootstrap themes](//https://wrapbootstrap.com). It is currenty not free! It costs $10. How you can pay see in the installation notes.
 
 
-## Installation
+## Installation & First Steps
 
-Klone das Template:
+The Invisible University websites are design to be easy to handle, flexible and use current technologies. Though they all are widely used standard tools, they are not preinstalled on most systems. What we need is
 
-    $ git clone --recursive https://github.com/invisible-university/template [dein Projektname, erfinde etwas!]
-    $ cd [dein Projektname]
+- **git** for collaboration, easy publishing, version control,
+- **hugo** for simple and fast enhancing and changing the website,
+- optional: **less** for advanced styling,
+- optional: **sublime** for text editing (if you have another favourite text editor, fine)
 
-Kreiere das Projekt auf Github:
+If you don't have these, than look [here](https://github.com/invisible-university/template/wiki/Installation-of-Required-Programs-%E5%AE%89%E8%A3%9D) how to install them. Do it before you go on here.
 
-    $ curl -u '[dein Github-Konto]' https://api.github.com/user/repos -d '{"name":"[dein Projektname]"}'
-    $ 
+### STEP 1 一 Fork the template
 
-Passe die Variable BaseUrl in der Datei `config.toml` an (Zeile 6):
+Log into your GitHub account (get one [here](https://github.com) if you don't have one yet) and search for
 
-		$ 6 Baseurl = "https://[dein Github-Konto].github.io/[dein Projektname]/"
+	invisible template
 
-Dann ersetze in Zeile 8 gleich noch das Wort "template" mit deinem Namen.
+You find `invisible-university/template`. Go for it. On the next page look for the `Fork` button and hit it.
 
-Speichern. Dann `add, commit, push`.
+After some time you see a file overview named `Base Template for University Websites` and on top of it your github account name a slash and the word ´template`.
+That is your IU website, already. Let's rename and publish it.
 
-		$ git add .
-		$ git commit -m "First commit"
-		$ git push -u origin master
+### STEP 2 二 Publish your Invisible University Website
 
-
-
-
-
-## Getting started
-
-After installing the Hugo Vitality Theme successfully it requires a just a few more steps to get your site running.
+Click on `Settings` somewhat to the upper right of the page, and look for `Repository Name`. Type in your name there and hit `Rename`.
 
 
-### Install the StartBootstrap theme
-
-The Hugo Vitality Theme is just a frame for the StartBootstrap Vitality theme. Vitality is a premium theme and is not free. A single licence costs $10. You can buy it here: [StartBootstrap Vitality](//wrapbootstrap.com/theme/vitality-multipurpose-one-page-theme-WB02K3KK3). From the downloaded zip file just extract the <em>contents</em> of the dist folder to the static folder of this project. After copying there has to be a `static/index.html` file.
-
-### The config file
-
-Take a look inside the [`exampleSite`](//github.com/hugo-startbootstrap-themes/hugo-vitality-theme/tree/master/exampleSite) folder of this theme. You'll find six config files called config-agency.toml, config-creative.toml, config-culinary.toml, config-fashion.toml, config-legal.toml, config-video.toml. Select one of them and copy it in the root folder of your Hugo site. Rename it to config.toml. Then test the site:
-
-```
-cp themes/hugo-vitality-theme/exampleSite/config-[agency || creative || culinary || fashion || legal || video].toml config.toml
-hugo serve
-```
-Now you can look at the site with a browser at address `http://localhost:1313`.
-
-Feel free to change the strings in this theme. You will also find some hints there where to look next.
-
-### Optional: Modify website for use with github pages
-
-Add to config.yaml at line 10:
-
-	$ publishDir = "docs"
-
-In case you called the hugo command before, delete old public directory. Then call hugo again.
-	
-	$ rm public
-	$ hugo
-
-Push website to Github. First create it on Github and then use following commands: 
-
-	$ git init 
-	$ git add .
-	$ git commit -m "First commit."
-	$ git remote add origin [your repository ]
-	$ git push -u
-
-Go back to Github and switch on the pages functionality: set `Settings/Github Pages/Source` to `master branch /docs folder`.
+You will be sent back to the file list.
+Hit `Settings` again and scroll down to `GitHub Pages`.
+As `Source` select `Master branch /docs folder` and hit `Save`.
+That will do a little magic: It will take all files from the docs folder of your project ("repository" in git language) and publish it as a website. Your new web address you find three lines above the place where you just hit `Save`. Well, that is your IU website, published and working. Try it out.
 
 
-### Change the hero background and text
-
-To change the hero eye-catcher of the site, open the file [`themes/hugo-vitality-theme/data/[your flavour]/hero.yaml`](//github.com/hugo-startbootstrap-themes/hugo-vitality-theme/tree/master/data/agency/hero.yaml) and change image locations and texts there, and then copy your images into the static/img folder. That's where hugo will look for it.
+Later you can even change to your own domain if you like.
 
 
-### Select the content sections
+### STEP 3 三 Get Ready to Change your Site
 
-In the file [`themes/hugo-vitality-theme/layouts/index.html`](//github.com/hugo-startbootstrap-themes/hugo-vitality-theme/tree/master/layouts/index.html) you find the content structure of your new website. It is organised in partials in the partials folder. In the index.html file you find all the content sections for every flavour, one line each. Feel free to change order, add and remove lines there. The corresponding data you find in the `themes/hugo-vitality-theme/data` folder. There is a .yaml file for every content section. If you need to change the layout itself or add content, you can do it by changing the .html file in `themes/hugo-vitality-theme/layouts/partials/[your flavour]` folder. One content section is different: work.
+Open a command line terminal (Mac: Terminal, Windows: Power Shell). To get your new website to your local computer type
 
-### The Work section
+	$ git clone --recursive https://github.com/[your GitHub name]/[your project name]    
+	$ cd [your project name]
 
-The work section contains an extra work_ folder in the `themes/hugo-vitality-theme/data/[your flavour]` folder. In there you find one .yaml file per product/project page. Just modify those files, add or delete.
+It should look something like:
 
-### Icons
+	$ git clone --recursive https://github.com/lafisrap/iu-michael
+	$ cd iu-michael
 
-All icons are part of Fontawesome's icon font. Look at the website of [Fontawesome](//fortawesome.github.io/Font-Awesome/icons/) for more icons. The icons are represented by their corresponding CSS class of Fontawesome. 
-
-### Less vs. CSS
-
-All custom styles of the theme are found in `static/css/vitality-red.css`. It is recommended not to change styles there, but in the static/less folder. The main less file is vitality.less. To compile it use the command
-
-```
-lessc static/less/vitality.less static/css/vitality-red.css
-```
-
-before invoking `hugo serve`. If you don't have less on your computer, you can get it here: [{less}](//lesscss.org/).
+This may take some minutes.
 
 
-## Contributing
+Now we can start changing it. Open the file `config.toml` with your favourite text editor.
 
-Did you find a bug or got an idea for a new feature? Feel free to use the [issue tracker](//github.com/hugo-startbootstrap-themes/hugo-vitality-theme) to let me know. Or make directly a [pull request](//github.com/hugo-startbootstrap-themes/hugo-vitality-theme/pulls).
+	$ sublime_text .
 
+	Then select the file `config.toml` in the left window.
 
-## License
+Five places to change some meta information
 
-This theme is released under the Apache License 2.0 For more information read the [License](//github.com/digitalcraftsman/hugo-agency-theme/blob/master/LICENSE).
+	1) Line 6: Change the Baseurl to the exact url of your site. Something like
+		Baseurl = "https://[Your GitHub name].github.io/[Your project name]/"
 
-## Have fun!
+	2) Line 8: Set in your name (That´s what appears in the browser tab title)
+		Title = "大學 Invisible University - [Your Name]"
+
+	3) Line 29: Same: Set in your name (For search engines)
+		Title = "大學 Invisible University - [Your Name]"
+
+	4) Line 30: Description of your site (also for search engines, you want to be found)
+
+	5) Line 32: Change the author line (You are the author now!)
+
+### STEP 4 四 A new Title, a new Background Image
+
+In your editor open the `data` folder, than the file `hero.yaml`
+
+First change the title and the subtitle.
+
+	Line 8: title: "[Your name]"
+	Line 9: subtitle: "[What are you offering?]"
+
+Save your file. 
+Then copy a new image file named `bg-header.jpg` into the folder static/img/backgrounds.
+Preferably wider as 1600 pixel and not larger then 500 kbyte.
+That's it.
+
+### STEP 5 五 Publish your Changed Site
+
+On the command line type
+
+	$ ./publish "First commit"
+		(windows: publish "First commit")
+
+When asked type in your GitHub name and password, and a minute later, your website is ready. Open it.
+
+Where you can go from here, you find in the [Wiki](https://github.com/invisible-university/template/wiki).

@@ -20,3 +20,16 @@ social:
     link:   "#"
   - icon:   "fa-whatsapp"
     link:   "#"
+impressumTitle: Impressum
+impressumText: >
+    <h4>------------- Anbieter -------------</h4>
+    Name<br>
+    Street<br>
+    ZIP / Town<br>
+    <h4>------------- Kontakt: -------------</h4>
+    Telephone: +49 <br>
+    Email: ccb@michaelschmidt.berlin<br>
+    Jabber: lafisrap@trashserver.net<br>
+    Website: michaelschmidt.berlin<br>
+    <h4 style="margin-bottom: 60px;"></h4>
+copyright: 2017 Your Name

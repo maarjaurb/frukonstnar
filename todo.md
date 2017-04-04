@@ -1,6 +1,17 @@
 # TO DO
 
-Responsive Design
+- Warum is das submodule anfangs detached?
+
+
+- README.md: Spannender ... Installation etc.
+- Rework Wiki-Tutorial
+- i18n
+- Firebase-Access
+- React-Redux App
+- More Sections --- many sections!!!
+
+
+- Responsive Design
 
 ## Main Site: template
 
@@ -15,8 +26,6 @@ Responsive Design
 - Klick auf Topic geht nicht
 
 ## Startpunkte
-
-- Dieters Auswahl
 
 ## Peers
 

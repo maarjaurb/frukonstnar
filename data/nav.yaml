@@ -17,10 +17,16 @@ menu:
   - title: 	"Menschen"
     href: 	"peers"
 
+logoText: "大學 Invisible University"
+# logoImage: 	"img/logo.png"
+
+
 # Additional Parameters
 
-# menuSize: 	"20px"
-# brandSize: 	"22px"
-# colorLight: "#ff0000"
-# colorDark: 	"#330000"
+# menuSize: 					"20px"
+# logoTextSize: 			"22px"
+# logoHeight: 				"50px"
+# logoHeightExpanded: "80px"
+# colorLight: 				"#ff0000"
+# colorDark: 					"#330000"
 
