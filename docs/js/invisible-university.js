@@ -1,8 +1,48 @@
 var locale = "de";
 
 $( () => {
+	//////////////////////////////////////////////////////////
+	// Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBKdpxWmDe1sNd4A9nDu89Lp840xKcYgUw",
+    authDomain: "invisibleuniversity-d8698.firebaseapp.com",
+    databaseURL: "https://invisibleuniversity-d8698.firebaseio.com",
+    projectId: "invisibleuniversity-d8698",
+    storageBucket: "invisibleuniversity-d8698.appspot.com",
+    messagingSenderId: "10713201968"
+  };
+  var fireApp = firebase.initializeApp(config);
+  var fireDatabase = fireApp.database();
+	var provider = new firebase.auth.GithubAuthProvider();
+	//provider.addScope('user:name');
 
-	////////////////////////////////////////////////////////7
+	$(".navbar-login").click((e) => {
+
+		firebase.auth().signInWithPopup(provider).then(function(result) {
+		  // This gives you a GitHub Access Token. You can use it to access the GitHub API.
+		  var token = result.credential.accessToken;
+		  // The signed-in user info.
+		  var user = result.user;
+
+		  $(".navbar-login").fadeOut();
+		  $(".navbar-logout").fadeIn();
+		  $(".navbar-name").text(user.displayName);
+
+		  // ...
+		}).catch(function(error) {
+		  // Handle Errors here.
+		  var errorCode = error.code;
+		  var errorMessage = error.message;
+		  // The email of the user's account used.
+		  var email = error.email;
+		  // The firebase.auth.AuthCredential type that was used.
+		  var credential = error.credential;
+
+		  console.log(errorCode, errorMessage);
+		});
+	});
+
+	/////////////////////////////////////////////////////////
 	// Lift topic menu up
 	var topicAnimating = null;
 	$( ".device-mockup .oneword li" ).hover( function() {
@@ -106,4 +146,8 @@ $( () => {
 
 	updateWeather();
 	setInterval( updateWeather, 1800000); // every 30 min
+
+	$( "footer #impressum" ).hide();
+	$( "footer .impressum" ).click(() => $( "footer #impressum" ).fadeToggle() );
 });
+

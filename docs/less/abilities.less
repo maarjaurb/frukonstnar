@@ -10,7 +10,6 @@
 		text-align: center;
 
 		img {
-			--border: 3px solid white;
 			box-shadow: 5px 5px 55px -13px rgba(0,0,0,0.63);
 		}
 
@@ -33,7 +32,6 @@
 				.btn-outline-light {
 					color: @themeLight;
 					border-color: @themeLight;
-					border-radius: 0px;
 				}
 			}
 		}
@@ -322,6 +320,12 @@
 					color: @themePrimary;
 				}
 			}
+			.oneword.light li {
+				color: @themeLight
+			}
+			.oneword.dark li {
+				color: @themeDark
+			}
 			hr {
 				margin-left: 0px;
 				margin-right: 0px;
@@ -333,7 +337,7 @@
 			.description {
 				border-radius: 5px;
 				padding: 10px;
-				font-size: 15px;
+				font-size: 17px;
 				background-color: @themeDark;
 				box-shadow: 0px 0px 0px 3px rgba(0,0,0,0.3);
 			}
@@ -379,8 +383,14 @@
 			text-align: left;
 		}
 
+    p, div {
+	    font-size: 18px;
+  	  line-height: 24.75px;
+    	margin: 0 0 9px;
+    }
+
 		img {
-			width: 300px;
+			width: 400px;
 			clear: both;
 			float: right;
 			padding: 16px;
@@ -414,9 +424,6 @@
 
 	.topics {
 		.topic {
-			.oneword li {
-				color: rgba( 177, 35, 3, 1);
-			}
 
 			hr {
 				border-color: rgba( 177, 35, 3, 1);
@@ -444,9 +451,6 @@
 
 	.topics {
 		.topic {
-			.oneword li {
-				color: rgba( 47, 54, 73, 1);
-			}
 
 			hr {
 				border-color: rgba( 47, 54, 73, 1);
@@ -470,10 +474,4 @@
 			top: 11.0438729%; bottom: 14.6747352%; left: 13.364486%; right: 13.364486%;
 		}
 	}
-}
-
-
-
-.owl-item {
-	background-color: black;
 }

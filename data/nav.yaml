@@ -19,6 +19,8 @@ menu:
 
 logoText: "大學 Invisible University"
 # logoImage: 	"img/logo.png"
+login: "Login"
+logout: "Logout"
 
 
 # Additional Parameters
