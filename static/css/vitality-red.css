@@ -1017,6 +1017,10 @@ aside.cta-quote .panel {
   left: 13.364486%;
   right: 13.364486%;
 }
+/* Not for now! */
+.topics {
+  display: none;
+}
 .portfolio-filter {
   display: inline-block;
 }

@@ -17,7 +17,7 @@ description: >
     Welchen Sinn siehst Du in deinem Tätigkeitsfeld?
 
 linkText: Mehr
-colorMode: dark
+colorMode: light
 # backgroundImage: img/...
 backgroundColor: "#13105C"
 screenImage: img/abilities/pencils.jpg
@@ -25,9 +25,9 @@ placeOfWriting: Dahab
 date: 13. Febr. 2017
 
 # titleSize:        40
-titleColor:       "white"
+# titleColor:       "white"
 # textSize:         24
-textColor:        "white"
+# textColor:        "white"
 # lineColor:        "#700D00"
 # buttonSize:       14
 
@@ -123,7 +123,7 @@ closeButton: Schließen
 # modalTitleColor:        red
 # modalLineColor:         red
 # modalTopicSize:         34
-modalTopicWidth:        340
+# modalTopicWidth:        340
 # modalTopicColor:        grey
 # modalDescriptionSize:   16
 # modalDescriptionColor:  white
@@ -134,5 +134,5 @@ modalTopicWidth:        340
 # modalTextSize:          24      # Use <h3> tag in the md text for headlines
 # modalTextColor:         green
 # modalImagePadding:      20
-# modalImageSize:         300
+modalImageWidth:         300
 # modalImageOpacity:      100, 100, 100, 0.05   # First three values red, green, blue, last opacity

@@ -2,7 +2,10 @@ var locale = "de";
 
 $( () => {
 	//////////////////////////////////////////////////////////
-	// Initialize Firebase
+	// Firebase
+
+	//////////////////////////////////////////////////////////
+	// Login / Logout
   var config = {
     apiKey: "AIzaSyBKdpxWmDe1sNd4A9nDu89Lp840xKcYgUw",
     authDomain: "invisibleuniversity-d8698.firebaseapp.com",
@@ -14,11 +17,12 @@ $( () => {
   var fireApp = firebase.initializeApp(config);
   var fireDatabase = fireApp.database();
 	var provider = new firebase.auth.GithubAuthProvider();
+	var firebaseStatus = {};
 	//provider.addScope('user:name');
 
 	$(".navbar-login").click((e) => {
 
-		firebase.auth().signInWithPopup(provider).then(function(result) {
+		firebaseStatus.GitHubLogin = firebase.auth().signInWithPopup(provider).then(function(result) {
 		  // This gives you a GitHub Access Token. You can use it to access the GitHub API.
 		  var token = result.credential.accessToken;
 		  // The signed-in user info.
@@ -42,6 +46,45 @@ $( () => {
 		});
 	});
 
+	$(".navbar-logout").click((e) => {
+		firebase.auth().signOut().then(function() {
+			$(".navbar-name").text("");
+		  $(".navbar-login").fadeIn();
+		  $(".navbar-logout").fadeOut();
+
+		}).catch(function(error) {
+		  // An error happened.
+		});
+	});
+
+	firebaseStatus.AnonLogin = firebase.auth().signInAnonymously().catch(function(error) {
+	  // Handle Errors here.
+	  var errorCode = error.code;
+	  var errorMessage = error.message;
+	  // ...
+	});
+
+	//////////////////////////////////////////////////////////
+	// Writing data
+	var firebaseWriteSiteData = function() {
+		//if( firebaseSite.url.search("localhost") === -1 ) {
+		firebase.database().ref('sites/' + firebaseSite.url).once("value").then((snapshot) => {
+			var pageloads = (snapshot.val().pageloads || 0) + 1;
+			  firebase.database().ref('sites/' + firebaseSite.url).set({
+			    name: firebaseSite.name,
+			    description: firebaseSite.description,
+			    timeStamp: Date.now(),
+			    pageloads: pageloads
+			  });					
+		});		
+		//}
+	}
+
+	firebaseWriteSiteData();
+
+
+
+	/*
 	/////////////////////////////////////////////////////////
 	// Lift topic menu up
 	var topicAnimating = null;
@@ -119,7 +162,7 @@ $( () => {
 	});
 
 	console.assert( !lefts.length, "lefts array should be empty." );
-
+	*/
 	////////////////////////////////////////////////////////////////////
 	// Read weather data
 	moment.locale( locale );
