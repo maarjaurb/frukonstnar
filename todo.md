@@ -3,10 +3,7 @@
 - Warum is das submodule anfangs detached?
 
 
-- README.md: Spannender ... Installation etc.
-- Rework Wiki-Tutorial
 - i18n
-- Firebase-Access
 - React-Redux App
 - More Sections --- many sections!!!
 
