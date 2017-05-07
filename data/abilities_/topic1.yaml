@@ -19,7 +19,7 @@ description: >
 linkText: Mehr
 colorMode: light
 # backgroundImage: img/...
-backgroundColor: "#13105C"
+backgroundColor: "#22105C"
 screenImage: img/abilities/pencils.jpg
 placeOfWriting: Dahab
 date: 13. Febr. 2017
@@ -60,7 +60,7 @@ topicsUp:
       Charakterisiere hier skizzenhaft das Umfeld und den Kontext, in welchem Du diese Erfahrung gemacht hast.
     text: >
       <h3>Erlebnisse</h3>
-      ![left](img/backgrounds/bg-ability2.jpg "This text appears when hovering over the image")
+      ![left](img/abilities/bg-ability2.jpg "This text appears when hovering over the image")
 
 
 
@@ -68,7 +68,7 @@ topicsUp:
       Schreibe aus deiner eigenen Perspektive so, dass andere deine Erfahrung nachvollziehen können.
       Richte deine Aufmerksamkeit auf das, was in Dir geschehen ist und lege den Schwerpunkt des Portraits
       auf das, was andere von Außen nicht sehen können, weil es sonst in Dir verborgen bleibt.
-      ![right](img/backgrounds/bg-ability1.jpg "This text appears when hovering over the image")
+      ![right](img/abilities/bg-ability1.jpg "This text appears when hovering over the image")
 
 
 
@@ -78,7 +78,7 @@ topicsUp:
 
   - oneword: Viele
     description: Wenn man tut, was man gerne tut und gut kann, ... 
-    image: img/abilities/programming1.png
+    image: img/abilities/bg-ability2.jpg
   - oneword: weitere
     description: dann trifft man auf wiederkehrende innere Erlebnisse.
     video: video/image_to_playground.mp4

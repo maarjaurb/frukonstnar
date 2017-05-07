@@ -9,7 +9,7 @@ filters: [
 all: Alle
 
 elements:
-  - image: img/backgrounds/startingpoints1.jpg
+  - image: img/startingpoints/startingpoints1.jpg
     captionTitle: A Template for the first steps
     captionCategory: Invisible University
     filters:
@@ -18,59 +18,41 @@ elements:
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
     video: video/image_to_playground.mp4
 
-    # Backgorund color and text color can be changed for each element, but also for all together further below with the global attributes
+    # Capiton and panel looks can be changed for each element, but also for all together further below with the global attributes
+    # captionSize:            16
+    # captionColor:           white
+    # captionBackgroundColor: "#FF4C3D"
     # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
     # panelColor:             white
 
-  - image: img/startingpoints/sp_freecodecamp.png
-    captionTitle: FreeCodeCamp
-    captionCategory: Programmieren
-    filters:
-      - Programmieren
-    content: >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
-    video: video/image_to_playground.mp4
-
-    # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
-    # panelColor:             white
-
-  - image: img/startingpoints/sp_khanacademy.png
+  - image: img/startingpoints/startingpoints2.jpg
     captionTitle: Khan-Academy
     captionCategory: Programmieren
     filters:
       - Programmieren
+      - Kommunikation
     content: >
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
     video: video/image_to_playground.mp4
 
-    # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
-    # panelColor:             white
-
-  - image: img/startingpoints/sp_spielplatz.png
-    captionTitle: Der Computer-Spielplatz
+  - image: img/startingpoints/startingpoints3.jpg
+    captionTitle: FreeCodeCamp
     captionCategory: Programmieren
     filters:
       - Programmieren
+      - Kommunikation
     content: >
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
     video: video/image_to_playground.mp4
 
+
+    # captionSize:            16
+    # captionColor:           white
+    # captionBackgroundColor: "#FF4C3D"
     # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
     # panelColor:             white
 
-  - image: img/startingpoints/sp_codecademy.png
-    captionTitle: Codecademy
-    captionCategory: Programmieren
-    filters:
-      - Programmieren
-    content: >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
-    video: video/image_to_playground.mp4
-
-    # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
-    # panelColor:             white
-
-  - image: img/backgrounds/startingpoints4.jpg
+  - image: img/startingpoints/startingpoints4.jpg
     captionTitle: Original Play - Ursprüngliches Spiel
     captionCategory: Kommunikation
     filters:
@@ -79,10 +61,29 @@ elements:
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
     video: video/image_to_playground.mp4
 
+    # captionSize:            16
+    # captionColor:           white
+    # captionBackgroundColor: "#FF4C3D"
     # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
     # panelColor:             white
 
-  - image: img/backgrounds/startingpoints5.jpg
+
+  - image: img/startingpoints/startingpoints4.jpg
+    captionTitle: Original Play - Ursprüngliches Spiel
+    captionCategory: Kommunikation
+    filters:
+      - Kommunikation
+    content: >
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
+    video: video/image_to_playground.mp4
+
+    # captionSize:            16
+    # captionColor:           white
+    # captionBackgroundColor: "#FF4C3D"
+    # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
+    # panelColor:             white
+
+  - image: img/startingpoints/startingpoints5.jpg
     captionTitle: 9 Grundgedanken
     captionCategory: Ideen
     filters:
@@ -91,10 +92,13 @@ elements:
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
     video: video/image_to_playground.mp4
 
+    # captionSize:            16
+    # captionColor:           white
+    # captionBackgroundColor: "#FF4C3D"
     # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
     # panelColor:             white
 
-  - image: img/backgrounds/startingpoints6.jpg
+  - image: img/startingpoints/startingpoints6.jpg
     captionTitle: Primärwoche in Dahab
     captionCategory: Kommunikation
     filters:
@@ -103,10 +107,13 @@ elements:
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
     video: video/image_to_playground.mp4
 
+    # captionSize:            16
+    # captionColor:           white
+    # captionBackgroundColor: "#FF4C3D"
     # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
     # panelColor:             white
 
-  - image: img/backgrounds/startingpoints7.jpg
+  - image: img/startingpoints/startingpoints7.jpg
     captionTitle: 95 Gedankenfehler der westlichen Kultur
     captionCategory: Ideen
     filters:
@@ -115,10 +122,13 @@ elements:
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
     video: video/image_to_playground.mp4
 
+    # captionSize:            16
+    # captionColor:           white
+    # captionBackgroundColor: "#FF4C3D"
     # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
     # panelColor:             white
 
-  - image: img/backgrounds/startingpoints8.jpg
+  - image: img/startingpoints/startingpoints8.jpg
     captionTitle: 2064 - Die Geschichte der Cypherpunks
     captionCategory: Kommunikation
     filters:
@@ -128,10 +138,13 @@ elements:
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
     video: video/image_to_playground.mp4
 
+    # captionSize:            16
+    # captionColor:           white
+    # captionBackgroundColor: "#FF4C3D"
     # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
     # panelColor:             white
 
-  - image: img/backgrounds/startingpoints9.jpg
+  - image: img/startingpoints/startingpoints9.jpg
     captionTitle: 2064 - Das Spiel
     captionCategory: Ideen
     filters:
@@ -140,6 +153,9 @@ elements:
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
     video: video/image_to_playground.mp4
 
+    # captionSize:            16
+    # captionColor:           white
+    # captionBackgroundColor: "#FF4C3D"
     # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
     # panelColor:             white
 
@@ -157,7 +173,7 @@ elements:
 
 # captionSize:            16
 # captionColor:           white
-# captionBackgroundColor: "#BA4C3D"
+# captionBackgroundColor: "#FF4C3D"
 # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
 # panelColor:             white
 # panelTitleSize:         60

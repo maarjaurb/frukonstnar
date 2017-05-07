@@ -439,6 +439,14 @@ if (typeof Object.create !== "function") {
                 ///////////////////////////////////////////////////////////////////////////////
             });
 
+
+            ///////////////////////////////////////////////////////////////////////////
+            // @lafisrap: Restart with one
+            buttonsWrapper.on("gotostart", "div[class^=\"owl\"]", function (event, page) {
+                event.preventDefault();
+                base.goTo(page);
+            });
+
             ///////////////////////////////////////////////////////////////////////////
             // @lafisrap: Extension for Invisible University: Listening to topic menus
             var topicWrapper = $( ".topic[tid]" );

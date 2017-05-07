@@ -1,4 +1,4 @@
-image: "img/backgrounds/startingpoints9.jpg"
+image: "img/startingpoints/startingpoints9.jpg"
 details: # 2, 3 or 4 entries
   - icon:   "fa-phone"
     title:  "Phone"

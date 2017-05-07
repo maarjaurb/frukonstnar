@@ -13,14 +13,15 @@ menu:
   - title: 	"Was ich kann"
     href: 	"abilities"
   - title: 	"Startpunkte"
-    href:   "zeropoints"
+    href:   "startingpoints"
   - title: 	"Menschen"
     href: 	"peers"
 
 logoText: "大學 Invisible University"
 # logoImage: 	"img/logo.png"
-login: "Login"
-logout: "Logout"
+
+# login: "Login"
+# logout: "Logout"
 
 
 # Additional Parameters

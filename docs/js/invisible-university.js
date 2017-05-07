@@ -75,8 +75,8 @@ $( () => {
 			    description: firebaseSite.description,
 			    timeStamp: Date.now(),
 			    pageloads: pageloads
-			  });					
-		});		
+			  });
+		});
 		//}
 	}
 
@@ -106,7 +106,7 @@ $( () => {
 
 			topic.stop().animate( {
 				"margin-top": -(height+40)+"px",
-			}, 300);			
+			}, 300);
 
 		} else {
 			$( ".device-mockup .down" ).each( function() {
@@ -119,7 +119,7 @@ $( () => {
 
 			topic.stop().animate( {
 				"margin-bottom": "-"+(height+40)+"px",
-			}, 300);						
+			}, 300);
 		}
 
 	}, null);
@@ -147,16 +147,16 @@ $( () => {
 				width = $( ".oneword li", $this ).outerWidth(),
 				attr = $this.attr( "padding" ),
 				padding = parseInt( $this.attr( "padding" ) );
-		
+
 		var a = $this.hasClass( "cr" );
 		if( $this.hasClass( "cr" )) left = 0;
-				
+
 		lefts.push( left );
 		left += width + padding;
 	});
 
 	$( "#just-for-width" ).remove();
-	
+
 	$( ".topic" ).each( function() {
 		$( this ).css( "left", lefts.shift()+"px" );
 	});
@@ -193,4 +193,3 @@ $( () => {
 	$( "footer #impressum" ).hide();
 	$( "footer .impressum" ).click(() => $( "footer #impressum" ).fadeToggle() );
 });
-
