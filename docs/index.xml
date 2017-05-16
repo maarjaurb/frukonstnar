@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>大學 Invisible University - Template</title>
-    <link>https://invisible-university.github.io/template/index.xml</link>
-    <description>Recent content on 大學 Invisible University - Template</description>
+    <title>Frü Konstnär</title>
+    <link>https://maarjaurb.github.io/frukonstnar/index.xml</link>
+    <description>Recent content on Frü Konstnär</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>de-DE</language>
-    <atom:link href="https://invisible-university.github.io/template/index.xml" rel="self" type="application/rss+xml" />
+    <language>se-SE</language>
+    <atom:link href="https://maarjaurb.github.io/frukonstnar/index.xml" rel="self" type="application/rss+xml" />
     
   </channel>
 </rss>
