@@ -1,1 +1,1 @@
-# Still have to do the Windows version
+lessc static/less/vitality.less static/css/vitality-red.css
