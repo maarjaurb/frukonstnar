@@ -4,7 +4,7 @@ subtitle: Here can you tell something about the fears
 
 elements:
   - image: img/startingpoints/startingpoints1.jpg
-    captionTitle: DUKTIG 
+    captionTitle: DUKTIG
     captionCategory: RÄTT
     content: >
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
@@ -16,8 +16,6 @@ elements:
     # captionBackgroundColor: "#FF4C3D"
     # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
     # panelColor:             white
-
-  - image: ""
 
   - image: img/startingpoints/startingpoints2.jpg
     captionTitle: TILL LAGS
@@ -52,13 +50,15 @@ elements:
     # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
     # panelColor:             white
 
+  - image: ""
+
 
   - image: img/startingpoints/startingpoints5.jpg
     captionTitle: GENERAD
     captionCategory: Wants to be invisible
     content: >
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
-    video: 
+    video:
 
     # captionSize:            16
     # captionColor:           white
@@ -71,7 +71,7 @@ elements:
     captionCategory: DÅLIG
     content: >
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
-    video: 
+    video:
 
     # captionSize:            16
     # captionColor:           white
@@ -84,7 +84,7 @@ elements:
     captionCategory: TVIVEL
     content: >
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
-    video: 
+    video:
 
     # captionSize:            16
     # captionColor:           white
@@ -97,7 +97,7 @@ elements:
     captionCategory: BRA
     content: >
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
-    video: 
+    video:
 
     # captionSize:            16
     # captionColor:           white
