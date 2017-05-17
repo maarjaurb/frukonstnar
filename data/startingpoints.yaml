@@ -1,22 +1,14 @@
-title: Startpunkte
-subtitle: Du willst etwas Neues beginnen? Hier sind einige Startpunkte, die ich für mich gefunden habe.
+title: Different Faces of Fears
+subtitle: Here can you tell something about the fears
 
-filters: [
-  University,
-  Programmieren,
-  Ideen,
-]
-all: Alle
 
 elements:
   - image: img/startingpoints/startingpoints1.jpg
-    captionTitle: A Template for the first steps
-    captionCategory: Invisible University
-    filters:
-      - University
+    captionTitle: DUKTIG 
+    captionCategory: RÄTT
     content: >
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
-    video: video/image_to_playground.mp4
+
 
     # Capiton and panel looks can be changed for each element, but also for all together further below with the global attributes
     # captionSize:            16
@@ -26,24 +18,18 @@ elements:
     # panelColor:             white
 
   - image: img/startingpoints/startingpoints2.jpg
-    captionTitle: Khan-Academy
-    captionCategory: Programmieren
-    filters:
-      - Programmieren
-      - Kommunikation
+    captionTitle: TILL LAGS
+    captionCategory: BORDE
     content: >
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
-    video: video/image_to_playground.mp4
+
 
   - image: img/startingpoints/startingpoints3.jpg
-    captionTitle: FreeCodeCamp
-    captionCategory: Programmieren
-    filters:
-      - Programmieren
-      - Kommunikation
+    captionTitle: AGGRESSIV
+    captionCategory: FEL
     content: >
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
-    video: video/image_to_playground.mp4
+
 
 
     # captionSize:            16
@@ -53,13 +39,10 @@ elements:
     # panelColor:             white
 
   - image: img/startingpoints/startingpoints4.jpg
-    captionTitle: Original Play - Ursprüngliches Spiel
-    captionCategory: Kommunikation
-    filters:
-      - Kommunikation
+    captionTitle: FÖRMER
+    captionCategory: MÅSTE
     content: >
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
-    video: video/image_to_playground.mp4
 
     # captionSize:            16
     # captionColor:           white
@@ -67,30 +50,13 @@ elements:
     # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
     # panelColor:             white
 
-
-  - image: img/startingpoints/startingpoints4.jpg
-    captionTitle: Original Play - Ursprüngliches Spiel
-    captionCategory: Kommunikation
-    filters:
-      - Kommunikation
-    content: >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
-    video: video/image_to_playground.mp4
-
-    # captionSize:            16
-    # captionColor:           white
-    # captionBackgroundColor: "#FF4C3D"
-    # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
-    # panelColor:             white
 
   - image: img/startingpoints/startingpoints5.jpg
-    captionTitle: 9 Grundgedanken
-    captionCategory: Ideen
-    filters:
-      - Ideen
+    captionTitle: GENERAD
+    captionCategory: Wants to be invisible
     content: >
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
-    video: video/image_to_playground.mp4
+    video: 
 
     # captionSize:            16
     # captionColor:           white
@@ -99,13 +65,11 @@ elements:
     # panelColor:             white
 
   - image: img/startingpoints/startingpoints6.jpg
-    captionTitle: Primärwoche in Dahab
-    captionCategory: Kommunikation
-    filters:
-      - Kommunikation
+    captionTitle: OFFER
+    captionCategory: DÅLIG
     content: >
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
-    video: video/image_to_playground.mp4
+    video: 
 
     # captionSize:            16
     # captionColor:           white
@@ -114,13 +78,11 @@ elements:
     # panelColor:             white
 
   - image: img/startingpoints/startingpoints7.jpg
-    captionTitle: 95 Gedankenfehler der westlichen Kultur
-    captionCategory: Ideen
-    filters:
-      - Ideen
+    captionTitle: OROLIG
+    captionCategory: TVIVEL
     content: >
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
-    video: video/image_to_playground.mp4
+    video: 
 
     # captionSize:            16
     # captionColor:           white
@@ -129,14 +91,11 @@ elements:
     # panelColor:             white
 
   - image: img/startingpoints/startingpoints8.jpg
-    captionTitle: 2064 - Die Geschichte der Cypherpunks
-    captionCategory: Kommunikation
-    filters:
-      - Ideen
-      - Kommunikation
+    captionTitle: LYCKAD
+    captionCategory: BRA
     content: >
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
-    video: video/image_to_playground.mp4
+    video: 
 
     # captionSize:            16
     # captionColor:           white
@@ -144,20 +103,6 @@ elements:
     # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
     # panelColor:             white
 
-  - image: img/startingpoints/startingpoints9.jpg
-    captionTitle: 2064 - Das Spiel
-    captionCategory: Ideen
-    filters:
-      - Ideen
-    content: >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
-    video: video/image_to_playground.mp4
-
-    # captionSize:            16
-    # captionColor:           white
-    # captionBackgroundColor: "#FF4C3D"
-    # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
-    # panelColor:             white
 
 
 # backgroundColor:        white

@@ -17,7 +17,7 @@ menu:
   - title: 	"Menschen"
     href: 	"peers"
 
-logoText: "大學 Invisible University"
+logoText: "Frü Konstnär"
 # logoImage: 	"img/logo.png"
 
 # login: "Login"
@@ -30,5 +30,5 @@ logoText: "大學 Invisible University"
 # logoTextSize: 			"22px"
 # logoHeight: 				"50px"
 # logoHeightExpanded: "80px"
-# colorLight: 				"#ff0000"
+colorLight: 				"white"
 # colorDark: 					"#330000"
