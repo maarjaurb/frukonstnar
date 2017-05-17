@@ -1,0 +1,17 @@
+
+title: This is what we do
+description: I provide web design, web development, photography, and graphic design services.
+services:
+  - service: "Web Design"
+    icon: "fa-laptop"
+    description: "This theme includes the retina.js plugin for easy retina image support so your images and graphics will look great on mobile devices!"
+  - service: "Web Development"
+    icon: "fa-code"
+    description: "Vitality is built using Bootstrap 3, and is easy to edit and customize. LESS files are included as well for deeper customization."
+  - service: "Photography"
+    icon: "fa-camera-retro"
+    description: "When building this theme, we've paid close attention to how it looks on various screen sizes. Try it out on a phone or tablet!"
+  - service: "Graphic Design"
+    icon: "fa-paint-brush"
+    description: "All of our themes are crafted with care, and we strive to make your experience as one of our customers the best as possible."
+servicesDelay: 0.2

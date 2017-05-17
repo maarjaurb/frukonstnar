@@ -5,8 +5,8 @@
 # @fontTitle: 	Font of title
 
 image: "img/backgrounds/bg-header.jpg"
-title: "Frü Konstnär"
-subtitle: "..."
+title: "DEN HALTANDE TEATER"
+subtitle: "läka med lek"
 ref: "about"
 
 
@@ -14,7 +14,7 @@ ref: "about"
 
 # titleSize: 			"80px"
 # subtitleSize: 	"40px"
-#titleColor: 		"white"
-#subtitleColor: 	"white"
-#lineColor: 			"white"
-#buttonColor: 		"white"
+titleColor: 		"white"
+subtitleColor: 	"white"
+lineColor: 			"white"
+buttonColor: 		"white"
