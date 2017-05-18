@@ -12,8 +12,8 @@ elements:
     # Capiton and panel looks can be changed for each element, but also for all together further below with the global attributes
     # captionSize:            16
     # captionColor:           white
-    # captionBackgroundColor: "#FF4C3D"
-    # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
+    captionBackgroundColor:   "120, 76, 61, 0.95"
+    # panelBackgroundColor:   "255, 0, 0, 0.3"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
     # panelColor:             white
 
   - image: img/startingpoints/startingpoints2.jpg
@@ -31,8 +31,8 @@ elements:
 
     # captionSize:            16
     # captionColor:           white
-    # captionBackgroundColor: "#FF4C3D"
-    # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
+    # captionBackgroundColor: "172, 76, 61, 0.95"
+    # panelBackgroundColor:   "182, 76, 61, 0.3"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
     # panelColor:             white
 
   - image: img/startingpoints/startingpoints4.jpg
@@ -43,23 +43,22 @@ elements:
 
     # captionSize:            16
     # captionColor:           white
-    # captionBackgroundColor: "#FF4C3D"
-    # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
+    captionBackgroundColor: "172, 76, 61, 0.50"
+    # panelBackgroundColor:   "182, 76, 61, 0.3"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
     # panelColor:             white
 
-  - image: ""
-    content: ""
-
+  - image: "img/startingpoints/middle.jpg"
 
   - image: img/startingpoints/startingpoints5.jpg
     captionTitle: GENERAD
     captionCategory: 
     content: >
+      DÅLIG
 
     # captionSize:            16
     # captionColor:           white
-    # captionBackgroundColor: "#FF4C3D"
-    # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
+    # captionBackgroundColor: "172, 76, 61, 0.95"
+    # panelBackgroundColor:   "182, 76, 61, 0.3"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
     # panelColor:             white
 
   - image: img/startingpoints/startingpoints6.jpg
@@ -70,8 +69,8 @@ elements:
 
     # captionSize:            16
     # captionColor:           white
-    # captionBackgroundColor: "#FF4C3D"
-    # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
+    # captionBackgroundColor: "172, 76, 61, 0.95"
+    # panelBackgroundColor:   "182, 76, 61, 0.3"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
     # panelColor:             white
 
   - image: img/startingpoints/startingpoints7.jpg
@@ -82,8 +81,8 @@ elements:
 
     # captionSize:            16
     # captionColor:           white
-    # captionBackgroundColor: "#FF4C3D"
-    # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
+    # captionBackgroundColor: "172, 76, 61, 0.95"
+    # panelBackgroundColor:   "182, 76, 61, 0.3"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
     # panelColor:             white
 
   - image: img/startingpoints/startingpoints8.jpg
@@ -94,15 +93,14 @@ elements:
 
     # captionSize:            16
     # captionColor:           white
-    # captionBackgroundColor: "#FF4C3D"
-    # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
+    # captionBackgroundColor: "172, 76, 61, 0.95"
+    # panelBackgroundColor:   "182, 76, 61, 0.3"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
     # panelColor:             white
-
-
 
 # backgroundColor:        white
 # titleSize:              50
 # titleColor:             "#333"
+titleMargin:            20px 0px 30px 0px
 # lineColor:              "#BA4C3D"
 # textSize:               18
 # textColor:              "#333"
