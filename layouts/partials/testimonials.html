@@ -1,0 +1,56 @@
+<style>
+{{ with .Site.Data.testimonials }}
+{{ if .backgroundImage }}
+#testimonials {
+    background-image: url({{ .backgroundImage }}) !important;
+}
+{{ end }}
+
+{{ if .opacity }}
+#testimonials .testimonials-carousel {
+    background-color: rgba( 0,0,0, {{ .opacity }}) !important;
+    border-radius: 20px;
+    color: white;
+}
+{{ end }}
+{{ end }}
+</style>
+
+<!-- Testomonials Section -->
+<section class="testimonials bg-gray" id="testimonials">
+    <div class="container wow fadeIn">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+                <div class="testimonials-carousel">
+                    <!-- NOTE: You can add more items to the carousel, or remove items you don't need! -->
+                    <!-- Testimonial Item 1 -->
+                    {{ range .Site.Data.testimonials.quotes}}
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <p class="lead">"{{ .lead }}"</p>
+                                <hr class="colored">
+                                <p class="quote">{{ .quote | markdownify }}</p>
+                                <div class="testimonial-info">
+                                    <div class="testimonial-img">
+                                        <img src="{{ .image }}" class="img-circle img-responsive" alt="">
+                                    </div>
+                                    <div class="testimonial-author">
+                                        <span class="name">{{ .author }}</span>
+                                        <p class="small">{{ .authorInfo }}</p>
+                                        <div class="stars">
+                                            {{ range (seq .stars) }}
+                                            <i class="fa fa-star"></i>
+                                            {{ end }}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -7,14 +7,11 @@
 <!-- NOTE: Use the .modern or .vintage class to the body element below to see different font pairings! -->
 <body id="page-top"{{ if or (eq .Site.Params.Style "modern") (eq .Site.Params.Style "vintage") }} class="{{ .Site.Params.Style }}"{{ end }}>
 
-    {{ partial "nav.html" . }}
+    
     {{ partial "hero.html" . }}
     {{ partial "startingpoints.html" . }}
+    {{ partial "testimonials.html" . }}
     {{ partial "aside.html" . }}
-    {{ partial "testimonials.html" . }} 
-
-    {{ partial "about.html" . }}
-    {{ partial "abilities.html" . }}
     {{ partial "footer.html" . }}
 
     <!-- Potential Addons

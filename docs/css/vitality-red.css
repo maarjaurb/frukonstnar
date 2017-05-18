@@ -109,7 +109,7 @@ p {
   line-height: 1.5;
 }
 p.lead {
-  font-family: "IM Fell English SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Nothing You Could Do", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   font-size: 24px;
@@ -120,7 +120,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "IM Fell English SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Nothing You Could Do", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -212,7 +212,7 @@ hr.colored {
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
-  font-family: "IM Fell English SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Nothing You Could Do", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   font-size: 24px;
@@ -326,7 +326,7 @@ header .intro-content {
   position: relative;
 }
 header .brand-name {
-  font-family: "IM Fell English SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Nothing You Could Do", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
@@ -451,7 +451,7 @@ aside.cta-quote div.quote p {
   display: block;
 }
 aside.cta-quote a.btn {
-  font-family: "IM Fell English SC";
+  font-family: "Nothing You Could Do";
   font-size: 18px;
 }
 aside.cta-quote hr {
@@ -531,7 +531,7 @@ aside.cta-quote .panel {
   display: inline-block;
 }
 .testimonials .testimonials-carousel .item .testimonial-info .testimonial-author .name {
-  font-family: "IM Fell English SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Nothing You Could Do", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -615,7 +615,7 @@ aside.cta-quote .panel {
   font-size: 40px;
   line-height: 40px;
   margin-bottom: 25px;
-  font-family: "IM Fell English SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Nothing You Could Do", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -670,7 +670,7 @@ aside.cta-quote .panel {
 #abilities p {
   color: #1B073D;
   font-size: 30px;
-  font-family: "IM Fell English SC";
+  font-family: "Nothing You Could Do";
   border: 0px solid #1B073D;
   border-radius: 100%;
   padding: 40px;
@@ -783,7 +783,7 @@ aside.cta-quote .panel {
   z-index: 1052;
 }
 .portfolio-modal h2 {
-  font-family: "IM Fell English SC";
+  font-family: "Nothing You Could Do";
 }
 .portfolio-modal h2.light {
   color: white;
@@ -793,7 +793,7 @@ aside.cta-quote .panel {
 }
 .portfolio-modal .topic {
   font-size: 30px;
-  font-family: "Josefin Sans";
+  font-family: "Quattrocento";
   color: #1B073D;
 }
 .portfolio-modal .infoline {
@@ -840,7 +840,7 @@ aside.cta-quote .panel {
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
-  font-family: "IM Fell English SC";
+  font-family: "Nothing You Could Do";
 }
 .mockup-carousel .owl-controls .owl-prev:hover,
 .mockup-carousel .owl-controls .owl-next:hover {
@@ -1261,7 +1261,7 @@ footer.footer .copyright p.small {
   }
 }
 body.modern {
-  font-family: "Josefin Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Quattrocento", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
 }
 body.modern h1,
@@ -1275,7 +1275,7 @@ body.modern p.lead,
 body.modern header .brand-name,
 body.modern .portfolio-carousel .project-name,
 body.modern .testimonials .testimonial-author .name {
-  font-family: "IM Fell English SC", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-family: "Nothing You Could Do", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   font-weight: 400 !important;
   text-transform: uppercase !important;
 }
@@ -1286,7 +1286,7 @@ body.modern .testimonials .owl-controls .owl-next {
   line-height: 55px !important;
 }
 body.vintage {
-  font-family: "Josefin Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Quattrocento", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
 }
 body.vintage h1,
@@ -1300,7 +1300,7 @@ body.vintage p.lead,
 body.vintage header .brand-name,
 body.vintage .portfolio-carousel .project-name,
 body.vintage .testimonials .testimonial-author .name {
-  font-family: "IM Fell English SC", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-family: "Nothing You Could Do", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   font-weight: 400 !important;
   text-transform: uppercase !important;
 }

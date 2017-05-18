@@ -1,13 +1,12 @@
-title: Different Faces of Fears
-subtitle: Here can you tell something about the fears
-
+title: "Rädslan har många ansikten:"
+subtitle: ""
 
 elements:
   - image: img/startingpoints/startingpoints1.jpg
     captionTitle: DUKTIG
-    captionCategory: RÄTT
+    captionCategory: 
     content: >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
+      RÄTT
 
 
     # Capiton and panel looks can be changed for each element, but also for all together further below with the global attributes
@@ -19,17 +18,15 @@ elements:
 
   - image: img/startingpoints/startingpoints2.jpg
     captionTitle: TILL LAGS
-    captionCategory: BORDE
+    captionCategory: 
     content: >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
-
+      BORDE
 
   - image: img/startingpoints/startingpoints3.jpg
     captionTitle: AGGRESSIV
-    captionCategory: FEL
+    captionCategory: 
     content: >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
-
+      FEL
 
 
     # captionSize:            16
@@ -40,9 +37,9 @@ elements:
 
   - image: img/startingpoints/startingpoints4.jpg
     captionTitle: FÖRMER
-    captionCategory: MÅSTE
+    captionCategory: 
     content: >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
+      MÅSTE
 
     # captionSize:            16
     # captionColor:           white
@@ -51,14 +48,13 @@ elements:
     # panelColor:             white
 
   - image: ""
+    content: ""
 
 
   - image: img/startingpoints/startingpoints5.jpg
     captionTitle: GENERAD
-    captionCategory: Wants to be invisible
+    captionCategory: 
     content: >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
-    video:
 
     # captionSize:            16
     # captionColor:           white
@@ -68,10 +64,9 @@ elements:
 
   - image: img/startingpoints/startingpoints6.jpg
     captionTitle: OFFER
-    captionCategory: DÅLIG
+    captionCategory: 
     content: >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
-    video:
+      DÅLIG
 
     # captionSize:            16
     # captionColor:           white
@@ -81,10 +76,9 @@ elements:
 
   - image: img/startingpoints/startingpoints7.jpg
     captionTitle: OROLIG
-    captionCategory: TVIVEL
+    captionCategory: 
     content: >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
-    video:
+      TVIVEL
 
     # captionSize:            16
     # captionColor:           white
@@ -94,10 +88,9 @@ elements:
 
   - image: img/startingpoints/startingpoints8.jpg
     captionTitle: LYCKAD
-    captionCategory: BRA
+    captionCategory: 
     content: >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sed non expedita officia quidem fugiat reprehenderit, dignissimos dolorem magnam alias optio culpa a neque eius laudantium ipsum, quae adipisci doloribus!
-    video:
+      BRA
 
     # captionSize:            16
     # captionColor:           white

@@ -13,7 +13,7 @@ ref: "about"
 # Additional Parameters
 
 # titleSize: 			"80px"
-# subtitleSize: 	"40px"
+subtitleSize: 	"30px"
 titleColor: 		"white"
 subtitleColor: 	"white"
 lineColor: 			"white"
