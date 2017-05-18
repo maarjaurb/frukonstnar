@@ -1,35 +1,22 @@
 image: "img/backgrounds/bg-header.jpg"
-details: # 2, 3 or 4 entries
-  - icon:   "fa-phone"
-    title:  "Phone"
-    text:   "+49-151-28075067<br>+49-163-7951207"
-  - icon:   "fa-map-marker"
-    title:  "Visit"
-    text:   Hauptstraße 25, 61239 Ober-Mörlen<br>Turiner Straße 21, 13347 Berlin"
-  - icon:   "fa-envelope"
-    title:  "Email"
-    text:   "lukaskoenig@spielsinn.net<br>michael@c2064.org"
 social:
-  - icon:   "fa-twitter"
-    link:   "#"
-  - icon:   "fa-linkedin"
-    link:   "#"
+  - icon:   "fa-facebook"
+    link:   "https://www.facebook.com/denhaltandeteatern/"
+  - icon:   "fa-youtube"
+    link:   "https://www.youtube.com/channel/UCOKogsrWZxx1qh3EIq_7qkg/videos"
   - icon:   "fa-github"
     link:   "#"
   - icon:   "fa-instagram"
     link:   "#"
-  - icon:   "fa-whatsapp"
-    link:   "#"
-impressumTitle: Impressum
+
+impressumTitle: Kontakt
 impressumText: >
-    <h4>------------- Anbieter -------------</h4>
-    Name<br>
-    Street<br>
-    ZIP / Town<br>
-    <h4>------------- Kontakt: -------------</h4>
+    <h4>------------- : -------------</h4>
+    Lunda By<br>
+    15396 Mölnbo<br>
+    <br>
+    <h4>------------- : -------------</h4>
     Telephone: +49 <br>
-    Email: ccb@michaelschmidt.berlin<br>
-    Jabber: lafisrap@trashserver.net<br>
-    Website: michaelschmidt.berlin<br>
+    Email: modermalin@telia.com<br>
     <h4 style="margin-bottom: 60px;"></h4>
-copyright: 2017 Your Name
+copyright: 2017 HomeyPages
