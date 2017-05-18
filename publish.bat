@@ -4,6 +4,6 @@ if %1.==. (
 	lessc static/less/vitality.less static/css/vitality-red.css
 	hugo
 	git add --all .
-	git commit -m "$1"
+	git commit -m "%1"
 	git push -u origin master
 )
