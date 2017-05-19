@@ -1,9 +1,9 @@
 quotes:
   - lead: VÄLKOMMEN TILL DEN HALTANDE TEATERN!
     quote: >
-      Det är här det sker!  
+      DET ÄR HÄR det sker!  
 
-      **Den haltande teatern** är arenan för utforskandet, medvetandegörandet av det inre, 
+      Den **haltande teatern** är arenan för utforskandet, medvetandegörandet av det inre, 
       det som är i mörkret blir belyst här!  
 
       Man kan också kort och gott kalla det för en LEKSTUGA.
@@ -103,10 +103,17 @@ quotes:
       Jag vill göra konst av det! Jag vill leka med det!  
 
       Jag vill sluta vara rädd för rädslan!  
-      
+
       Jag vill älska!
 
     image: 
     author: Frü Konstnär
     authorInfo: Malin Haraldsson
     stars: 
+
+titleSize:        32
+# titleColor:       "#1B073D"
+# lineColor:        "#700D00"
+textSize:         24
+# textColor:        "#1B073D"
+textAlign:        left
