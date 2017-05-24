@@ -2,11 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Frü Konstnär</title>
-    <link>https://maarjaurb.github.io/frukonstnar/index.xml</link>
+    <link>https://maarjaurb.github.io/frukonstnar/</link>
     <description>Recent content on Frü Konstnär</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>se-SE</language>
-    <atom:link href="https://maarjaurb.github.io/frukonstnar/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://maarjaurb.github.io/frukonstnar/index.xml" rel="self" type="application/rss+xml" />
+    
     
   </channel>
 </rss>
