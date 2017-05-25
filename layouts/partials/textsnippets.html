@@ -20,6 +20,12 @@
 }
 {{ end }}
 
+{{ if .titleMargin }}
+#textsnippets .container > h2 {
+    margin: {{ .titleMargin }} !important;
+}
+{{ end }}
+
 {{ if .lineColor }}
 #textsnippets .container > hr {
     border-color: {{ .lineColor }} !important;
@@ -76,11 +82,11 @@
     font-size: {{ mul .captionSize 0.75 }}px !important;
     line-height: {{ mul .captionSize 1.0 }}px !important;
 }
-.portfoliolist .mix .portfolio-wrapper .caption {
+#textsnippets .mix .portfolio-wrapper .caption {
     height: {{ add (mul .captionSize 2.5) 32 }}px !important;
     bottom: -{{ add (mul .captionSize 2.5) 32 }}px !important;
 }
-.portfoliolist .mix:hover .portfolio-wrapper .caption {
+#textsnippets .mix:hover .portfolio-wrapper .caption {
     bottom: 0px !important;
 }
 {{ end }}
@@ -101,124 +107,126 @@
 {{ end }}
 
 {{ if .panelBackgroundColor }}
-.portfolio-modal #grid-panel {
+.portfolio-modal #textsnippets-panel {box-shadow
     background-color: rgba( {{ .panelBackgroundColor }}, 0.3 ) !important;
     border-color: rgb( {{ .panelBackgroundColor }} );
 
 }
-.portfolio-modal #grid-panel h2 {
+.portfolio-modal #textsnippets-panel h2 {
     background-color: rgb( {{ .panelBackgroundColor }} ) !important;    
 }
 {{ end }}
 
 {{ if .panelColor }}
-.portfolio-modal #grid-panel h2 {
+.portfolio-modal #textsnippets-panel h2 {
     color: {{ .panelColor }} !important;
 }
 {{ end }}
 
 {{ if .panelTitleSize }}
-.portfolio-modal #grid-panel h2 {
+.portfolio-modal #textsnippets-panel h2 {
     font-size: {{ .panelTitleSize }}px !important;
     line-height: {{ mul .panelTitleSize 1.375 }}px !important;
 }
 {{ end }}
 
 {{ if .panelTitleColor }}
-.portfolio-modal #grid-panel h2 {
+.portfolio-modal #textsnippets-panel h2 {
     color: {{ .panelTitleColor }} !important;
 }
 {{ end }}
 
 {{ if .panelTextSize }}
-.portfolio-modal #grid-panel p {
+.portfolio-modal #textsnippets-panel p {
     font-size: {{ .panelTextSize }}px !important;
     line-height: {{ mul .panelTextSize 1.375 }}px !important;
 }
 {{ end }}
 
 {{ if .panelTextColor }}
-.portfolio-modal #grid-panel p {
+.portfolio-modal #textsnippets-panel p {
     color: {{ .panelTextColor }} !important;
 }
 {{ end }}
 
 
 {{ range $i, $e := .elements }}
-{{ if .panelBackgroundColor }}
-#gridModal{{ $i }} #grid-panel {
-    background-color: rgba( {{ .panelBackgroundColor }}, 0.3 ) !important;
-    border-color: rgb( {{ .panelBackgroundColor }} );
+    {{ if .panelBackgroundColor }}
+    #gridModal{{ $i }} #textsnippets-panel {
+        background-color: rgba( {{ .panelBackgroundColor }} ) !important;
+        border-color: rgba( {{ .panelBackgroundColor }} );
 
-}
-#gridModal{{ $i }} #grid-panel h2 {
-    background-color: rgb( {{ .panelBackgroundColor }} ) !important;    
-}
-{{ end }}
+    }
+    #gridModal{{ $i }} #textsnippets-panel h2 {
+        background-color: rgb( {{ .panelBackgroundColor }} ) !important;    
+    }
+    {{ end }}
 
-{{ if .panelColor }}
-#gridModal{{ $i }} #grid-panel h2 {
-    color: {{ .panelColor }} !important;
-}
-{{ end }}
-{{ end }}
+    {{ if .panelColor }}
+    #gridModal{{ $i }} #textsnippets-panel h2 {
+        color: {{ .panelColor }} !important;
+    }
+    {{ end }}
 
+    {{ if .captionSize }}
+    #textsnippets #portfolio{{ $i }} .caption-text .text-title {
+        font-size: {{ .captionSize }}px !important;
+        line-height: {{ mul .captionSize 1.175 }}px !important;
+    }
+    #textsnippets #portfolio{{ $i }} .caption-text .text-category {
+        font-size: {{ mul .captionSize 0.75 }}px !important;
+        line-height: {{ mul .captionSize 1.0 }}px !important;
+    }
+    #textsnippets #portfolio{{ $i }} .portfolio-wrapper .caption {
+        height: {{ add (mul .captionSize 2.5) 32 }}px !important;
+        bottom: -{{ add (mul .captionSize 2.5) 32 }}px !important;
+    }
+    #textsnippets #portfolio{{ $i }}:hover .portfolio-wrapper .caption {
+        bottom: 0px !important;
+    }
+    {{ end }}
+
+    {{ if .captionColor }}
+    #textsnippets #portfolio{{ $i }} .caption-text .text-title {
+        color: {{ .captionColor }} !important;
+    }
+    #textsnippets #portfolio{{ $i }} .caption-text .text-category {
+        color: {{ .captionColor }} !important;
+    }
+    {{ end }}
+
+    {{ if .captionBackgroundColor }}
+    #textsnippets #portfolio{{ $i }} .caption-bg {
+        background-color: rgba( {{ .captionBackgroundColor }} ) !important;
+    }
+    {{ end }}
+
+{{ end }}
 
 </style>
 
 <section id="textsnippets">
     <div class="container text-center wow fadeIn">
         <h2>{{ .title }}</h2>
-        <hr class="colored">
         <p>{{ .subtitle | markdownify }}</p>
-        <div class="row content-row">
-            <div class="col-lg-12">
-                <ul id="filters" class="nav nav-tabs">
-                {{ $all := .all }}
-                {{ range $i, $e := .filters }}
-                  <li{{ if eq $i 0 }} class="active"{{ end }}><a data-toggle="tab" href="#filters-{{ .name | urlize }}">{{ .name }}</a></li>
-                {{ end }}
-                </ul>
-                <div class="tab-content">
-                {{ range $i, $e := .filters }}
-                    <div id="filters-{{ .name | urlize }}" class="tab-pane fade{{ if eq $i 0 }} in active{{ end }}">
-                        <div class="portfolio-filter">
-                            <ul id="filters" class="clearfix">
-                                {{ range $j, $el := .topics }}
-                                <li>
-                                    {{ if eq $j 0 }}
-                                    <span class="filter active" data-filter=".{{ . | urlize }}">{{ $all }}</span>
-                                    {{ else }}
-                                    <span class="filter" data-filter=".{{ . | urlize }}">{{ . }}</span>
-                                    {{ end }}
-                                </li>
-                                {{ end }}
-                            </ul>
-                        </div>
-                    </div>
-                {{ end }}
-                </div>
-            </div>
-        </div>
         <div class="row">
             <div class="col-lg-12">
-                <div class="portfoliolist">
+                <div id="textsnippetslist">
                     <!-- NOTE: You can add more items to the grid, or remove items you don't need! -->
                     {{ range $i, $e := .elements }}
-                    <div class="mix {{ range .filters }}{{ . | urlize }} {{ end }}" id="portfolio{{ $i }}" href="#" title="Client Name" checkbox="{{ $i }}">
+                    <div class="mix {{ range .filters }}{{ . | replaceRE "[ ÄäÀàÁáÂâÃãÅåǍǎĄąĂăÆæĀāÇçĆćĈĉČčĎđĐďðÈèÉéÊêËëĚěĘęĖėĒēĜĝĢģĞğĤĥÌìÍíÎîÏïıĪīĮįĴĵĶķĹĺĻļŁłĽľÑñŃńŇňŅņÖöÒòÓóÔôÕõŐőØøŒœŔŕŘřẞßŚśŜŝŞşŠšȘșŤťŢţÞþȚțÜüÙùÚúÛûŰűŨũŲųŮůŪūŴŵÝýŸÿŶŷŹźŽžŻż]" "-" }} {{ end }}" id="portfolio{{ $i }}" {{ if not .content }}style="box-shadow: none"{{ end }} href="#">
                         <div class="portfolio-wrapper">
                             <a href="#gridModal{{ $i }}" data-toggle="modal">
                                 <img src="{{ .image }}" alt="">
+                                {{ if .content }}
                                 <div class="caption">
                                     <div class="caption-text">
                                         <a class="text-title">{{ .captionTitle }}</a>
                                         <span class="text-category">{{ .captionCategory }}</span>
-                                        <div class="checkbox checkbox-modal">
-                                          <label><input type="checkbox" value="" checkbox="{{ $i }}" img="{{ .image }}" img-id="{{ .imageId }}"></label>
-                                        </div>
                                     </div>
                                     <div class="caption-bg"></div>
                                 </div>
+                                {{ end }}
                             </a>
                         </div>
                     </div>
@@ -231,19 +239,20 @@
 </section>
 
 {{ range $i, $e := .elements }}
+{{ if .content }}
 <div class="portfolio-modal modal fade" id="gridModal{{ $i }}" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('{{ .image }}')">
     <div class="modal-content" data-dismiss="modal">
-    </div>
-    <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-            <div class="rl">
-            </div>
+        <div id="textsnippets-panel">
+            <h2>{{ .captionTitle }}</h2>
+            <p>{{ .content | markdownify }}</p>
+            {{ if .video }}
+            <video controls>
+                <source src="{{ .video }}" type="video/mp4">
+            </video>
+            {{ end }}
         </div>
     </div>
-    <div class="checkbox checkbox-modal">
-      <label><input type="checkbox" value="" checkbox="{{ $i }}"></label>
-    </div>
-
 </div>
+{{ end }}
 {{ end }}
 {{ end }}

@@ -1,225 +1,114 @@
-title: Image Gallery
-subtitle: "Basic: Choose up to 5 photos, Plus: Choose up to 10, Premium: Any number"
-
-filters:
-  - name: "Nature"
-    topics: [
-      Nature,  # First entry here is whole topic, shown as "all"
-      Flowers,
-      Animals,
-      Trees,
-      Water,
-      Sky,
-      Drops,
-      Sunlight
-    ]
-  - name: "Time"
-    topics: [
-      Time,
-      Spring,
-      Summer,
-      Autumn,
-      Winter,
-      Morning,
-      Evening
-    ]
-  - name: "In the House"
-    topics: [
-      Inhouse,
-      Objects
-    ]
-all: Alle
+title: "Rädslan har många ansikten:"
+subtitle: ""
 
 elements:
-  - image: img/gallery/bird.jpg
-    imageId: 1001
-    captionTitle: Bird
-    captionCategory: ...
-    filters:
-      - Nature
-      - Animals
-      - Spring
-    # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
+  - image: img/startingpoints/startingpoints1.jpg
+    captionTitle: DUKTIG
+    captionCategory: 
+    content: >
+      RÄTT
+
+
+    # Capiton and panel looks can be changed for each element, but also for all together further below with the global attributes
+    # captionSize:            16
+    # captionColor:           white
+    captionBackgroundColor:   "190, 80, 40, 0.98"
+    # panelBackgroundColor:   "255, 0, 0, 0.3"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
     # panelColor:             white
 
-  - image: img/gallery/drops.jpg
-    imageId: 1002
-    captionTitle: Drops
-    captionCategory: ...
-    filters:
-      - Nature
-      - Autumn
-      - Water
-      - Drops
+  - image: img/startingpoints/startingpoints2.jpg
+    captionTitle: TILL LAGS
+    captionCategory: 
+    content: >
+      BORDE
 
-    # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
+
+    # Capiton and panel looks can be changed for each element, but also for all together further below with the global attributes
+    # captionSize:            16
+    # captionColor:           white
+    captionBackgroundColor:   "180, 70, 40, 0.98"
+    # panelBackgroundColor:   "255, 0, 0, 0.3"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
     # panelColor:             white
 
-  - image: img/gallery/drygrass.jpg
-    imageId: 1003
-    captionTitle: Dry Grass
-    captionCategory: ...
-    filters:
-      - Nature
-      - Autumn
-      - Flowers
-    # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
+  - image: img/startingpoints/startingpoints3.jpg
+    captionTitle: AGGRESSIV
+    captionCategory: 
+    content: >
+      FEL
+
+
+    # captionSize:            16
+    # captionColor:           white
+    captionBackgroundColor: "170, 60, 40, 0.98"
+    # panelBackgroundColor:   "182, 76, 61, 0.3"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
     # panelColor:             white
 
-  - image: img/gallery/flies.jpg
-    imageId: 1004
-    captionTitle: Flies
-    captionCategory: ...
-    filters:
-      - Nature
-      - Autumn
-      - Sunlight
-      - Evening
-      - Time
-    # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
+  - image: img/startingpoints/startingpoints4.jpg
+    captionTitle: FÖRMER
+    captionCategory: 
+    content: >
+      MÅSTE
+
+    # captionSize:            16
+    # captionColor:           white
+    captionBackgroundColor: "160, 50, 40, 0.98"
+    # panelBackgroundColor:   "182, 76, 61, 0.3"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
     # panelColor:             white
 
-  - image: img/gallery/forest.jpg
-    imageId: 1005
-    captionTitle: Forest
-    captionCategory: ...
-    filters:
-      - Nature
-      - Trees
-      - Sunlight
-      - Evening
-      - Time
-    # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
+  - image: "img/startingpoints/middle.jpg"
+
+  - image: img/startingpoints/startingpoints5.jpg
+    captionTitle: GENERAD
+    captionCategory: 
+    content: >
+      DÅLIG
+
+    # captionSize:            16
+    # captionColor:           white
+    captionBackgroundColor: "150, 40, 40, 0.98"
+    # panelBackgroundColor:   "182, 76, 61, 0.3"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
     # panelColor:             white
 
-  - image: img/gallery/globe.jpg
-    imageId: 1006
-    captionTitle: Globe
-    captionCategory: ...
-    filters:
-      - Inhouse
-      - Objects
+  - image: img/startingpoints/startingpoints6.jpg
+    captionTitle: OFFER
+    captionCategory: 
+    content: >
+      DÅLIG
 
-    # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
+    # captionSize:            16
+    # captionColor:           white
+    captionBackgroundColor: "140, 30, 40, 0.98"
+    # panelBackgroundColor:   "182, 76, 61, 0.3"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
     # panelColor:             white
 
-  - image: img/gallery/ice.jpg
-    imageId: 1007
-    captionTitle: Ice
-    captionCategory: ...
-    filters:
-      - Nature
-      - Water
-      - Winter
-    # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
+  - image: img/startingpoints/startingpoints7.jpg
+    captionTitle: OROLIG
+    captionCategory: 
+    content: >
+      TVIVEL
+
+    # captionSize:            16
+    # captionColor:           white
+    captionBackgroundColor: "130, 20, 40, 0.98"
+    # panelBackgroundColor:   "182, 76, 61, 0.3"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
     # panelColor:             white
 
-  - image: img/gallery/morning.jpg
-    imageId: 1008
-    captionTitle: Morning
-    captionCategory: ...
-    filters:
-      - Nature
-      - Trees
-      - Autumn
-      - Morning
-      - Time
+  - image: img/startingpoints/startingpoints8.jpg
+    captionTitle: LYCKAD
+    captionCategory: 
+    content: >
+      BRA
 
-    # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
+    # captionSize:            16
+    # captionColor:           white
+    captionBackgroundColor: "120, 10, 40, 0.98"
+    # panelBackgroundColor:   "182, 76, 61, 0.3"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
     # panelColor:             white
-
-  - image: img/gallery/pastel.jpg
-    imageId: 1009
-    captionTitle: Pastel
-    captionCategory: ...
-    filters:
-      - Nature
-      - Water
-    # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
-    # panelColor:             white
-
-  - image: img/gallery/pink.jpg
-    imageId: 1010
-    captionTitle: Pink
-    captionCategory: ...
-    filters:
-      - Nature
-      - Flowers
-      - Spring
-    # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
-    # panelColor:             white
-
-  - image: img/gallery/rain.jpg
-    imageId: 1011
-    captionTitle: Rain
-    captionCategory: ...
-    filters:
-      - Nature
-      - Water
-      - Drops
-    # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
-    # panelColor:             white
-
-  - image: img/gallery/rose.jpg
-    imageId: 1012
-    captionTitle: Rose
-    captionCategory: ...
-    filters:
-      - Nature
-      - Flowers
-      - Summer
-      - Time
-    # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
-    # panelColor:             white
-
-  - image: img/gallery/sea.jpg
-    imageId: 1013
-    captionTitle: Sea
-    captionCategory: ...
-    filters:
-      - Nature
-      - Water
-      - Sky
-    # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
-    # panelColor:             white
-
-  - image: img/gallery/sky.jpg
-    imageId: 1014
-    captionTitle: Sky
-    captionCategory: ...
-    filters:
-      - Nature
-      - Water
-      - Sky
-    # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
-    # panelColor:             white
-
-  - image: img/gallery/tree.jpg
-    imageId: 1015
-    captionTitle: Tree
-    captionCategory: ...
-    filters:
-      - Nature
-      - Trees
-      - Morning
-      - Time
-    # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
-    # panelColor:             white
-
-  - image: img/gallery/wave.jpg
-    imageId: 1016
-    captionTitle: Wave
-    captionCategory: ...
-    filters:
-      - Nature
-      - Water
-    # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
-    # panelColor:             white
-
 
 # backgroundColor:        white
 # titleSize:              50
 # titleColor:             "#333"
+titleMargin:            20px 0px 30px 0px
 # lineColor:              "#BA4C3D"
 # textSize:               18
 # textColor:              "#333"
@@ -230,13 +119,10 @@ elements:
 
 # captionSize:            16
 # captionColor:           white
-# captionBackgroundColor: "#BA4C3D"
+# captionBackgroundColor: "#FF4C3D"
 # panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
 # panelColor:             white
 # panelTitleSize:         60
 # panelTitleColor:        blue
 # panelTextSize:          20
 # panelTextColor:         blue
-
-
-
