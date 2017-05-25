@@ -211,7 +211,7 @@
         <p>{{ .subtitle | markdownify }}</p>
         <div class="row">
             <div class="col-lg-12">
-                <div class="portfoliolist">
+                <div id="portfoliolist">
                     <!-- NOTE: You can add more items to the grid, or remove items you don't need! -->
                     {{ range $i, $e := .elements }}
                     <div class="mix {{ range .filters }}{{ . | replaceRE "[ ÄäÀàÁáÂâÃãÅåǍǎĄąĂăÆæĀāÇçĆćĈĉČčĎđĐďðÈèÉéÊêËëĚěĘęĖėĒēĜĝĢģĞğĤĥÌìÍíÎîÏïıĪīĮįĴĵĶķĹĺĻļŁłĽľÑñŃńŇňŅņÖöÒòÓóÔôÕõŐőØøŒœŔŕŘřẞßŚśŜŝŞşŠšȘșŤťŢţÞþȚțÜüÙùÚúÛûŰűŨũŲųŮůŪūŴŵÝýŸÿŶŷŹźŽžŻż]" "-" }} {{ end }}" id="portfolio{{ $i }}" {{ if not .content }}style="box-shadow: none"{{ end }} href="#">

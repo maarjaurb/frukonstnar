@@ -51,23 +51,23 @@
 				max-width:100%;
 				position: relative;
 				-webkit-filter: grayscale(0);
-				filter: grayscale(1);
+				filter: grayscale(0);
 				.transition-all;
 				&:hover {
-					-webkit-filter: grayscale(0);
-					filter: grayscale(0);
+					-webkit-filter: grayscale(1);
+					filter: grayscale(1);
 				}
 			}
 
 			.caption {
 				position: absolute;
 				width: 100%;
-				height: 100%;
-				bottom: 0px;
+				height: 75px;
+				bottom: -75px;
 				.transition-all;
 
 				.caption-bg {
-					background: rgba(182, 76, 61, 0.85);
+					background: @themePrimary;
 					width: 100%;
 					height:100%;
 					position: absolute;
@@ -98,7 +98,7 @@
 		&:hover {
 			.portfolio-wrapper {
 				.caption {
-					bottom: -100%;
+					bottom: 0px;
 				}
 			}
 		}
@@ -108,12 +108,12 @@
 
 /*  #Mobile (Portrait) - Note: Design for a width of 320px */
 @media only screen and (max-width: 767px) {
-
+	
 	#portfoliolist .mix {
 		width:48%;
 		margin:1%;
-	}
-
+	}		
+	
 }
 
 
