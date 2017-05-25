@@ -211,7 +211,7 @@
         <p>{{ .subtitle | markdownify }}</p>
         <div class="row">
             <div class="col-lg-12">
-                <div class="portfoliolist">
+                <div id="fearslist">
                     <!-- NOTE: You can add more items to the grid, or remove items you don't need! -->
                     {{ range $i, $e := .elements }}
                     <div class="mix {{ range .filters }}{{ . | replaceRE "[ ÄäÀàÁáÂâÃãÅåǍǎĄąĂăÆæĀāÇçĆćĈĉČčĎđĐďðÈèÉéÊêËëĚěĘęĖėĒēĜĝĢģĞğĤĥÌìÍíÎîÏïıĪīĮįĴĵĶķĹĺĻļŁłĽľÑñŃńŇňŅņÖöÒòÓóÔôÕõŐőØøŒœŔŕŘřẞßŚśŜŝŞşŠšȘșŤťŢţÞþȚțÜüÙùÚúÛûŰűŨũŲųŮůŪūŴŵÝýŸÿŶŷŹźŽžŻż]" "-" }} {{ end }}" id="portfolio{{ $i }}" {{ if not .content }}style="box-shadow: none"{{ end }} href="#">
@@ -242,8 +242,8 @@
 {{ if .content }}
 <div class="portfolio-modal modal fade" id="gridModal{{ $i }}" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('{{ .image }}')">
     <div class="modal-content" data-dismiss="modal">
-        <div id="grid-panel">
-            <h2>{{ .captionTitle2 }}</h2>
+        <div id="fears-panel">
+            <h2>{{ .captionTitle }}</h2>
             <p>{{ .content | markdownify }}</p>
             {{ if .video }}
             <video controls>

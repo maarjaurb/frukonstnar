@@ -1021,6 +1021,136 @@ aside.cta-quote .panel {
 .topics {
   display: none;
 }
+#fears {
+  /*  #Mobile (Portrait) - Note: Design for a width of 320px */
+}
+#fears .portfolio-filter {
+  display: inline-block;
+}
+#fears .portfolio-filter #filters {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+#fears .portfolio-filter #filters li {
+  display: inline-block;
+}
+#fears .portfolio-filter #filters li .filter {
+  display: block;
+  cursor: pointer;
+  padding: 10px 15px;
+  margin: 2px;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-size: 12px;
+  color: #1B073D;
+  background: transparent;
+  border: 1px solid #1B073D;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+#fears .portfolio-filter #filters li .filter.active {
+  background-color: #BA4C3D;
+  color: white;
+  border-color: #BA4C3D;
+}
+#fears #fearslist .mix {
+  width: 31%;
+  margin: 1%;
+  display: none;
+  float: left;
+  overflow: hidden;
+  box-shadow: 2px 2px 10px 2px rgba(27, 7, 61, 0.25);
+}
+#fears #fearslist .mix .portfolio-wrapper {
+  overflow: hidden;
+  position: relative !important;
+  background: #1B073D;
+  cursor: pointer;
+}
+#fears #fearslist .mix .portfolio-wrapper img {
+  max-width: 100%;
+  position: relative;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(1);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+#fears #fearslist .mix .portfolio-wrapper img:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+#fears #fearslist .mix .portfolio-wrapper .caption {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+#fears #fearslist .mix .portfolio-wrapper .caption .caption-bg {
+  background: rgba(182, 76, 61, 0.85);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#fears #fearslist .mix .portfolio-wrapper .caption .caption-text {
+  color: white;
+  position: relative;
+  z-index: 500;
+  padding: 15px 8px;
+}
+#fears #fearslist .mix .portfolio-wrapper .caption .caption-text a.text-title {
+  color: white;
+}
+#fears #fearslist .mix .portfolio-wrapper .caption .caption-text .text-category {
+  display: block;
+  font-size: 12px;
+}
+#fears #fearslist .mix:hover .portfolio-wrapper .caption {
+  bottom: -100%;
+}
+@media only screen and (max-width: 767px) {
+  #fears #fearslist .mix {
+    width: 48%;
+    margin: 1%;
+  }
+}
+#fears-panel {
+  width: 90%;
+  max-width: 920px;
+  border: 0.2vw solid #BA4C3D;
+  border-radius: 1vw;
+  background-color: rgba(250, 216, 212, 0.6);
+  margin: 2vw auto;
+  overflow: hidden;
+}
+#fears-panel h2 {
+  background-color: #BA4C3D;
+  color: white;
+  padding: 2vw 0vw;
+}
+#fears-panel h3 {
+  background-color: #BA4C3D;
+  color: white;
+  padding: 1.5vw 0vw;
+}
+#fears-panel p {
+  font-size: 1.5vw;
+  color: black;
+  padding: 2vw 2vw;
+  text-align: justify;
+}
+#fears-panel video {
+  height: 25vw;
+  padding: 2vw 0vw;
+}
 .portfolio-filter {
   display: inline-block;
 }
@@ -1053,7 +1183,7 @@ aside.cta-quote .panel {
   color: white;
   border-color: #BA4C3D;
 }
-#portfoliolist .mix {
+#textsnippetslist .mix {
   width: 31%;
   margin: 1%;
   display: none;
@@ -1061,13 +1191,13 @@ aside.cta-quote .panel {
   overflow: hidden;
   box-shadow: 2px 2px 10px 2px rgba(27, 7, 61, 0.25);
 }
-#portfoliolist .mix .portfolio-wrapper {
+#textsnippetslist .mix .portfolio-wrapper {
   overflow: hidden;
   position: relative !important;
   background: #1B073D;
   cursor: pointer;
 }
-#portfoliolist .mix .portfolio-wrapper img {
+#textsnippetslist .mix .portfolio-wrapper img {
   max-width: 100%;
   position: relative;
   -webkit-filter: grayscale(0);
@@ -1076,11 +1206,11 @@ aside.cta-quote .panel {
   -moz-transition: all 0.5s;
   transition: all 0.5s;
 }
-#portfoliolist .mix .portfolio-wrapper img:hover {
+#textsnippetslist .mix .portfolio-wrapper img:hover {
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
 }
-#portfoliolist .mix .portfolio-wrapper .caption {
+#textsnippetslist .mix .portfolio-wrapper .caption {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1089,7 +1219,7 @@ aside.cta-quote .panel {
   -moz-transition: all 0.5s;
   transition: all 0.5s;
 }
-#portfoliolist .mix .portfolio-wrapper .caption .caption-bg {
+#textsnippetslist .mix .portfolio-wrapper .caption .caption-bg {
   background: rgba(182, 76, 61, 0.85);
   width: 100%;
   height: 100%;
@@ -1097,30 +1227,30 @@ aside.cta-quote .panel {
   top: 0;
   left: 0;
 }
-#portfoliolist .mix .portfolio-wrapper .caption .caption-text {
+#textsnippetslist .mix .portfolio-wrapper .caption .caption-text {
   color: white;
   position: relative;
   z-index: 500;
   padding: 15px 8px;
 }
-#portfoliolist .mix .portfolio-wrapper .caption .caption-text a.text-title {
+#textsnippetslist .mix .portfolio-wrapper .caption .caption-text a.text-title {
   color: white;
 }
-#portfoliolist .mix .portfolio-wrapper .caption .caption-text .text-category {
+#textsnippetslist .mix .portfolio-wrapper .caption .caption-text .text-category {
   display: block;
   font-size: 12px;
 }
-#portfoliolist .mix:hover .portfolio-wrapper .caption {
+#textsnippetslist .mix:hover .portfolio-wrapper .caption {
   bottom: -100%;
 }
 /*  #Mobile (Portrait) - Note: Design for a width of 320px */
 @media only screen and (max-width: 767px) {
-  #portfoliolist .mix {
+  #textsnippetslist .mix {
     width: 48%;
     margin: 1%;
   }
 }
-#grid-panel {
+#textsnippets-panel {
   width: 90%;
   max-width: 920px;
   border: 0.2vw solid #BA4C3D;
@@ -1129,23 +1259,23 @@ aside.cta-quote .panel {
   margin: 2vw auto;
   overflow: hidden;
 }
-#grid-panel h2 {
+#textsnippets-panel h2 {
   background-color: #BA4C3D;
   color: white;
   padding: 2vw 0vw;
 }
-#grid-panel h3 {
+#textsnippets-panel h3 {
   background-color: #BA4C3D;
   color: white;
   padding: 1.5vw 0vw;
 }
-#grid-panel p {
+#textsnippets-panel p {
   font-size: 1.5vw;
   color: black;
   padding: 2vw 2vw;
   text-align: justify;
 }
-#grid-panel video {
+#textsnippets-panel video {
   height: 25vw;
   padding: 2vw 0vw;
 }
