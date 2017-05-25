@@ -5,7 +5,7 @@
 #--------------------------------------------------------------
 BaseURL = "https://maarjaurb.github.io/frukonstnar/"
 LanguageCode = "se-SE"
-Title = "Frü Konstnär"
+Title = "Fru Konstnär"
 Theme = "hugo-university-theme"
 publishDir = "docs"
 
@@ -28,7 +28,7 @@ publishDir = "docs"
 	
 	Name = "Fru Konstnär"
 	Description = "..."
-	Favicon = "favicon.ico"
+	Favicon = "img/favicon.png"
 	Author = "HOMEY PAGES (homey.berlin)"
 	Brand = "Fru Konstnär"
 

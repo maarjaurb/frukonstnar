@@ -1,0 +1,128 @@
+title: "Rädslan har många ansikten:"
+subtitle: ""
+
+elements:
+  - image: img/startingpoints/startingpoints1.jpg
+    captionTitle: DUKTIG
+    captionCategory: 
+    content: >
+      RÄTT
+
+
+    # Capiton and panel looks can be changed for each element, but also for all together further below with the global attributes
+    # captionSize:            16
+    # captionColor:           white
+    captionBackgroundColor:   "190, 80, 40, 0.98"
+    # panelBackgroundColor:   "255, 0, 0, 0.3"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
+    # panelColor:             white
+
+  - image: img/startingpoints/startingpoints2.jpg
+    captionTitle: TILL LAGS
+    captionCategory: 
+    content: >
+      BORDE
+
+
+    # Capiton and panel looks can be changed for each element, but also for all together further below with the global attributes
+    # captionSize:            16
+    # captionColor:           white
+    captionBackgroundColor:   "180, 70, 40, 0.98"
+    # panelBackgroundColor:   "255, 0, 0, 0.3"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
+    # panelColor:             white
+
+  - image: img/startingpoints/startingpoints3.jpg
+    captionTitle: AGGRESSIV
+    captionCategory: 
+    content: >
+      FEL
+
+
+    # captionSize:            16
+    # captionColor:           white
+    captionBackgroundColor: "170, 60, 40, 0.98"
+    # panelBackgroundColor:   "182, 76, 61, 0.3"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
+    # panelColor:             white
+
+  - image: img/startingpoints/startingpoints4.jpg
+    captionTitle: FÖRMER
+    captionCategory: 
+    content: >
+      MÅSTE
+
+    # captionSize:            16
+    # captionColor:           white
+    captionBackgroundColor: "160, 50, 40, 0.98"
+    # panelBackgroundColor:   "182, 76, 61, 0.3"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
+    # panelColor:             white
+
+  - image: "img/startingpoints/middle.jpg"
+
+  - image: img/startingpoints/startingpoints5.jpg
+    captionTitle: GENERAD
+    captionCategory: 
+    content: >
+      DÅLIG
+
+    # captionSize:            16
+    # captionColor:           white
+    captionBackgroundColor: "150, 40, 40, 0.98"
+    # panelBackgroundColor:   "182, 76, 61, 0.3"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
+    # panelColor:             white
+
+  - image: img/startingpoints/startingpoints6.jpg
+    captionTitle: OFFER
+    captionCategory: 
+    content: >
+      DÅLIG
+
+    # captionSize:            16
+    # captionColor:           white
+    captionBackgroundColor: "140, 30, 40, 0.98"
+    # panelBackgroundColor:   "182, 76, 61, 0.3"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
+    # panelColor:             white
+
+  - image: img/startingpoints/startingpoints7.jpg
+    captionTitle: OROLIG
+    captionCategory: 
+    content: >
+      TVIVEL
+
+    # captionSize:            16
+    # captionColor:           white
+    captionBackgroundColor: "130, 20, 40, 0.98"
+    # panelBackgroundColor:   "182, 76, 61, 0.3"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
+    # panelColor:             white
+
+  - image: img/startingpoints/startingpoints8.jpg
+    captionTitle: LYCKAD
+    captionCategory: 
+    content: >
+      BRA
+
+    # captionSize:            16
+    # captionColor:           white
+    captionBackgroundColor: "120, 10, 40, 0.98"
+    # panelBackgroundColor:   "182, 76, 61, 0.3"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
+    # panelColor:             white
+
+# backgroundColor:        white
+# titleSize:              50
+# titleColor:             "#333"
+titleMargin:            20px 0px 30px 0px
+# lineColor:              "#BA4C3D"
+# textSize:               18
+# textColor:              "#333"
+# filterSize:             12
+# filterColor:            "#1B0728"
+# filterActiveColor:      "#BA4C3D"
+# filterActiveTextColor:  white
+
+# captionSize:            16
+# captionColor:           white
+# captionBackgroundColor: "#FF4C3D"
+# panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
+# panelColor:             white
+# panelTitleSize:         60
+# panelTitleColor:        blue
+# panelTextSize:          20
+# panelTextColor:         blue
