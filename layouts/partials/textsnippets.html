@@ -219,13 +219,13 @@
                 </ul>
                 <div class="tab-content">
                 {{ range $i, $e := .filters }}
-                    <div id="filters-{{ .name | urlize }}" class="tab-pane fade{{ if eq $i 0 }} in active{{ end }}">
+                    <div id="filters-{{ .name | replaceRE "[ ÄäÀàÁáÂâÃãÅåǍǎĄąĂăÆæĀāÇçĆćĈĉČčĎđĐďðÈèÉéÊêËëĚěĘęĖėĒēĜĝĢģĞğĤĥÌìÍíÎîÏïıĪīĮįĴĵĶķĹĺĻļŁłĽľÑñŃńŇňŅņÖöÒòÓóÔôÕõŐőØøŒœŔŕŘřẞßŚśŜŝŞşŠšȘșŤťŢţÞþȚțÜüÙùÚúÛûŰűŨũŲųŮůŪūŴŵÝýŸÿŶŷŹźŽžŻż]" "-" | urlize }}" class="tab-pane fade{{ if eq $i 0 }} in active{{ end }}">
                         <div class="portfolio-filter">
                             <ul id="filters" class="clearfix">
                                 {{ range $j, $el := .topics }}
                                 <li>
                                     {{ if eq $j 0 }}
-                                    <span class="filter active" data-filter=".{{ . | urlize }}">{{ $all }}</span>
+                                    <span class="filter active" data-filter=".{{ . | urlize }}">{{ . }}</span>
                                     {{ else }}
                                     <span class="filter" data-filter=".{{ . | urlize }}">{{ . }}</span>
                                     {{ end }}

@@ -4,18 +4,21 @@ subtitle: ""
 filters:
   - name: "Välkommen!"
     topics: [
-      Den Haltande Teatern,  # First entry here is whole topic, shown as "all"
+      Den Haltande Teatern,
+      TEST,
+      TEST1
 
     ]
   - name: "Om Malin"
     topics: [
-      Malin,
+      Om Malin,
+      Malin
 
     ]
   - name: "Inuti"
     topics: [
       Inuti,
-      Lek,
+      Lek
     ]
 all: Alle
 
@@ -26,6 +29,8 @@ elements:
     content: >
       RÄTT
     filters:
+      - Välkommen
+      - TEST
       - Den Haltande Teatern
       - Inuti
       - Lek
