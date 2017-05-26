@@ -216,7 +216,7 @@
                     {{ range $i, $e := .elements }}
                     <div class="mix {{ range .filters }}{{ . | replaceRE "[ ÄäÀàÁáÂâÃãÅåǍǎĄąĂăÆæĀāÇçĆćĈĉČčĎđĐďðÈèÉéÊêËëĚěĘęĖėĒēĜĝĢģĞğĤĥÌìÍíÎîÏïıĪīĮįĴĵĶķĹĺĻļŁłĽľÑñŃńŇňŅņÖöÒòÓóÔôÕõŐőØøŒœŔŕŘřẞßŚśŜŝŞşŠšȘșŤťŢţÞþȚțÜüÙùÚúÛûŰűŨũŲųŮůŪūŴŵÝýŸÿŶŷŹźŽžŻż]" "-" }} {{ end }}" id="portfolio{{ $i }}" {{ if not .content }}style="box-shadow: none"{{ end }} href="#">
                         <div class="portfolio-wrapper">
-                            <a href="#gridModal{{ $i }}" data-toggle="modal">
+                            <a href="#fearsModal{{ $i }}" data-toggle="modal">
                                 <img src="{{ .image }}" alt="">
                                 {{ if .content }}
                                 <div class="caption">
@@ -240,7 +240,7 @@
 
 {{ range $i, $e := .elements }}
 {{ if .content }}
-<div class="portfolio-modal modal fade" id="gridModal{{ $i }}" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('{{ .image }}')">
+<div class="portfolio-modal modal fade" id="fearsModal{{ $i }}" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('{{ .image }}')">
     <div class="modal-content" data-dismiss="modal">
         <div id="fears-panel">
             <h2>{{ .captionTitle }}</h2>

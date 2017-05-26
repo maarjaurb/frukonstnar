@@ -8,12 +8,12 @@ elements:
     captionCategory: 
     content: >
       ...
-    video: video/test.MP4
+    video: video/test.m4v
 
     # Capiton and panel looks can be changed for each element, but also for all together further below with the global attributes
     # captionSize:            16
     # captionColor:           white
-    captionBackgroundColor:   "190, 80, 40, 0.20"
+    captionBackgroundColor:   "190, 80, 40, 0.94"
     # panelBackgroundColor:   "255, 0, 0, 0.3"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
     # panelColor:             white
 
