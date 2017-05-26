@@ -9,6 +9,7 @@ elements:
     content: >
       ...
     video: video/Duktig.m4v
+    videoShot: video/Duktig.png
 
     # Capiton and panel looks can be changed for each element, but also for all together further below with the global attributes
     # captionSize:            16

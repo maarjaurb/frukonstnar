@@ -246,7 +246,7 @@
             <h2>{{ .captionTitle }}</h2>
             <p>{{ .content | markdownify }}</p>
             {{ if .video }}
-            <video controls>
+            <video controls preload="none"{{ if .videoShot }} poster="{{ .videoShot }}"{{ end }}>
                 <source src="{{ .video }}" type="video/mp4">
             </video>
             {{ end }}
