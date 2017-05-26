@@ -8,7 +8,7 @@ elements:
     captionCategory: 
     content: >
       ...
-    video: video/test.m4v
+    video: video/Duktig.m4v
 
     # Capiton and panel looks can be changed for each element, but also for all together further below with the global attributes
     # captionSize:            16
@@ -23,7 +23,7 @@ elements:
     captionCategory: 
     content: >
       BORDE2
-    video: video/test.MP4
+    video: video/test.m4v
 
     # Capiton and panel looks can be changed for each element, but also for all together further below with the global attributes
     # captionSize:            16
@@ -38,6 +38,7 @@ elements:
     captionCategory: 
     content: >
       FEL
+    video: video/Aggresiv.m4v
 
 
     # captionSize:            16
@@ -52,6 +53,7 @@ elements:
     captionCategory: 
     content: >
       MÅSTE
+    video: video/Förmer.m4v
 
     # captionSize:            16
     # captionColor:           white
@@ -67,6 +69,7 @@ elements:
     captionCategory: 
     content: >
       DÅLIG
+    video: video/Generad.m4v
 
     # captionSize:            16
     # captionColor:           white
@@ -80,6 +83,7 @@ elements:
     captionCategory: 
     content: >
       DÅLIG
+    video: video/Offer.m4v
 
     # captionSize:            16
     # captionColor:           white
@@ -93,6 +97,7 @@ elements:
     captionCategory: 
     content: >
       TVIVEL
+    video: video/Orolig.m4v
 
     # captionSize:            16
     # captionColor:           white
@@ -105,6 +110,7 @@ elements:
     captionCategory: 
     content: >
       BRA
+    video: video/Lyckad.m4v
 
     # captionSize:            16
     # captionColor:           white

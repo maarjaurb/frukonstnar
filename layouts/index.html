@@ -32,20 +32,11 @@
     {{ partial "testimonials.html" . }} 
 
     -->
-    <script>
-        firebaseSite = {
-            url: {{ .Site.BaseURL }}.replace(/http:\/\/|https:\/\//i, "").replace(/:1313|:|\//ig, "-"),
-            name: {{ .Site.Params.Name }},
-            description: {{ .Site.Params.Description }}
-        };
-    </script>
-
-
         <!-- Core Scripts -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.js"></script>
     <script src="js/classie.js"></script>
-    <script src="js/cbpAnimatedHeader.js"></script>
+    <!-- script src="js/cbpAnimatedHeader.js"></script> -->
     <script src="js/moment.min.js"></script>
 
     <!-- Plugin Scripts -->
@@ -63,14 +54,9 @@
     <script src="js/jqBootstrapValidation.js"></script>
 
     <!-- Vitality Theme Scripts -->
-    <script src="js/invisible-university.js"></script>
     <script src="js/vitality.js"></script>
+    <script src="js/malin.js"></script>
     
-    <!-- Firebase -->
-    <script src="https://www.gstatic.com/firebasejs/3.7.5/firebase.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase-database.js"></script>
 </body>
 
 </html>

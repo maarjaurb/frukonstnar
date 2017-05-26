@@ -216,7 +216,7 @@
                     {{ range $i, $e := .elements }}
                     <div class="mix {{ range .filters }}{{ . | replaceRE "[ ÄäÀàÁáÂâÃãÅåǍǎĄąĂăÆæĀāÇçĆćĈĉČčĎđĐďðÈèÉéÊêËëĚěĘęĖėĒēĜĝĢģĞğĤĥÌìÍíÎîÏïıĪīĮįĴĵĶķĹĺĻļŁłĽľÑñŃńŇňŅņÖöÒòÓóÔôÕõŐőØøŒœŔŕŘřẞßŚśŜŝŞşŠšȘșŤťŢţÞþȚțÜüÙùÚúÛûŰűŨũŲųŮůŪūŴŵÝýŸÿŶŷŹźŽžŻż]" "-" }} {{ end }}" id="portfolio{{ $i }}" {{ if not .content }}style="box-shadow: none"{{ end }} href="#">
                         <div class="portfolio-wrapper">
-                            <a href="#fearsModal{{ $i }}" data-toggle="modal">
+                            <a href="#fearsModal{{ $i }}" class="fearsCall" data-toggle="modal">
                                 <img src="{{ .image }}" alt="">
                                 {{ if .content }}
                                 <div class="caption">
