@@ -53,22 +53,22 @@
 {{ end }}
 
 {{ if .filterActiveColor }}
-#textsnippets #filters li .filter {
+#textsnippets #filters li .filter2 {
     color: {{ .filterActiveColor }} !important;
 }
 {{ end }}
 
 {{ if .filterActiveTextColor }}
-#textsnippets #filters li .filter.active {
+#textsnippets #filters li .filter2.active {
     color: {{ .filterActiveTextColor }} !important;
 }
 {{ end }}
 
 {{ if .filterBorderColor }}
-#textsnippets #filters li .filter.active {
+#textsnippets #filters li .filter2.active {
     background-color: {{ .filterBorderColor }} !important;
 }
-#textsnippets #filters li .filter {
+#textsnippets #filters li .filter2 {
     border-color: {{ .filterBorderColor }} !important;
 }
 {{ end }}
@@ -82,11 +82,11 @@
     font-size: {{ mul .captionSize 0.75 }}px !important;
     line-height: {{ mul .captionSize 1.0 }}px !important;
 }
-#textsnippets .mix .portfolio-wrapper .caption {
+#textsnippets .mix2 .portfolio-wrapper .caption {
     height: {{ add (mul .captionSize 2.5) 32 }}px !important;
     bottom: -{{ add (mul .captionSize 2.5) 32 }}px !important;
 }
-#textsnippets .mix:hover .portfolio-wrapper .caption {
+#textsnippets .mix2:hover .portfolio-wrapper .caption {
     bottom: 0px !important;
 }
 {{ end }}
@@ -211,7 +211,7 @@
         <p>{{ .subtitle | markdownify }}</p>
         <div class="row content-row">
             <div class="col-lg-12">
-                <ul id="filters" class="nav nav-tabs">
+                <ul id="filters" class="filters nav nav-tabs">
                 {{ $all := .all }}
                 {{ range $i, $e := .filters }}
                   <li{{ if eq $i 0 }} class="active"{{ end }}><a data-toggle="tab" href="#filters-{{ .name | replaceRE "[ ÄäÀàÁáÂâÃãÅåǍǎĄąĂăÆæĀāÇçĆćĈĉČčĎđĐďðÈèÉéÊêËëĚěĘęĖėĒēĜĝĢģĞğĤĥÌìÍíÎîÏïıĪīĮįĴĵĶķĹĺĻļŁłĽľÑñŃńŇňŅņÖöÒòÓóÔôÕõŐőØøŒœŔŕŘřẞßŚśŜŝŞşŠšȘșŤťŢţÞþȚțÜüÙùÚúÛûŰűŨũŲųŮůŪūŴŵÝýŸÿŶŷŹźŽžŻż]" "-" | urlize }}">{{ .name }}</a></li>
@@ -225,9 +225,9 @@
                                 {{ range $j, $el := .topics }}
                                 <li>
                                     {{ if eq $j 0 }}
-                                    <span class="filter active" data-filter=".{{ . | urlize }}">{{ . }}</span>
+                                    <span class="filter2 active" data-filter=".{{ . | urlize }}">{{ . }}</span>
                                     {{ else }}
-                                    <span class="filter" data-filter=".{{ . | urlize }}">{{ . }}</span>
+                                    <span class="filter2" data-filter=".{{ . | urlize }}">{{ . }}</span>
                                     {{ end }}
                                 </li>
                                 {{ end }}
@@ -243,7 +243,7 @@
                 <div id="textsnippetslist">
                     <!-- NOTE: You can add more items to the grid, or remove items you don't need! -->
                     {{ range $i, $e := .elements }}
-                    <div class="mix {{ range .filters }}{{ . | replaceRE "[ ÄäÀàÁáÂâÃãÅåǍǎĄąĂăÆæĀāÇçĆćĈĉČčĎđĐďðÈèÉéÊêËëĚěĘęĖėĒēĜĝĢģĞğĤĥÌìÍíÎîÏïıĪīĮįĴĵĶķĹĺĻļŁłĽľÑñŃńŇňŅņÖöÒòÓóÔôÕõŐőØøŒœŔŕŘřẞßŚśŜŝŞşŠšȘșŤťŢţÞþȚțÜüÙùÚúÛûŰűŨũŲųŮůŪūŴŵÝýŸÿŶŷŹźŽžŻż]" "-" | urlize }} {{ end }}" id="portfolio{{ $i }}" {{ if not .content }}style="box-shadow: none"{{ end }} href="#">
+                    <div class="mix2 {{ range .filters }}{{ . | replaceRE "[ ÄäÀàÁáÂâÃãÅåǍǎĄąĂăÆæĀāÇçĆćĈĉČčĎđĐďðÈèÉéÊêËëĚěĘęĖėĒēĜĝĢģĞğĤĥÌìÍíÎîÏïıĪīĮįĴĵĶķĹĺĻļŁłĽľÑñŃńŇňŅņÖöÒòÓóÔôÕõŐőØøŒœŔŕŘřẞßŚśŜŝŞşŠšȘșŤťŢţÞþȚțÜüÙùÚúÛûŰűŨũŲųŮůŪūŴŵÝýŸÿŶŷŹźŽžŻż]" "-" | urlize }} {{ end }}" id="portfolio{{ $i }}" {{ if not .content }}style="box-shadow: none"{{ end }} href="#">
                         <div class="portfolio-wrapper">
                             <a href="#textsnippetsModal{{ $i }}" data-toggle="modal">
                                 <img src="{{ .image }}" alt="">

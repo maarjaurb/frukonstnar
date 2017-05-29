@@ -24,7 +24,22 @@ $( () => {
     }
 	});
 
+	// If a modal is closed, stopp all videos
 	$("body").on('hidden.bs.modal', function () {
 		stopAllVideos();
-	})
+	});
+
+
+	// Switch on the first topic of each filter in textsnippets
+	var href = $( "#textsnippets .filters li:nth-child(1) a").attr("href");
+	$( href + " ul li span" ).trigger( "click" );
+
+	$( ".filters li").on( "click tap", function() {
+		var href = $( this ).find( "a" ).attr( "href" );
+		$( href + " ul li:nth-child(1) span" ).trigger( "click" ).addClass("active");		
+	});
+
+	$( ".filter").on( "click tap", function() {
+		$( this ).addClass("active");
+	});
 });

@@ -118,8 +118,7 @@ $(document).ready(function() {
 
             // MixItUp plugin
             $('#fearslist').mixItUp();
-            $('#textsnippetslist').mixItUp();
-
+            $('#textsnippetslist').mixItUp2();
         },
 
     };

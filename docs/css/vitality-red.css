@@ -1021,21 +1021,18 @@ aside.cta-quote .panel {
 .topics {
   display: none;
 }
-#fears {
-  /*  #Mobile (Portrait) - Note: Design for a width of 320px */
-}
-#fears .portfolio-filter {
+.portfolio-filter {
   display: inline-block;
 }
-#fears .portfolio-filter #filters {
+.portfolio-filter #filters {
   list-style: none;
   padding: 0;
   margin-bottom: 30px;
 }
-#fears .portfolio-filter #filters li {
+.portfolio-filter #filters li {
   display: inline-block;
 }
-#fears .portfolio-filter #filters li .filter {
+.portfolio-filter #filters li .filter {
   display: block;
   cursor: pointer;
   padding: 10px 15px;
@@ -1051,12 +1048,12 @@ aside.cta-quote .panel {
   -moz-transition: all 0.5s;
   transition: all 0.5s;
 }
-#fears .portfolio-filter #filters li .filter.active {
+.portfolio-filter #filters li .filter.active {
   background-color: #BA4C3D;
   color: white;
   border-color: #BA4C3D;
 }
-#fears #fearslist .mix {
+#fearslist .mix {
   width: 31%;
   margin: 1%;
   display: none;
@@ -1064,13 +1061,13 @@ aside.cta-quote .panel {
   overflow: hidden;
   box-shadow: 2px 2px 10px 2px rgba(27, 7, 61, 0.25);
 }
-#fears #fearslist .mix .portfolio-wrapper {
+#fearslist .mix .portfolio-wrapper {
   overflow: hidden;
   position: relative !important;
   background: #1B073D;
   cursor: pointer;
 }
-#fears #fearslist .mix .portfolio-wrapper img {
+#fearslist .mix .portfolio-wrapper img {
   max-width: 100%;
   position: relative;
   -webkit-filter: grayscale(0);
@@ -1079,11 +1076,11 @@ aside.cta-quote .panel {
   -moz-transition: all 0.5s;
   transition: all 0.5s;
 }
-#fears #fearslist .mix .portfolio-wrapper img:hover {
+#fearslist .mix .portfolio-wrapper img:hover {
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
 }
-#fears #fearslist .mix .portfolio-wrapper .caption {
+#fearslist .mix .portfolio-wrapper .caption {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1092,7 +1089,7 @@ aside.cta-quote .panel {
   -moz-transition: all 0.5s;
   transition: all 0.5s;
 }
-#fears #fearslist .mix .portfolio-wrapper .caption .caption-bg {
+#fearslist .mix .portfolio-wrapper .caption .caption-bg {
   background: rgba(182, 76, 61, 0.85);
   width: 100%;
   height: 100%;
@@ -1100,24 +1097,25 @@ aside.cta-quote .panel {
   top: 0;
   left: 0;
 }
-#fears #fearslist .mix .portfolio-wrapper .caption .caption-text {
+#fearslist .mix .portfolio-wrapper .caption .caption-text {
   color: white;
   position: relative;
   z-index: 500;
   padding: 15px 8px;
 }
-#fears #fearslist .mix .portfolio-wrapper .caption .caption-text a.text-title {
+#fearslist .mix .portfolio-wrapper .caption .caption-text a.text-title {
   color: white;
 }
-#fears #fearslist .mix .portfolio-wrapper .caption .caption-text .text-category {
+#fearslist .mix .portfolio-wrapper .caption .caption-text .text-category {
   display: block;
   font-size: 12px;
 }
-#fears #fearslist .mix:hover .portfolio-wrapper .caption {
+#fearslist .mix:hover .portfolio-wrapper .caption {
   bottom: -100%;
 }
+/*  #Mobile (Portrait) - Note: Design for a width of 320px */
 @media only screen and (max-width: 767px) {
-  #fears #fearslist .mix {
+  #fearslist .mix {
     width: 48%;
     margin: 1%;
   }
@@ -1162,7 +1160,7 @@ aside.cta-quote .panel {
 .portfolio-filter #filters li {
   display: inline-block;
 }
-.portfolio-filter #filters li .filter {
+.portfolio-filter #filters li .filter2 {
   display: block;
   cursor: pointer;
   padding: 10px 15px;
@@ -1178,12 +1176,12 @@ aside.cta-quote .panel {
   -moz-transition: all 0.5s;
   transition: all 0.5s;
 }
-.portfolio-filter #filters li .filter.active {
+.portfolio-filter #filters li .filter2.active {
   background-color: #BA4C3D;
   color: white;
   border-color: #BA4C3D;
 }
-#textsnippetslist .mix {
+#textsnippetslist .mix2 {
   width: 23%;
   margin: 1%;
   display: none;
@@ -1192,14 +1190,14 @@ aside.cta-quote .panel {
   box-shadow: 2px 2px 10px 2px rgba(27, 7, 61, 0.25);
   border-radius: 20%;
 }
-#textsnippetslist .mix .portfolio-wrapper {
+#textsnippetslist .mix2 .portfolio-wrapper {
   overflow: hidden;
   position: relative !important;
   background: #1B073D;
   cursor: pointer;
   border-radius: 20%;
 }
-#textsnippetslist .mix .portfolio-wrapper img {
+#textsnippetslist .mix2 .portfolio-wrapper img {
   max-width: 100%;
   position: relative;
   -webkit-filter: grayscale(0);
@@ -1208,11 +1206,11 @@ aside.cta-quote .panel {
   -moz-transition: all 0.5s;
   transition: all 0.5s;
 }
-#textsnippetslist .mix .portfolio-wrapper img:hover {
+#textsnippetslist .mix2 .portfolio-wrapper img:hover {
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
 }
-#textsnippetslist .mix .portfolio-wrapper .caption {
+#textsnippetslist .mix2 .portfolio-wrapper .caption {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1222,7 +1220,7 @@ aside.cta-quote .panel {
   -moz-transition: all 0.5s;
   transition: all 0.5s;
 }
-#textsnippetslist .mix .portfolio-wrapper .caption .caption-bg {
+#textsnippetslist .mix2 .portfolio-wrapper .caption .caption-bg {
   background: rgba(182, 76, 61, 0.85);
   width: 100%;
   height: 100%;
@@ -1230,26 +1228,26 @@ aside.cta-quote .panel {
   top: 0;
   left: 0;
 }
-#textsnippetslist .mix .portfolio-wrapper .caption .caption-text {
+#textsnippetslist .mix2 .portfolio-wrapper .caption .caption-text {
   color: white;
   position: relative;
   z-index: 500;
   padding: 15px 8px;
 }
-#textsnippetslist .mix .portfolio-wrapper .caption .caption-text a.text-title {
+#textsnippetslist .mix2 .portfolio-wrapper .caption .caption-text a.text-title {
   color: white;
 }
-#textsnippetslist .mix .portfolio-wrapper .caption .caption-text .text-category {
+#textsnippetslist .mix2 .portfolio-wrapper .caption .caption-text .text-category {
   display: block;
   font-size: 12px;
 }
-#textsnippetslist .mix:hover .portfolio-wrapper .caption {
+#textsnippetslist .mix2:hover .portfolio-wrapper .caption {
   opacity: 0.90;
   bottom: 0%;
 }
 /*  #Mobile (Portrait) - Note: Design for a width of 320px */
 @media only screen and (max-width: 767px) {
-  #textsnippetslist .mix {
+  #textsnippetslist .mix2 {
     width: 48%;
     margin: 1%;
   }
