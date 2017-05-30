@@ -24,6 +24,10 @@ all: Alle
 
 elements:
   - image: img/textsnippets/1.jpg
+    imageTitle: >
+      The Grand Opening!<br>
+      (with Video)
+    imageDate: "30. Mai 2017"
     captionTitle: Välkommen!
     captionCategory: 
     content: >
@@ -51,6 +55,9 @@ elements:
       BORDE
     filters:
       - Malin
+      - Om Malin
+      - TEST
+      - TEST1
 
 
     # Capiton and panel looks can be changed for each element, but also for all together further below with the global attributes

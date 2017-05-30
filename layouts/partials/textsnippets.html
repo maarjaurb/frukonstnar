@@ -246,7 +246,13 @@
                     <div class="mix2 {{ range .filters }}{{ . | replaceRE "[ ÄäÀàÁáÂâÃãÅåǍǎĄąĂăÆæĀāÇçĆćĈĉČčĎđĐďðÈèÉéÊêËëĚěĘęĖėĒēĜĝĢģĞğĤĥÌìÍíÎîÏïıĪīĮįĴĵĶķĹĺĻļŁłĽľÑñŃńŇňŅņÖöÒòÓóÔôÕõŐőØøŒœŔŕŘřẞßŚśŜŝŞşŠšȘșŤťŢţÞþȚțÜüÙùÚúÛûŰűŨũŲųŮůŪūŴŵÝýŸÿŶŷŹźŽžŻż]" "-" | urlize }} {{ end }}" id="portfolio{{ $i }}" {{ if not .content }}style="box-shadow: none"{{ end }} href="#">
                         <div class="portfolio-wrapper">
                             <a href="#textsnippetsModal{{ $i }}" data-toggle="modal">
-                                <img src="{{ .image }}" alt="">
+                                <img id="textsnippetsImg{{ $i }}" src="{{ .image }}" alt="">
+                                {{ if .imageTitle }}
+                                <div class="image-title"><span>{{ .imageTitle | markdownify }}</span></div>
+                                {{ end }}
+                                {{ if .imageDate }}
+                                <div class="image-date"><span>{{ .imageDate }}</span></div>
+                                {{ end }}
                                 {{ if .content }}
                                 <div class="caption">
                                     <div class="caption-text">
@@ -271,7 +277,7 @@
 
 {{ range $i, $e := .elements }}
 {{ if .content }}
-<div class="portfolio-modal modal fade" id="textsnippetsModal{{ $i }}" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('{{ .image }}')">
+<div class="portfolio-modal modal fade" id="textsnippetsModal{{ $i }}" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('{{ .image }}')" parent="#textsnippetsImg{{ $i }}">
     <div class="modal-content" data-dismiss="modal">
         <div id="textsnippets-panel">
             <h2>{{ .captionTitle }}</h2>

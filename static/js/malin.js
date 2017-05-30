@@ -25,8 +25,18 @@ $( () => {
 	});
 
 	// If a modal is closed, stopp all videos
-	$("body").on('hidden.bs.modal', function () {
+	$("body").on('hidden.bs.modal', function (e) {
 		stopAllVideos();
+
+		let parent = $( e.target ).attr( "parent" );
+
+		if( parent ) {
+			setTimeout( () => {
+				debugger;
+				$( parent ).trigger("mouseover");
+				$( parent ).trigger("mouseout");
+			}, 200)		
+		}
 	});
 
 

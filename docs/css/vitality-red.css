@@ -1149,18 +1149,16 @@ aside.cta-quote .panel {
   height: 25vw;
   padding: 2vw 0vw;
 }
-.portfolio-filter {
+#textsnippets .portfolio-filter {
   display: inline-block;
 }
-.portfolio-filter #filters {
+#textsnippets .portfolio-filter #filters {
+  text-align: center;
   list-style: none;
   padding: 0;
   margin-bottom: 30px;
 }
-.portfolio-filter #filters li {
-  display: inline-block;
-}
-.portfolio-filter #filters li .filter2 {
+#textsnippets .portfolio-filter #filters li .filter2 {
   display: block;
   cursor: pointer;
   padding: 10px 15px;
@@ -1176,10 +1174,21 @@ aside.cta-quote .panel {
   -moz-transition: all 0.5s;
   transition: all 0.5s;
 }
-.portfolio-filter #filters li .filter2.active {
+#textsnippets .portfolio-filter #filters li .filter2.active {
+  display: inline-block;
   background-color: #BA4C3D;
   color: white;
   border-color: #BA4C3D;
+}
+#textsnippets .nav-tabs > li {
+  float: none;
+  display: inline-block;
+}
+#textsnippets .nav-tabs {
+  text-align: center;
+}
+#textsnippets .tab-content {
+  margin-top: 15px;
 }
 #textsnippetslist .mix2 {
   width: 23%;
@@ -1200,7 +1209,7 @@ aside.cta-quote .panel {
 #textsnippetslist .mix2 .portfolio-wrapper img {
   max-width: 100%;
   position: relative;
-  -webkit-filter: grayscale(0);
+  -webkit-filter: grayscale(1);
   filter: grayscale(1);
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -1209,6 +1218,21 @@ aside.cta-quote .panel {
 #textsnippetslist .mix2 .portfolio-wrapper img:hover {
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
+}
+#textsnippetslist .mix2 .portfolio-wrapper .image-title,
+#textsnippetslist .mix2 .portfolio-wrapper .image-date {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  color: white;
+}
+#textsnippetslist .mix2 .portfolio-wrapper .image-title {
+  font-size: 1.2em;
+  bottom: 30px;
+}
+#textsnippetslist .mix2 .portfolio-wrapper .image-date {
+  font-size: 0.9em;
+  bottom: 10px;
 }
 #textsnippetslist .mix2 .portfolio-wrapper .caption {
   position: absolute;
