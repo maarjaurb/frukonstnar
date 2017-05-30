@@ -21,7 +21,7 @@
 	 * @extends jQuery
 	 */
 
-	$.MixItUp2 = function(){
+	$.mixItUp2 = function(){
 		var self = this;
 
 		self._execAction('_constructor', 0);
@@ -129,8 +129,8 @@
 	 * @override
 	 */
 
-	$.MixItUp2.prototype = {
-		constructor: $.MixItUp2,
+	$.mixItUp2.prototype = {
+		constructor: $.mixItUp2,
 
 		/* Static Properties
 		---------------------------------------------------------------------- */
@@ -159,7 +159,7 @@
 
 		extend: function(extension){
 			for(var key in extension){
-				$.MixItUp2.prototype[key] = extension[key];
+				$.mixItUp2.prototype[key] = extension[key];
 			}
 		},
 
@@ -174,7 +174,7 @@
 		 */
 
 		addAction: function(hook, name, func, priority){
-			$.MixItUp2.prototype._addHook('_actions', hook, name, func, priority);
+			$.mixItUp2.prototype._addHook('_actions', hook, name, func, priority);
 		},
 
 		/**
@@ -188,7 +188,7 @@
 		 */
 
 		addFilter: function(hook, name, func, priority){
-			$.MixItUp2.prototype._addHook('_filters', hook, name, func, priority);
+			$.mixItUp2.prototype._addHook('_filters', hook, name, func, priority);
 		},
 
 		/**
@@ -202,7 +202,7 @@
 		 */
 
 		_addHook: function(type, hook, name, func, priority){
-			var collection = $.MixItUp2.prototype[type],
+			var collection = $.mixItUp2.prototype[type],
 				obj = {};
 
 			priority = (priority === 1 || priority === 'post') ? 'post' : 'pre';
@@ -434,17 +434,17 @@
 
 		_bindHandlers: function(){
 			var self = this,
-				filters = $.MixItUp2.prototype._bound._filter,
-				sorts = $.MixItUp2.prototype._bound._sort;
+				filters = $.mixItUp2.prototype._bound._filter,
+				sorts = $.mixItUp2.prototype._bound._sort;
 
 			self._execAction('_bindHandlers', 0);
 
 			if(self.controls.live){
 				self._$body
-					.on('click.mixItUp.'+self._id, self.selectors.sort, function(){
+					.on('click.mixItUp2.'+self._id, self.selectors.sort, function(){
 						self._processClick($(this), 'sort');
 					})
-					.on('click.mixItUp.'+self._id, self.selectors.filter, function(){
+					.on('click.mixItUp2.'+self._id, self.selectors.filter, function(){
 						self._processClick($(this), 'filter');
 					});
 			} else {
@@ -452,13 +452,13 @@
 				self._$sortButtons = $(self.selectors.sort);
 				self._$filterButtons = $(self.selectors.filter);
 
-				self._$sortButtons.on('click.mixItUp.'+self._id, function(){
+				self._$sortButtons.on('click.mixItUp2.'+self._id, function(){
 					self._processClick($(this), 'sort');
 				});
 
 				// lafisrap: Do not react on clicks on featlist
-				if( self._id !== "fearslist" )
-					self._$filterButtons.on('click.mixItUp.'+self._id, function(){
+				//if( self._id !== "fearslist" )
+					self._$filterButtons.on('click.mixItUp2.'+self._id, function(){
 						self._processClick($(this), 'filter');
 					});
 			}
@@ -479,7 +479,7 @@
 		_processClick: function($button, type){
 			var self = this,
 				trackClick = function($button, type, off){
-					var proto = $.MixItUp2.prototype;
+					var proto = $.mixItUp2.prototype;
 
 					proto._handled['_'+type][self.selectors[type]] = (proto._handled['_'+type][self.selectors[type]] === undf) ?
 						1 :
@@ -1359,13 +1359,13 @@
 				el.dataset.bound = true;
 				self._targetsBound++;
 
-				$el.on('webkitTransitionEnd.mixItUp transitionend.mixItUp',function(e){
+				$el.on('webkitTransitionEnd.mixItUp2 transitionend.mixItUp2',function(e){
 					if(
 						(e.originalEvent.propertyName.indexOf('transform') > -1 ||
 						e.originalEvent.propertyName.indexOf('opacity') > -1) &&
 						$(e.originalEvent.target).is(self.selectors.target)
 					){
-						$el.off('.mixItUp');
+						$el.off('.mixItUp2');
 						el.dataset.bound = '';
 						self._targetDone();
 					}
@@ -1962,15 +1962,15 @@
 
 		destroy: function(hideAll){
 			var self = this,
-				filters = $.MixItUp2.prototype._bound._filter,
-				sorts = $.MixItUp2.prototype._bound._sort;
+				filters = $.mixItUp2.prototype._bound._filter,
+				sorts = $.mixItUp2.prototype._bound._sort;
 
 			self._execAction('destroy', 0, arguments);
 
 			self._$body
 				.add($(self.selectors.sort))
 				.add($(self.selectors.filter))
-				.off('.mixItUp');
+				.off('.mixItUp2');
 
 			for(var i = 0; i < self._$targets.length; i++){
 				var target = self._$targets[i];
@@ -1994,7 +1994,7 @@
 				delete sorts[self.selectors.sort];
 			}
 
-			delete $.MixItUp2.prototype._instances[self._id];
+			delete $.mixItUp2.prototype._instances[self._id];
 		}
 
 	};
@@ -2013,14 +2013,14 @@
 			dataReturn = [],
 			eachReturn,
 			_instantiate = function(domNode, settings){
-				var instance = new $.MixItUp2(),
+				var instance = new $.mixItUp2(),
 					rand = function(){
 						return ('00000'+(Math.random()*16777216<<0).toString(16)).substr(-6).toUpperCase();
 					};
 
 				instance._execAction('_instantiate', 0, arguments);
 
-				domNode.id = !domNode.id ? 'MixItUp'+rand() : domNode.id;
+				domNode.id = !domNode.id ? 'mixItUp2'+rand() : domNode.id;
 
 				if(!instance._instances[domNode.id]){
 					instance._instances[domNode.id] = instance;
@@ -2032,7 +2032,7 @@
 
 		eachReturn = this.each(function(){
 			if(args && typeof args[0] === 'string'){
-				var instance = $.MixItUp2.prototype._instances[this.id];
+				var instance = $.mixItUp2.prototype._instances[this.id];
 				if(args[0] === 'isLoaded'){
 					dataReturn.push(instance ? true : false);
 				} else {
@@ -2071,13 +2071,13 @@
 							var prop = styles[i];
 							break;
 						case 1:
-							var prop = $.MixItUp2.prototype._helpers._camelCase(prop);
+							var prop = $.mixItUp2.prototype._helpers._camelCase(prop);
 							break;
 						case 2:
 							var prop = prefix+styles[i];
 							break;
 						case 3:
-							var prop = $.MixItUp2.prototype._helpers._camelCase(prefix+styles[i]);
+							var prop = $.mixItUp2.prototype._helpers._camelCase(prefix+styles[i]);
 					}
 
 					if(
