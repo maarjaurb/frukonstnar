@@ -246,9 +246,14 @@
             <h2>{{ .captionTitle }}</h2>
             <p>{{ .content | markdownify }}</p>
             {{ if .video }}
-            <video controls preload="none"{{ if .videoShot }} poster="{{ .videoShot }}"{{ end }}>
-                <source src="{{ .video }}" type="video/mp4">
-            </video>
+            <div class="video-wrapper">
+                
+                <div class="control prev{{ if not .prev }} not-shown{{ end }}"{{ if .prev }} href="#fearsModal{{ add .prev -1 }}" data-toggle="modal"{{ end }}>&lt;&lt;</div>
+                <video controls preload="none"{{ if .videoShot }} poster="{{ .videoShot }}"{{ end }}>
+                    <source src="{{ .video }}" type="video/mp4">
+                </video>
+                <div class="control next{{ if not .next }} not-shown{{ end }}"{{ if .next }} href="#fearsModal{{ add .next -1 }}" data-toggle="modal"{{ end }}>&gt;&gt;</div>
+            </div>
             {{ end }}
         </div>
     </div>

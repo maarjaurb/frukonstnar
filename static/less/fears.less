@@ -145,8 +145,33 @@
 		text-align: justify;
 	}
 
+	.video-wrapper {
+		position: relative;
+		width: 48vw;
+		margin: 0 auto;
+
+		& > * {
+			float: left;
+		}
+
+		.prev, .next {
+			cursor: pointer;
+			line-height: 25vw;
+			font-size: 4vw;
+			font-weight: bold;
+			padding: 10px;
+			color: rgba(255,255,255,0.3);
+
+			&.not-shown {
+				color: rgba(0,0,0,0);
+			}
+		}
+	}
+
 	video {
 		height: 25vw;
 		padding: 2vw 0vw;
 	}
+
+
 }

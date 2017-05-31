@@ -1145,6 +1145,27 @@ aside.cta-quote .panel {
   padding: 2vw 2vw;
   text-align: justify;
 }
+#fears-panel .video-wrapper {
+  position: relative;
+  width: 48vw;
+  margin: 0 auto;
+}
+#fears-panel .video-wrapper > * {
+  float: left;
+}
+#fears-panel .video-wrapper .prev,
+#fears-panel .video-wrapper .next {
+  cursor: pointer;
+  line-height: 25vw;
+  font-size: 4vw;
+  font-weight: bold;
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.3);
+}
+#fears-panel .video-wrapper .prev.not-shown,
+#fears-panel .video-wrapper .next.not-shown {
+  color: rgba(0, 0, 0, 0);
+}
 #fears-panel video {
   height: 25vw;
   padding: 2vw 0vw;

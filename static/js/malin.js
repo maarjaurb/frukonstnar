@@ -9,26 +9,40 @@ $( () => {
     });
 	}
 
-	$( "video" ).on("loadeddata", (e) => console.log("Loaded video"+e.target));
-
-	// User presses on fear image -> start video
-	$( ".fearsCall ").on( "click tap", function() {
-		// Stopp all videos
-		stopAllVideos()
+	function startVideo() {		
+    console.log("Stopped all videos before start one.");
+		stopAllVideos();
 
 		// Start the current one
-    var v = $( $( this ).attr("href") ).find( "video" );
+    var h = $( this ).attr("href"),
+    		v = $( h ).find( "video" );
 
     v = v && v.get(0);
 
     if( v ) {
 	    v.currentTime = 0;
-	    v.play();    	
+	    v.play(); 
+
+	    console.log("Started video:"+h);   	
     }
+	}
+
+	$( "video" ).on("loadeddata", (e) => console.log("Loaded video"+e.target));
+
+	// User presses on fear image -> start video
+	$( ".fearsCall ").on( "click tap", function() {
+		startVideo.call(this);
 	});
+
+	$( ".video-wrapper .control").on( "click tap", function() {
+		setTimeout( () => startVideo.call(this), 500 );
+	});
+
+
 
 	// If a modal is closed, stopp all videos
 	$("body").on('hidden.bs.modal', function (e) {
+    console.log("Stopped all videos after hidden.");
 		stopAllVideos();
 
 		let parent = $( e.target ).attr( "parent" );
