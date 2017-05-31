@@ -1,0 +1,55 @@
+<!-- Quote Call to Action -->
+{{ with .Site.Data.calendar }}
+
+<style>
+{{ if .textSize }}
+	aside.cta-quote span.quote {
+		font-size: {{ .textSize }}px !important;
+		line-height: {{ mul .textSize 1.375 }}px !important;
+  }
+{{ end }}
+
+{{ if .textPadding }}
+	aside.cta-quote .panel {
+		padding: {{ mul .textPadding 0.266 }}px {{ mul .textPadding 0.666 }}px !important;
+  }
+{{ end }}
+
+{{ if .textColor }}
+	aside.cta-quote span.quote {
+		color: {{ .textColor }} !important;
+  }
+{{ end }}
+
+</style>
+
+
+<section id="calendar" style="background-image: url('{{ .backgroundImage }}'); position: relative;">
+		<div class="calendar-icon">
+			<a href="#calendar" class="page-scroll">
+				<img src="{{ .icon }}" width="{{ .iconSize }}" style="top: {{ .iconTop }}; left: {{ .iconLeft }};" />
+			</a>
+		</div>
+    <div class="container">
+			<div class="panel-group" id="accordion">
+				{{ range $i, $e := .events }}
+			  <div class="panel panel-default">
+			    <div class="panel-heading">
+			      <h4 class="panel-title">
+			        <a data-toggle="collapse" data-parent="#accordion" href="#calendar-collapse-{{ $i }}">
+			        	<span class="date">{{ .date }}</span>
+			        	<span class="title"><strong>{{ .title }}</strong></span>
+			      	</a>
+			      </h4>
+			    </div>
+			    <div id="calendar-collapse-{{ $i }}" class="panel-collapse collapse{{ if eq $i 0 }} in{{ end }}">
+			      <div class="panel-body">
+			      	{{ .text }}
+			      </div>
+			    </div>
+			  </div>
+			  {{ end }}
+			</div>    	
+    </div>
+</section>
+{{ end }}

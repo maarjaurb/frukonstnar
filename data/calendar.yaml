@@ -1,0 +1,32 @@
+# Change LESS Globals in file static/less/vitality.less for following items
+# @themeDark: 	Color of title and subtitle
+# @themePrimary: 	Color of double line and navigation button
+# @fontPrimary: Font of subtitle
+# @fontTitle: 	Font of title
+
+backgroundImage: img/calendar/dahabshore.jpg
+icon: img/calendar/calendar.ico
+iconTop: 	-80px
+iconLeft: 20px
+iconSize: 160
+events:
+  - title: Vuxen Collo
+    date: 22. - 28. July 2017
+    text: >
+      I wonder ...
+
+  - title: Sjöbis Summer Festival
+    date: 20. - 24. June 2017
+    text: >
+      Many things can happen here ...
+
+# Additional Parameters
+
+# textSize:     		36
+# textPadding:			60
+# textColor: 				"yellow"
+# textColorPrimary: "#700D00"
+# buttonSize:    		18
+# buttonColor: 			"white"
+# lineColor: 				"#700D00"
+# opacity: 					0.6

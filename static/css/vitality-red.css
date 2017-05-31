@@ -1693,3 +1693,18 @@ body.vintage .testimonials .owl-controls .owl-next {
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #dbcaf9;
 }
+#calendar.closed {
+  padding: 0px;
+}
+#calendar .panel-group {
+  width: 90%;
+  max-width: 600px;
+}
+#calendar .calendar-icon img {
+  position: absolute;
+  cursor: pointer;
+}
+#calendar .panel-title span {
+  display: inline-block;
+  width: 200px;
+}

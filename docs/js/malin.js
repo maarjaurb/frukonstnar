@@ -1,5 +1,8 @@
 $( () => {
 
+	///////////////////////////////////////////////////////////////////////////////////
+	// Generell: Handling Videos
+	//
 	function stopAllVideos() {
     $("video").each( function(e) {
         $( this ).get(0).pause();
@@ -39,7 +42,9 @@ $( () => {
 		}
 	});
 
-
+	//////////////////////////////////////////////////////////////////////////////////////
+	// Handling Textsnippets
+	//
 	// Switch on the first topic of each filter in textsnippets
 	var href = $( "#textsnippets .filters li:nth-child(1) a").attr("href");
 	$( href + " ul li span" ).trigger( "click" );
@@ -52,4 +57,16 @@ $( () => {
 	$( ".filter").on( "click tap", function() {
 		$( this ).addClass("active");
 	});
+
+	//////////////////////////////////////////////////////////////////////////////////////////
+	// Handling Calendar
+	//
+	let cal = $( "#calendar" );
+
+	cal.addClass("closed");
+	$( ".container", cal ).hide();
+	$( ".calendar-icon", cal ).on( "click tap", function(e) {
+		cal.toggleClass("closed");
+		$( ".container", cal ).fadeToggle();
+	}); 
 });
