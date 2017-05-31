@@ -13,45 +13,6 @@
     color: white;
 }
 {{ end }}
-
-{{ if .titleSize }}
-#testimonials p.lead {
-    font-size: {{ .titleSize }}px !important;
-    line-height: {{ mul .titleSize 1.375 }}px !important;
-}
-{{ end }}
-
-{{ if .titleColor }}
-#testimonials p.lead {
-    color: {{ .titleColor }} !important;
-}
-{{ end }}
-
-{{ if .lineColor }}
-#testimonials hr.colored {
-        border-color: {{ .lineColor }} !important;
-  }
-{{ end }}
-
-{{ if .textSize }}
-#testimonials .quote-wrapper p {
-    font-size: {{ .textSize }}px !important;
-    line-height: {{ mul .textSize 1.375 }}px !important;
-}
-{{ end }}
-
-{{ if .textColor }}
-#testimonials .quote-wrapper p {
-    color: {{ .textColor }} !important;
-}
-{{ end }}
-
-{{ if .textAlign }}
-#testimonials .quote-wrapper p {
-    text-align: {{ .textAlign }} !important;
-}
-{{ end }}
-
 {{ end }}
 </style>
 
@@ -67,11 +28,8 @@
                     <div class="item">
                         <div class="row">
                             <div class="col-lg-12">
-                                <p class="lead">{{ .lead }}</p>
-                                <hr class="colored">
-                                <div class="quote-wrapper">
-                                    <p class="quote">{{ .quote | markdownify }}</p>
-                                </div>
+                                <p class="lead">"{{ .lead }}"</p>
+                                <p class="quote">{{ .quote | markdownify }}</p>
                                 <div class="testimonial-info">
                                     <div class="testimonial-img">
                                         <img src="{{ .image }}" class="img-circle img-responsive" alt="">

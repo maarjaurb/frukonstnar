@@ -4,9 +4,9 @@
 # @fontPrimary: Font of subtitle
 # @fontTitle: 	Font of title
 
-image: "img/backgrounds/bg-header.jpg"
-title: "DEN HALTANDE TEATER"
-subtitle: "läka med lek"
+image: "img/backgrounds/bg-header2.jpg"
+title: ""
+subtitle: ""
 ref: "about"
 
 

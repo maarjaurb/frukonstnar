@@ -1202,7 +1202,7 @@ aside.cta-quote .panel {
 #textsnippetslist .mix2 .portfolio-wrapper {
   overflow: hidden;
   position: relative !important;
-  background: #1B073D;
+  background: #bbb;
   cursor: pointer;
   border-radius: 20%;
 }
@@ -1254,9 +1254,10 @@ aside.cta-quote .panel {
 }
 #textsnippetslist .mix2 .portfolio-wrapper .caption .caption-text {
   color: white;
+  text-align: left;
   position: relative;
   z-index: 500;
-  padding: 15px 8px;
+  padding: 15px 15px;
 }
 #textsnippetslist .mix2 .portfolio-wrapper .caption .caption-text a.text-title {
   color: white;

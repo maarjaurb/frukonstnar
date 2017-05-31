@@ -225,9 +225,9 @@
                                 {{ range $j, $el := .topics }}
                                 <li>
                                     {{ if eq $j 0 }}
-                                    <span class="filter2 active" data-filter=".{{ . | urlize }}">{{ . }}</span>
+                                    <span class="filter2 active" data-filter=".{{ . | replaceRE "[ ÄäÀàÁáÂâÃãÅåǍǎĄąĂăÆæĀāÇçĆćĈĉČčĎđĐďðÈèÉéÊêËëĚěĘęĖėĒēĜĝĢģĞğĤĥÌìÍíÎîÏïıĪīĮįĴĵĶķĹĺĻļŁłĽľÑñŃńŇňŅņÖöÒòÓóÔôÕõŐőØøŒœŔŕŘřẞßŚśŜŝŞşŠšȘșŤťŢţÞþȚțÜüÙùÚúÛûŰűŨũŲųŮůŪūŴŵÝýŸÿŶŷŹźŽžŻż]" "-" | urlize }}">{{ . }}</span>
                                     {{ else }}
-                                    <span class="filter2" data-filter=".{{ . | urlize }}">{{ . }}</span>
+                                    <span class="filter2" data-filter=".{{ . | replaceRE "[ ÄäÀàÁáÂâÃãÅåǍǎĄąĂăÆæĀāÇçĆćĈĉČčĎđĐďðÈèÉéÊêËëĚěĘęĖėĒēĜĝĢģĞğĤĥÌìÍíÎîÏïıĪīĮįĴĵĶķĹĺĻļŁłĽľÑñŃńŇňŅņÖöÒòÓóÔôÕõŐőØøŒœŔŕŘřẞßŚśŜŝŞşŠšȘșŤťŢţÞþȚțÜüÙùÚúÛûŰűŨũŲųŮůŪūŴŵÝýŸÿŶŷŹźŽžŻż]" "-" | urlize }}">{{ . }}</span>
                                     {{ end }}
                                 </li>
                                 {{ end }}
@@ -255,11 +255,10 @@
                                 {{ end }}
                                 {{ if .content }}
                                 <div class="caption">
-                                    <div class="caption-text">
-                                        <a href="#textsnippetsModal{{ $i }}" data-toggle="modal" class="text-title">{{ .captionTitle }}</a>
-                                        <span class="text-category">{{ .captionCategory }}</span>
+                                    <div class="caption-text" href="#textsnippetsModal{{ $i }}" data-toggle="modal">
+                                        <a class="text-title">{{ .captionText }}</a>
                                     </div>
-                                    <a href="#textsnippetsModal{{ $i }}" data-toggle="modal">
+                                    <a>
                                         <div class="caption-bg"></div>
                                     </a>
                                 </div>
