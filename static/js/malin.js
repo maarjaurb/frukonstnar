@@ -92,4 +92,15 @@ $( () => {
 		about.toggleClass("closed");
 		$( ".container", about ).fadeToggle();
 	});
+
+	//////////////////////////////////////////////////////////////////////////////////////////
+	// Handling Welcome
+	//
+	let welcome = $( "#welcome" );
+	welcome.addClass("closed");
+	$( ".container", welcome ).hide();
+	$( ".welcome-icon", welcome ).on( "click tap", function(e) {
+		welcome.toggleClass("closed");
+		$( ".container", welcome ).fadeToggle();
+	});
 });

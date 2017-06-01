@@ -1742,3 +1742,13 @@ form .row:first-child .floating-label-form-group {
   display: inline-block;
   width: 200px;
 }
+#welcome {
+  position: relative;
+}
+#welcome.closed {
+  padding: 0px;
+}
+#welcome .welcome-icon img {
+  position: absolute;
+  cursor: pointer;
+}

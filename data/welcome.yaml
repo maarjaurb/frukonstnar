@@ -5,13 +5,12 @@
 # @fontTitle: 	Font of title
 
 backgroundImage: img/calendar/dahabshore.jpg
-icon: img/about/mask.png
-iconTop: 	-80px
-iconRight: 20px
-iconSize: 160
+icon: img/welcome/valkommen.png
+iconTop: 	-100px
+iconLeft: 100px
+iconSize: 120
 text: >
-    Malin ...
-    Hmmm.
+    W E L C O M E !
 
 # Additional Parameters
 
@@ -22,4 +21,4 @@ text: >
 # buttonSize:    		18
 # buttonColor: 			"white"
 # lineColor: 				"#700D00"
-opacity: 					0.4
+# opacity: 					0.4
