@@ -38,7 +38,7 @@ footer .row-container {
         </div>
         <div class="row copyright">
             <div class="col-lg-12">
-                <p class="small">{{ if .copyright }}&copy; {{ .copyright }}{{ end }}</p>
+                <p class="small">{{ if .copyright }}&copy; {{ .copyright | markdownify }}{{ end }}</p>
             </div>
         </div>
     </div>

@@ -39,7 +39,7 @@
 	}
 
 	.nav-tabs {
-	  text-align:center;
+	  text-align:left;
 	}
 
 	.tab-content {
@@ -167,6 +167,9 @@
 		background-color: @themePrimary;
 		color: @themeLight;
 		padding: 2vw 0vw;
+		margin-bottom: 6vw;
+		font-family: @fontModelTitle;
+		font-size: 2.5vw;
 	}
 
 	h3 {
@@ -175,11 +178,16 @@
 		padding: 1.5vw 0vw;
 	}
 
+	/* Paragraph of Textsnippet */
 	p {
-		font-size: 1.5vw;
+		font-size: 1.3vw;
 		color: black;
-		padding: 2vw 2vw;
+		padding: 0.5vw 10vw; /* Padding around the text */
 		text-align: justify;
+	}
+
+	div.end {
+		margin-top: 6vw;
 	}
 
 	video {

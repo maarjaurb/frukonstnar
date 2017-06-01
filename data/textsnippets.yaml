@@ -2,19 +2,11 @@ title: ""
 subtitle: ""
 
 filters:
-  - name: "Välkommen!"
-    topics: [
-      Den Haltande Teatern,
-    ]
-  - name: "Om Malin"
-    topics: [
-      Malin,
-    ]
   - name: "Inuti"
     topics: [
+      Tvivlet,
       Lek,
       Rädsla,
-      Tvivlet,
     ]
 all: Alle
 
@@ -26,6 +18,7 @@ elements:
     captionText: > 
       Det är här det sker!
       Den haltande teatern är arenan för utforskandet, medvetandegörandet av det inre, det som är i mörkret blir belyst här! 
+    contentImage: img/backgrounds/wall.jpg
     content: >
       Det är här det sker!  
 
@@ -80,6 +73,7 @@ elements:
     imageTitle: >
       Välkommen till den Haltande Teatern!1
     imageDate: "30. Mai 2017"
+    contentImage: img/backgrounds/wall.jpg
     captionText: > 
       Det är här det sker!
       Den haltande teatern är arenan för utforskandet, medvetandegörandet av det inre, det som är i mörkret blir belyst här!     content: >
@@ -152,10 +146,12 @@ elements:
     captionText: >
       Jag blir förvirrad över min egen kluvenhet. Jag får så mycket ideer och inspiration ibland. 
       Och såå mycket kraft att genomföra vad som helst. Men sen tappar jag kontakten med det. 
-      Vågar inte. Börjar värdera. Tvivla. Vilja rädda andra. Är det här verkligen rätt?
+      Vågar inte. Börjar värdera. Tvivla. Vilja rädda andra. 
+    contentImage: img/backgrounds/wall.jpg
     content: >
       ”Jag blir förvirrad över min egen kluvenhet. Jag får så mycket ideer och inspiration ibland. 
-      Och såå mycket kraft att genomföra vad som helst. Men sen tappar jag kontakten med det. 
+      Och såå mycket kraft att genomföra vad som helst. Men sen tappar jag kontakten med det.  
+
       Vågar inte. Börjar värdera. Tvivla. Vilja rädda andra. Är det här verkligen rätt?
       Önskar då att jag kunde glömma allt det som har med mitt eget uttrycksbehov att göra. 
       Det vore lättare. Men det hjälper inte. Det är bara en hinna emellan. Och Plötsligt är 
@@ -163,6 +159,8 @@ elements:
       full kraft och jag är på ruta noll igen. Det hjälpte inte att jag försökte kväva min kapacitet, 
       min inre motivation, min livsväg, min NATUR! Det finns och det vill leva och manifestera sig, 
       ovillkorligt, i evighet.
+
+
       Varför är det så komplicerat och tillkrånglat för mig att leva ”mig själv”?? Nu!! 
       Varför kommer skuld, skam, synd och in? Varför lyssnar jag på kraxande kråkor?
       Sviker jag någon när jag gör det jag älskar? Lättsamt, lekfullt, skamlöst och onyttigt?
@@ -192,6 +190,7 @@ elements:
     captionText: > 
       Det är här det sker!
       Den haltande teatern är arenan för utforskandet, medvetandegörandet av det inre, det som är i mörkret blir belyst här!     content: >
+    contentImage: img/backgrounds/wall.jpg
     content: >
       Texten om lek och annant
     filters:
@@ -212,6 +211,7 @@ elements:
     captionText: > 
       Det är här det sker!
       Den haltande teatern är arenan för utforskandet, medvetandegörandet av det inre, det som är i mörkret blir belyst här!     content: >
+    contentImage: img/backgrounds/wall.jpg
     content: >
       
       Det jag anar om mig själv:  
@@ -281,6 +281,7 @@ elements:
     captionText: > 
       Det är här det sker!
       Den haltande teatern är arenan för utforskandet, medvetandegörandet av det inre, det som är i mörkret blir belyst här!     content: >
+    contentImage: img/backgrounds/wall.jpg
     content: >
       DÅLIG
     filters:
@@ -301,6 +302,7 @@ elements:
     captionText: > 
       Det är här det sker!
       Den haltande teatern är arenan för utforskandet, medvetandegörandet av det inre, det som är i mörkret blir belyst här!     content: >
+    contentImage: img/backgrounds/wall.jpg
     content: >
       TVIVEL
     filters:
@@ -321,6 +323,7 @@ elements:
     captionText: > 
       Det är här det sker!
       Den haltande teatern är arenan för utforskandet, medvetandegörandet av det inre, det som är i mörkret blir belyst här!     content: >
+    contentImage: img/backgrounds/wall.jpg
     content: >
       BRA
     filters:
@@ -349,7 +352,7 @@ titleMargin:            20px 0px 30px 0px
 # captionSize:            16
 # captionColor:           white
 # captionBackgroundColor: "#FF4C3D"
-# panelBackgroundColor:   "182, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
+panelBackgroundColor:   "197, 195, 161"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
 # panelColor:             white
 # panelTitleSize:         60
 # panelTitleColor:        blue

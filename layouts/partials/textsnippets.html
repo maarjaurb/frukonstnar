@@ -152,18 +152,18 @@
 
 {{ range $i, $e := .elements }}
     {{ if .panelBackgroundColor }}
-    #gridModal{{ $i }} #textsnippets-panel {
+    #textsnippetsModal{{ $i }} #textsnippets-panel {
         background-color: rgba( {{ .panelBackgroundColor }} ) !important;
         border-color: rgba( {{ .panelBackgroundColor }} );
 
     }
-    #gridModal{{ $i }} #textsnippets-panel h2 {
+    #textsnippetsModal{{ $i }} #textsnippets-panel h2 {
         background-color: rgb( {{ .panelBackgroundColor }} ) !important;    
     }
     {{ end }}
 
     {{ if .panelColor }}
-    #gridModal{{ $i }} #textsnippets-panel h2 {
+    #textsnippetsModal{{ $i }} #textsnippets-panel h2 {
         color: {{ .panelColor }} !important;
     }
     {{ end }}
@@ -276,16 +276,17 @@
 
 {{ range $i, $e := .elements }}
 {{ if .content }}
-<div class="portfolio-modal modal fade" id="textsnippetsModal{{ $i }}" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('{{ .image }}')" parent="#textsnippetsImg{{ $i }}">
+<div class="portfolio-modal modal fade" id="textsnippetsModal{{ $i }}" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('{{ .contentImage }}')" parent="#textsnippetsImg{{ $i }}">
     <div class="modal-content" data-dismiss="modal">
         <div id="textsnippets-panel">
-            <h2>{{ .captionTitle }}</h2>
+            <h2>{{ .imageTitle }}</h2>
             <p>{{ .content | markdownify }}</p>
             {{ if .video }}
             <video controls>
                 <source src="{{ .video }}" type="video/mp4">
             </video>
             {{ end }}
+            <div class="end"></div>
         </div>
     </div>
 </div>

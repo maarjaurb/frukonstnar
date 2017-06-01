@@ -4,10 +4,10 @@
 # @fontPrimary: Font of subtitle
 # @fontTitle: 	Font of title
 
-image: "img/backgrounds/bg-header2.jpg"
+image: "img/backgrounds/bg-header_5.jpg"
 title: ""
 subtitle: ""
-ref: "about"
+ref: "fears"
 
 
 # Additional Parameters

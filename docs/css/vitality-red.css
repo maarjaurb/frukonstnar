@@ -1125,7 +1125,7 @@ aside.cta-quote .panel {
   max-width: 920px;
   border: 0.2vw solid #BA4C3D;
   border-radius: 1vw;
-  background-color: rgba(250, 216, 212, 0.6);
+  background-color: rgba(247, 247, 241, 0.6);
   margin: 2vw auto;
   overflow: hidden;
 }
@@ -1206,7 +1206,7 @@ aside.cta-quote .panel {
   display: inline-block;
 }
 #textsnippets .nav-tabs {
-  text-align: center;
+  text-align: left;
 }
 #textsnippets .tab-content {
   margin-top: 15px;
@@ -1303,14 +1303,18 @@ aside.cta-quote .panel {
   max-width: 920px;
   border: 0.2vw solid #BA4C3D;
   border-radius: 1vw;
-  background-color: rgba(250, 216, 212, 0.6);
+  background-color: rgba(247, 247, 241, 0.6);
   margin: 2vw auto;
   overflow: hidden;
+  /* Paragraph of Textsnippet */
 }
 #textsnippets-panel h2 {
   background-color: #BA4C3D;
   color: white;
   padding: 2vw 0vw;
+  margin-bottom: 6vw;
+  font-family: "Josefin Sans";
+  font-size: 2.5vw;
 }
 #textsnippets-panel h3 {
   background-color: #BA4C3D;
@@ -1318,10 +1322,14 @@ aside.cta-quote .panel {
   padding: 1.5vw 0vw;
 }
 #textsnippets-panel p {
-  font-size: 1.5vw;
+  font-size: 1.3vw;
   color: black;
-  padding: 2vw 2vw;
+  padding: 0.5vw 10vw;
+  /* Padding around the text */
   text-align: justify;
+}
+#textsnippets-panel div.end {
+  margin-top: 6vw;
 }
 #textsnippets-panel video {
   height: 25vw;
@@ -1453,9 +1461,9 @@ body.modern p.lead,
 body.modern header .brand-name,
 body.modern .portfolio-carousel .project-name,
 body.modern .testimonials .testimonial-author .name {
-  font-family: "Patrick Hand", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  font-weight: 400 !important;
-  text-transform: uppercase !important;
+  font-family: "Patrick Hand", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 body.modern .about-carousel .owl-controls .owl-prev,
 body.modern .testimonials .owl-controls .owl-prev,
