@@ -49,7 +49,6 @@ $( () => {
 
 		if( parent ) {
 			setTimeout( () => {
-				debugger;
 				$( parent ).trigger("mouseover");
 				$( parent ).trigger("mouseout");
 			}, 200)		
@@ -76,11 +75,21 @@ $( () => {
 	// Handling Calendar
 	//
 	let cal = $( "#calendar" );
-
 	cal.addClass("closed");
 	$( ".container", cal ).hide();
 	$( ".calendar-icon", cal ).on( "click tap", function(e) {
 		cal.toggleClass("closed");
 		$( ".container", cal ).fadeToggle();
 	}); 
+
+	//////////////////////////////////////////////////////////////////////////////////////////
+	// Handling About
+	//
+	let about = $( "#about" );
+	about.addClass("closed");
+	$( ".container", about ).hide();
+	$( ".about-icon", about ).on( "click tap", function(e) {
+		about.toggleClass("closed");
+		$( ".container", about ).fadeToggle();
+	});
 });

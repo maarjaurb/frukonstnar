@@ -4,21 +4,14 @@
 # @fontPrimary: Font of subtitle
 # @fontTitle: 	Font of title
 
-backgroundImage: img/backgrounds/dahabshore.jpg
-image: img/me.jpg
-imagePos: left
-imageSize: 250
+backgroundImage: img/calendar/dahabshore.jpg
+icon: img/calendar/calendar.ico
+iconTop: 	-80px
+iconRight: 20px
+iconSize: 160
 text: >
-    Hinterlasse einen ersten Eindruck von Dir. 
-    <br>Du bist nicht der Abdruck,
-
-
-    Du bist nicht der Fuß,  
-    
-
-    Du bist der, der geht.
-action: Was ich kann ...
-ref: abilities
+    Malin ...
+    Hmmm.
 
 # Additional Parameters
 
@@ -29,4 +22,4 @@ ref: abilities
 # buttonSize:    		18
 # buttonColor: 			"white"
 # lineColor: 				"#700D00"
-# opacity: 					0.6
+opacity: 					0.4

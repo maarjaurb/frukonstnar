@@ -457,11 +457,6 @@ aside.cta-quote a.btn {
 aside.cta-quote hr {
   margin: 30px auto;
 }
-aside.cta-quote img {
-  border-radius: 100%;
-  margin: 0px auto;
-  opacity: 0.5;
-}
 aside.cta-quote .transparent-border {
   border-width: 1px;
   border-style: solid;
@@ -471,6 +466,16 @@ aside.cta-quote .transparent-border {
 }
 aside.cta-quote .panel {
   padding: 15px 40px;
+}
+#about {
+  position: relative;
+}
+#about.closed {
+  padding: 0px;
+}
+#about .about-icon img {
+  position: absolute;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   aside.cta-quote {
