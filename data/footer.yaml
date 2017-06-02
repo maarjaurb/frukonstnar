@@ -1,13 +1,12 @@
 image: "img/backgrounds/bg-aside.jpg"
 social:
-  - icon:   "fa-facebook"
+  - icon:   "img/footer/FB_s.png"
     link:   "https://www.facebook.com/denhaltandeteatern/"
-  - icon:   "fa-youtube"
+  - icon:   "img/footer/YT_s.png"
     link:   "https://www.youtube.com/channel/UCOKogsrWZxx1qh3EIq_7qkg/videos"
-  - icon:   "fa-github"
+  - icon:   "img/footer/YT_s.png"
     link:   "#"
-  - icon:   "fa-instagram"
-    link:   "#"
+socialSize:  64
 
 impressumTitle: Kontakt
 impressumText: >

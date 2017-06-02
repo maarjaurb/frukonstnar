@@ -245,7 +245,7 @@
 
 {{ range $i, $e := .elements }}
 {{ if .content }}
-<div class="portfolio-modal modal fade" id="fearsModal{{ $i }}" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('{{ .image }}')">
+<div class="portfolio-modal modal fade fears-modal" id="fearsModal{{ $i }}" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('{{ .image }}')">
     <div class="modal-content" data-dismiss="modal">
         <div id="fears-panel">
             <h2>{{ .modalTitle }}</h2>
@@ -253,11 +253,11 @@
             {{ if .video }}
             <div class="video-wrapper">
                 
-                <div class="control prev{{ if not .prev }} not-shown{{ end }}"{{ if .prev }} href="#fearsModal{{ add .prev -1 }}" data-toggle="modal"{{ end }}>&lt;&lt;</div>
+                <!-- <div class="control prev{{ if not .prev }} not-shown{{ end }}"{{ if .prev }} href="#fearsModal{{ add .prev -1 }}"{{ end }}><span>&lt;&lt;</span></div> -->
                 <video controls preload="none"{{ if .videoShot }} poster="{{ .videoShot }}"{{ end }}>
                     <source src="{{ .video }}" type="video/mp4">
                 </video>
-                <div class="control next{{ if not .next }} not-shown{{ end }}"{{ if .next }} href="#fearsModal{{ add .next -1 }}" data-toggle="modal"{{ end }}>&gt;&gt;</div>
+                <!-- <div class="control next{{ if not .next }} not-shown{{ end }}"{{ if .next }} href="#fearsModal{{ add .next -1 }}"{{ end }}><span>&gt;&gt;</span></div> -->
             </div>
             {{ end }}
         </div>

@@ -45,14 +45,11 @@ $( () => {
     console.log("Stopped all videos after hidden.");
 		stopAllVideos();
 
-		let parent = $( e.target ).attr( "parent" );
-
-		if( parent ) {
-			setTimeout( () => {
-				$( parent ).trigger("mouseover");
-				$( parent ).trigger("mouseout");
-			}, 200)		
-		}
+		// Set all modals back to normal when they are hidden
+		$( e.target ).css({
+			marginLeft: 0,
+			opacity: 1
+		})
 	});
 
 	//////////////////////////////////////////////////////////////////////////////////////
@@ -98,9 +95,32 @@ $( () => {
 	//
 	let welcome = $( "#welcome" );
 	welcome.addClass("closed");
-	$( ".container", about ).hide();
+	$( ".container", welcome ).hide();
 	$( ".welcome-icon", welcome ).on( "click tap", function(e) {
 		welcome.toggleClass("closed");
 		$( ".container", welcome ).fadeToggle();
+	});
+
+
+	//////////////////////////////////////////////////////////////////////////////////////////
+	// Handling Fear Modals
+	//
+	$( ".fears-modal" ).modal({ show: false });
+	$( ".fears-modal .control" ).on("click tap", function(e) {
+			var prev = $( this ).hasClass("prev"),
+					modal = $( this ).closest(".fears-modal"),
+					modal2 = $( $( this ).attr("href") );
+
+			modal2.modal("show");
+
+			modal.animate({
+				marginLeft: -screen.width*2,
+				opacity: 0
+			}, 1000, () => {
+				modal.modal("hide");
+			})
+
+			e.preventDefault();
+			e.stopPropagation();
 	});
 });

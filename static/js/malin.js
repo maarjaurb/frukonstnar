@@ -35,7 +35,7 @@ $( () => {
 	});
 
 	$( ".video-wrapper .control").on( "click tap", function() {
-		setTimeout( () => startVideo.call(this), 500 );
+		setTimeout( () => startVideo.call(this), 1500 );
 	});
 
 
@@ -45,14 +45,12 @@ $( () => {
     console.log("Stopped all videos after hidden.");
 		stopAllVideos();
 
-		let parent = $( e.target ).attr( "parent" );
-
-		if( parent ) {
-			setTimeout( () => {
-				$( parent ).trigger("mouseover");
-				$( parent ).trigger("mouseout");
-			}, 200)		
-		}
+		// Set all modals back to normal when they are hidden
+		$( e.target ).css({
+			marginLeft: 0,
+			marginRight: 0,
+			opacity: 1
+		})
 	});
 
 	//////////////////////////////////////////////////////////////////////////////////////
@@ -102,5 +100,29 @@ $( () => {
 	$( ".welcome-icon", welcome ).on( "click tap", function(e) {
 		welcome.toggleClass("closed");
 		$( ".container", welcome ).fadeToggle();
+	});
+
+
+	//////////////////////////////////////////////////////////////////////////////////////////
+	// Handling Fear Modals
+	//
+	$( ".fears-modal" ).modal({ show: false });
+	$( ".fears-modal .control" ).on("click tap", function(e) {
+			var prev = $( this ).hasClass("prev"),
+					modal = $( this ).closest(".fears-modal"),
+					modal2 = $( $( this ).attr("href") ),
+					anim = { opacity: 0 };
+
+			anim[prev? "marginLeft" : "marginRight"] = -screen.width*2;
+
+			modal2.modal("show");
+
+			console.log("Animating: ", anim);
+			modal.animate(anim, 1000, () => {
+				modal.modal("hide");
+			})
+
+			e.preventDefault();
+			e.stopPropagation();
 	});
 });

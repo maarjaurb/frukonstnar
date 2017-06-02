@@ -147,7 +147,7 @@
 
 	.video-wrapper {
 		position: relative;
-		width: 48vw;
+		display: inline-block;
 		margin: 0 auto;
 
 		& > * {
@@ -160,11 +160,19 @@
 			font-size: 4vw;
 			font-weight: bold;
 			padding: 10px;
-			color: rgba(255,255,255,0.3);
+
+			span {
+				color: rgba(255,255,255,0.4);
+				&:hover {
+					color: rgba(255,255,255,0.6);
+				}
+			}
 
 			&.not-shown {
-				color: rgba(0,0,0,0);
-			}
+				span, span:hover {
+					color: rgba(0,0,0,0);
+				}
+			}			
 		}
 	}
 
@@ -174,4 +182,9 @@
 	}
 
 
+}
+
+
+.modal-open {
+	overflow: scroll;
 }
