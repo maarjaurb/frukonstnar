@@ -221,8 +221,13 @@
                                 {{ if .content }}
                                 <div class="caption">
                                     <div class="caption-text">
-                                        <a class="text-title">{{ .captionTitle }}</a>
-                                        <span class="text-category">{{ .captionCategory }}</span>
+                                        <a class="text-title">
+                                            {{ if .captionTitle }}
+                                                {{ .captionTitle }}
+                                            {{ else if .captionImage }}
+                                                <img src="{{ .captionImage }}" width="50%" />
+                                            {{ end }}
+                                        </a>
                                     </div>
                                     <div class="caption-bg"></div>
                                 </div>
@@ -243,7 +248,7 @@
 <div class="portfolio-modal modal fade" id="fearsModal{{ $i }}" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('{{ .image }}')">
     <div class="modal-content" data-dismiss="modal">
         <div id="fears-panel">
-            <h2>{{ .captionTitle }}</h2>
+            <h2>{{ .modalTitle }}</h2>
             <p>{{ .content | markdownify }}</p>
             {{ if .video }}
             <div class="video-wrapper">

@@ -30,12 +30,6 @@ aside.cta-quote {
 		margin: 30px auto;
 	}
 
-	img {
-		border-radius: 100%;
-		margin: 0px auto;
-		opacity: 0.5;
-	}
-
 	.transparent-border {
 		border-width: 1px;
 		border-style: solid;
@@ -47,6 +41,21 @@ aside.cta-quote {
 	.panel {
 		padding: 15px 40px;
 	}
+}
+
+#about {
+	position: relative;
+
+	&.closed {
+		padding: 0px;
+	}
+
+	.about-icon {
+		img {
+			position: absolute;
+			cursor: pointer;			
+		}
+	}	
 }
 
 @media(min-width:768px) {

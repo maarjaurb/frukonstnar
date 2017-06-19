@@ -4,7 +4,8 @@ subtitle: ""
 elements:
   - image: img/startingpoints/startingpoints1.jpg
     captionTitle: DUKTIG
-    captionTitle2: RÄTT
+    # captionImage: img/fears/aggressiv_s.png
+    modalTitle: RÄTT
     captionCategory: 
     content: >
       ...
@@ -20,8 +21,9 @@ elements:
     # panelColor:             white
 
   - image: img/startingpoints/startingpoints2.jpg
-    captionTitle: TILL LAGS
-    captionTitle2: BORDE
+    #captionTitle: TILL LAGS
+    captionImage: img/fears/tilllags_s.png
+    modalTitle: BORDE
     captionCategory: 
     content: >
       BORDE2
@@ -38,8 +40,9 @@ elements:
     # panelColor:             white
 
   - image: img/startingpoints/startingpoints3.jpg
-    captionTitle: AGGRESSIV
-    captionTitle2: FEL
+    #captionTitle: AGGRESSIV
+    captionImage: img/fears/aggressiv_s.png
+    modalTitle: FEL
     captionCategory: 
     content: >
       FEL
@@ -57,7 +60,8 @@ elements:
 
   - image: img/startingpoints/startingpoints4.jpg
     captionTitle: FÖRMER
-    captionTitle2: MÅSTE
+    #captionImage: img/fears/aggressiv_s.png
+    modalTitle: MÅSTE
     captionCategory: 
     content: >
       MÅSTE
@@ -75,8 +79,9 @@ elements:
   - image: "img/startingpoints/middle.jpg"
 
   - image: img/startingpoints/startingpoints5.jpg
-    captionTitle: GENERAD
-    captionTitle2: DÅLIG
+    #captionTitle: GENERAD
+    captionImage: img/fears/generad_s.png
+    modalTitle: DÅLIG
     captionCategory: 
     content: >
       DÅLIG
@@ -92,8 +97,9 @@ elements:
     # panelColor:             white
 
   - image: img/startingpoints/startingpoints6.jpg
-    captionTitle: OFFER
-    captionTitle2: DÅLIG
+    #captionTitle: OFFER
+    captionImage: img/fears/offer_s.png
+    modalTitle: DÅLIG
     captionCategory: 
     content: >
       DÅLIG
@@ -109,8 +115,9 @@ elements:
     # panelColor:             white
 
   - image: img/startingpoints/startingpoints7.jpg
-    captionTitle: OROLIG
-    captionTitle2: TVIVEL
+    #captionTitle: OROLIG
+    captionImage: img/fears/orolig_s.png
+    modalTitle: TVIVEL
     captionCategory: 
     content: >
       TVIVEL
@@ -126,7 +133,8 @@ elements:
     # panelColor:             white
 
   - image: img/startingpoints/startingpoints8.jpg
-    captionTitle: LYCKAD
+    #captionTitle: LYCKAD
+    captionImage: img/fears/lyckad_s.png
     captionCategory: 
     content: >
       BRA
