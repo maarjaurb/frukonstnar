@@ -1,0 +1,12 @@
+# Change LESS Globals in file static/less/vitality.less for following items
+# @themeDark: 	
+# @themePrimary: 	
+# @fontPrimary: 
+# @fontTitle: 	
+
+#quotes:
+#	- id: portfolio4
+#   x: 100
+#    y: 100
+#    title: Hello!
+#    text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius aliquam adipisci alias perspiciatis perferendis quasi saepe iusto beatae, facilis natus eligendi assumenda nam similique velit? Voluptatem optio alias, tenetur voluptate.
