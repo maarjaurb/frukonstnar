@@ -3,7 +3,7 @@
 
 <style>
 {{ if .textSize }}
-	aside.cta-quote span.quote {
+	aside.cta-quote div.quote p {
 		font-size: {{ .textSize }}px !important;
 		line-height: {{ mul .textSize 1.375 }}px !important;
   }
@@ -16,13 +16,13 @@
 {{ end }}
 
 {{ if .textColor }}
-	aside.cta-quote span.quote {
+	aside.cta-quote div.quote p {
 		color: {{ .textColor }} !important;
   }
 {{ end }}
 
 {{ if .textColorPrimary }}
-	aside.cta-quote span.quote .text-primary {
+	aside.cta-quote div.quote .text-primary {
 		color: {{ .textColorPrimary }} !important;
   }
 {{ end }}

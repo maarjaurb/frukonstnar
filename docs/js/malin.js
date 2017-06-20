@@ -35,7 +35,7 @@ $( () => {
 	});
 
 	$( ".video-wrapper .control").on( "click tap", function() {
-		setTimeout( () => startVideo.call(this), 500 );
+		setTimeout( () => startVideo.call(this), 1500 );
 	});
 
 
@@ -48,6 +48,7 @@ $( () => {
 		// Set all modals back to normal when they are hidden
 		$( e.target ).css({
 			marginLeft: 0,
+			marginRight: 0,
 			opacity: 1
 		})
 	});
@@ -109,14 +110,15 @@ $( () => {
 	$( ".fears-modal .control" ).on("click tap", function(e) {
 			var prev = $( this ).hasClass("prev"),
 					modal = $( this ).closest(".fears-modal"),
-					modal2 = $( $( this ).attr("href") );
+					modal2 = $( $( this ).attr("href") ),
+					anim = { opacity: 0 };
+
+			anim[prev? "marginLeft" : "marginRight"] = -screen.width*2;
 
 			modal2.modal("show");
 
-			modal.animate({
-				marginLeft: -screen.width*2,
-				opacity: 0
-			}, 1000, () => {
+			console.log("Animating: ", anim);
+			modal.animate(anim, 1000, () => {
 				modal.modal("hide");
 			})
 

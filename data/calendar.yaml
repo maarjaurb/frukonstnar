@@ -10,15 +10,22 @@ iconTop: 	-80px
 iconLeft: 20px
 iconSize: 160
 events:
-  - title: Vuxen Collo
+  - title: SOFIA Galan
     date: 22. - 28. July 2017
     text: >
-      I wonder ...
+      Föreningen SOFIA är ett paraply för en mångfald projektgrupper i Sverige. 
+      Med inspiration ur antroposofin arbetar vi med internationellt utvecklingssamarbete 
+      tillsammans med lokala organisationer världen över och i Sverige.
 
-  - title: Sjöbis Summer Festival
+  - title: Livsspelbryt
     date: 20. - 24. June 2017
     text: >
-      Many things can happen here ...
+      Det finns de som känner att de inte kan vara sig själva, utan hela tiden förskjuts till en 
+      roll eller identitet istället, som inte kan vara ovillkorligt nöjda med sig själva utan 
+      villkorar det och kan inte låta blir att straffa sig för att de inte är idealet de själva har.
+      Ibland är det som ett tvång eller ett missbruk, och de vet att de tagit över det eftersom de i 
+      grunden vet att det inte finns några villkor och att det går att vara helt kärleksfull, men 
+      ”det gäller inte mot mig själv”.
 
 # Additional Parameters
 

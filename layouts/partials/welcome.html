@@ -3,7 +3,7 @@
 
 <style>
 {{ if .textSize }}
-	#welcome span.quote {
+	#welcome div.quote p {
 		font-size: {{ .textSize }}px !important;
 		line-height: {{ mul .textSize 1.375 }}px !important;
   }
@@ -16,13 +16,13 @@
 {{ end }}
 
 {{ if .textColor }}
-	#welcome span.quote {
+	#welcome div.quote p {
 		color: {{ .textColor }} !important;
   }
 {{ end }}
 
 {{ if .textColorPrimary }}
-	#welcome span.quote .text-primary {
+	#welcome div.quote .text-primary {
 		color: {{ .textColorPrimary }} !important;
   }
 {{ end }}
