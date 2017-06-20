@@ -63,7 +63,7 @@ elements:
 
 
 
-  - image: img/textsnippets/3.jpg
+  - image: img/textsnippets/1.jpg
     imageTitle: >
       Det inre tvivlet.  
 
@@ -124,7 +124,7 @@ titleMargin:            20px 0px 30px 0px
 # captionSize:            16
 # captionColor:           white
 # captionBackgroundColor: "#FF4C3D"
-panelBackgroundColor:   "197, 195, 161"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
+panelBackgroundColor:   "36, 81, 126"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
 # panelColor:             white
 # panelTitleSize:         60
 # panelTitleColor:        blue
