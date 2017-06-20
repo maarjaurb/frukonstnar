@@ -135,7 +135,7 @@ elements:
     # Capiton and panel looks can be changed for each element, but also for all together further below with the global attributes
     # captionSize:            16
     # captionColor:           white
-    captionBackgroundColor:   "180, 70, 40, 0.98"
+    captionBackgroundColor:   "160, 70, 40, 0.98"
     # panelBackgroundColor:   "255, 0, 0, 0.3"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
     # panelColor:             white
 
