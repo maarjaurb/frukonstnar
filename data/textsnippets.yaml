@@ -17,7 +17,7 @@ elements:
     captionText: > 
       Hej! Det har gått mycket bra ett tag nu att stå upp för mig själv, ta fight, inte lägga mig platt osv. 
       Men igår kväll så sipprade rädslan in i alla fall. 
-    contentImage: img/backgrounds/wall.jpg
+    contentImage: img/backgrounds/wall.png
     content: >
       Hej! Det har gått mycket bra ett tag nu att stå upp för mig själv, ta fight, inte lägga mig platt osv. 
       Men igår kväll så sipprade rädslan in i alla fall. Typiskt! Förstår inte vad som händer när det jag plötsligen 
@@ -57,7 +57,7 @@ elements:
     # Capiton and panel looks can be changed for each element, but also for all together further below with the global attributes
     # captionSize:            16
     # captionColor:           white
-    captionBackgroundColor:   "190, 80, 40, 0.98"
+    captionBackgroundColor:   "51, 114, 166, 0.98"
     # panelBackgroundColor:   "255, 0, 0, 0.3"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
     # panelColor:             white
 
@@ -72,7 +72,7 @@ elements:
     captionText: >
       Jag blir förvirrad över min egen kluvenhet. Jag får så mycket ideer och inspiration ibland. 
       Och såå mycket kraft att genomföra vad som helst. 
-    contentImage: img/backgrounds/wall.jpg
+    contentImage: img/backgrounds/wall.png
     content: >
       ”Jag blir förvirrad över min egen kluvenhet. Jag får så mycket ideer och inspiration ibland. 
       Och såå mycket kraft att genomföra vad som helst. Men sen tappar jag kontakten med det.  
@@ -124,7 +124,7 @@ titleMargin:            20px 0px 30px 0px
 # captionSize:            16
 # captionColor:           white
 # captionBackgroundColor: "#FF4C3D"
-panelBackgroundColor:   "36, 81, 126"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
+panelBackgroundColor:   "148, 35, 64"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
 # panelColor:             white
 # panelTitleSize:         60
 # panelTitleColor:        blue

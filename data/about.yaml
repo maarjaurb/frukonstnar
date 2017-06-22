@@ -63,11 +63,11 @@ text: >
 
 # Additional Parameters
 
-textSize:     		16
+textSize:     		18
 # textPadding:			60
-# textColor: 				"yellow"
+textColor: 				"#efefef"
 # textColorPrimary: "#700D00"
 # buttonSize:    		18
 # buttonColor: 			"white"
 # lineColor: 				"#700D00"
-opacity: 					0.4
+opacity: 					0.5

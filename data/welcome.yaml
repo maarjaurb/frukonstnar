@@ -10,7 +10,7 @@ iconTop: 	-100px
 iconLeft: 100px
 iconSize: 120
 text: >
-    <h3>VÄLKOMMEN TILL DEN HALTANDE TEATERN!</h3>  
+    <h2>VÄLKOMMEN TILL DEN HALTANDE TEATERN!</h2>  
 
 
     Det är här det sker!  
@@ -21,7 +21,7 @@ text: >
     förbjudet och omöjligt.  
 
     Vi undviker inte det som står i vägen. Vi lär känna det. Vi lever igenom det. Lever ut det. Skrattar åt eländet. 
-    Och landar om och om igen i ett tillstånd av….ja, av vaddå? Frid? Kärlek? Varande? Det som finns när inget annat finns, 
+    Och landar om och om igen i ett tillstånd av... ja, av vaddå? Frid? Kärlek? Varande? Det som finns när inget annat finns, 
     det som finns bakom rädslan, bakom alla värderingar, borden, rätt och fel. Där landar vi när det andra tystnar.
     Och det är rätt skönt.
     Men så länge har vi kul med skiten!  
@@ -48,9 +48,9 @@ text: >
 
 # Additional Parameters
 
-textSize:     		16
+textSize:     		18
 # textPadding:			60
-# textColor: 				"yellow"
+textColor: 				"#cecece"
 # textColorPrimary: "#700D00"
 # buttonSize:    		18
 # buttonColor: 			"white"

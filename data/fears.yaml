@@ -17,7 +17,7 @@ elements:
     # Capiton and panel looks can be changed for each element, but also for all together further below with the global attributes
     # captionSize:            16
     # captionColor:           white
-    captionBackgroundColor:   "236, 237, 235, 0.94"
+    captionBackgroundColor:   "144, 166, 178, 0.94"
     # panelBackgroundColor:   "255, 0, 0, 0.3"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
     # panelColor:             white
 
@@ -36,7 +36,7 @@ elements:
     # Capiton and panel looks can be changed for each element, but also for all together further below with the global attributes
     # captionSize:            16
     # captionColor:           white
-    captionBackgroundColor:   "236, 237, 235, 0.94"
+    captionBackgroundColor:   "182, 207, 220, 0.94"
     # panelBackgroundColor:   "255, 0, 0, 0.3"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
     # panelColor:             white
 
@@ -55,7 +55,7 @@ elements:
 
     # captionSize:            16
     # captionColor:           white
-    captionBackgroundColor: "236, 237, 235, 0.94"
+    captionBackgroundColor: "181, 136, 136, 0.94"
     # panelBackgroundColor:   "182, 76, 61, 0.3"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
     # panelColor:             white
 
@@ -74,7 +74,7 @@ elements:
 
     # captionSize:            16
     # captionColor:           white
-    captionBackgroundColor: "236, 237, 235, 0.94"
+    captionBackgroundColor: "182, 207, 220, 0.94"
     # panelBackgroundColor:   "182, 76, 61, 0.3"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
     # panelColor:             white
 
@@ -95,7 +95,7 @@ elements:
 
     # captionSize:            16
     # captionColor:           white
-    captionBackgroundColor: "236, 237, 235, 0.94"
+    captionBackgroundColor: "181, 226, 211, 0.94"
     # panelBackgroundColor:   "182, 76, 61, 0.3"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
     # panelColor:             white
 
@@ -103,7 +103,7 @@ elements:
     #captionTitle: OFFER
     captionImage: img/fears/offer_s.png
     #modalTitle: DÅLIG
-    modalTitleImage: img/fears/dalig_s.png
+    modalTitleImage: img/fears/ombara_s.png
     captionCategory: 
     content: >
       &nbsp;
@@ -114,7 +114,7 @@ elements:
 
     # captionSize:            16
     # captionColor:           white
-    captionBackgroundColor: "236, 237, 235, 0.94"
+    captionBackgroundColor: "179, 172, 132, 0.94"
     # panelBackgroundColor:   "182, 76, 61, 0.3"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
     # panelColor:             white
 
@@ -133,7 +133,7 @@ elements:
 
     # captionSize:            16
     # captionColor:           white
-    captionBackgroundColor: "236, 237, 235, 0.94"
+    captionBackgroundColor: "171, 226, 211, 0.94"
     # panelBackgroundColor:   "182, 76, 61, 0.3"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
     # panelColor:             white
 
@@ -150,7 +150,7 @@ elements:
 
     # captionSize:            16
     # captionColor:           white
-    captionBackgroundColor: "236, 237, 235, 0.94"
+    captionBackgroundColor: "139, 168, 159, 0.94"
     # panelBackgroundColor:   "182, 76, 61, 0.3"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
     # panelColor:             white
 
