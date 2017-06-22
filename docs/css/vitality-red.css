@@ -109,7 +109,7 @@ p {
   line-height: 1.5;
 }
 p.lead {
-  font-family: "Patrick Hand", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Quicksand", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   font-size: 24px;
@@ -120,7 +120,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Patrick Hand", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Quicksand", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -212,7 +212,7 @@ hr.colored {
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
-  font-family: "Patrick Hand", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Quicksand", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   font-size: 24px;
@@ -326,7 +326,7 @@ header .intro-content {
   position: relative;
 }
 header .brand-name {
-  font-family: "Patrick Hand", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Quicksand", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
@@ -451,7 +451,7 @@ aside.cta-quote div.quote p {
   display: block;
 }
 aside.cta-quote a.btn {
-  font-family: "Patrick Hand";
+  font-family: "Quicksand";
   font-size: 18px;
 }
 aside.cta-quote hr {
@@ -536,7 +536,7 @@ aside.cta-quote .panel {
   display: inline-block;
 }
 .testimonials .testimonials-carousel .item .testimonial-info .testimonial-author .name {
-  font-family: "Patrick Hand", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Quicksand", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -620,7 +620,7 @@ aside.cta-quote .panel {
   font-size: 40px;
   line-height: 40px;
   margin-bottom: 25px;
-  font-family: "Patrick Hand", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Quicksand", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -675,7 +675,7 @@ aside.cta-quote .panel {
 #abilities p {
   color: #1B073D;
   font-size: 30px;
-  font-family: "Patrick Hand";
+  font-family: "Quicksand";
   border: 0px solid #1B073D;
   border-radius: 100%;
   padding: 40px;
@@ -788,7 +788,7 @@ aside.cta-quote .panel {
   z-index: 1052;
 }
 .portfolio-modal h2 {
-  font-family: "Patrick Hand";
+  font-family: "Quicksand";
 }
 .portfolio-modal h2.light {
   color: white;
@@ -845,7 +845,7 @@ aside.cta-quote .panel {
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
-  font-family: "Patrick Hand";
+  font-family: "Quicksand";
 }
 .mockup-carousel .owl-controls .owl-prev:hover,
 .mockup-carousel .owl-controls .owl-next:hover {
@@ -1295,7 +1295,7 @@ aside.cta-quote .panel {
   text-align: left;
   position: relative;
   z-index: 500;
-  padding: 15px 15px;
+  padding: 25px 25px;
 }
 #textsnippetslist .mix2 .portfolio-wrapper .caption .caption-text a.text-title {
   color: white;
@@ -1330,7 +1330,7 @@ aside.cta-quote .panel {
   color: white;
   padding: 2vw 0vw;
   margin-bottom: 6vw;
-  font-family: "Josefin Sans";
+  font-family: "Quicksand";
   font-size: 2.5vw;
 }
 #textsnippets-panel h3 {
@@ -1449,13 +1449,19 @@ footer.footer a:hover {
 footer.footer p {
   font-size: 22px;
 }
-footer.footer .contact-details {
-  margin: 75px 0;
-}
 footer.footer .social {
-  margin-bottom: 75px;
+  margin-top: 35px;
 }
-footer.footer .copyright p.small {
+footer.footer .social img:hover {
+  opacity: 0.6;
+}
+footer.footer .logo span.small {
+  font-size: 14px;
+}
+footer.footer .contact {
+  margin: 0;
+}
+footer.footer .contact span.small {
   font-size: 14px;
 }
 @media (min-width: 1025px) {
@@ -1478,7 +1484,7 @@ body.modern p.lead,
 body.modern header .brand-name,
 body.modern .portfolio-carousel .project-name,
 body.modern .testimonials .testimonial-author .name {
-  font-family: "Patrick Hand", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Quicksand", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -1503,7 +1509,7 @@ body.vintage p.lead,
 body.vintage header .brand-name,
 body.vintage .portfolio-carousel .project-name,
 body.vintage .testimonials .testimonial-author .name {
-  font-family: "Patrick Hand", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-family: "Quicksand", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   font-weight: 400 !important;
   text-transform: uppercase !important;
 }

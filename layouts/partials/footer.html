@@ -16,8 +16,8 @@ footer .row-container {
 <footer class="footer" id="footer" style="background-image: url('{{ .image }}')">
     <div class="container text-center">
         <div class="row-container">
-            <div class="row social">
-                <div class="col-lg-12">
+            <div class="row">
+                <div class="social col-lg-4">
                     <ul class="list-inline">
                         {{ $size := .socialSize }}
                         {{ range .social }}
@@ -25,22 +25,19 @@ footer .row-container {
                         {{ end }}
                     </ul>
                 </div>
-            </div>
-            {{ if .impressumTitle }}
-            <div class="row small">
-                <div class="col-lg-12">
+                <div class="logo col-lg-4">
+                    <img src="img/footer/swan.png" width="170" />
+                </div>
+                <div class="contact col-lg-4">
                     <h3>{{ .impressumTitle }}</h3>
                     <div>
                         {{ .impressumText | markdownify }}
                     </div>
+                    <span class="small">{{ if .copyright }}&copy; {{ .copyright | markdownify }}{{ end }}</span>
                 </div>
             </div>
-            {{ end }}
         </div>
-        <div class="row copyright">
-            <div class="col-lg-12">
-                <p class="small">{{ if .copyright }}&copy; {{ .copyright | markdownify }}{{ end }}</p>
-            </div>
+        <div class="row ">
         </div>
     </div>
 </footer>

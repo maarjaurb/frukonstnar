@@ -5,10 +5,11 @@ elements:
   - image: img/startingpoints/startingpoints1.jpg
     captionTitle: DUKTIG
     # captionImage: img/fears/aggressiv_s.png
-    modalTitle: RÄTT
+    # modalTitle: RÄTT
+    modalTitleImage: img/fears/ratt_s.png
     captionCategory: 
     content: >
-      ...
+      &nbsp;
     video: video/Duktig.m4v
     videoShot: video/Duktig.png
     next: 2
@@ -23,10 +24,10 @@ elements:
   - image: img/startingpoints/startingpoints2.jpg
     #captionTitle: TILL LAGS
     captionImage: img/fears/tilllags_s.png
-    modalTitle: BORDE
+    modalTitleImage: img/fears/borde_s.png
     captionCategory: 
     content: >
-      BORDE2
+      &nbsp;
     video: video/TillLags.m4v
     videoShot: video/black.png
     prev: 1
@@ -42,10 +43,10 @@ elements:
   - image: img/startingpoints/startingpoints3.jpg
     #captionTitle: AGGRESSIV
     captionImage: img/fears/aggressiv_s.png
-    modalTitle: FEL
+    modalTitleImage: img/fears/fel_s.png
     captionCategory: 
     content: >
-      FEL
+      &nbsp;
     video: video/Aggresiv.m4v
     videoShot: video/Aggresiv.png
     prev: 2
@@ -61,10 +62,11 @@ elements:
   - image: img/startingpoints/startingpoints4.jpg
     captionTitle: FÖRMER
     #captionImage: img/fears/aggressiv_s.png
-    modalTitle: MÅSTE
+    #modalTitle: MÅSTE
+    modalTitleImage: img/fears/maste_s.png
     captionCategory: 
     content: >
-      MÅSTE
+      &nbsp;
     video: video/Förmer.m4v
     videoShot: video/Förmer.png
     prev: 3
@@ -81,10 +83,11 @@ elements:
   - image: img/startingpoints/startingpoints5.jpg
     #captionTitle: GENERAD
     captionImage: img/fears/generad_s.png
-    modalTitle: DÅLIG
+    #modalTitle: DÅLIG
+    modalTitleImage: img/fears/dalig_s.png
     captionCategory: 
     content: >
-      DÅLIG
+      &nbsp;
     video: video/Generad.m4v
     videoShot: video/Generad.png
     prev: 4
@@ -99,10 +102,11 @@ elements:
   - image: img/startingpoints/startingpoints6.jpg
     #captionTitle: OFFER
     captionImage: img/fears/offer_s.png
-    modalTitle: DÅLIG
+    #modalTitle: DÅLIG
+    modalTitleImage: img/fears/dalig_s.png
     captionCategory: 
     content: >
-      DÅLIG
+      &nbsp;
     video: video/Offer.m4v
     videoShot: video/Offer.png
     prev: 6
@@ -117,10 +121,11 @@ elements:
   - image: img/startingpoints/startingpoints7.jpg
     #captionTitle: OROLIG
     captionImage: img/fears/orolig_s.png
-    modalTitle: TVIVEL
+    #modalTitle: TVIVEL
+    modalTitleImage: img/fears/dalig_s.png
     captionCategory: 
     content: >
-      TVIVEL
+      &nbsp;
     video: video/Orolig.m4v
     videoShot: video/Orolig.png
     prev: 7
@@ -136,8 +141,9 @@ elements:
     #captionTitle: LYCKAD
     captionImage: img/fears/lyckad_s.png
     captionCategory: 
+    modalTitleImage: img/fears/bra_s.png
     content: >
-      BRA
+      &nbsp;
     video: video/Lyckad.m4v
     videoShot: video/Lyckad.png
     prev: 8

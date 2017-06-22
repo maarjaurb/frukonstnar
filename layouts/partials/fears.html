@@ -248,7 +248,13 @@
 <div class="portfolio-modal modal fade fears-modal" id="fearsModal{{ $i }}" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('{{ .image }}')">
     <div class="modal-content" data-dismiss="modal">
         <div id="fears-panel">
-            <h2>{{ .modalTitle }}</h2>
+            <h2>
+            {{ if .modalTitle }}
+                {{ .modalTitle }}
+            {{ else if .modalTitleImage }}
+                <img src="{{ .modalTitleImage }}" height="50" />
+            {{ end }}
+            </h2>
             <p>{{ .content | markdownify }}</p>
             {{ if .video }}
             <div class="video-wrapper">

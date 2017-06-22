@@ -44,8 +44,7 @@ publishDir = "docs"
 
 	Fonts = [
 		"IM+Fell+English+SC&amp;subset=latin-ext",
-		"Josefin+Sans:300,300i,400,400i,700,700i",
-		"Patrick+Hand",
+		"Quicksand:400",
 		"Quattrocento:400,700"
 	]
 

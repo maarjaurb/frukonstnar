@@ -13,7 +13,7 @@ elements:
   - image: img/textsnippets/1.jpg
     imageTitle: >
       AUTOPILOT ON/OFF
-    imageDate: "20.06.2017"
+    imageDate: "20/06/2017"
     captionText: > 
       Hej! Det har gått mycket bra ett tag nu att stå upp för mig själv, ta fight, inte lägga mig platt osv. 
       Men igår kväll så sipprade rädslan in i alla fall. 
@@ -68,10 +68,10 @@ elements:
       Det inre tvivlet.  
 
       Förbjudet att vara jag!
-    imageDate: "30.05.2017"
+    imageDate: "30/05/2017"
     captionText: >
       Jag blir förvirrad över min egen kluvenhet. Jag får så mycket ideer och inspiration ibland. 
-      Och såå mycket kraft att genomföra vad som helst. Men sen tappar jag kontakten med det.
+      Och såå mycket kraft att genomföra vad som helst. 
     contentImage: img/backgrounds/wall.jpg
     content: >
       ”Jag blir förvirrad över min egen kluvenhet. Jag får så mycket ideer och inspiration ibland. 
@@ -109,7 +109,7 @@ elements:
     # panelColor:             white
 
 
-# backgroundColor:        white
+backgroundColor:        white
 # titleSize:              50
 # titleColor:             "#333"
 titleMargin:            20px 0px 30px 0px
