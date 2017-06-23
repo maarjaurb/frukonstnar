@@ -7,7 +7,7 @@ filters:
       Tvivlet,
       Autopilot,
     ]
-all: Alle
+all: Alla
 
 elements:
   - image: img/textsnippets/1.jpg
