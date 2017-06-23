@@ -1316,17 +1316,6 @@ aside.cta-quote .panel {
     margin: 1%;
   }
 }
-@media (min-width: 767px) {
-  #textsnippetslist .mix2 .portfolio-wrapper .image-title {
-    font-size: 1.2em;
-    bottom: 30px;
-    line-height: 1.4em;
-  }
-  #textsnippetslist .mix2 .portfolio-wrapper .image-date {
-    font-size: 0.9em;
-    bottom: 10px;
-  }
-}
 #textsnippets-panel {
   width: 90%;
   max-width: 920px;
@@ -1343,7 +1332,7 @@ aside.cta-quote .panel {
   padding: 2vw 0vw;
   margin-bottom: 6vw;
   font-family: "Quicksand";
-  font-size: 2.5vw;
+  font-size: 7.5vw;
 }
 #textsnippets-panel h3 {
   background-color: #BA4C3D;
@@ -1351,7 +1340,8 @@ aside.cta-quote .panel {
   padding: 1.5vw 0vw;
 }
 #textsnippets-panel p {
-  font-size: 1.3vw;
+  font-size: 4vw;
+  line-height: 5.5vw;
   color: black;
   padding: 0.5vw 10vw;
   /* Padding around the text */
@@ -1363,6 +1353,42 @@ aside.cta-quote .panel {
 #textsnippets-panel video {
   height: 25vw;
   padding: 2vw 0vw;
+}
+@media (min-width: 767px) {
+  #textsnippetslist .mix2 .portfolio-wrapper .image-title {
+    font-size: 1.2em;
+    bottom: 30px;
+    line-height: 1.4em;
+  }
+  #textsnippetslist .mix2 .portfolio-wrapper .image-date {
+    font-size: 0.9em;
+    bottom: 10px;
+  }
+  #textsnippets-panel h2 {
+    font-size: 5vw;
+  }
+  #textsnippets-panel p {
+    font-size: 2.5vw;
+    line-height: 3vw;
+  }
+}
+@media (min-width: 992px) {
+  #textsnippetslist .mix2 .portfolio-wrapper .image-title {
+    font-size: 1.2em;
+    bottom: 30px;
+    line-height: 1.4em;
+  }
+  #textsnippetslist .mix2 .portfolio-wrapper .image-date {
+    font-size: 0.9em;
+    bottom: 10px;
+  }
+  #textsnippets-panel h2 {
+    font-size: 2.5vw;
+  }
+  #textsnippets-panel p {
+    font-size: 1.5vw;
+    line-height: 1.8vw;
+  }
 }
 .about-content {
   padding: 30px;
