@@ -36,7 +36,7 @@ elements:
     # Capiton and panel looks can be changed for each element, but also for all together further below with the global attributes
     # captionSize:            16
     # captionColor:           white
-    captionBackgroundColor:   "181, 226, 211, 0.91"
+    captionBackgroundColor:   "225, 162, 124, 0.91"
     # panelBackgroundColor:   "255, 0, 0, 0.3"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
     # panelColor:             white
 
@@ -74,7 +74,7 @@ elements:
 
     # captionSize:            16
     # captionColor:           white
-    captionBackgroundColor: "181, 226, 211, 0.92"
+    captionBackgroundColor: "225, 162, 124, 0.91"
     # panelBackgroundColor:   "182, 76, 61, 0.3"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
     # panelColor:             white
 
@@ -95,7 +95,7 @@ elements:
 
     # captionSize:            16
     # captionColor:           white
-    captionBackgroundColor: "181, 226, 211, 0.91"
+    captionBackgroundColor: "225, 162, 124, 0.91"
     # panelBackgroundColor:   "182, 76, 61, 0.3"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
     # panelColor:             white
 
@@ -133,7 +133,7 @@ elements:
 
     # captionSize:            16
     # captionColor:           white
-    captionBackgroundColor: "171, 226, 211, 0.92"
+    captionBackgroundColor: "225, 162, 124, 0.91"
     # panelBackgroundColor:   "182, 76, 61, 0.3"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
     # panelColor:             white
 
