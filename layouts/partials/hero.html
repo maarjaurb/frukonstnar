@@ -37,10 +37,28 @@
     }
 {{ end }}
 
+header {
+    background-image: url('{{ .imageSmartphone }}');
+}
+
+@media(min-width:768px) {
+    header {
+        background-image: url('{{ .imageTablet }}');
+    }
+}
+
+@media(min-width:992px) {
+    header {
+        background-image: url('{{ .image }}');
+    }
+}
+
+
+
 
 </style>
 
-<header style="background-image: url('{{ .image }}');">
+<header>
     <div class="intro-content">
         <img src="{{ .logo }}" class="img-responsive img-centered" alt="">
         <div class="brand-name">{{ .title | markdownify }}</div>

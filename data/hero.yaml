@@ -5,6 +5,8 @@
 # @fontTitle: 	Font of title
 
 image: "img/backgrounds/bg-header_2.jpg"
+imageTablet: "img/backgrounds/tablet.jpg"
+imageSmartphone: "img/backgrounds/mobile.jpg"
 title: ""
 subtitle: ""
 ref: "fears"

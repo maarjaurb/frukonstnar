@@ -76,10 +76,28 @@
     }
 
 
+header {
+    background-image: url('img/backgrounds/mobile.jpg');
+}
+
+@media(min-width:768px) {
+    header {
+        background-image: url('img/backgrounds/tablet.jpg');
+    }
+}
+
+@media(min-width:992px) {
+    header {
+        background-image: url('img/backgrounds/bg-header_2.jpg');
+    }
+}
+
+
+
 
 </style>
 
-<header style="background-image: url('img/backgrounds/bg-header_2.jpg');">
+<header>
     <div class="intro-content">
         <img src="" class="img-responsive img-centered" alt="">
         <div class="brand-name"></div>
@@ -1101,7 +1119,7 @@ Mängder av situationer, utmaningar, fortbildningar, grävande, prövande.</p>
                                 
                                 <li>
                                     
-                                    <span class="filter2" data-filter=".tvivlet">Tvivlet</span>
+                                    <span class="filter2 active" data-filter=".tvivlet">Tvivlet</span>
                                     
                                 </li>
                                 

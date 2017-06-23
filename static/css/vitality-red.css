@@ -1265,12 +1265,13 @@ aside.cta-quote .panel {
   color: white;
 }
 #textsnippetslist .mix2 .portfolio-wrapper .image-title {
-  font-size: 1.2em;
-  bottom: 30px;
+  font-size: 5vw;
+  bottom: 7vw;
+  line-height: 6vw;
 }
 #textsnippetslist .mix2 .portfolio-wrapper .image-date {
-  font-size: 0.9em;
-  bottom: 10px;
+  font-size: 3vw;
+  bottom: 1.5vw;
 }
 #textsnippetslist .mix2 .portfolio-wrapper .caption {
   position: absolute;
@@ -1313,6 +1314,17 @@ aside.cta-quote .panel {
   #textsnippetslist .mix2 {
     width: 48%;
     margin: 1%;
+  }
+}
+@media (min-width: 767px) {
+  #textsnippetslist .mix2 .portfolio-wrapper .image-title {
+    font-size: 1.2em;
+    bottom: 30px;
+    line-height: 1.4em;
+  }
+  #textsnippetslist .mix2 .portfolio-wrapper .image-date {
+    font-size: 0.9em;
+    bottom: 10px;
   }
 }
 #textsnippets-panel {
@@ -1745,6 +1757,10 @@ body.vintage .testimonials .owl-controls .owl-next {
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #dbcaf9;
 }
+#calendar {
+  margin-top: 56px;
+  margin-bottom: 210px;
+}
 #calendar.closed {
   padding: 0px;
 }
@@ -1759,6 +1775,12 @@ form .row:first-child .floating-label-form-group {
 #calendar .panel-title span {
   display: inline-block;
   width: 200px;
+}
+@media (min-width: 992px) {
+  #calendar {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
 }
 #welcome {
   position: relative;
