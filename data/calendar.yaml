@@ -4,7 +4,7 @@
 # @fontPrimary: Font of subtitle
 # @fontTitle: 	Font of title
 
-#backgroundImage: img/calendar/dahabshore.jpg
+#backgroundImage: img/calendar/wall.png
 icon: img/calendar/calendar.ico
 iconTop: 	-80px
 iconLeft: 20px
