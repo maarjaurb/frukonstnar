@@ -1181,11 +1181,24 @@ aside.cta-quote .panel {
   color: rgba(0, 0, 0, 0);
 }
 #fears-panel video {
-  height: 25vw;
+  width: 100%;
+  height: 100%;
   padding: 2vw 0vw;
 }
 .modal-open {
   overflow: scroll;
+}
+@media (min-width: 767px) {
+  #fears-panel video {
+    height: 50vw;
+    padding: 2vw 0vw;
+  }
+}
+@media (min-width: 992px) {
+  #fears-panel video {
+    height: 25vw;
+    padding: 2vw 0vw;
+  }
 }
 #textsnippets .portfolio-filter {
   display: inline-block;
