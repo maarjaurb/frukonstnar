@@ -5,7 +5,7 @@
 # @fontTitle: 	Font of title
 
 backgroundImage: img/calendar/malin.jpg
-icon: img/about/mask.png
+icon: img/about/mask_s.png
 iconTop: 	-80px
 iconRight: 20px
 iconSize: 160

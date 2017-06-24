@@ -4,7 +4,7 @@
 # @fontPrimary: Font of subtitle
 # @fontTitle: 	Font of title
 
-backgroundImage: img/calendar/gardiner.jpg
+backgroundImage: img/welcome/valkommen.jpg
 icon: img/welcome/valkommen.png
 iconTop: 	-100px
 iconLeft: 100px
