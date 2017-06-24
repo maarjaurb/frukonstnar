@@ -5,7 +5,7 @@
 # @fontTitle: 	Font of title
 
 #backgroundImage: img/calendar/wall.png
-icon: img/calendar/calendar.ico
+icon: img/calendar/calendar.png
 iconTop: 	-80px
 iconLeft: 20px
 iconSize: 160
