@@ -8,13 +8,17 @@ filters:
       Autopilot,
     ]
 
-  - name: "Det bästa jag vet"
+  - name: "Det bästa jag vet. Vill du vara med?"
     topics: [
-      Initiation,
       Sång,
-      Teater,
       Improvisation,
-      Inspiration
+      Rampljus,
+      Inspiration,
+      Intuition,
+      Initiation,
+      
+      
+      
     ]
 all: Alla
 
@@ -106,7 +110,7 @@ elements:
       - Tvivlet
 
 
-  - image: img/textsnippets/1.jpg
+  - image: img/textsnippets/2.jpg
     imageTitle: >
       INITIATION TILL VUXEN KVINNA
 
@@ -161,10 +165,11 @@ elements:
       För flickor 13-18 år eller kvinnor 21 och uppåt. Helhelg tor-sön.
 
     filters:
+      - Det bästa jag vet. Vill du vara med?
       - Initiation
 
 
-  - image: img/textsnippets/1.jpg
+  - image: img/textsnippets/2.jpg
     imageTitle: >
       SJUNGANDE
 
@@ -194,9 +199,10 @@ elements:
       La la la la la la laaaa!!! <3 <3 <3 
 
     filters:
+      - Det bästa jag vet. Vill du vara med?
       - Sång
 
-  - image: img/textsnippets/1.jpg
+  - image: img/textsnippets/2.jpg
     imageTitle: >
       RAMPLJUS
 
@@ -230,11 +236,12 @@ elements:
 
 
     filters:
-      - Teater
+      - Det bästa jag vet. Vill du vara med?
+      - Rampljus
 
-  - image: img/textsnippets/1.jpg
+  - image: img/textsnippets/2.jpg
     imageTitle: >
-      IMPROVISATION...
+      IMPROVISATION
 
     #imageDate: "30/05/2017"
     captionText: >
@@ -261,9 +268,10 @@ elements:
       Så borde man väl egentligen inte hålla på?   
 
     filters:
+      - Det bästa jag vet. Vill du vara med?
       - Improvisation
 
-  - image: img/textsnippets/1.jpg
+  - image: img/textsnippets/2.jpg
     imageTitle: >
       INSPIRATION I GRUPP
 
@@ -354,11 +362,14 @@ elements:
       Kontakt för mer info: frukonstnar@gmail.com
 
     filters:
+      - Det bästa jag vet. Vill du vara med?
       - Inspiration
 
-  - image: img/textsnippets/1.jpg
+  - image: img/textsnippets/2.jpg
     imageTitle: >
-      MED TILLIT TILL INTUITIONEN:  KOM, LÅT MIG INSPIRERA DIG!
+      MED TILLIT TILL INTUITIONEN:  
+
+      KOM, LÅT MIG INSPIRERA DIG!
 
     #imageDate: "30/05/2017"
     captionText: >
@@ -419,7 +430,8 @@ elements:
       Intuitiv inspiratör
 
     filters:
-      - Inspiration
+      - Det bästa jag vet. Vill du vara med?
+      - Intuition
 
 
     # captionSize:            16
