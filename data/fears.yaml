@@ -24,7 +24,7 @@ elements:
   - image: img/startingpoints/startingpoints2.jpg
     #captionTitle: TILL LAGS
     captionImage: img/fears/tilllags_s.png
-    modalTitleImage: img/fears/borde_s.png
+    modalTitleImage: img/fears/maste_s.png
     captionCategory: 
     content: >
       &nbsp;
@@ -63,7 +63,7 @@ elements:
     captionTitle: FÖRMER
     #captionImage: img/fears/aggressiv_s.png
     #modalTitle: MÅSTE
-    modalTitleImage: img/fears/maste_s.png
+    #modalTitleImage: img/fears/maste_s.png
     captionCategory: 
     content: >
       &nbsp;
@@ -101,7 +101,7 @@ elements:
     #captionTitle: GENERAD
     captionImage: img/fears/generad_s.png
     #modalTitle: DÅLIG
-    modalTitleImage: img/fears/dalig_s.png
+    modalTitleImage: img/fears/borde_s.png
     captionCategory: 
     content: >
       &nbsp;
