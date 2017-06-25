@@ -56,9 +56,8 @@ elements:
 
 
     filters:
+      - Inuti
       - Autopilot
-
-
 
     # Capiton and panel looks can be changed for each element, but also for all together further below with the global attributes
     # captionSize:            16
@@ -66,8 +65,6 @@ elements:
     captionBackgroundColor:   "51, 114, 166, 0.98"
     # panelBackgroundColor:   "255, 0, 0, 0.3"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
     # panelColor:             white
-
-
 
   - image: img/textsnippets/1.jpg
     imageTitle: >
@@ -102,10 +99,45 @@ elements:
        kontakten med mig själv och utsuddandet av mig själv”
 
     filters:
+      - Inuti
       - Tvivlet
 
 
+  - image: img/textsnippets/1.jpg
+    imageTitle: >
+      22222 Det inre tvivlet.  
 
+      Förbjudet att vara jag!
+    imageDate: "30/05/2017"
+    captionText: >
+      22222 Jag blir förvirrad över min egen kluvenhet. Jag får så mycket ideer och inspiration ibland. 
+      Och såå mycket kraft att genomföra vad som helst. 
+    contentImage: img/backgrounds/wall.png
+    content: >
+      22222 ”Jag blir förvirrad över min egen kluvenhet. Jag får så mycket ideer och inspiration ibland. 
+      Och såå mycket kraft att genomföra vad som helst. Men sen tappar jag kontakten med det.  
+
+      Vågar inte. Börjar värdera. Tvivla. Vilja rädda andra. Är det här verkligen rätt?
+      Önskar då att jag kunde glömma allt det som har med mitt eget uttrycksbehov att göra. 
+      Det vore lättare. Men det hjälper inte. Det är bara en hinna emellan. Och Plötsligt är 
+      den borta och då finns allt där igen. Det har inte försvunnit. Inte sinat. Det är där i 
+      full kraft och jag är på ruta noll igen. Det hjälpte inte att jag försökte kväva min kapacitet, 
+      min inre motivation, min livsväg, min NATUR! Det finns och det vill leva och manifestera sig, 
+      ovillkorligt, i evighet.
+
+
+      Varför är det så komplicerat och tillkrånglat för mig att leva ”mig själv”?? Nu!! 
+      Varför kommer skuld, skam, synd och in? Varför lyssnar jag på kraxande kråkor?
+      Sviker jag någon när jag gör det jag älskar? Lättsamt, lekfullt, skamlöst och onyttigt?
+      Varför får jag dåligt samvete? Och tror på att det är fel, fult och en flykt! VARFÖR vågar 
+      jag inte gå emot alla offerkoftor, lidandet, och existensiella ödesmättade lockelser??
+      Jo för Det KAN ju vara SANT!!! Att jag ÄR en skyldig, synderska som lurar mig själv! Jag är
+       då ett stoort EGO! FY SKÄMS!! Att ens TÄNKA TANKEN.  USCH!  Ja så är det.  varv på varv, 
+       kontakten med mig själv och utsuddandet av mig själv”
+
+    filters:
+      - New
+      - New1
 
 
     # captionSize:            16

@@ -448,6 +448,7 @@
 						self._processClick($(this), 'filter');
 					});
 			} else {
+
 				self._$sortButtons = $(self.selectors.sort);
 				self._$filterButtons = $(self.selectors.filter);
 
@@ -455,9 +456,11 @@
 					self._processClick($(this), 'sort');
 				});
 
-				self._$filterButtons.on('click.mixItUp.'+self._id, function(){
-					self._processClick($(this), 'filter');
-				});
+				// lafisrap: Do not react on clicks on featlist
+				// if( self._id !== "fearslist" )
+					self._$filterButtons.on('click.mixItUp.'+self._id, function(){
+						self._processClick($(this), 'filter');
+					});
 			}
 
 			filters[self.selectors.filter] = (filters[self.selectors.filter] === undf) ? 1 : filters[self.selectors.filter] + 1;
