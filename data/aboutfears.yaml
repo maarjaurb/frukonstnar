@@ -1,0 +1,58 @@
+# Change LESS Globals in file static/less/vitality.less for following items
+# @themeDark: 	Color of title and subtitle
+# @themePrimary: 	Color of double line and navigation button
+# @fontPrimary: Font of subtitle
+# @fontTitle: 	Font of title
+
+backgroundImage: img/calendar/gardiner.jpg
+icon: img/welcome/valkommen.png
+iconTop:  -100px
+iconLeft: 250px
+iconSize: 120
+text: >
+    <h2>VÄLKOMMEN TILL DEN HALTANDE TEATERN!</h2>  
+
+
+    Det är här det sker!  
+
+    Den haltande teatern är arenan för utforskandet, medvetandegörandet av det inre, det som är i mörkret blir belyst här!  
+
+    Man kan också kort och gott kalla det för en LEKSTUGA. För här leker vi med det som känns allvarligt, farligt, 
+    förbjudet och omöjligt.  
+
+    Vi undviker inte det som står i vägen. Vi lär känna det. Vi lever igenom det. Lever ut det. Skrattar åt eländet. 
+    Och landar om och om igen i ett tillstånd av... ja, av vaddå? Frid? Kärlek? Varande? Det som finns när inget annat finns, 
+    det som finns bakom rädslan, bakom alla värderingar, borden, rätt och fel. Där landar vi när det andra tystnar.
+    Och det är rätt skönt.
+    Men så länge har vi kul med skiten!  
+
+
+    På den haltande teatern får man höras och synas. Gråta , skrika och skratta högt eller tystna, 
+    frysa, skaka och vara handlingsförlamad eller blyg, eller fnittrig. Helig och mänsklig på samma gång!   
+
+
+    Den haltande teatern vilar tryggt under Fru Konstnärs vingar och här kan det dyka upp workshops, 
+    bjudas föreställningar eller andra livgivande evenemang.  
+
+
+    Asså livet är ändå ofullständigt och bristfälligt så vi kan likväl gilla det. Inklusive allt! Och då menar jag ALLT!
+    Gilla kanske är lite att ta i …men älska det då!?  
+
+
+    Och när du ändå är igång:
+    Älska DIG SJÄLV också. När du förtjänar det som minst!  
+
+
+    Och förresten, teatern går att besöka, den finns IRL !!!
+    Adressen är: Lunda By, 15396 Mölnbo
+
+# Additional Parameters
+
+textSize:     		18
+# textPadding:			60
+textColor: 				"#cecece"
+# textColorPrimary: "#700D00"
+# buttonSize:    		18
+# buttonColor: 			"white"
+# lineColor: 				"#700D00"
+# opacity: 					0.4

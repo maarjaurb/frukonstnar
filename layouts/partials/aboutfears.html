@@ -1,0 +1,89 @@
+<!-- Quote Call to Action -->
+{{ with .Site.Data.aboutfears }}
+
+<style>
+{{ if .textSize }}
+	#aboutfears div.quote p {
+		font-size: {{ .textSize }}px !important;
+		line-height: {{ mul .textSize 1.375 }}px !important;
+  }
+{{ end }}
+
+{{ if .textPadding }}
+	#aboutfears .panel {
+		padding: {{ mul .textPadding 0.266 }}px {{ mul .textPadding 0.666 }}px !important;
+  }
+{{ end }}
+
+{{ if .textColor }}
+	#aboutfears div.quote p {
+		color: {{ .textColor }} !important;
+  }
+{{ end }}
+
+{{ if .textColorPrimary }}
+	#aboutfears div.quote .text-primary {
+		color: {{ .textColorPrimary }} !important;
+  }
+{{ end }}
+
+{{ if .buttonSize }}
+	#aboutfears a.btn {
+		font-size: {{ .buttonSize }}px !important;
+  }
+{{ end }}
+
+{{ if .buttonColor }}
+	#aboutfears a.btn {
+		color: {{ .buttonColor }} !important;
+		border-color: {{ .buttonColor }} !important;
+  }
+{{ end }}
+
+{{ if .lineColor }}
+	#aboutfears hr {
+		border-color: {{ .lineColor }} !important;
+  }
+{{ end }}
+
+{{ if .opacity }}
+	#aboutfears .transparent-border {
+		border-color: rgba( 0, 0, 0, {{ add .opacity 0.05 }});
+		background-color: rgba( 0, 0, 0, {{ .opacity }});
+	}
+{{ end }}
+
+@media(min-width:768px) {
+	{{ if .textPadding }}
+		#aboutfears .panel {
+			padding: {{ mul .textPadding 0.3 }}px {{ mul .textPadding 0.75 }}px !important;
+	  }
+	{{ end }}
+}
+
+@media(min-width:992px) {
+	{{ if .textPadding }}
+		#aboutfears .panel {
+			padding: {{ mul .textPadding 0.4 }}px {{ .textPadding }}px !important;
+	  }
+	{{ end }}
+}
+
+</style>
+<aside id="aboutfears" class="collapsible-section cta-quote icon-section" style="background-image: url('{{ .backgroundImage }}');">
+		<div class="aboutfears-icon">
+			<a href="#aboutfears" class="page-scroll">
+				<img src="{{ .icon }}" width="{{ .iconSize }}" style="top: {{ .iconTop }}; left: {{ .iconLeft }};" />
+			</a>
+		</div>
+    <div class="container">
+        <div class="row">
+            <div class="panel transparent-border col-md-10 col-md-offset-1 wow fadeIn">
+                <div class="row">
+	                <div class="col-xs-12 col-md-8 col-md-offset-2 quote">{{ .text | markdownify }}</div>
+		            </div>
+        		</div>
+        </div>
+    </div>
+</aside>
+{{ end }}
