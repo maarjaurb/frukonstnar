@@ -1,4 +1,4 @@
-title: "Rädslan har många ansikten:"
+title: "Rädd?"
 subtitle: ""
 
 elements:
@@ -80,9 +80,9 @@ elements:
 
   - image: "img/startingpoints/middle.jpg"
       #captionTitle: FÖRMER
-    #captionImage: img/fears/aggressiv_s.png
+    captionImage: img/fears/logo.png
     #modalTitle: MÅSTE
-    #modalTitleImage: img/fears/maste_s.png
+    modalTitleImage: img/fears/migsjalv_s.png
     captionCategory: 
     content: >
       &nbsp;
@@ -93,7 +93,7 @@ elements:
 
     # captionSize:            16
     # captionColor:           white
-    captionBackgroundColor: "219, 110, 80, 0.90"
+    captionBackgroundColor: "255, 255, 255, 0.99"
     # panelBackgroundColor:   "182, 76, 61, 0.3"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
     # panelColor:             white
 

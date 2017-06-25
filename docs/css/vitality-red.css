@@ -1831,3 +1831,7 @@ form .row:first-child .floating-label-form-group {
   position: absolute;
   cursor: pointer;
 }
+#welcome .panel img {
+  border-radius: 10px;
+  width: 100%;
+}
