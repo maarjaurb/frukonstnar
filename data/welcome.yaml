@@ -10,7 +10,8 @@ iconTop: 	-100px
 iconLeft: 100px
 iconSize: 120
 text: >
-    <h2>VÄLKOMMEN TILL DEN HALTANDE TEATERN!</h2>  
+    <h2>VÄLKOMMEN TILL</h2>  
+    ![Alt text](img/welcome/Den.png "")
 
 
     Fru konstnärs verksamhet.  
@@ -37,9 +38,6 @@ text: >
     bjudas föreställningar eller andra livgivande evenemang.  
 
 
-    ![Alt text](img/welcome/valkommen.jpg "Test")
-
-
     Asså livet är ändå ofullständigt och bristfälligt så vi kan likväl gilla det. Inklusive allt! Och då menar jag ALLT!
     Gilla kanske är lite att ta i …men älska det då!?  
 
@@ -51,6 +49,10 @@ text: >
     Och förresten, teatern går att besöka, den finns IRL !!!
     Adressen är: Lunda By, 15396 Mölnbo
 
+
+
+    ![Alt text](img/welcome/teatern_1.jpg "")
+    
 
 # Additional Parameters
 
