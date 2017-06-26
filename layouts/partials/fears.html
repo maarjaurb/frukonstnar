@@ -201,6 +201,12 @@
     }
     {{ end }}
 
+    {{ if .captionBackgroundImage }}
+    #fears #portfolio{{ $i }} .caption-bg {
+        background-image: url({{ .captionBackgroundImage }}) !important;
+        background-size: 100% 100%;
+    }
+    {{ end }}
 {{ end }}
 
 </style>
