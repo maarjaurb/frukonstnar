@@ -213,7 +213,12 @@
 
 <section id="fears">
     <div class="container text-center wow fadeIn">
+        {{ if .title }}
         <h2>{{ .title }}</h2>
+        {{ end }}
+        {{ if .titleImage }}
+        <h2><img src="{{ .titleImage }}" width="{{ .imageSize }}" /></h2>
+        {{ end }}
         <p>{{ .subtitle | markdownify }}</p>
         <div class="row">
             <div class="col-lg-12">
