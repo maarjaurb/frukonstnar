@@ -456,7 +456,7 @@ titleMargin:            20px 0px 30px 0px
 # captionSize:            16
 # captionColor:           white
 # captionBackgroundColor: "#FF4C3D"
-panelBackgroundColor:   "4, 90, 66"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
+panelBackgroundColor:   "186, 76, 61"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
 # panelColor:             white
 # panelTitleColor:        blue
 # panelTextColor:         blue
