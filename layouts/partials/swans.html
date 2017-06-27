@@ -1,0 +1,124 @@
+<!-- Quote Call to Action -->
+{{ with .Site.Data.swans }}
+
+<style>
+{{ range $i, $e := .panels }}
+{{ if .textSize }}
+	#swans{{ $i }} div.quote p {
+		font-size: {{ .textSize }}px !important;
+		line-height: {{ mul .textSize 1.375 }}px !important;
+  }
+{{ end }}
+
+{{ if .textPadding }}
+	#swans{{ $i }} .panel {
+		padding: {{ mul .textPadding 0.266 }}px {{ mul .textPadding 0.666 }}px !important;
+  }
+{{ end }}
+
+{{ if .textColor }}
+	#swans{{ $i }} div.quote p {
+		color: {{ .textColor }} !important;
+  }
+{{ end }}
+
+{{ if .textColorPrimary }}
+	#swans{{ $i }} div.quote .text-primary {
+		color: {{ .textColorPrimary }} !important;
+  }
+{{ end }}
+
+{{ if .buttonSize }}
+	#swans{{ $i }} a.btn {
+		font-size: {{ .buttonSize }}px !important;
+  }
+{{ end }}
+
+{{ if .buttonColor }}
+	#swans{{ $i }} a.btn {
+		color: {{ .buttonColor }} !important;
+		border-color: {{ .buttonColor }} !important;
+  }
+{{ end }}
+
+{{ if .lineColor }}
+	#swans{{ $i }} hr {
+		border-color: {{ .lineColor }} !important;
+  }
+{{ end }}
+
+{{ if .opacity }}
+	#swans{{ $i }} .transparent-border {
+		border-color: rgba( 0, 0, 0, {{ add .opacity 0.05 }});
+		background-color: rgba( 0, 0, 0, {{ .opacity }});
+	}
+{{ end }}
+
+@media(min-width:768px) {
+	{{ if .textPadding }}
+		#swans{{ $i }} .panel {
+			padding: {{ mul .textPadding 0.3 }}px {{ mul .textPadding 0.75 }}px !important;
+	  }
+	{{ end }}
+}
+
+@media(min-width:992px) {
+	{{ if .textPadding }}
+		#swans{{ $i }} .panel {
+			padding: {{ mul .textPadding 0.4 }}px {{ .textPadding }}px !important;
+	  }
+	{{ end }}
+}
+{{ end }}
+
+</style>
+<section id="swans" class="cta-quote icon-section" style="background-image: url('{{ .backgroundImage }}');">
+	<div style="text-align:center;">
+		<ul class="nav nav-tabs">
+			{{ range $i, $e := .panels }}
+		  <li><a data-toggle="tab" href="#swan{{ $i }}"><img src="{{ .icon }}" width="{{ .iconSize }}" /></a></li>
+		  {{ end }}
+		</ul>
+	</div>
+
+	<div class="tab-content">
+		{{ range $i, $e := .panels }}
+	  <div id="swan{{ $i }}" class="tab-pane fade">
+	  	{{ if eq .type "Text" }}
+	    <div class="container swan-text">
+	        <div class="row">
+	            <div class="panel transparent-border col-md-10 col-md-offset-1 wow fadeIn">
+	                <div class="row">
+		                <div class="col-xs-12 col-md-8 col-md-offset-2 quote">{{ .text | markdownify }}</div>
+			            </div>
+	        		</div>
+	        </div>
+	    </div>
+	  	{{ else if eq .type "Calendar" }}
+	    <div class="container swan-calendar">
+				<div class="panel-group" id="accordion">
+					{{ range $i1, $e1 := .events }}
+				  <div class="panel panel-default">
+				    <div class="panel-heading">
+				      <h4 class="panel-title">
+				        <a data-toggle="collapse" data-parent="#accordion" href="#calendar-collapse-{{ $i1 }}">
+				        	<span class="date">{{ .date }}</span>
+				        	<span class="title"><strong>{{ .title }}</strong></span>
+				      	</a>
+				      </h4>
+				    </div>
+				    <div id="calendar-collapse-{{ $i1 }}" class="panel-collapse collapse{{ if eq $i1 0 }} in{{ end }}">
+				      <div class="panel-body">
+				      	{{ .text }}
+				      </div>
+				    </div>
+				  </div>
+				  {{ end }}
+				</div>    	
+	    </div>
+		  {{ end }}
+	  </div>
+	  {{ end }}
+	</div>
+</section>
+{{ end }}

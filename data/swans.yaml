@@ -1,0 +1,212 @@
+# Change LESS Globals in file static/less/vitality.less for following items
+# @themeDark: 	Color of title and subtitle
+# @themePrimary: 	Color of double line and navigation button
+# @fontPrimary: Font of subtitle
+# @fontTitle: 	Font of title
+
+backgroundImage: img/about/malin2.jpg
+
+panels:
+    - icon: img/swans/swan_welcome.png
+      iconSize: 160
+      type: Text
+      text: >
+
+        <h2>VÄLKOMMEN TILL</h2>  
+        ![Alt text](img/welcome/Den.png "")
+
+
+        Fru konstnärs verksamhet.  
+
+        Det är här det sker!  
+
+        Den haltande teatern är arenan för utforskandet, medvetandegörandet av det inre, det som är i mörkret blir belyst här!  
+
+        Man kan också kort och gott kalla det för en LEKSTUGA. För här leker vi med det som känns allvarligt, farligt, 
+        förbjudet och omöjligt.  
+
+        Vi undviker inte det som står i vägen. Vi lär känna det. Vi lever igenom det. Lever ut det. Skrattar åt eländet. 
+        Och landar om och om igen i ett tillstånd av... ja, av vaddå? Frid? Kärlek? Varande? Det som finns när inget annat finns, 
+        det som finns bakom rädslan, bakom alla värderingar, borden, rätt och fel. Där landar vi när det andra tystnar.
+        Och det är rätt skönt.
+        Men så länge får vi var nyfikna på skiten! 
+
+
+        På den haltande teatern får man höras och synas. Gråta , skrika och skratta högt eller tystna, 
+        frysa, skaka och vara handlingsförlamad eller blyg, eller fnittrig. Eller bara se på. Helig och mänsklig på samma gång!   
+
+
+        Den haltande teatern vilar tryggt under Fru Konstnärs vingar och här kan det dyka upp workshops, 
+        bjudas föreställningar eller andra livgivande evenemang.  
+
+
+        Asså livet är ändå ofullständigt och bristfälligt så vi kan likväl gilla det. Inklusive allt! Och då menar jag ALLT!
+        Gilla kanske är lite att ta i …men älska det då!?  
+
+
+        Och när du ändå är igång:
+        Älska dig själv också, särskilt när du förtjänar det som minst!  
+
+
+        Och förresten, teatern går att besöka, den finns IRL !!!
+        Adressen är: Lunda By, 15396 Mölnbo
+
+
+
+        ![Alt text](img/welcome/teatern_1.jpg "")
+
+      textSize:     		38
+      # textPadding:			60
+      textColor: 				"#efefef"
+      # textColorPrimary: "#700D00"
+      # buttonSize:    		18
+      # buttonColor: 			"white"
+      # lineColor: 				"#700D00"
+      opacity: 					0.5
+
+
+
+
+    - icon: img/swans/swan_calendar.png
+      iconSize: 160
+      type: Calendar
+      events:
+        - title: Min sommarkreation
+          date: 30/6-5/7 2017
+          text: >
+            Workshop för föräldrar och andra intresserade under barnlägret på Sjöbergsgården. 
+            Att under några timmar varje kväll ha fokus på sig själv och sin kreativa process i livet.
+
+        - title: Min sommarkreation
+          date: 12/7-17/7 2017
+          text: >
+            Workshop för föräldrar och andra intresserade under barnlägret på Sjöbergsgården. 
+            Att under några timmar varje kväll ha fokus på sig själv och sin kreativa process i livet.
+
+        - title: LIVSSPELSGRUPP (kvinnor)
+          date: 15-17/9 2017
+          text: >
+            Sluten grupp med fokus på att bryta egna mönster.
+
+        - title: LIVSSPELSGRUPP (Män)
+          date: 20-22/10 2017
+          text: >
+            Sluten grupp med fokus på att bryta egna mönster.
+
+        - title: SHOW SOFIAGALAN, kulturhuset, Ytterjärna
+          date: 21/10 2017
+          text: >
+            Konfrencier på upcyklingshowen ”Jag i världen” tillsammans med Bettina Fuerstein.
+
+        - title: Workshop på Malmö konsthögskola
+          date: 6-8/11 2017
+          text: >
+            Tillsammans med Iris Johansson och Tobias Sjöberg på temat ”värde och värderingar-om det ovärderliga.
+
+        - title: LIVSSPELSGRUPP (Tyska män)
+          date: 17-19/11 2017
+          text: >
+            Sluten grupp med fokus på att bryta egna mönster.
+
+        - title: LIVSSPELSGRUPP (Tyska kvinnor)
+          date: 27-29/11 2017
+          text: >
+            Sluten grupp med fokus på att bryta egna mönster.
+
+        - title: LIVSSPELSGRUPP (Ny)
+          date: 1-3/12 2017
+          text: >
+            Sluten grupp med fokus på att bryta egna mönster.
+
+      textSize:             18
+      # textPadding:            60
+      textColor:                "#efefef"
+      # textColorPrimary: "#700D00"
+      # buttonSize:         18
+      # buttonColor:            "white"
+      # lineColor:              "#700D00"
+      opacity:                  0.5
+
+
+
+
+    - icon: img/swans/swan_about.png
+      iconSize: 160
+      type: Text
+      text: >
+
+        <h3>OM MALIN</h3>  
+
+        Det jag anar om mig själv:
+        Jag är ett glädjetjut, en virvelvind, ett ljus. Ett väsen med vingar.  
+        En sångfågel. Jag har fått gåvan att förändra ett rum med min närvaro. Scenen är mitt element. 
+        Inlevelsen är pricksäker. Intuitionen talar sanning.  
+
+
+        Det som går att bevisa:  
+
+        Jag är inte högskoleutbildad och har inget papper som säger vad jag kan, vad som är min proffession.  
+
+        Min livsväg och mina livsval är min kvalitetssäkring.  
+
+        Mina viktigaste lärare/utbildningar:  
+
+        Min mamma Anette  
+
+        Min man Jón Kristján  
+
+        mina fem barn Benjamin, Ruben, Luna, Sonja och Hilma  
+
+        Mina lånesöner Öystein och Fabian  
+
+        Iris Johansson - min mentor  
+
+        Mina vänner...  
+
+        Mina fiender...  
+
+        Mängder av situationer, utmaningar, fortbildningar, grävande, prövande.  
+
+
+        En envishet att komma närmre och närmre min natur, min unika konstitution. 
+        Att avkläda lager på lager av rädsla för att få uppleva det jag anar om mig själv.  
+
+
+        Ha ha! Efter denna gedigna utbildning är jag nu självutnämnd och färdigdiplomerad till
+        ”INTUITIV INSPIRATÖR”. Känn på den du!  
+
+
+        DET vill jag gärna dela med mig av till dig!  
+
+
+        Varje dag är en lektion i konsten att eliminera rädsla och försonas med faktumet att jag, 
+        du och livet är ofullständigt men att det är helt i sin ordning! 
+        Jag vill göra konst av det! Jag vill leka med det! 
+        Jag vill sluta vara rädd för rädslan! 
+        Jag vill älska!
+
+      textSize:             18
+      # textPadding:            60
+      textColor:                "#efefef"
+      # textColorPrimary: "#700D00"
+      # buttonSize:         18
+      # buttonColor:            "white"
+      # lineColor:              "#700D00"
+      opacity:                  0.5
+
+
+
+    - icon: img/swans/swan_radslor.png
+      iconSize: 160
+      type: Text
+      text: >
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim dolor consequatur perspiciatis voluptatum quo fugiat consectetur, officiis repellendus provident nesciunt ipsa quos eveniet sunt modi odio reprehenderit veniam, neque iste!
+
+      textSize:             18
+      # textPadding:            60
+      textColor:                "#efefef"
+      # textColorPrimary: "#700D00"
+      # buttonSize:         18
+      # buttonColor:            "white"
+      # lineColor:              "#700D00"
+      opacity:                  0.5
