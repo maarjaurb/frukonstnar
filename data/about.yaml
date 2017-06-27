@@ -4,7 +4,7 @@
 # @fontPrimary: Font of subtitle
 # @fontTitle: 	Font of title
 
-backgroundImage: img/calendar/malin.jpg
+backgroundImage: img/about/malin.jpg
 icon: img/about/mask_s.png
 iconTop: 	-80px
 iconRight: 20px
