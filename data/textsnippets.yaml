@@ -69,7 +69,7 @@ elements:
     # Capiton and panel looks can be changed for each element, but also for all together further below with the global attributes
     # captionSize:            16
     # captionColor:           white
-    captionBackgroundColor:   "51, 114, 166, 0.98"
+    #captionBackgroundColor:   "151, 114, 66, 0.98"
     # panelBackgroundColor:   "255, 0, 0, 0.3"  # Color has to be written like this (no brackets, no hex, no string), due to opacity
     # panelColor:             white
 
@@ -161,7 +161,11 @@ elements:
       INITATION betyder början, och detta är en början på att leva som sig själv.  
 
 
-      För flickor 13-18 år eller kvinnor 21 och uppåt. Helhelg tor-sön.
+      För flickor 13-18 år eller kvinnor 21 och uppåt. Helhelg tor-sön.  
+
+
+
+      ![Alt text](img/textsnippets/2.jpg "")
 
     filters:
       - Det bästa jag vet. Vill du vara med?
@@ -195,7 +199,11 @@ elements:
       Jag älskar att dela med mig av denna kärlek. Jag vill dela den med dig.  
 
 
-      La la la la la la laaaa!!! <3 <3 <3 
+      La la la la la la laaaa!!! <3 <3 <3  
+
+      
+
+      ![Alt text](img/textsnippets/5.jpg "")
 
     filters:
       - Det bästa jag vet. Vill du vara med?
@@ -234,6 +242,9 @@ elements:
       THE SHOW IS GOING ON! ENJOY!
 
 
+      ![Alt text](img/textsnippets/4.jpg "")
+
+
     filters:
       - Det bästa jag vet. Vill du vara med?
       - Rampljus
@@ -265,6 +276,9 @@ elements:
       Eller….?  
 
       Så borde man väl egentligen inte hålla på?   
+
+
+      ![Alt text](img/textsnippets/9.jpg "")
 
     filters:
       - Det bästa jag vet. Vill du vara med?
@@ -342,7 +356,6 @@ elements:
 
       antingen tre hel- eller halvdagar där alltså processen uppföljs.  
 
-      (mängdrabatt)  
 
 
 
@@ -359,6 +372,9 @@ elements:
 
 
       Kontakt för mer info: frukonstnar@gmail.com
+
+
+      ![Alt text](img/textsnippets/8.jpg "")
 
     filters:
       - Det bästa jag vet. Vill du vara med?
@@ -427,6 +443,9 @@ elements:
       Fru Konstnär,  
 
       Intuitiv inspiratör
+
+
+      ![Alt text](img/textsnippets/3.jpg "")
 
     filters:
       - Det bästa jag vet. Vill du vara med?
