@@ -125,4 +125,28 @@ $( () => {
 			e.preventDefault();
 			e.stopPropagation();
 	});
+
+
+	//////////////////////////////////////////////////////////////////////////////////////////
+	// Handling Swans Pages
+	//
+	let lastActivePanel = null;
+	$( ".swan-link" ).click(function(e) {
+		let activePanel = $(this).attr("i"),
+				bg = (activePanel === lastActivePanel )? $("#swans").attr("background") : $(this).attr("background");
+
+		$("#swans").attr("style", "background-image: url(" + bg + ");");			
+
+		if( activePanel === lastActivePanel ) {
+			$("#swan"+activePanel).removeClass("active in");
+			lastActivePanel = null;
+		} else {
+	    let top = $("#swan"+activePanel).offset().top; //Getting Y of target element
+
+	 		$('html,body').animate({scrollTop: $(this).offset().top}, 800);			
+		}
+
+		lastActivePanel = activePanel;
+  });
+
 });

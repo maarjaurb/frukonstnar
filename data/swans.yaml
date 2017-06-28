@@ -8,6 +8,7 @@ backgroundImage: img/backgrounds/wall.png
 
 panels:
     - icon: img/swans/swan_welcome.png
+      backgroundImage: img/swans/bg-welcome.jpg
       iconSize: 160
       type: Text
       text: >
@@ -69,6 +70,7 @@ panels:
 
     - icon: img/swans/swan_calendar.png
       iconSize: 160
+      backgroundImage: img/swans/bg-calendar.png
       type: Calendar
       events:
         - title: Min sommarkreation
@@ -132,6 +134,7 @@ panels:
 
     - icon: img/swans/swan_about.png
       iconSize: 160
+      backgroundImage: img/swans/bg-about.jpg
       type: Text
       text: >
 
@@ -197,6 +200,7 @@ panels:
 
 
     - icon: img/swans/swan_radslor.png
+      backgroundImage: img/swans/bg-radslor.jpg
       iconSize: 160
       type: Text
       text: >

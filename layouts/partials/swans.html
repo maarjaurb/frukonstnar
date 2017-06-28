@@ -72,18 +72,18 @@
 {{ end }}
 
 </style>
-<section id="swans" class="cta-quote icon-section" style="background-image: url('{{ .backgroundImage }}');">
+<section id="swans" class="cta-quote icon-section" background="{{ .backgroundImage }}" style="background-image: url('{{ .backgroundImage }}');">
 	<div style="text-align:center;">
 		<ul class="nav nav-tabs">
 			{{ range $i, $e := .panels }}
-		  <li><a data-toggle="tab" href="#swan{{ $i }}"><img src="{{ .icon }}" width="{{ .iconSize }}" /></a></li>
+		  <li><a class="swan-link" i="{{ $i }}" data-toggle="pill" href="#swan{{ $i }}" background="{{ .backgroundImage }}"><img src="{{ .icon }}" width="{{ .iconSize }}" /></a></li>
 		  {{ end }}
 		</ul>
 	</div>
 
 	<div class="tab-content">
 		{{ range $i, $e := .panels }}
-	  <div id="swan{{ $i }}" class="tab-pane fade">
+	  <div id="swan{{ $i }}" i="{{ $i }}" class="tab-pane fade">
 	  	{{ if eq .type "Text" }}
 	    <div class="container swan-text">
 	        <div class="row">

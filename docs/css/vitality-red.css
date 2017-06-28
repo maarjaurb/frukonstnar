@@ -1860,12 +1860,12 @@ form .row:first-child .floating-label-form-group {
 }
 #swans .tab-content .swan-text {
   padding: 50px;
-  border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 40px;
+  background-color: rgba(0, 0, 0, 0.35);
 }
 #swans .tab-content .swan-text .panel {
   margin: 0;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: transparent;
 }
 #swans .tab-content .swan-text .panel img {
   border-radius: 10px;
