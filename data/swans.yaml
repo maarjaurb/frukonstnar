@@ -4,7 +4,7 @@
 # @fontPrimary: Font of subtitle
 # @fontTitle: 	Font of title
 
-backgroundImage: img/about/malin2.jpg
+backgroundImage: img/backgrounds/wall.png
 
 panels:
     - icon: img/swans/swan_welcome.png
