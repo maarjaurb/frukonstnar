@@ -4,7 +4,7 @@
 # @fontPrimary: Font of subtitle
 # @fontTitle: 	Font of title
 
-backgroundImage: img/backgrounds/wall.png
+backgroundImage: img/swans/wall.png
 
 panels:
     - icon: img/swans/swan_welcome.png
@@ -49,7 +49,7 @@ panels:
         Älska dig själv också, särskilt när du förtjänar det som minst!  
 
 
-        Och förresten, teatern går att besöka, den finns IRL !!!
+        Och förresten, teatern går att besöka, den finns IRL!!! SE PROGRAM!
         Adressen är: Lunda By, 15396 Mölnbo
 
 
@@ -138,7 +138,8 @@ panels:
       type: Text
       text: >
 
-        <h2>OM MALIN</h2>  
+        <h3>OM MALIN</h3>  
+
 
 
         Det jag anar om mig själv:
@@ -153,6 +154,8 @@ panels:
 
         Min livsväg och mina livsval är min kvalitetssäkring.  
 
+        Jag har tagit, lånat, härmat och prövat ut kunskap jag stött på och gjort en del av det till mitt.  
+    
         Mina viktigaste lärare/utbildningar:  
 
         Min mamma Anette  
@@ -172,22 +175,27 @@ panels:
         Mängder av situationer, utmaningar, fortbildningar, grävande, prövande.  
 
 
+
         En envishet att komma närmre och närmre min natur, min unika konstitution. 
         Att avkläda lager på lager av rädsla för att få uppleva det jag anar om mig själv.  
 
 
-        Ha ha! Efter denna gedigna utbildning är jag nu självutnämnd och färdigdiplomerad till
-        ”INTUITIV INSPIRATÖR”. Känn på den du!  
+
+        Ha ha! Efter denna gedigna utbildning är jag nu självutnämnd och diplomerad
+        ”INTUITIV INSPIRATÖR”. Det du!
+
 
 
         DET vill jag gärna dela med mig av till dig!  
 
 
+  
         Varje dag är en lektion i konsten att eliminera rädsla och försonas med faktumet att jag, 
         du och livet är ofullständigt men att det är helt i sin ordning! 
         Jag vill göra konst av det! Jag vill leka med det! 
         Jag vill sluta vara rädd för rädslan! 
         Jag vill älska!
+
 
       textSize:             30
       # textPadding:            60
@@ -205,10 +213,28 @@ panels:
       iconSize: 160
       type: Text
       text: >
-        <h2>Lorem ipsum dolor sit amet</h2>
+        <h2>RÄDSLAN HAR MÅNGA ANSIKTEN.</h2>
 
 
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim dolor consequatur perspiciatis voluptatum quo fugiat consectetur, officiis repellendus provident nesciunt ipsa quos eveniet sunt modi odio reprehenderit veniam, neque iste!
+        Rädsla när något är livsfarligt är relevant. Men onödiga rädslor ställer sig i vägen för att leva i kärlek och inre frihet. 
+        När faktiskt livet inte är hotat.  
+
+        Oro, tvivel, jämförelse, fördömanden, straff, följsamhet, måsten, tyckanden, irritation och värderingar.
+        De är osynliga men får väldigt många konsekvenser.
+        Att verkligen KÄNNA rädsla, frysa, skaka, frossa betyder att du är i yttre trygghet, det är bara då kroppen vågar 
+        släppa fram en urladdning, som djuren när de varit i livsfara. Annars visar den sig i försvar, spändhet, 
+        attacker, masker, roller, tvångsartade leenden och beteenden. Och det gäller oss alla. Det är helt NORMALT! 
+        Att vilja dölja sin rädsla och osäkerhet.  
+
+        Och våra rädslor håller vi ofta som heliga. Och då får de verkan. Gör Avtryck på livet. 
+        Men om man tar fram trollet i ljuset så spricker det! Kanske också din självbild och din identitet, 
+        men det är inte så farligt som du tror. Det är snarare helt ofarligt. Yippie! FRIHET! Att inte vara rädd.  
+
+
+        Men låt oss NU se våra rädslor som bundsförvanter, gåvor, som skaver och ställer sig i vägen för det vi 
+        önskar ända tills vi faktiskt löser upp dem.  Låt oss se dem. Erkänna dem. Utforska dem. Uppleva dem. 
+        Tillåta dem. Andas igenom dem. Omfamna dem. Leka med dem. Ladda ur dem. Och vem vet vad för skatt som 
+        öppnar sig i det mötet? <3
 
       textSize:             30
       # textPadding:            60

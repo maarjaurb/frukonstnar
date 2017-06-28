@@ -4,8 +4,8 @@
 # @fontPrimary: Font of subtitle
 # @fontTitle: 	Font of title
 
-backgroundImage: img/about/malin2.jpg
-icon: img/about/mask_s.png
+backgroundImage: img/about/malin.jpg
+icon: img/about/varfor.png
 iconTop: 	-80px
 iconRight: 20px
 iconSize: 160
