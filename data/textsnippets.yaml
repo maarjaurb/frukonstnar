@@ -3,6 +3,7 @@ subtitle: ""
 
 filters:
   - name: "Inuti"
+    image: img/textsnippets/inuti_s.png
     topics: [
       Tvivlet,
       Autopilot,

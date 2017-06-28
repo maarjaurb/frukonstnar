@@ -56,7 +56,7 @@ panels:
 
         ![Alt text](img/welcome/teatern_1.jpg "")
 
-      textSize:     		28
+      textSize:     		22
       # textPadding:			60
       textColor: 				"#efefef"
       # textColorPrimary: "#700D00"
@@ -138,7 +138,7 @@ panels:
       type: Text
       text: >
 
-        <h3>OM MALIN</h3>  
+        <h2>OM MALIN</h2>  
 
 
 
@@ -197,7 +197,7 @@ panels:
         Jag vill älska!
 
 
-      textSize:             30
+      textSize:             22
       # textPadding:            60
       textColor:                "#efefef"
       # textColorPrimary: "#700D00"
@@ -213,11 +213,12 @@ panels:
       iconSize: 160
       type: Text
       text: >
-        <h2>RÄDSLAN HAR MÅNGA ANSIKTEN.</h2>
+        <h2>RÄDSLAN HAR MÅNGA ANSIKTEN.</h2>  
 
 
         Rädsla när något är livsfarligt är relevant. Men onödiga rädslor ställer sig i vägen för att leva i kärlek och inre frihet. 
         När faktiskt livet inte är hotat.  
+
 
         Oro, tvivel, jämförelse, fördömanden, straff, följsamhet, måsten, tyckanden, irritation och värderingar.
         De är osynliga men får väldigt många konsekvenser.
@@ -225,6 +226,7 @@ panels:
         släppa fram en urladdning, som djuren när de varit i livsfara. Annars visar den sig i försvar, spändhet, 
         attacker, masker, roller, tvångsartade leenden och beteenden. Och det gäller oss alla. Det är helt NORMALT! 
         Att vilja dölja sin rädsla och osäkerhet.  
+
 
         Och våra rädslor håller vi ofta som heliga. Och då får de verkan. Gör Avtryck på livet. 
         Men om man tar fram trollet i ljuset så spricker det! Kanske också din självbild och din identitet, 
@@ -236,7 +238,7 @@ panels:
         Tillåta dem. Andas igenom dem. Omfamna dem. Leka med dem. Ladda ur dem. Och vem vet vad för skatt som 
         öppnar sig i det mötet? <3
 
-      textSize:             30
+      textSize:             22
       # textPadding:            60
       textColor:                "#efefef"
       # textColorPrimary: "#700D00"
