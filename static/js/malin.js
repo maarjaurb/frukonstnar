@@ -144,9 +144,9 @@ $( () => {
 	    let top = $("#swan"+activePanel).offset().top; //Getting Y of target element
 
 	 		$('html,body').animate({scrollTop: $(this).offset().top}, 800);			
+			$("#swan"+activePanel).addClass("active in");
+			lastActivePanel = activePanel;
 		}
-
-		lastActivePanel = activePanel;
   });
 
 });
