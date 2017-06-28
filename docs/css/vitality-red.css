@@ -1845,7 +1845,7 @@ form .row:first-child .floating-label-form-group {
   border: none;
 }
 #swans .nav-tabs li a {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.15);
   border: none;
   border-radius: 20px;
   margin: 10px;
@@ -1853,7 +1853,7 @@ form .row:first-child .floating-label-form-group {
 #swans .nav-tabs li a:active,
 #swans .nav-tabs li a:focus,
 #swans .nav-tabs li a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 #swans .tab-content {
   margin-top: 50px;
@@ -1863,11 +1863,16 @@ form .row:first-child .floating-label-form-group {
   border-radius: 40px;
   background-color: rgba(0, 0, 0, 0.35);
 }
-#swans .tab-content .swan-text .panel {
-  margin: 0;
+#swans .tab-content .swan-text .row .panel {
+  margin: 0 auto;
+  float: none;
+  border: none;
   background-color: transparent;
 }
-#swans .tab-content .swan-text .panel img {
+#swans .tab-content .swan-text .row .panel img {
   border-radius: 10px;
   width: 100%;
+}
+#swans .tab-content .swan-calendar .panel-heading {
+  padding: 25px;
 }

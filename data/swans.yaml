@@ -56,7 +56,7 @@ panels:
 
         ![Alt text](img/welcome/teatern_1.jpg "")
 
-      textSize:     		38
+      textSize:     		28
       # textPadding:			60
       textColor: 				"#efefef"
       # textColorPrimary: "#700D00"
@@ -70,7 +70,7 @@ panels:
 
     - icon: img/swans/swan_calendar.png
       iconSize: 160
-      backgroundImage: img/swans/bg-calendar.png
+      backgroundImage: ...
       type: Calendar
       events:
         - title: Min sommarkreation
@@ -120,7 +120,7 @@ panels:
           text: >
             Sluten grupp med fokus på att bryta egna mönster.
 
-      textSize:             18
+      textSize:             20
       # textPadding:            60
       textColor:                "#efefef"
       # textColorPrimary: "#700D00"
@@ -138,7 +138,8 @@ panels:
       type: Text
       text: >
 
-        <h3>OM MALIN</h3>  
+        <h2>OM MALIN</h2>  
+
 
         Det jag anar om mig själv:
         Jag är ett glädjetjut, en virvelvind, ett ljus. Ett väsen med vingar.  
@@ -188,7 +189,7 @@ panels:
         Jag vill sluta vara rädd för rädslan! 
         Jag vill älska!
 
-      textSize:             18
+      textSize:             30
       # textPadding:            60
       textColor:                "#efefef"
       # textColorPrimary: "#700D00"
@@ -204,9 +205,12 @@ panels:
       iconSize: 160
       type: Text
       text: >
+        <h2>Lorem ipsum dolor sit amet</h2>
+
+
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim dolor consequatur perspiciatis voluptatum quo fugiat consectetur, officiis repellendus provident nesciunt ipsa quos eveniet sunt modi odio reprehenderit veniam, neque iste!
 
-      textSize:             18
+      textSize:             30
       # textPadding:            60
       textColor:                "#efefef"
       # textColorPrimary: "#700D00"

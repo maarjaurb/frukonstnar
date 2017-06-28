@@ -3,52 +3,68 @@
 
 <style>
 {{ range $i, $e := .panels }}
+
 {{ if .textSize }}
-	#swans{{ $i }} div.quote p {
-		font-size: {{ .textSize }}px !important;
-		line-height: {{ mul .textSize 1.375 }}px !important;
+	#swan{{ $i }} div.quote p {
+		font-size: {{ mul .textSize 2.0 }}px !important;
+		line-height: {{ mul .textSize 2.2 }}px !important;
+  }
+
+  #swan{{ $i }} div.quote h2 {
+		font-size: {{ mul .textSize 3.0 }}px !important;
+		line-height: {{ mul .textSize 3.3 }}px !important;  	
+  }
+
+  #swan{{ $i }} #accordion p {
+		font-size: {{ mul .textSize 1.8 }}px !important;
+		line-height: {{ mul .textSize 2.0 }}px !important;  			
+  }
+
+  #swan{{ $i }} #accordion h2 span {
+		font-size: {{ mul .textSize 2.0 }}px !important;
+		line-height: {{ mul .textSize 2.2 }}px !important;  			
   }
 {{ end }}
-
 {{ if .textPadding }}
-	#swans{{ $i }} .panel {
+	#swan{{ $i }} .panel {
 		padding: {{ mul .textPadding 0.266 }}px {{ mul .textPadding 0.666 }}px !important;
   }
 {{ end }}
 
 {{ if .textColor }}
-	#swans{{ $i }} div.quote p {
+	#swan{{ $i }} div.quote p,
+	#swan{{ $i }} div.quote h2 {
 		color: {{ .textColor }} !important;
   }
 {{ end }}
 
 {{ if .textColorPrimary }}
-	#swans{{ $i }} div.quote .text-primary {
+	#swan{{ $i }} div.quote .text-primary {
 		color: {{ .textColorPrimary }} !important;
   }
 {{ end }}
 
 {{ if .buttonSize }}
-	#swans{{ $i }} a.btn {
+	#swan{{ $i }} a.btn {
 		font-size: {{ .buttonSize }}px !important;
   }
 {{ end }}
 
 {{ if .buttonColor }}
-	#swans{{ $i }} a.btn {
+	#swan{{ $i }} a.btn {
 		color: {{ .buttonColor }} !important;
 		border-color: {{ .buttonColor }} !important;
   }
 {{ end }}
 
 {{ if .lineColor }}
-	#swans{{ $i }} hr {
+	#swan{{ $i }} hr {
 		border-color: {{ .lineColor }} !important;
   }
 {{ end }}
 
 {{ if .opacity }}
-	#swans{{ $i }} .transparent-border {
+	#swan{{ $i }} .transparent-border {
 		border-color: rgba( 0, 0, 0, {{ add .opacity 0.05 }});
 		background-color: rgba( 0, 0, 0, {{ .opacity }});
 	}
@@ -56,19 +72,63 @@
 
 @media(min-width:768px) {
 	{{ if .textPadding }}
-		#swans{{ $i }} .panel {
+		#swan{{ $i }} .panel {
 			padding: {{ mul .textPadding 0.3 }}px {{ mul .textPadding 0.75 }}px !important;
 	  }
 	{{ end }}
+
+	{{ if .textSize }}
+		#swan{{ $i }} div.quote p {
+			font-size: {{ mul .textSize 1.5 }}px !important;
+			line-height: {{ mul .textSize 1.7 }}px !important;
+	  }
+
+	  #swan{{ $i }} div.quote h2 {
+			font-size: {{ mul .textSize 2.5 }}px !important;
+			line-height: {{ mul .textSize 3.0 }}px !important;  	
+	  }
+
+	  #swan{{ $i }} #accordion p {
+			font-size: {{ mul .textSize 1.5 }}px !important;
+			line-height: {{ mul .textSize 1.7 }}px !important;  			
+	  }
+
+	  #swan{{ $i }} #accordion h2 span {
+			font-size: {{ mul .textSize 1.7 }}px !important;
+			line-height: {{ mul .textSize 1.9 }}px !important;  			
+	  }
+	{{ end }}		
 }
 
 @media(min-width:992px) {
 	{{ if .textPadding }}
-		#swans{{ $i }} .panel {
+		#swan{{ $i }} .panel {
 			padding: {{ mul .textPadding 0.4 }}px {{ .textPadding }}px !important;
 	  }
 	{{ end }}
-}
+
+	{{ if .textSize }}
+		#swan{{ $i }} div.quote p {
+			font-size: {{ .textSize }}px !important;
+			line-height: {{ mul .textSize 1.375 }}px !important;
+	  }
+
+	  #swan{{ $i }} div.quote h2 {
+			font-size: {{ mul .textSize 1.7 }}px !important;
+			line-height: {{ mul .textSize 2.0 }}px !important;  	
+	  }
+
+	  #swan{{ $i }} #accordion p {
+			font-size: {{ .textSize }}px !important;
+			line-height: {{ mul .textSize 1.375 }}px !important;  			
+	  }
+
+	  #swan{{ $i }} #accordion h2 span {
+			font-size: {{ mul .textSize 1.175 }}px !important;
+			line-height: {{ mul .textSize 1.275 }}px !important;  			
+	  }
+	{{ end }}
+	}
 {{ end }}
 
 </style>
@@ -89,7 +149,7 @@
 	        <div class="row">
 	            <div class="panel transparent-border col-md-10 col-md-offset-1 wow fadeIn">
 	                <div class="row">
-		                <div class="col-xs-12 col-md-8 col-md-offset-2 quote">{{ .text | markdownify }}</div>
+		                <div class="col-xs-12 col-md-10 col-md-offset-1 quote">{{ .text | markdownify }}</div>
 			            </div>
 	        		</div>
 	        </div>
@@ -100,16 +160,16 @@
 					{{ range $i1, $e1 := .events }}
 				  <div class="panel panel-default">
 				    <div class="panel-heading">
-				      <h4 class="panel-title">
+				      <h2 class="panel-title">
 				        <a data-toggle="collapse" data-parent="#accordion" href="#calendar-collapse-{{ $i1 }}">
 				        	<span class="date">{{ .date }}</span>
 				        	<span class="title"><strong>{{ .title }}</strong></span>
 				      	</a>
-				      </h4>
+				      </h2>
 				    </div>
 				    <div id="calendar-collapse-{{ $i1 }}" class="panel-collapse collapse{{ if eq $i1 0 }} in{{ end }}">
 				      <div class="panel-body">
-				      	{{ .text }}
+				      	<p>{{ .text }}</p>
 				      </div>
 				    </div>
 				  </div>
