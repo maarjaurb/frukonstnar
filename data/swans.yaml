@@ -120,7 +120,7 @@ panels:
           text: >
             Sluten grupp med fokus på att bryta egna mönster.
 
-      textSize:             20
+      textSize:             16
       # textPadding:            60
       textColor:                "#efefef"
       # textColorPrimary: "#700D00"
