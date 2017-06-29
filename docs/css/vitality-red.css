@@ -1235,6 +1235,10 @@ aside.cta-quote .panel {
   float: none;
   display: inline-block;
 }
+#textsnippets .nav-tabs > li a {
+  font-weight: bold;
+  font-size: 20px;
+}
 #textsnippets .nav-tabs {
   text-align: left;
 }
@@ -1835,44 +1839,51 @@ form .row:first-child .floating-label-form-group {
   border-radius: 10px;
   width: 100%;
 }
-#swans {
+section#swans {
   background-attachment: fixed;
   background-size: cover;
+  padding: 220px 0;
 }
-#swans .nav-tabs {
+section#swans .nav-tabs {
   display: inline-block;
   text-align: center;
   border: none;
 }
-#swans .nav-tabs li a {
+section#swans .nav-tabs li a {
   background-color: rgba(255, 255, 255, 0.15);
   border: none;
   border-radius: 20px;
   margin: 10px;
 }
-#swans .nav-tabs li a:active,
-#swans .nav-tabs li a:focus,
-#swans .nav-tabs li a:hover {
+section#swans .nav-tabs li a:active,
+section#swans .nav-tabs li a:focus,
+section#swans .nav-tabs li a:hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
-#swans .tab-content {
+section#swans .tab-content {
   margin-top: 50px;
 }
-#swans .tab-content .swan-text {
+section#swans .tab-content .swan-text {
   padding: 50px;
   border-radius: 40px;
   background-color: rgba(0, 0, 0, 0.35);
 }
-#swans .tab-content .swan-text .row .panel {
+section#swans .tab-content .swan-text .row .panel {
   margin: 0 auto;
   float: none;
   border: none;
   background-color: transparent;
 }
-#swans .tab-content .swan-text .row .panel img {
+section#swans .tab-content .swan-text .row .panel h2 {
+  margin-bottom: 50px;
+}
+section#swans .tab-content .swan-text .row .panel p {
+  margin-bottom: 20px;
+}
+section#swans .tab-content .swan-text .row .panel img {
   border-radius: 10px;
   width: 100%;
 }
-#swans .tab-content .swan-calendar .panel-heading {
+section#swans .tab-content .swan-calendar .panel-heading {
   padding: 25px;
 }

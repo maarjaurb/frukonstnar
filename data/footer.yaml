@@ -1,4 +1,4 @@
-image: "img/backgrounds/footer.jpg"
+image: "img/footer/footer.jpg"
 social:
   - icon:   "img/footer/FB.png"
     link:   "https://www.facebook.com/denhaltandeteatern/"
@@ -12,7 +12,7 @@ impressumTitle: Kontakt
 impressumText: >
     Lunda By<br>
     15396 Mölnbo<br>
-    Telephone: +49 7654342344 <br>
-    modermalin@telia.com<br>
+    Telephone: +49 70 229 97 03 <br>
+    frukonstnar@gmail.com<br>
     <h4 style="margin-bottom: 60px;"></h4>
 copyright: "<a href='http://homey.berlin' target='_blank'>2017 HomeyPages</a>"
