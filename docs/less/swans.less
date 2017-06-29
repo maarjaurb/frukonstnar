@@ -1,18 +1,28 @@
 section#swans {
 	background-attachment: fixed;
 	background-size: cover;
-	padding: 220px 0;
+	padding: 0;
+	padding-top: 20px;
+	padding-bottom: 220px;
 
 	.nav-tabs {
 		display: inline-block;
 		text-align: center;
 		border: none;
 
-		li a {
-			background-color: rgba(255, 255, 255, 0.15);
-			border: none;
-			border-radius: 20px;
-			margin: 10px;
+		li {
+			a {
+				background-color: rgba(255, 255, 255, 0.15);
+				border: none;
+				border-radius: 20px;
+				margin: 1vw;
+				padding: 1.5vw 1.8vw 1.5vw 1.8vw;
+
+				img {
+					width: 17vw;
+					max-width: 160px;
+				}
+			}
 		}
 
 		li a:active,
@@ -61,5 +71,17 @@ section#swans {
 
 	}
 
+}
+
+@media(min-width:768px) {
+	section#swans {
+		padding: 220px 0;
+	}
+}
+
+@media(min-width:992px) {
+	section#swans {
+		padding: 220px 0;
+	}
 }
 

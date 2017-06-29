@@ -136,7 +136,7 @@
 	<div style="text-align:center;">
 		<ul class="nav nav-tabs">
 			{{ range $i, $e := .panels }}
-		  <li><a class="swan-link" i="{{ $i }}" data-toggle="pill" href="#swan{{ $i }}" background="{{ .backgroundImage }}"><img src="{{ .icon }}" width="{{ .iconSize }}" /></a></li>
+		  <li><a class="swan-link" i="{{ $i }}" data-toggle="pill" href="#swan{{ $i }}" background="{{ .backgroundImage }}"><img src="{{ .icon }}" width="{{ .iconSize }}" class="img-responsive" /></a></li>
 		  {{ end }}
 		</ul>
 	</div>
