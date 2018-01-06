@@ -1,0 +1,98 @@
+<!-- Quote Call to Action -->
+{{ with .Site.Data.about }}
+
+<style>
+{{ if .textSize }}
+	aside.cta-quote span.quote {
+		font-size: {{ .textSize }}px !important;
+		line-height: {{ mul .textSize 1.375 }}px !important;
+  }
+{{ end }}
+
+{{ if .textPadding }}
+	aside.cta-quote .panel {
+		padding: {{ mul .textPadding 0.266 }}px {{ mul .textPadding 0.666 }}px !important;
+  }
+{{ end }}
+
+{{ if .textColor }}
+	aside.cta-quote span.quote {
+		color: {{ .textColor }} !important;
+  }
+{{ end }}
+
+{{ if .textColorPrimary }}
+	aside.cta-quote span.quote .text-primary {
+		color: {{ .textColorPrimary }} !important;
+  }
+{{ end }}
+
+{{ if .buttonSize }}
+	aside.cta-quote a.btn {
+		font-size: {{ .buttonSize }}px !important;
+  }
+{{ end }}
+
+{{ if .buttonColor }}
+	aside.cta-quote a.btn {
+		color: {{ .buttonColor }} !important;
+		border-color: {{ .buttonColor }} !important;
+  }
+{{ end }}
+
+{{ if .lineColor }}
+	aside.cta-quote hr {
+		border-color: {{ .lineColor }} !important;
+  }
+{{ end }}
+
+{{ if .opacity }}
+	aside.cta-quote .transparent-border {
+		border-color: rgba( 0, 0, 0, {{ add .opacity 0.05 }});
+		background-color: rgba( 0, 0, 0, {{ .opacity }});
+	}
+{{ end }}
+
+@media(min-width:768px) {
+	{{ if .textPadding }}
+		aside.cta-quote .panel {
+			padding: {{ mul .textPadding 0.3 }}px {{ mul .textPadding 0.75 }}px !important;
+	  }
+	{{ end }}
+}
+
+@media(min-width:992px) {
+	{{ if .textPadding }}
+		aside.cta-quote .panel {
+			padding: {{ mul .textPadding 0.4 }}px {{ .textPadding }}px !important;
+	  }
+	{{ end }}
+}
+
+</style>
+<aside id="about" class="cta-quote" style="background-image: url('{{ .backgroundImage }}');">
+    <div class="container">
+        <div class="row">
+            <div class="panel transparent-border col-md-10 col-md-offset-1 wow fadeIn">
+                <div class="row">
+                	{{ if eq .imagePos "left" }}
+	              	<div class="col-xs-12 col-sm-4" style="height: {{ .imageSize }}px">
+	              		<img src="{{ .image }}" class="img-responsive" height="{{ .imageSize }}" width="{{ .imageSize }}">
+	    			      </div>
+	                <div class="col-xs-12 col-md-8 quote">{{ .text | markdownify }}</div>
+	    			      {{ else }}
+	                <div class="col-xs-12 col-md-8 quote">{{ .text | markdownify }}</div>
+	              	<div class="col-xs-12 col-sm-4" style="height: {{ .imageSize }}px">
+	              		<img src="{{ .image }}" class="img-responsive" height="{{ .imageSize }}" width="{{ .imageSize }}">
+	    			      </div>
+	    			      {{ end }}
+		            </div>
+                <div class="row">
+                	<div class="col-xs-12">
+		                <a class="btn btn-outline-light page-scroll" href="#{{ .ref }}">{{ .action }}</a>
+			            </div>
+            </div>
+        </div>
+    </div>
+</aside>
+{{ end }}

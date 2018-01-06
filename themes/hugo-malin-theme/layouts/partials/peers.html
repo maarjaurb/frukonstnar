@@ -1,0 +1,132 @@
+<!-- Team Section -->
+{{ with .Site.Data.peers }}
+<style>
+{{ if .backgroundColor }}
+#peers {
+    background-color: {{ .backgroundColor }} !important;
+}
+{{ end }}
+
+{{ if .titleSize }}
+#peers .title > h2 {
+    font-size: {{ .titleSize }}px !important;
+    line-height: {{ mul .titleSize 1.375 }}px !important;
+}
+{{ end }}
+
+{{ if .titleColor }}
+#peers .title > h2 {
+    color: {{ .titleColor }} !important;
+}
+{{ end }}
+
+{{ if .lineColor }}
+#peers .title > hr {
+    border-color: {{ .lineColor }} !important;
+}
+{{ end }}
+
+{{ if .textSize }}
+#peers .title > p {
+    font-size: {{ .textSize }}px !important;
+    line-height: {{ mul .textSize 1.375 }}px !important;
+}
+{{ end }}
+
+{{ if .textColor }}
+#peers .title > p {
+    color: {{ .textColor }} !important;
+}
+{{ end }}
+
+
+{{ if .photoTitleSize }}
+#peers .owl-carousel h3 {
+    font-size: {{ .photoTitleSize }}px !important;
+    line-height: {{ mul .photoTitleSize 1.375 }}px !important;
+}
+{{ end }}
+
+{{ if .photoTitleColor }}
+#peers .owl-carousel h3 {
+    color: {{ .photoTitleColor }} !important;
+}
+{{ end }}
+
+{{ if .photoLineColor }}
+#peers .owl-carousel hr {
+    border-color: {{ .photoLineColor }} !important;
+}
+{{ end }}
+
+{{ if .photoTextSize }}
+#peers .owl-carousel p {
+    font-size: {{ .photoTextSize }}px !important;
+    line-height: {{ mul .photoTextSize 1.375 }}px !important;
+}
+{{ end }}
+
+{{ if .photoTextColor }}
+#peers .owl-carousel p {
+    color: {{ .photoTextColor }} !important;
+}
+{{ end }}
+
+{{ if .photoTextLeft }}
+#peers .owl-carousel .caption {
+    left: {{ .photoTextLeft }} !important;
+}
+{{ end }}
+
+{{ if .photoTextTop }}
+#peers .owl-carousel .caption {
+    top: {{ .photoTextTop }} !important;
+}
+{{ end }}
+
+{{ if .photoIconSize }}
+#peers .owl-carousel i.fa {
+    font-size: {{ .photoIconSize }}px !important;
+}
+{{ end }}
+</style>
+
+<section id="peers" class="bg-gray">
+    <div class="container text-center wow fadeIn">
+        <div class="row">
+            <div class="title col-lg-12">
+                <h2>{{ .title }}</h2>
+                <p>{{ .description }}</p>
+                <hr class="colored">
+            </div>
+        </div>
+        <div class="row content-row">
+            <div class="col-lg-12">
+                <div class="about-carousel">
+                    <!-- NOTE: You can add more items to the carousel, or remove items you don't need! -->
+                    {{ $overlay := .overlay }}
+                    {{ range .people }}
+                    <!-- Team Member 1 -->
+                    <div class="item">
+                        <div {{ if $overlay }}class="overlay"{{ end }}></div>
+                        <img src="{{ .image }}" class="img-responsive" alt="">
+                        <div class="caption">
+                            <h3>{{ .name }}</h3>
+                            <hr class="colored">
+                            <p>{{ .position }}</p>
+                            <ul class="list-inline social">
+                                {{ range .social }}
+                                <li>
+                                    <a href="{{ .link }}"><i class="fa {{ .icon }} fa-fw"></i></a>
+                                </li>
+                                {{ end }}
+                            </ul>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

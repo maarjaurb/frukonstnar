@@ -1,0 +1,5 @@
+image: img/backgrounds/bg-aside.jpg
+text: >
+    Good <span class="text-primary">design</span> is finding that perfect balance between the way something
+    <span class="text-primary">looks</span> and how it <span class="text-primary">functions</span>.
+action: Let's find it

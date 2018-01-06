@@ -1,0 +1,14 @@
+<!-- Quote Call to Action -->
+{{ with .Site.Data.aside }}
+<aside class="cta-quote" style="background-image: url('{{ .image }}');">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 wow fadeIn">
+                <span class="quote">{{ .text | markdownify }}</span>
+                <hr class=" colored">
+                <a class="btn btn-outline-light page-scroll" href="#process">{{ .action }}</a>
+            </div>
+        </div>
+    </div>
+</aside>
+{{ end }}

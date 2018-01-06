@@ -1,0 +1,232 @@
+<!-- Portfolio Grid Section -->
+{{ with .Site.Data.startingpoints }}
+<style>
+{{ if .backgroundColor }}
+#startingpoints {
+    background-color: {{ .backgroundColor }} !important;
+}
+{{ end }}
+
+{{ if .titleSize }}
+#startingpoints .container > h2 {
+    font-size: {{ .titleSize }}px !important;
+    line-height: {{ mul .titleSize 1.375 }}px !important;
+}
+{{ end }}
+
+{{ if .titleColor }}
+#startingpoints .container > h2 {
+    color: {{ .titleColor }} !important;
+}
+{{ end }}
+
+{{ if .lineColor }}
+#startingpoints .container > hr {
+    border-color: {{ .lineColor }} !important;
+}
+{{ end }}
+
+{{ if .textSize }}
+#startingpoints .container > p {
+    font-size: {{ .textSize }}px !important;
+    line-height: {{ mul .textSize 1.375 }}px !important;
+}
+{{ end }}
+
+{{ if .textColor }}
+#startingpoints .container > p {
+    color: {{ .textColor }} !important;
+}
+{{ end }}
+
+{{ if .filterSize }}
+#startingpoints #filters li span {
+    font-size: {{ .filterSize }}px !important;
+    line-height: {{ mul .filterSize 1.375 }}px !important;
+}
+{{ end }}
+
+{{ if .filterActiveColor }}
+#startingpoints #filters li .filter {
+    color: {{ .filterActiveColor }} !important;
+}
+{{ end }}
+
+{{ if .filterActiveTextColor }}
+#startingpoints #filters li .filter.active {
+    color: {{ .filterActiveTextColor }} !important;
+}
+{{ end }}
+
+{{ if .filterBorderColor }}
+#startingpoints #filters li .filter.active {
+    background-color: {{ .filterBorderColor }} !important;
+}
+#startingpoints #filters li .filter {
+    border-color: {{ .filterBorderColor }} !important;
+}
+{{ end }}
+
+{{ if .captionSize }}
+#startingpoints .caption-text .text-title {
+    font-size: {{ .captionSize }}px !important;
+    line-height: {{ mul .captionSize 1.175 }}px !important;
+}
+#startingpoints .caption-text .text-category {
+    font-size: {{ mul .captionSize 0.75 }}px !important;
+    line-height: {{ mul .captionSize 1.0 }}px !important;
+}
+#portfoliolist .mix .portfolio-wrapper .caption {
+    height: {{ add (mul .captionSize 2.5) 32 }}px !important;
+    bottom: -{{ add (mul .captionSize 2.5) 32 }}px !important;
+}
+#portfoliolist .mix:hover .portfolio-wrapper .caption {
+    bottom: 0px !important;
+}
+{{ end }}
+
+{{ if .captionColor }}
+#startingpoints .caption-text .text-title {
+    color: {{ .captionColor }} !important;
+}
+#startingpoints .caption-text .text-category {
+    color: {{ .captionColor }} !important;
+}
+{{ end }}
+
+{{ if .captionBackgroundColor }}
+#startingpoints .caption-bg {
+    background-color: {{ .captionBackgroundColor }} !important;
+}
+{{ end }}
+
+{{ if .panelBackgroundColor }}
+.portfolio-modal #grid-panel {
+    background-color: rgba( {{ .panelBackgroundColor }}, 0.3 ) !important;
+    border-color: rgb( {{ .panelBackgroundColor }} );
+
+}
+.portfolio-modal #grid-panel h2 {
+    background-color: rgb( {{ .panelBackgroundColor }} ) !important;    
+}
+{{ end }}
+
+{{ if .panelColor }}
+.portfolio-modal #grid-panel h2 {
+    color: {{ .panelColor }} !important;
+}
+{{ end }}
+
+{{ if .panelTitleSize }}
+.portfolio-modal #grid-panel h2 {
+    font-size: {{ .panelTitleSize }}px !important;
+    line-height: {{ mul .panelTitleSize 1.375 }}px !important;
+}
+{{ end }}
+
+{{ if .panelTitleColor }}
+.portfolio-modal #grid-panel h2 {
+    color: {{ .panelTitleColor }} !important;
+}
+{{ end }}
+
+{{ if .panelTextSize }}
+.portfolio-modal #grid-panel p {
+    font-size: {{ .panelTextSize }}px !important;
+    line-height: {{ mul .panelTextSize 1.375 }}px !important;
+}
+{{ end }}
+
+{{ if .panelTextColor }}
+.portfolio-modal #grid-panel p {
+    color: {{ .panelTextColor }} !important;
+}
+{{ end }}
+
+
+{{ range $i, $e := .elements }}
+{{ if .panelBackgroundColor }}
+#gridModal{{ $i }} #grid-panel {
+    background-color: rgba( {{ .panelBackgroundColor }}, 0.3 ) !important;
+    border-color: rgb( {{ .panelBackgroundColor }} );
+
+}
+#gridModal{{ $i }} #grid-panel h2 {
+    background-color: rgb( {{ .panelBackgroundColor }} ) !important;    
+}
+{{ end }}
+
+{{ if .panelColor }}
+#gridModal{{ $i }} #grid-panel h2 {
+    color: {{ .panelColor }} !important;
+}
+{{ end }}
+{{ end }}
+
+
+</style>
+
+<section id="startingpoints">
+    <div class="container text-center wow fadeIn">
+        <h2>{{ .title }}</h2>
+        <hr class="colored">
+        <p>{{ .subtitle | markdownify }}</p>
+        <div class="row content-row">
+            <div class="col-lg-12">
+                <div class="portfolio-filter">
+                    <ul id="filters" class="clearfix">
+                        <li>
+                            <span class="filter active" data-filter="all">{{ .all }}</span>
+                        </li>
+                        {{ range $index, $element := .filters }}
+                        <li>
+                            <span class="filter" data-filter=".{{ . | urlize }}">{{ . }}</span>
+                        </li>
+                        {{ end }}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div id="portfoliolist">
+                    <!-- NOTE: You can add more items to the grid, or remove items you don't need! -->
+                    {{ range $i, $e := .elements }}
+                    <div class="mix {{ range .filters }}{{ . | urlize }} {{ end }}" id="portfolio{{ $i }}" href="#" title="Client Name">
+                        <div class="portfolio-wrapper">
+                            <a href="#gridModal{{ $i }}" data-toggle="modal">
+                                <img src="{{ .image }}" alt="">
+                                <div class="caption">
+                                    <div class="caption-text">
+                                        <a class="text-title">{{ .captionTitle }}</a>
+                                        <span class="text-category">{{ .captionCategory }}</span>
+                                    </div>
+                                    <div class="caption-bg"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+{{ range $i, $e := .elements }}
+<div class="portfolio-modal modal fade" id="gridModal{{ $i }}" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('{{ .image }}')">
+    <div class="modal-content" data-dismiss="modal">
+        <div id="grid-panel">
+            <h2>{{ .captionTitle }}</h2>
+            <p>{{ .content | markdownify }}</p>
+            {{ if .video }}
+            <video controls>
+                <source src="{{ .video }}" type="video/mp4">
+            </video>
+            {{ end }}
+        </div>
+    </div>
+</div>
+{{ end }}
+{{ end }}

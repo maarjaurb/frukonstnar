@@ -1,0 +1,401 @@
+<!-- Portfolio Carousel Heading -->
+<style>
+{{ with .Site.Data.abilities }}
+{{ if .titleSize }}
+#abilities h2 {
+    font-size: {{ .titleSize }}px !important;
+    line-height: {{ mul .titleSize 1.375 }}px !important;
+}
+{{ end }}
+
+{{ if .titleColor }}
+#abilities h2 {
+    color: {{ .titleColor }} !important;
+}
+{{ end }}
+
+{{ if .asterixColor }}
+#abilities .asterix {
+    color: {{ .asterixColor }} !important;
+}
+{{ end }}
+
+{{ if .lineColor }}
+    #abilities hr {
+        border-color: {{ .lineColor }} !important;
+  }
+{{ end }}
+
+{{ if .textSize }}
+#abilities p {
+    font-size: {{ .textSize }}px !important;
+    line-height: {{ mul .textSize 1.375 }}px !important;
+}
+{{ end }}
+
+{{ if .textColor }}
+#abilities p {
+    color: {{ .textColor }} !important;
+}
+{{ end }}
+
+{{ if .shadow }}
+#abilities p {
+    box-shadow: 4px 6px 157px -15px rgba(27,7,61,0.10) !important;
+}
+{{ end }}
+
+{{ if .shadowRadius }}
+#abilities p {
+    border-radius: {{ .shadowRadius }} !important;
+}
+{{ end }}
+{{ end }}
+
+{{ range $index, $element := .Site.Data.abilities_ }}
+    {{ if .titleSize }}
+    #carousel .item_{{ $index }} .project-name {
+        font-size: {{ .titleSize }}px !important;
+        line-height: {{ mul .titleSize 1.375 }}px !important;
+    }
+    {{ end }}
+
+    {{ if .titleColor }}
+    #carousel .item_{{ $index }} .project-name {
+        color: {{ .titleColor }} !important;
+    }
+    {{ end }}
+
+    {{ if .lineColor }}
+        #carousel .item_{{ $index }} hr {
+            border-color: {{ .lineColor }} !important;
+      }
+    {{ end }}
+
+    {{ if .textSize }}
+    #carousel .item_{{ $index }} .project-description,
+    #carousel .item_{{ $index }} .project-description p {
+        font-size: {{ .textSize }}px !important;
+        line-height: {{ mul .textSize 1.375 }}px !important;
+    }
+    {{ end }}
+
+    {{ if .textColor }}
+    #carousel .item_{{ $index }} .project-description,
+    #carousel .item_{{ $index }} .project-description p {
+        color: {{ .textColor }} !important;
+    }
+    {{ end }}
+
+    {{ if .buttonSize }}
+    #carousel .item_{{ $index }} .project-description a {
+        font-size: {{ .buttonSize }}px !important;
+    }
+    {{ end }}
+
+    {{ if .modalTitleSize }}
+    .modal_{{ $index }} h2 {
+        font-size: {{ .modalTitleSize }}px !important;
+    }
+    {{ end }}
+
+    {{ if .modalTitleColor }}
+    .modal_{{ $index }} h2 {
+        color: {{ .modalTitleColor }} !important;
+    }
+    {{ end }}
+    
+    {{ if .modalLineColor }}
+        .modal_{{ $index }} hr {
+            border-color: {{ .modalLineColor }} !important;
+      }
+    {{ end }}
+
+    {{ if .modalTopicSize }}
+    .modal_{{ $index }} .topic li {
+        font-size: {{ .modalTopicSize }}px !important;
+    }
+
+    .modal_{{ $index }} .topics.up {
+        top: -{{ add (mul .modalTopicSize 1.30) 16 }}px !important;
+    }
+
+    .modal_{{ $index }} .topics.down {
+        bottom: -{{ add (mul .modalTopicSize 1.30) 5 }}px !important;
+    }
+    {{ end }}
+    
+    {{ if .modalTopicColor }}
+    .modal_{{ $index }} .topic li {
+        color: {{ .modalTopicColor }} !important;
+    }
+    {{ end }}
+
+    {{ if .modalTopicWidth }}
+    .modal_{{ $index }} .topic {
+        width: {{ .modalTopicWidth }}px !important;
+    }
+    {{ end }}
+
+    {{ if .modalDescriptionSize }}
+    .modal_{{ $index }} .topic span {
+        font-size: {{ .modalDescriptionSize }}px !important;
+    }
+    {{ end }}
+
+    {{ if .modalDescriptionColor }}
+    .modal_{{ $index }} .topic span {
+        color: {{ .modalDescriptionColor }} !important;
+    }
+    {{ end }}
+
+    {{ if .modalButtonSize }}
+    .modal_{{ $index }} button {
+        font-size: {{ .modalButtonSize }}px !important;
+    }
+    {{ end }}
+
+    {{ if .modalButtonColor }}
+    .modal_{{ $index }} button {
+        color: {{ .modalButtonColor }} !important;
+        opacity: 0.20;
+    }
+    .modal_{{ $index }} button:hover {
+        opacity: 0.40;
+    }
+    {{ end }}
+
+    {{ if .modalWeatherSize }}
+    .modal_{{ $index }} .infoline {
+        font-size: {{ .modalWeatherSize }}px !important;
+    }
+    {{ end }}
+
+    {{ if .modalWeatherColor }}
+    .modal_{{ $index }} .infoline {
+        color: {{ .modalWeatherColor }} !important;
+    }
+    {{ end }}
+
+    {{ if .modalTextSize }}
+    .modal_{{ $index }} .screen .item, 
+    .modal_{{ $index }} .screen .item p {
+        font-size: {{ .modalTextSize }}px !important;
+        line-height: {{ mul .modalTextSize 1.375 }}px !important;
+        margin: 0 0 {{ mul .modalTextSize 0.5 }}px;
+    }
+    .modal_{{ $index }} .screen .item h3 {
+        font-size: {{ mul .modalTextSize 1.5 }}px !important;
+        line-height: {{ mul .modalTextSize 2 }}px !important;
+        margin: 0 0 {{ mul .modalTextSize 1.0 }}px !important;
+    }
+    {{ end }}
+
+    {{ if .modalTextColor }}
+    .modal_{{ $index }} .screen .item {
+        color: {{ .modalTextColor }} !important;
+    }
+    {{ end }}
+
+    {{ if .modalImagePadding }}
+    .modal_{{ $index }} .screen .text img {
+        padding: {{ mul .modalImagePadding 0.8 }}px !important;
+        margin: {{ mul .modalImagePadding 0.2 }}px !important;
+    }
+    {{ end }}
+
+    {{ if .modalImageWidth }}
+    .modal_{{ $index }} .screen .text img {
+        width: {{ .modalImageWidth }}px !important;
+    }
+    {{ end }}
+
+    {{ if .modalImageOpacity }}
+    .modal_{{ $index }} .screen .text img {
+        background-color: rgba( {{ .modalImageOpacity }} ) !important;
+    }
+    {{ end }}
+
+
+
+{{ end }}
+</style>
+
+{{ with .Site.Data.abilities }}
+<section id="abilities" class="bg-white">
+    <div class="container text-center wow fadeIn">
+        <h2>{{ .title }}<a class="asterix page-scroll" href="#carousel">*</a></h2>
+        <hr class="colored">
+        <p>{{ .subtitle | markdownify }}</p>
+    </div>
+</section>
+{{ end }}
+
+<!-- Portfolio Carousel -->
+<section id="carousel" class="portfolio-carousel wow fadeIn">
+    <!-- Carousel Items -->
+    {{ $imageColumns := .Site.Data.abilities.imageColumns }}
+    {{ $screenFrame := .Site.Data.abilities.screenFrame }}
+    {{ $imagePadding := .Site.Data.abilities.imagePadding }}
+    {{ range $index, $element := .Site.Data.abilities_ }}
+
+    <div class="item item_{{ $index }}" {{ if .backgroundImage }}style="background-image: url('{{ .backgroundImage }}')"{{ else if .backgroundColor }}style="background-color: {{ .backgroundColor }}"{{ end }}>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-{{ sub 12 $imageColumns }} col-md-push-{{ $imageColumns }}">
+                    <div class="project-details {{ .colorMode }}">
+                        {{ if .clientLogo }}
+                        <img src="{{ .clientLogo }}" class="img-responsive client-logo" alt="">
+                        {{ end }}
+                        <span class="project-name">{{ .abilityName }}</span>
+                        <span class="project-description">{{ .description | markdownify }}</span>
+                        <hr class="colored">
+                        <a href="#workModal{{ $index }}" data-toggle="modal" class="btn btn-outline-{{ .colorMode }}">{{ .linkText }} <i class="fa fa-long-arrow-right fa-fw"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-{{ $imageColumns }} col-md-pull-{{ sub 12 $imageColumns }} hidden-xs">
+                    {{ if $screenFrame }}
+                    <div class="device-container">
+                        <div class="device-mockup {{ .frame }} portrait black">
+                            <div class="device">
+                                <div class="screen">
+                                    <img src="{{ .screenImage }}" class="img-responsive" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {{ else }}
+                    <div class="image-frame" style="padding: {{ $imagePadding }}px;">
+                        <img src="{{ .screenImage }}" class="img-responsive" alt="">
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+    {{ end }}
+</section>
+
+<div id="just-for-width" class="device-mockup">
+    {{ range $index, $element := .Site.Data.abilities_ }}
+    <div class="topics modal_{{ $index }}">
+        <div class="inner">
+            {{ $modalTopicSize := .modalTopicSize }}
+            {{ range $i, $e := .topicsUp }}
+            <div class="topic up {{ if eq $i 0 }}cr{{ end }}" padding="{{ if $modalTopicSize }}{{ $modalTopicSize }}{{ else }}20{{ end }}">
+                <div class="oneword row"><li>{{ .oneword | markdownify }}</li></span></div>
+            </div>
+            {{ end }}                                
+            {{ range $i, $e := .topicsDown }}
+            <div class="topic down {{ if eq $i 0 }}cr{{ end }}" padding="{{ if $modalTopicSize }}{{ $modalTopicSize }}{{ else }}20{{ end }}">
+                <div class="oneword row"><li>{{ .oneword | markdownify }}</li></span></div>
+            </div>
+            {{ end }}                                
+        </div>
+    </div>
+    {{ end }}
+</div>
+
+{{ range $index, $element := .Site.Data.abilities_ }}
+<div class="portfolio-modal modal fade modal_{{ $index }}" id="workModal{{ $index }}" tabindex="-1" role="dialog" aria-hidden="true"{{ if .backgroundImage }}style="background-image: url('{{ .backgroundImage }}')"{{ else if .backgroundColor }}style="background-color: {{ .backgroundColor }}"{{ end }}>
+    <div class="modal-content">
+        <div class="modal-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-11 col-md-offset-1">
+                        <h2 class="{{ .colorMode }}">{{ .abilityName }}</h2>
+                        <hr class="colored">
+                    </div>
+                    <div class="device-mockup-wrapper col-md-11 col-md-offset-1">
+                        <div class="device-mockup {{ .stone }}">
+                            <div class="topics up">
+                                <div class="inner">
+                                    {{ $colorMode := .colorMode }}
+                                    {{ range $i, $e := .topicsUp }}
+                                    <div class="topic up" tid="{{ $i }}">
+                                        <div class="oneword row {{ $colorMode }}"><li>{{ .oneword | markdownify }}</li></span></div>
+                                        <hr>
+                                        <div class="description row {{ $colorMode }}"><span>{{ .description | markdownify }}</span></div>
+                                        <br><br><br><br><br>
+                                    </div>
+                                    {{ end }} 
+                                </div>
+                            </div>
+                            <div class="topics down">
+                                <div class="inner">
+                                    {{ $len := len .topicsUp }}
+                                    {{ range $i, $e := .topicsDown }}
+                                    <div class="topic down" tid="{{ add $i $len }}">
+                                        <br><br><br><br><br>
+                                        <div class="description row {{ $colorMode }}"><span>{{ .description | markdownify }}</span></div>
+                                        <hr>
+                                        <div class="oneword row {{ $colorMode }}"><li>{{ .oneword | markdownify }}</li></span></div>
+                                    </div>
+                                    {{ end }}                                
+                                </div>
+                            </div>
+                            <div class="device">
+                                <div class="screen">
+                                    <div class="mockup-carousel">
+                                        {{ range $i, $e := .topicsUp }}
+                                        <div class="item item{{ $i }}">
+                                            {{ if .text }}
+                                            <img src="img/nil.png" class="img-responsive" alt="">
+                                            <table class="text"><tr><td><div><h3>{{ .oneword | markdownify }}</h3>{{ .text | markdownify }}</div></td></tr></table>
+                                            {{ else if .image }}
+                                            <h3>{{ .oneword | markdownify }}</h3>
+                                            <img src="{{ .image }}" class="img-responsive" alt="">
+                                            {{ else if .video }}
+                                            <h3>{{ .oneword | markdownify }}</h3>
+                                            <video controls>
+                                                <source src="{{ .video }}" type="video/mp4">
+                                            </video>
+                                            {{ end }}                                                
+                                        </div>
+                                        {{ end }}
+                                        {{ $len := len .topicsUp }}
+                                        {{ range $i, $e := .topicsDown }}
+                                        <div class="item item{{ add $i $len }}">
+                                            {{ if .text }}
+                                            <img src="img/nil.png" class="img-responsive" alt="">
+                                            <table class="text"><tr><td><div><h3>{{ .oneword | markdownify }}</h3>{{ .text | markdownify }}</div></td></tr></table>
+                                            {{ else if .image }}
+                                            <h3>{{ .oneword | markdownify }}</h3>
+                                            <img src="{{ .image }}" class="img-responsive" alt="">
+                                            {{ else if .video }}
+                                            <h3>{{ .oneword | markdownify }}</h3>
+                                            <video controls>
+                                                <source src="{{ .video }}" type="video/mp4">
+                                            </video>
+                                            {{ end }}                                                
+                                        </div>
+                                        {{ end }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> {{ .closeButton }}</button>
+                    </div>
+                    <div class="infoline col-md-8 col-md-offset-2">
+                        <div class="list-wrapper">
+                            <ul class="list-inline item-details">
+                                <li class="date">Datum: <strong>{{ .date }}</strong></li>
+                                <li class="placeOfWriting" place="{{ .placeOfWriting }}" language="{{ .language }}">Ort: <strong>{{ .placeOfWriting }}</strong></li>
+                                <li class="weather">Derzeitiges Wetter: <strong></strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}
+

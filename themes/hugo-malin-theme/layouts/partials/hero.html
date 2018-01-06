@@ -1,0 +1,57 @@
+<!-- Header -->
+{{ with .Site.Data.hero }}
+
+<style>
+{{ if .titleSize }}
+    header .brand-name {
+        font-size: {{ .titleSize }} !important; 
+    }
+{{ end }}
+{{ if .subtitleSize }}
+    header .brand-name-subtext {
+        font-size: {{ .subtitleSize }} !important; 
+    }
+{{ end }}
+{{ if .titleColor }}
+    header .brand-name {
+        color: {{ .titleColor }} !important; 
+    }
+{{ end }}
+{{ if .subtitleColor }}
+    header .brand-name-subtext {
+        color: {{ .subtitleColor }} !important; 
+    }
+{{ end }}
+{{ if .lineColor }}
+    header hr.colored {
+        border-color: {{ .lineColor }} !important; 
+    }
+{{ end }}
+{{ if .buttonColor }}
+    header .scroll-down .btn {
+        border-color: {{ .buttonColor }} !important; 
+        color: {{ .buttonColor }} !important; 
+    }
+    header .scroll-down .btn:hover {
+        opacity: 0.5;
+    }
+{{ end }}
+
+
+</style>
+
+<header style="background-image: url('{{ .image }}');">
+    <div class="intro-content">
+        <img src="{{ .logo }}" class="img-responsive img-centered" alt="">
+        <div class="brand-name">{{ .title | markdownify }}</div>
+        <hr class="colored">
+        <div class="brand-name-subtext">{{ .subtitle | markdownify }}</div>
+        <hr class="colored">
+        <div>{{ .test }}</div>
+    </div>
+    <div class="scroll-down">
+        <a class="btn page-scroll" href="#{{ .ref | urlize }}"><i class="fa fa-angle-down fa-fw"></i></a>
+    </div>
+</header>
+{{ end }}
+
