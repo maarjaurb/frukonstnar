@@ -73,60 +73,60 @@ panels:
       backgroundImage: ...
       type: Calendar
       events:
-        - title: AMATÖRAFTON
-          date: 27/1 2018
+        - title: Fru Konstnärs debutalbum
+          date: 31/8 - 9/10 2018
           text: >
-            Ö̈ppen scen på Haltande teatern kl 18.30 Konferencier: Fru Konstnär
+            Insamling för att kunna finansiera Fru Konstnärs debutalbum -Malin och jag (all hjälp mottages tacksamt-besök Kickstarter https://www.kickstarter.com/projects/589306349/fru-konstnar-malin-och-jag-the-album?ref=project_build )
 
-        - title: MONOLOG
-          date: 15/2 2018
+        - title: Performance/Spelning
+          date: 1/9 2018
           text: >
-            Kl 17 föräldraträff på lekskolan Nyponkulla
+            performance/spelning på Honungssvängen-Gnesta
 
-        - title: LIVSSPELSGRUPP (TYSK MÄN)
-          date: 19-21/2 2018
+        - title: "from Järna with love"
+          date: 9/9 2018
           text: >
-            Sluten grupp med fokus på att bryta egna mönster. Iris Johansson och Fru Konstnär.
+            performance på "from Järna with love" Gula villan, Järna
 
-        - title: MONOLOG, ”att passa in till varje pris”
-          date: 8/3 2018
+        - title: Livsspelsgrupp (tysk män)
+          date: 17 - 19/9 2018
           text: >
-            Fira kvinnodagen på Haltande teatern kl 19.00 Fru Konstnär visar en av sina monologer. Efterföljande fika och dans.
+            Livsspelsgrupp (tysk män) sluten grupp med fokus på att bryta egna mönster. Iris Johansson och Fru Konstnär
 
-        - title: AMATÖRAFTON
-          date: 24/3 2018
+        - title: Performance
+          date: 29/9 2018
           text: >
-            Ö̈ppen scen på Haltande teatern kl 18.30 Konferencier: Fru Konstnär
+            performance på Järna kulturnatt
 
-        - title: EKELÖFAFTON
-          date: 1/4 2018
+        - title: Studioinspelning
+          date: OKTOBER 2018
           text: >
-            Välkommen till Haltande teatern kl 18.30 på påsksöndagen John Beck: piano. Fru konstnär: dikt
+            
 
-        - title: LIVVSPELSGRUPP (KVINNOR TYSK)
-          date: 2-4/4 2018
+        - title: Livsspelsgrupp (svensk män)
+          date: 9 - 11/11 2018
           text: >
-            Sluten grupp med fokus på att bryta egna mönster. Iris Johansson och Fru Konstnär
+            Livsspelsgrupp (svensk män) sluten grupp med fokus på att bryta egna mönster. Iris Johansson och Fru Konstnär
 
-        - title: LIVSSPELGRUPP (KVINNOR 2)
-          date: 4-6/5 2018
-          text: >
-            Sluten grupp med fokus på att bryta egna mönster. Iris Johansson och Fru Konst
-
-        - title: AMATÖRAFTON
-          date: 11/5 2018
-          text: >
-            Sluten grupp med fokus på att bryta egna mönster.
-
-        - title: LIVSSPELSGRUPP (KVINNOR 1)
-          date: 18-20/5 2018
-          text: >
-            Sluten grupp med fokus på att bryta egna mönster. Iris Johansson och Fru Konstnär
-
-        - title: SOFIAGALANS SHOW
+        - title: "ett drömscenario"
           date: 17/11 2018
           text: >
-            YtterJärna kulturhus. Konferencierer Fru Konstnär och Bettina Feuerstein
+            Sofiagalans show-"ett drömscenario", Ytterjärna kulturhus
+
+        - title: Livsspelsgrupp (tysk kvinnor)
+          date: 26/11 2018
+          text: >
+            Livsspelsgrupp (tysk kvinnor), sluten grupp med fokus på att bryta egna mönster. Iris Johansson och Fru Konstnär
+
+        - title: Livsspelsgrupp (kvinnor)
+          date: 30/11 - 2/12 2018
+          text: >
+            Livsspelsgrupp (kvinnor), sluten grupp med fokus på att bryta egna mönster. Iris Johansson och Fru Konstnär
+
+        - title: Livsspelsgrupp (kvinnor)
+          date: 14 - 16/12 2018
+          text: >
+            Livsspelsgrupp (kvinnor), sluten grupp med fokus på att bryta egna mönster. Iris Johansson och Fru Konstnär
 
       textSize:             16
       # textPadding:            60
