@@ -169,7 +169,7 @@
 				    </div>
 				    <div id="calendar-collapse-{{ $i1 }}" class="panel-collapse collapse{{ if eq $i1 0 }} in{{ end }}">
 				      <div class="panel-body">
-				      	<p>{{ .text }}</p>
+				      	<p>{{ .text | markdownify }}</p>
 				      </div>
 				    </div>
 				  </div>
