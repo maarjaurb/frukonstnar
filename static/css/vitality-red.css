@@ -369,6 +369,21 @@ header .scroll-down .btn:hover {
   border-color: rgba(186, 76, 61, 0.5);
   outline: none;
 }
+header .scroll-down .kickstarter {
+  position: absolute;
+  top: -100px;
+  right: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 9px;
+  padding: 17px;
+}
+header .scroll-down .kickstarter a {
+  color: lightblue;
+}
+header .scroll-down .kickstarter a:hover {
+  color: yellow;
+  font-size: 19px;
+}
 @media (min-width: 768px) {
   header {
     height: 100%;
@@ -1323,7 +1338,7 @@ aside.cta-quote .panel {
   font-size: 12px;
 }
 #textsnippetslist .mix2:hover .portfolio-wrapper .caption {
-  opacity: 0.90;
+  opacity: 0.9;
   bottom: 0%;
 }
 /*  #Mobile (Portrait) - Note: Design for a width of 320px */
@@ -1777,14 +1792,14 @@ body.vintage .testimonials .owl-controls .owl-next {
   top: 2em;
   margin: 0;
   font-size: 0.85em;
-  line-height: 1.764705882em;
+  line-height: 1.76470588em;
   vertical-align: middle;
   vertical-align: baseline;
   opacity: 0;
-  -webkit-transition: top 0.5s ease,opacity 0.5s ease;
-  -moz-transition: top 0.5s ease,opacity 0.5s ease;
-  -ms-transition: top 0.5s ease,opacity 0.5s ease;
-  transition: top 0.5s ease,opacity 0.5s ease;
+  -webkit-transition: top 0.5s ease, opacity 0.5s ease;
+  -moz-transition: top 0.5s ease, opacity 0.5s ease;
+  -ms-transition: top 0.5s ease, opacity 0.5s ease;
+  transition: top 0.5s ease, opacity 0.5s ease;
 }
 .floating-label-form-group::not(:first-child) {
   padding-left: 14px;
